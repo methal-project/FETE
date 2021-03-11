@@ -2,21 +2,34 @@ from html.parser import HTMLParser
 import sys
 from lxml import etree
 
+# Transfère les tailles de police contenues dans un fichier
+# HOCR au fichier ALTO crée par ocr-transform à partir de ce fichier
+# HOCR
+# Utile puisque ocr-transform ignore ces informations
+
 size_map = {}
 
 class MyHTMLParser(HTMLParser):
 
   def handle_starttag(self, tag, attrs_):
+    # récolter les attributs sous forme de dictionnaire
     attrs = {}
     for k, v in attrs_:
       attrs[k] = v
+
     if tag == "span":
       if attrs["class"] == "ocr_line":
         title = attrs["title"]
         title_toks = title.split()
+
+        # extraire le dernier token délimité par des espaces, c'est le
+        # numéro qui suit "x_size" dans les fichiers que produit Tesseract
         fsize = float(title_toks[-1])
+
         self.curr_size = fsize
       elif attrs["class"] == "ocrx_word":
+        # La taille de ce mot est la dernière taille qu'on a vue dans un tag
+        # ocr_line
         size_map[attrs["id"]] = self.curr_size
     
 
@@ -27,7 +40,9 @@ f.close()
 
 root = etree.parse(sys.argv[2]).getroot()
 
+# Liste des tailles de police qui existent dans le fichier
 unique_sizes = []
+# Envoie chaque ID à sa taille de police
 unique_size_map = {}
 for size in size_map.values():
   if not (size in unique_sizes):
@@ -35,9 +50,12 @@ for size in size_map.values():
     unique_sizes.append(size)
 
 
+# Insérer un élément Styles pour stocker
+# les différentes tailles dont on aura besoin
 styles = etree.Element("Styles")
 root.insert(1, styles)
 
+# Créer les styles
 for i in range(len(unique_sizes)):
   text_style = etree.SubElement(styles, "TextStyle")
   text_style.set("ID", "font" + str(i))
