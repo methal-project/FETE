@@ -23,9 +23,11 @@ function clean_hocr {
   sed -i 's/x_font ; //g'                $2
   sed -i 's/x_fsize [^;]*; //g'          $2
   
-  # Remplacer ocr_caption par ocr_line, pour éviter que ocr-transform génère
-  # des <TextBlock> sans <TextLine>
+  # Remplacer ocr_caption, ocr_textfloat, et ocr_header par ocr_line, 
+  # pour éviter que ocr-transform génère des <TextBlock> sans <TextLine>
   sed -i 's/ocr_caption/ocr_line/g;'     $2
+  sed -i 's/ocr_header/ocr_line/g;'      $2
+  sed -i 's/ocr_textfloat/ocr_line/g;'   $2
 
 }
 
@@ -36,7 +38,7 @@ fi
 
 clean_hocr $1 $2
 
-ocr-transform hocr alto4.0 $2 $2
+ocr-transform hocr alto3.0 $2 $2
 
 xmllint --format $2 -o $2
 
@@ -46,5 +48,5 @@ sed -i 's/HEIGHT=""/HEIGHT="1"/g' $2
 sed -i 's/WIDTH=""/WIDTH="1"/g' $2
 
 # Valider le résultat
-ocr-validate alto-4-0 $2
+ocr-validate alto-3-0 $2
 
