@@ -34,7 +34,9 @@ for size in size_map.values():
     unique_size_map[size] = len(unique_sizes)
     unique_sizes.append(size)
 
-styles = etree.SubElement(root, "Styles")
+
+styles = etree.Element("Styles")
+root.insert(1, styles)
 
 for i in range(len(unique_sizes)):
   text_style = etree.SubElement(styles, "TextStyle")
@@ -47,4 +49,14 @@ for i in range(len(unique_sizes)):
   text_style.set("FONTCOLOR", "#WWWWff")
   text_style.set("FONTSTYLE", "bold")
 
-print(etree.tostring(root, pretty_print=True))
+def insert_font_sizes(node):
+  if node.tag == "{http://www.loc.gov/standards/alto/ns-v3#}String":
+    node.set("STYLEREFS", "font" + str(unique_size_map[size_map[node.get("ID")]]))
+  for child in node:
+    insert_font_sizes(child)
+
+insert_font_sizes(root)
+
+f = open(sys.argv[2], "wb")
+f.write(etree.tostring(root, pretty_print=True))
+f.close()

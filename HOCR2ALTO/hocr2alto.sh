@@ -47,6 +47,9 @@ xmllint --format $2 -o $2
 sed -i 's/HEIGHT=""/HEIGHT="1"/g' $2
 sed -i 's/WIDTH=""/WIDTH="1"/g' $2
 
+# Transférer les tailles des mots, ignorées par ocr-transform
+python transfer_font_sizes.py $1 $2
+
 # Valider le résultat
 ocr-validate alto-3-0 $2
 
