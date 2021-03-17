@@ -1,0 +1,365 @@
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v3#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# https://www.loc.gov/standards/alto/v4/alto.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName/>
+    </sourceImageInformation>
+    <OCRProcessing ID="IdOcr">
+      <ocrProcessingStep>
+        <processingSoftware>
+          <softwareName>tesseract 4.1.0</softwareName>
+        </processingSoftware>
+      </ocrProcessingStep>
+    </OCRProcessing>
+  </Description>
+  <Styles><TextStyle ID="font0" FONTSIZE="32.0" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font1" FONTSIZE="24.0" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font2" FONTSIZE="25.0" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font3" FONTSIZE="25.279999" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font4" FONTSIZE="25.296295" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font5" FONTSIZE="26.0" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font6" FONTSIZE="24.661709" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font7" FONTSIZE="26.133518" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font8" FONTSIZE="26.605328" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font9" FONTSIZE="25.661709" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font10" FONTSIZE="23.0" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font11" FONTSIZE="26.5" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/></Styles><Layout>
+    <Page ID="page_1" PHYSICAL_IMG_NR="1" HEIGHT="1" WIDTH="1">
+      <PrintSpace HEIGHT="1" WIDTH="1" VPOS="0" HPOS="0">
+        <ComposedBlock ID="carea_1_1" HEIGHT="21" WIDTH="125" VPOS="169" HPOS="511">
+          <TextBlock ID="par_1_1" HEIGHT="21" WIDTH="125" VPOS="169" HPOS="511">
+            <TextLine ID="line_1_1" HEIGHT="517" WIDTH="NaN" VPOS="-6" HPOS="-0.008">
+              <String ID="word_1_1" CONTENT="&#8212;" HEIGHT="3" WIDTH="21" VPOS="181" HPOS="511" WC="0.9" STYLEREFS="font0"/>
+              <String ID="word_1_2" CONTENT="58" HEIGHT="21" WIDTH="30" VPOS="169" HPOS="556" WC="0.84" STYLEREFS="font0"/>
+              <String ID="word_1_3" CONTENT="&#8212;" HEIGHT="2" WIDTH="23" VPOS="181" HPOS="613" WC="0.87" STYLEREFS="font0"/>
+            </TextLine>
+          </TextBlock>
+        </ComposedBlock>
+        <ComposedBlock ID="carea_1_2" HEIGHT="1117" WIDTH="719" VPOS="228" HPOS="207">
+          <TextBlock ID="par_1_2" HEIGHT="53" WIDTH="708" VPOS="228" HPOS="216">
+            <TextLine ID="line_1_2" HEIGHT="220" WIDTH="NaN" VPOS="-4" HPOS="-0.001">
+              <String ID="word_1_4" CONTENT="Aristide:" HEIGHT="20" WIDTH="100" VPOS="229" HPOS="216" WC="0.91" STYLE="bold" STYLEREFS="font1"/>
+              <String ID="word_1_5" CONTENT="Prinz," HEIGHT="23" WIDTH="66" VPOS="229" HPOS="330" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_6" CONTENT="wenn" HEIGHT="12" WIDTH="58" VPOS="236" HPOS="410" WC="0.95" STYLEREFS="font1"/>
+              <String ID="word_1_7" CONTENT="d&#252;" HEIGHT="19" WIDTH="26" VPOS="229" HPOS="482" WC="0.94" STYLEREFS="font1"/>
+              <String ID="word_1_8" CONTENT="Ehr" HEIGHT="19" WIDTH="36" VPOS="229" HPOS="523" WC="0.95" STYLEREFS="font1"/>
+              <String ID="word_1_9" CONTENT="im" HEIGHT="18" WIDTH="25" VPOS="230" HPOS="573" WC="0.93" STYLEREFS="font1"/>
+              <String ID="word_1_10" CONTENT="Lyb" HEIGHT="23" WIDTH="39" VPOS="229" HPOS="614" WC="0.92" STYLEREFS="font1"/>
+              <String ID="word_1_11" CONTENT="hesch," HEIGHT="24" WIDTH="70" VPOS="228" HPOS="666" WC="0.91" STYLEREFS="font1"/>
+              <String ID="word_1_12" CONTENT="gibsch" HEIGHT="24" WIDTH="71" VPOS="228" HPOS="750" WC="0.91" STYLEREFS="font1"/>
+              <String ID="word_1_13" CONTENT="d'r" HEIGHT="20" WIDTH="30" VPOS="228" HPOS="835" WC="0.86" STYLEREFS="font1"/>
+              <String ID="word_1_14" CONTENT="W&#228;j" HEIGHT="24" WIDTH="46" VPOS="228" HPOS="878" WC="0.67" STYLEREFS="font1"/>
+            </TextLine>
+            <TextLine ID="line_1_3" HEIGHT="282" WIDTH="NaN" VPOS="-6" HPOS="0.021">
+              <String ID="word_1_15" CONTENT="frej!" HEIGHT="25" WIDTH="48" VPOS="256" HPOS="276" WC="0.95" STYLEREFS="font2"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_20" HEIGHT="80" WIDTH="710" VPOS="284" HPOS="216">
+            <TextLine ID="line_1_4" HEIGHT="220" WIDTH="NaN" VPOS="-4" HPOS="-0.001">
+              <String ID="word_1_16" CONTENT="Chantalem:" HEIGHT="20" WIDTH="136" VPOS="284" HPOS="216" WC="0.82" STYLE="bold" STYLEREFS="font1"/>
+              <String ID="word_1_17" CONTENT="Haha," HEIGHT="24" WIDTH="67" VPOS="284" HPOS="369" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_18" CONTENT="dummer" HEIGHT="20" WIDTH="94" VPOS="284" HPOS="454" WC="0.93" STYLEREFS="font1"/>
+              <String ID="word_1_19" CONTENT="Hofnarr," HEIGHT="23" WIDTH="95" VPOS="284" HPOS="564" WC="0.92" STYLEREFS="font1"/>
+              <String ID="word_1_20" CONTENT="ich" HEIGHT="19" WIDTH="31" VPOS="284" HPOS="693" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_21" CONTENT="hab" HEIGHT="19" WIDTH="41" VPOS="284" HPOS="740" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_22" CONTENT="d&#8217;" HEIGHT="19" WIDTH="18" VPOS="284" HPOS="797" WC="0.89" STYLEREFS="font1"/>
+              <String ID="word_1_23" CONTENT="Prinzess" HEIGHT="19" WIDTH="93" VPOS="284" HPOS="833" WC="0.92" STYLEREFS="font1"/>
+            </TextLine>
+            <TextLine ID="line_1_5" HEIGHT="280" WIDTH="NaN" VPOS="-5" HPOS="0">
+              <String ID="word_1_24" CONTENT="gfunde," HEIGHT="24" WIDTH="86" VPOS="312" HPOS="275" WC="0.91" STYLEREFS="font1"/>
+              <String ID="word_1_25" CONTENT="un" HEIGHT="11" WIDTH="27" VPOS="320" HPOS="395" WC="0.95" STYLEREFS="font1"/>
+              <String ID="word_1_26" CONTENT="wer" HEIGHT="12" WIDTH="40" VPOS="319" HPOS="439" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_27" CONTENT="mer" HEIGHT="12" WIDTH="43" VPOS="319" HPOS="495" WC="0.93" STYLEREFS="font1"/>
+              <String ID="word_1_28" CONTENT="diss" HEIGHT="19" WIDTH="41" VPOS="312" HPOS="555" WC="0.92" STYLEREFS="font1"/>
+              <String ID="word_1_29" CONTENT="strittig" HEIGHT="23" WIDTH="78" VPOS="313" HPOS="613" WC="0.92" STYLEREFS="font1"/>
+              <String ID="word_1_30" CONTENT="mache" HEIGHT="19" WIDTH="74" VPOS="312" HPOS="709" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_31" CONTENT="will," HEIGHT="23" WIDTH="45" VPOS="312" HPOS="800" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_32" CONTENT="dem" HEIGHT="19" WIDTH="47" VPOS="312" HPOS="878" WC="0.96" STYLEREFS="font1"/>
+            </TextLine>
+            <TextLine ID="line_1_6" HEIGHT="285" WIDTH="NaN" VPOS="-5" HPOS="0">
+              <String ID="word_1_33" CONTENT="(zejt" HEIGHT="24" WIDTH="53" VPOS="340" HPOS="280" WC="0.8" STYLEREFS="font2"/>
+              <String ID="word_1_34" CONTENT="d'r" HEIGHT="20" WIDTH="31" VPOS="339" HPOS="345" WC="0.85" STYLEREFS="font2"/>
+              <String ID="word_1_35" CONTENT="Sawel)." HEIGHT="20" WIDTH="86" VPOS="339" HPOS="389" WC="0.89" STYLEREFS="font2"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_22" HEIGHT="24" WIDTH="550" VPOS="367" HPOS="215">
+            <TextLine ID="line_1_7" HEIGHT="219" WIDTH="NaN" VPOS="-4" HPOS="0">
+              <String ID="word_1_36" CONTENT="Aristide" HEIGHT="19" WIDTH="90" VPOS="368" HPOS="215" WC="0.93" STYLE="bold" STYLEREFS="font1"/>
+              <String ID="word_1_37" CONTENT="(zejt" HEIGHT="23" WIDTH="52" VPOS="368" HPOS="326" WC="0.94" STYLEREFS="font1"/>
+              <String ID="word_1_38" CONTENT="d&#8217;r" HEIGHT="20" WIDTH="30" VPOS="367" HPOS="393" WC="0.91" STYLEREFS="font1"/>
+              <String ID="word_1_39" CONTENT="Sawel)" HEIGHT="19" WIDTH="87" VPOS="367" HPOS="438" WC="0.9" STYLEREFS="font1"/>
+              <String ID="word_1_40" CONTENT=":" HEIGHT="33" WIDTH="12" VPOS="363" HPOS="521" WC="0.9" STYLEREFS="font1"/>
+              <String ID="word_1_41" CONTENT="Dem" HEIGHT="19" WIDTH="50" VPOS="367" HPOS="542" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_42" CONTENT="helf" HEIGHT="19" WIDTH="43" VPOS="367" HPOS="609" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_43" CONTENT="ich" HEIGHT="19" WIDTH="31" VPOS="367" HPOS="667" WC="0.93" STYLEREFS="font1"/>
+              <String ID="word_1_44" CONTENT="lieje." HEIGHT="24" WIDTH="52" VPOS="367" HPOS="713" WC="0.78" STYLEREFS="font1"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_21" HEIGHT="21" WIDTH="338" VPOS="394" HPOS="214">
+            <TextLine ID="line_1_8" HEIGHT="214" WIDTH="NaN" VPOS="0" HPOS="-0.003">
+              <String ID="word_1_45" CONTENT="Chantalem:" HEIGHT="20" WIDTH="137" VPOS="395" HPOS="214" WC="0.89" STYLE="bold" STYLEREFS="font3"/>
+              <String ID="word_1_46" CONTENT="Kumm!" HEIGHT="20" WIDTH="84" VPOS="394" HPOS="368" WC="0.79" STYLEREFS="font3"/>
+              <String ID="word_1_47" CONTENT="Kumm!" HEIGHT="20" WIDTH="84" VPOS="394" HPOS="468" WC="0.94" STYLEREFS="font3"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_5" HEIGHT="20" WIDTH="148" VPOS="436" HPOS="496">
+            <TextLine ID="line_1_9" HEIGHT="496" WIDTH="NaN" VPOS="0" HPOS="0">
+              <String ID="word_1_48" CONTENT="(Sawelduell.)" HEIGHT="20" WIDTH="148" VPOS="436" HPOS="496" WC="0.55" STYLEREFS="font4"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_6" HEIGHT="54" WIDTH="712" VPOS="476" HPOS="213">
+            <TextLine ID="line_1_10" HEIGHT="218" WIDTH="NaN" VPOS="-5" HPOS="-0.001">
+              <String ID="word_1_49" CONTENT="Aristide:" HEIGHT="20" WIDTH="101" VPOS="477" HPOS="213" WC="0.84" STYLE="bold" STYLEREFS="font5"/>
+              <String ID="word_1_50" CONTENT="Ich" HEIGHT="20" WIDTH="31" VPOS="477" HPOS="329" WC="0.95" STYLEREFS="font5"/>
+              <String ID="word_1_51" CONTENT="hab" HEIGHT="20" WIDTH="41" VPOS="477" HPOS="374" WC="0.92" STYLEREFS="font5"/>
+              <String ID="word_1_52" CONTENT="gschwore," HEIGHT="25" WIDTH="111" VPOS="477" HPOS="428" WC="0.92" STYLEREFS="font5"/>
+              <String ID="word_1_53" CONTENT="d&#8217;" HEIGHT="20" WIDTH="20" VPOS="477" HPOS="551" WC="0.91" STYLEREFS="font5"/>
+              <String ID="word_1_54" CONTENT="Prinzess" HEIGHT="18" WIDTH="92" VPOS="479" HPOS="586" WC="0.93" STYLEREFS="font5"/>
+              <String ID="word_1_55" CONTENT="gsund" HEIGHT="25" WIDTH="67" VPOS="477" HPOS="691" WC="0.92" STYLEREFS="font5"/>
+              <String ID="word_1_56" CONTENT="zuem" HEIGHT="13" WIDTH="60" VPOS="484" HPOS="771" WC="0.93" STYLEREFS="font5"/>
+              <String ID="word_1_57" CONTENT="Schloss" HEIGHT="20" WIDTH="81" VPOS="476" HPOS="844" WC="0.96" STYLEREFS="font5"/>
+            </TextLine>
+            <TextLine ID="line_1_11" HEIGHT="279" WIDTH="NaN" VPOS="-5" HPOS="0">
+              <String ID="word_1_58" CONTENT="ze" HEIGHT="13" WIDTH="24" VPOS="512" HPOS="274" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_59" CONTENT="bringe," HEIGHT="24" WIDTH="78" VPOS="506" HPOS="312" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_60" CONTENT="un" HEIGHT="12" WIDTH="27" VPOS="513" HPOS="405" WC="0.93" STYLEREFS="font2"/>
+              <String ID="word_1_61" CONTENT="diss" HEIGHT="18" WIDTH="41" VPOS="507" HPOS="446" WC="0.93" STYLEREFS="font2"/>
+              <String ID="word_1_62" CONTENT="halt" HEIGHT="18" WIDTH="45" VPOS="507" HPOS="501" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_63" CONTENT="ich." HEIGHT="18" WIDTH="37" VPOS="507" HPOS="561" WC="0.96" STYLEREFS="font2"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_7" HEIGHT="27" WIDTH="705" VPOS="533" HPOS="213">
+            <TextLine ID="line_1_12" HEIGHT="220" WIDTH="NaN" VPOS="-7" HPOS="-0.001">
+              <String ID="word_1_64" CONTENT="Chantalem:" HEIGHT="19" WIDTH="137" VPOS="534" HPOS="213" WC="0.91" STYLE="bold" STYLEREFS="font1"/>
+              <String ID="word_1_65" CONTENT="Un" HEIGHT="19" WIDTH="31" VPOS="534" HPOS="363" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_66" CONTENT="ich" HEIGHT="19" WIDTH="31" VPOS="534" HPOS="408" WC="0.93" STYLEREFS="font1"/>
+              <String ID="word_1_67" CONTENT="zaj" HEIGHT="24" WIDTH="32" VPOS="536" HPOS="452" WC="0.95" STYLEREFS="font1"/>
+              <String ID="word_1_68" CONTENT="dir" HEIGHT="19" WIDTH="31" VPOS="534" HPOS="496" WC="0.93" STYLEREFS="font1"/>
+              <String ID="word_1_69" CONTENT="d'r" HEIGHT="19" WIDTH="30" VPOS="534" HPOS="538" WC="0.83" STYLEREFS="font1"/>
+              <String ID="word_1_70" CONTENT="W&#228;j" HEIGHT="23" WIDTH="45" VPOS="534" HPOS="580" WC="0.87" STYLEREFS="font1"/>
+              <String ID="word_1_71" CONTENT="in" HEIGHT="16" WIDTH="18" VPOS="536" HPOS="641" WC="0.93" STYLEREFS="font1"/>
+              <String ID="word_1_72" CONTENT="d&#8217;" HEIGHT="19" WIDTH="20" VPOS="534" HPOS="671" WC="0.92" STYLEREFS="font1"/>
+              <String ID="word_1_73" CONTENT="Ewigkeit." HEIGHT="23" WIDTH="102" VPOS="534" HPOS="704" WC="0.93" STYLEREFS="font1"/>
+              <String ID="word_1_74" CONTENT="(Stosst.)" HEIGHT="19" WIDTH="92" VPOS="533" HPOS="826" WC="0.42" STYLEREFS="font1"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_8" HEIGHT="48" WIDTH="710" VPOS="561" HPOS="212">
+            <TextLine ID="line_1_13" HEIGHT="212" WIDTH="NaN" VPOS="0" HPOS="-0.003">
+              <String ID="word_1_75" CONTENT="Aristide:" HEIGHT="19" WIDTH="102" VPOS="562" HPOS="212" WC="0.88" STYLE="bold" STYLEREFS="font6"/>
+              <String ID="word_1_76" CONTENT="Ah!" HEIGHT="19" WIDTH="43" VPOS="562" HPOS="330" WC="0.91" STYLEREFS="font6"/>
+              <String ID="word_1_77" CONTENT="Ah!" HEIGHT="19" WIDTH="43" VPOS="562" HPOS="389" WC="0.91" STYLEREFS="font6"/>
+              <String ID="word_1_78" CONTENT="(Hebbt" HEIGHT="19" WIDTH="79" VPOS="562" HPOS="455" WC="0.89" STYLEREFS="font6"/>
+              <String ID="word_1_79" CONTENT="d&#8217;" HEIGHT="19" WIDTH="19" VPOS="562" HPOS="551" WC="0.85" STYLEREFS="font6"/>
+              <String ID="word_1_80" CONTENT="Bruscht.)" HEIGHT="19" WIDTH="103" VPOS="562" HPOS="590" WC="0.91" STYLEREFS="font6"/>
+              <String ID="word_1_81" CONTENT="Ich" HEIGHT="18" WIDTH="32" VPOS="562" HPOS="719" WC="0.96" STYLEREFS="font6"/>
+              <String ID="word_1_82" CONTENT="bin" HEIGHT="18" WIDTH="33" VPOS="562" HPOS="770" WC="0.92" STYLEREFS="font6"/>
+              <String ID="word_1_83" CONTENT="verwund." HEIGHT="19" WIDTH="102" VPOS="561" HPOS="820" WC="0.91" STYLEREFS="font6"/>
+            </TextLine>
+            <TextLine ID="line_1_14" HEIGHT="279" WIDTH="NaN" VPOS="-1" HPOS="0.008">
+              <String ID="word_1_84" CONTENT="(Fallt" HEIGHT="19" WIDTH="62" VPOS="590" HPOS="278" WC="0.79" STYLEREFS="font6"/>
+              <String ID="word_1_85" CONTENT="um.)" HEIGHT="19" WIDTH="51" VPOS="590" HPOS="353" WC="0.96" STYLEREFS="font6"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_9" HEIGHT="81" WIDTH="710" VPOS="617" HPOS="213">
+            <TextLine ID="line_1_15" HEIGHT="217" WIDTH="NaN" VPOS="-4" HPOS="-0.003">
+              <String ID="word_1_86" CONTENT="Chantalem" HEIGHT="20" WIDTH="126" VPOS="617" HPOS="213" WC="0.91" STYLE="bold" STYLEREFS="font2"/>
+              <String ID="word_1_87" CONTENT="(steckt" HEIGHT="19" WIDTH="79" VPOS="618" HPOS="359" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_88" CONTENT="d'r" HEIGHT="19" WIDTH="30" VPOS="618" HPOS="452" WC="0.75" STYLEREFS="font2"/>
+              <String ID="word_1_89" CONTENT="Sawel" HEIGHT="19" WIDTH="63" VPOS="618" HPOS="494" WC="0.9" STYLEREFS="font2"/>
+              <String ID="word_1_90" CONTENT="in" HEIGHT="16" WIDTH="19" VPOS="620" HPOS="572" WC="0.91" STYLEREFS="font2"/>
+              <String ID="word_1_91" CONTENT="d&#8216;" HEIGHT="23" WIDTH="20" VPOS="618" HPOS="604" WC="0.62" STYLEREFS="font2"/>
+              <String ID="word_1_92" CONTENT="Scheid)" HEIGHT="19" WIDTH="82" VPOS="618" HPOS="638" WC="0.76" STYLEREFS="font2"/>
+              <String ID="word_1_93" CONTENT=":" HEIGHT="12" WIDTH="3" VPOS="624" HPOS="732" WC="0.9" STYLEREFS="font2"/>
+              <String ID="word_1_94" CONTENT="So," HEIGHT="24" WIDTH="31" VPOS="617" HPOS="750" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_95" CONTENT="mit" HEIGHT="16" WIDTH="37" VPOS="619" HPOS="796" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_96" CONTENT="dir" HEIGHT="19" WIDTH="31" VPOS="617" HPOS="846" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_97" CONTENT="bin" HEIGHT="18" WIDTH="34" VPOS="617" HPOS="889" WC="0.96" STYLEREFS="font2"/>
+            </TextLine>
+            <TextLine ID="line_1_16" HEIGHT="278" WIDTH="NaN" VPOS="-5" HPOS="-0.005">
+              <String ID="word_1_98" CONTENT="ich" HEIGHT="18" WIDTH="31" VPOS="646" HPOS="273" WC="0.93" STYLEREFS="font2"/>
+              <String ID="word_1_99" CONTENT="ferdig." HEIGHT="25" WIDTH="74" VPOS="645" HPOS="318" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_100" CONTENT="Soldate," HEIGHT="24" WIDTH="90" VPOS="646" HPOS="406" WC="0.95" STYLEREFS="font2"/>
+              <String ID="word_1_101" CONTENT="he!" HEIGHT="19" WIDTH="35" VPOS="646" HPOS="510" WC="0.93" STYLEREFS="font2"/>
+              <String ID="word_1_102" CONTENT="(Zwai" HEIGHT="18" WIDTH="64" VPOS="646" HPOS="566" WC="0.86" STYLEREFS="font2"/>
+              <String ID="word_1_103" CONTENT="Soldate" HEIGHT="19" WIDTH="85" VPOS="645" HPOS="645" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_104" CONTENT="bringe" HEIGHT="24" WIDTH="71" VPOS="645" HPOS="744" WC="0.93" STYLEREFS="font2"/>
+              <String ID="word_1_105" CONTENT="e" HEIGHT="12" WIDTH="10" VPOS="651" HPOS="829" WC="0.95" STYLEREFS="font2"/>
+              <String ID="word_1_106" CONTENT="primi-" HEIGHT="23" WIDTH="68" VPOS="646" HPOS="854" WC="0.95" STYLEREFS="font2"/>
+            </TextLine>
+            <TextLine ID="line_1_17" HEIGHT="279" WIDTH="NaN" VPOS="-6" HPOS="0">
+              <String ID="word_1_107" CONTENT="tivi" HEIGHT="17" WIDTH="33" VPOS="675" HPOS="273" WC="0.94" STYLEREFS="font1"/>
+              <String ID="word_1_108" CONTENT="&#252;ss" HEIGHT="18" WIDTH="33" VPOS="675" HPOS="324" WC="0.92" STYLEREFS="font1"/>
+              <String ID="word_1_109" CONTENT="Aescht" HEIGHT="19" WIDTH="79" VPOS="674" HPOS="373" WC="0.89" STYLEREFS="font1"/>
+              <String ID="word_1_110" CONTENT="gemachti" HEIGHT="24" WIDTH="105" VPOS="674" HPOS="466" WC="0.91" STYLEREFS="font1"/>
+              <String ID="word_1_111" CONTENT="Drab&#228;r.)" HEIGHT="20" WIDTH="95" VPOS="673" HPOS="589" WC="0.87" STYLEREFS="font1"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_10" HEIGHT="25" WIDTH="545" VPOS="706" HPOS="214">
+            <TextLine ID="line_1_18" HEIGHT="219" WIDTH="NaN" VPOS="-5" HPOS="-0.002">
+              <String ID="word_1_112" CONTENT="1." HEIGHT="19" WIDTH="17" VPOS="707" HPOS="214" WC="0.95" STYLE="bold" STYLEREFS="font2"/>
+              <String ID="word_1_113" CONTENT="Soldat:" HEIGHT="21" WIDTH="81" VPOS="706" HPOS="247" WC="0.89" STYLE="bold" STYLEREFS="font2"/>
+              <String ID="word_1_114" CONTENT="Prinz," HEIGHT="24" WIDTH="64" VPOS="707" HPOS="346" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_115" CONTENT="mir" HEIGHT="18" WIDTH="37" VPOS="708" HPOS="428" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_116" CONTENT="warte" HEIGHT="16" WIDTH="63" VPOS="710" HPOS="480" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_117" CONTENT="uff" HEIGHT="20" WIDTH="33" VPOS="706" HPOS="559" WC="0.95" STYLEREFS="font2"/>
+              <String ID="word_1_118" CONTENT="diner" HEIGHT="20" WIDTH="58" VPOS="706" HPOS="607" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_119" CONTENT="Befehl." HEIGHT="19" WIDTH="78" VPOS="706" HPOS="681" WC="0.96" STYLEREFS="font2"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_11" HEIGHT="49" WIDTH="712" VPOS="738" HPOS="211">
+            <TextLine ID="line_1_19" HEIGHT="212" WIDTH="NaN" VPOS="-1" HPOS="-0.003">
+              <String ID="word_1_120" CONTENT="Chantalem:" HEIGHT="21" WIDTH="137" VPOS="739" HPOS="211" WC="0.87" STYLE="bold" STYLEREFS="font7"/>
+              <String ID="word_1_121" CONTENT="Helfe" HEIGHT="20" WIDTH="62" VPOS="740" HPOS="380" WC="0.87" STYLEREFS="font7"/>
+              <String ID="word_1_122" CONTENT="mir" HEIGHT="17" WIDTH="37" VPOS="742" HPOS="459" WC="0.96" STYLEREFS="font7"/>
+              <String ID="word_1_123" CONTENT="denne" HEIGHT="20" WIDTH="68" VPOS="740" HPOS="512" WC="0.93" STYLEREFS="font7"/>
+              <String ID="word_1_124" CONTENT="Felsblock" HEIGHT="20" WIDTH="105" VPOS="739" HPOS="597" WC="0.87" STYLEREFS="font7"/>
+              <String ID="word_1_125" CONTENT="uff" HEIGHT="20" WIDTH="34" VPOS="738" HPOS="726" WC="0.95" STYLEREFS="font7"/>
+              <String ID="word_1_126" CONTENT="d'r" HEIGHT="20" WIDTH="30" VPOS="738" HPOS="777" WC="0.6" STYLEREFS="font7"/>
+              <String ID="word_1_127" CONTENT="Hofnarr" HEIGHT="19" WIDTH="91" VPOS="738" HPOS="832" WC="0.9" STYLEREFS="font7"/>
+            </TextLine>
+            <TextLine ID="line_1_20" HEIGHT="272" WIDTH="NaN" VPOS="0" HPOS="0">
+              <String ID="word_1_128" CONTENT="rolle." HEIGHT="20" WIDTH="55" VPOS="767" HPOS="272" WC="0.84" STYLEREFS="font8"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_12" HEIGHT="20" WIDTH="256" VPOS="800" HPOS="211">
+            <TextLine ID="line_1_21" HEIGHT="211" WIDTH="NaN" VPOS="0" HPOS="0">
+              <String ID="word_1_129" CONTENT="2." HEIGHT="20" WIDTH="20" VPOS="800" HPOS="211" WC="0.96" STYLE="bold" STYLEREFS="font9"/>
+              <String ID="word_1_130" CONTENT="Soldat:" HEIGHT="20" WIDTH="82" VPOS="800" HPOS="245" WC="0.93" STYLE="bold" STYLEREFS="font9"/>
+              <String ID="word_1_131" CONTENT="Isch&#8217;r" HEIGHT="20" WIDTH="62" VPOS="800" HPOS="344" WC="0.85" STYLEREFS="font9"/>
+              <String ID="word_1_132" CONTENT="tod?" HEIGHT="20" WIDTH="47" VPOS="800" HPOS="420" WC="0.96" STYLEREFS="font9"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_13" HEIGHT="80" WIDTH="710" VPOS="834" HPOS="211">
+            <TextLine ID="line_1_22" HEIGHT="217" WIDTH="NaN" VPOS="-6" HPOS="-0.001">
+              <String ID="word_1_133" CONTENT="Chantalem:" HEIGHT="20" WIDTH="137" VPOS="834" HPOS="211" WC="0.92" STYLE="bold" STYLEREFS="font10"/>
+              <String ID="word_1_134" CONTENT="Der" HEIGHT="18" WIDTH="39" VPOS="835" HPOS="365" WC="0.93" STYLEREFS="font10"/>
+              <String ID="word_1_135" CONTENT="Grabstaan" HEIGHT="19" WIDTH="119" VPOS="835" HPOS="419" WC="0.91" STYLEREFS="font10"/>
+              <String ID="word_1_136" CONTENT="isch" HEIGHT="18" WIDTH="41" VPOS="835" HPOS="555" WC="0.96" STYLEREFS="font10"/>
+              <String ID="word_1_137" CONTENT="for" HEIGHT="19" WIDTH="32" VPOS="834" HPOS="613" WC="0.93" STYLEREFS="font10"/>
+              <String ID="word_1_138" CONTENT="e" HEIGHT="12" WIDTH="11" VPOS="840" HPOS="659" WC="0.94" STYLEREFS="font10"/>
+              <String ID="word_1_139" CONTENT="Narr" HEIGHT="18" WIDTH="54" VPOS="834" HPOS="685" WC="0.96" STYLEREFS="font10"/>
+              <String ID="word_1_140" CONTENT="grad" HEIGHT="24" WIDTH="51" VPOS="834" HPOS="754" WC="0.96" STYLEREFS="font10"/>
+              <String ID="word_1_141" CONTENT="guet" HEIGHT="21" WIDTH="51" VPOS="837" HPOS="820" WC="0.95" STYLEREFS="font10"/>
+              <String ID="word_1_142" CONTENT="ge-" HEIGHT="18" WIDTH="34" VPOS="841" HPOS="886" WC="0.95" STYLEREFS="font10"/>
+            </TextLine>
+            <TextLine ID="line_1_23" HEIGHT="277" WIDTH="NaN" VPOS="-6" HPOS="-0.002">
+              <String ID="word_1_143" CONTENT="nue." HEIGHT="12" WIDTH="46" VPOS="869" HPOS="271" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_144" CONTENT="So," HEIGHT="25" WIDTH="33" VPOS="862" HPOS="332" WC="0.93" STYLEREFS="font2"/>
+              <String ID="word_1_145" CONTENT="hewe" HEIGHT="18" WIDTH="56" VPOS="863" HPOS="378" WC="0.91" STYLEREFS="font2"/>
+              <String ID="word_1_146" CONTENT="d&#8217;" HEIGHT="19" WIDTH="19" VPOS="862" HPOS="447" WC="0.91" STYLEREFS="font2"/>
+              <String ID="word_1_147" CONTENT="Prinzess" HEIGHT="18" WIDTH="92" VPOS="863" HPOS="481" WC="0.93" STYLEREFS="font2"/>
+              <String ID="word_1_148" CONTENT="sachte" HEIGHT="18" WIDTH="73" VPOS="862" HPOS="586" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_149" CONTENT="uff," HEIGHT="24" WIDTH="39" VPOS="861" HPOS="673" WC="0.93" STYLEREFS="font2"/>
+              <String ID="word_1_150" CONTENT="sachte." HEIGHT="18" WIDTH="79" VPOS="862" HPOS="727" WC="0.9" STYLEREFS="font2"/>
+              <String ID="word_1_151" CONTENT="Un" HEIGHT="19" WIDTH="31" VPOS="862" HPOS="823" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_152" CONTENT="jetzt" HEIGHT="22" WIDTH="52" VPOS="864" HPOS="869" WC="0.96" STYLEREFS="font2"/>
+            </TextLine>
+            <TextLine ID="line_1_24" HEIGHT="277" WIDTH="NaN" VPOS="-6" HPOS="0">
+              <String ID="word_1_153" CONTENT="marsch." HEIGHT="20" WIDTH="87" VPOS="890" HPOS="271" WC="0.94" STYLEREFS="font2"/>
+              <String ID="word_1_154" CONTENT="(Geje" HEIGHT="24" WIDTH="59" VPOS="890" HPOS="383" WC="0.94" STYLEREFS="font2"/>
+              <String ID="word_1_155" CONTENT="Aristide.)" HEIGHT="20" WIDTH="107" VPOS="890" HPOS="458" WC="0.79" STYLEREFS="font2"/>
+              <String ID="word_1_156" CONTENT="D&#252;" HEIGHT="19" WIDTH="30" VPOS="889" HPOS="588" WC="0.93" STYLEREFS="font2"/>
+              <String ID="word_1_157" CONTENT="stehsch" HEIGHT="19" WIDTH="84" VPOS="889" HPOS="634" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_158" CONTENT="nim" HEIGHT="17" WIDTH="42" VPOS="891" HPOS="734" WC="0.95" STYLEREFS="font2"/>
+              <String ID="word_1_159" CONTENT="uff," HEIGHT="20" WIDTH="40" VPOS="890" HPOS="792" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_160" CONTENT="Haha!" HEIGHT="20" WIDTH="70" VPOS="890" HPOS="850" WC="0.96" STYLEREFS="font2"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_14" HEIGHT="20" WIDTH="185" VPOS="923" HPOS="473">
+            <TextLine ID="line_1_25" HEIGHT="474" WIDTH="NaN" VPOS="-1" HPOS="0.005">
+              <String ID="word_1_161" CONTENT="(Alli" HEIGHT="20" WIDTH="46" VPOS="923" HPOS="473" WC="0.64" STYLEREFS="font8"/>
+              <String ID="word_1_162" CONTENT="ab" HEIGHT="19" WIDTH="27" VPOS="924" HPOS="533" WC="0.96" STYLEREFS="font8"/>
+              <String ID="word_1_163" CONTENT="rechts.)" HEIGHT="20" WIDTH="84" VPOS="923" HPOS="574" WC="0.71" STYLEREFS="font8"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_23" HEIGHT="25" WIDTH="344" VPOS="957" HPOS="393">
+            <TextLine ID="line_1_26" HEIGHT="399" WIDTH="NaN" VPOS="-6" HPOS="0.003">
+              <String ID="word_1_164" CONTENT="Kurzi" HEIGHT="20" WIDTH="60" VPOS="957" HPOS="393" WC="0.89" STYLEREFS="font2"/>
+              <String ID="word_1_165" CONTENT="M&#252;sik:" HEIGHT="20" WIDTH="79" VPOS="957" HPOS="473" WC="0.91" STYLE="bold" STYLEREFS="font2"/>
+              <String ID="word_1_166" CONTENT="Mickey-Motif." HEIGHT="25" WIDTH="166" VPOS="957" HPOS="571" WC="0.92" STYLEREFS="font2"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_15" HEIGHT="21" WIDTH="127" VPOS="1034" HPOS="501">
+            <TextLine ID="line_1_27" HEIGHT="502" WIDTH="NaN" VPOS="-1" HPOS="0.008">
+              <String ID="word_1_167" CONTENT="8." HEIGHT="20" WIDTH="19" VPOS="1034" HPOS="501" WC="0.93" STYLE="bold" STYLEREFS="font11"/>
+              <String ID="word_1_168" CONTENT="Ufftritt." HEIGHT="21" WIDTH="92" VPOS="1034" HPOS="536" WC="0.7" STYLE="bold" STYLEREFS="font11"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_25" HEIGHT="49" WIDTH="707" VPOS="1066" HPOS="211">
+            <TextLine ID="line_1_28" HEIGHT="219" WIDTH="NaN" VPOS="-8" HPOS="0.004">
+              <String ID="word_1_169" CONTENT="Kinj" HEIGHT="24" WIDTH="43" VPOS="1067" HPOS="211" WC="0.89" STYLEREFS="font2"/>
+              <String ID="word_1_170" CONTENT="Mickey," HEIGHT="26" WIDTH="90" VPOS="1066" HPOS="273" WC="0.93" STYLEREFS="font2"/>
+              <String ID="word_1_171" CONTENT="Zieselmiesel" HEIGHT="20" WIDTH="140" VPOS="1067" HPOS="381" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_172" CONTENT="un" HEIGHT="11" WIDTH="26" VPOS="1076" HPOS="540" WC="0.93" STYLEREFS="font2"/>
+              <String ID="word_1_173" CONTENT="alli" HEIGHT="19" WIDTH="34" VPOS="1069" HPOS="583" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_174" CONTENT="Mickeymiesle" HEIGHT="25" WIDTH="156" VPOS="1068" HPOS="637" WC="0.85" STYLEREFS="font2"/>
+              <String ID="word_1_175" CONTENT="vum" HEIGHT="12" WIDTH="49" VPOS="1077" HPOS="809" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_176" CONTENT="Berj" HEIGHT="25" WIDTH="43" VPOS="1069" HPOS="875" WC="0.64" STYLEREFS="font2"/>
+            </TextLine>
+            <TextLine ID="line_1_29" HEIGHT="270" WIDTH="NaN" VPOS="-1" HPOS="0.018">
+              <String ID="word_1_177" CONTENT="erab." HEIGHT="20" WIDTH="55" VPOS="1095" HPOS="269" WC="0.92" STYLEREFS="font3"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_16" HEIGHT="56" WIDTH="710" VPOS="1139" HPOS="209">
+            <TextLine ID="line_1_30" HEIGHT="217" WIDTH="NaN" VPOS="-8" HPOS="0.006">
+              <String ID="word_1_178" CONTENT="Mickey:" HEIGHT="25" WIDTH="93" VPOS="1139" HPOS="209" WC="0.93" STYLE="bold" STYLEREFS="font2"/>
+              <String ID="word_1_179" CONTENT="Zieselmiesel" HEIGHT="21" WIDTH="141" VPOS="1139" HPOS="317" WC="0.89" STYLEREFS="font2"/>
+              <String ID="word_1_180" CONTENT="dummel" HEIGHT="20" WIDTH="90" VPOS="1141" HPOS="474" WC="0.9" STYLEREFS="font2"/>
+              <String ID="word_1_181" CONTENT="dich," HEIGHT="24" WIDTH="54" VPOS="1142" HPOS="580" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_182" CONTENT="dass" HEIGHT="20" WIDTH="49" VPOS="1142" HPOS="649" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_183" CONTENT="mer" HEIGHT="14" WIDTH="44" VPOS="1148" HPOS="712" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_184" CONTENT="hitt" HEIGHT="20" WIDTH="41" VPOS="1142" HPOS="770" WC="0.91" STYLEREFS="font2"/>
+              <String ID="word_1_185" CONTENT="noch" HEIGHT="20" WIDTH="53" VPOS="1142" HPOS="825" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_186" CONTENT="an" HEIGHT="14" WIDTH="27" VPOS="1148" HPOS="892" WC="0.96" STYLEREFS="font2"/>
+            </TextLine>
+            <TextLine ID="line_1_31" HEIGHT="276" WIDTH="NaN" VPOS="-8" HPOS="0.006">
+              <String ID="word_1_187" CONTENT="d&#8217;" HEIGHT="20" WIDTH="20" VPOS="1167" HPOS="268" WC="0.93" STYLEREFS="font2"/>
+              <String ID="word_1_188" CONTENT="Waldh&#252;ett" HEIGHT="21" WIDTH="125" VPOS="1167" HPOS="303" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_189" CONTENT="kumme" HEIGHT="21" WIDTH="85" VPOS="1168" HPOS="443" WC="0.91" STYLEREFS="font2"/>
+              <String ID="word_1_190" CONTENT="vum" HEIGHT="13" WIDTH="48" VPOS="1176" HPOS="542" WC="0.95" STYLEREFS="font2"/>
+              <String ID="word_1_191" CONTENT="heilige" HEIGHT="25" WIDTH="75" VPOS="1170" HPOS="607" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_192" CONTENT="See." HEIGHT="20" WIDTH="43" VPOS="1170" HPOS="699" WC="0.96" STYLEREFS="font2"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_17" HEIGHT="110" WIDTH="710" VPOS="1200" HPOS="209">
+            <TextLine ID="line_1_32" HEIGHT="216" WIDTH="NaN" VPOS="-7" HPOS="0.003">
+              <String ID="word_1_193" CONTENT="Zieselmiesel:" HEIGHT="21" WIDTH="152" VPOS="1200" HPOS="209" WC="0.92" STYLE="bold" STYLEREFS="font1"/>
+              <String ID="word_1_194" CONTENT="Ja" HEIGHT="20" WIDTH="25" VPOS="1201" HPOS="380" WC="0.93" STYLEREFS="font1"/>
+              <String ID="word_1_195" CONTENT="allewiel" HEIGHT="20" WIDTH="85" VPOS="1202" HPOS="424" WC="0.91" STYLEREFS="font1"/>
+              <String ID="word_1_196" CONTENT="saasch" HEIGHT="19" WIDTH="74" VPOS="1203" HPOS="529" WC="0.92" STYLEREFS="font1"/>
+              <String ID="word_1_197" CONTENT="dummel" HEIGHT="20" WIDTH="90" VPOS="1203" HPOS="623" WC="0.91" STYLEREFS="font1"/>
+              <String ID="word_1_198" CONTENT="dich," HEIGHT="24" WIDTH="54" VPOS="1203" HPOS="735" WC="0.87" STYLEREFS="font1"/>
+              <String ID="word_1_199" CONTENT="dummel" HEIGHT="20" WIDTH="90" VPOS="1203" HPOS="827" WC="0.87" STYLEREFS="font1"/>
+            </TextLine>
+            <TextLine ID="line_1_33" HEIGHT="275" WIDTH="NaN" VPOS="-7" HPOS="0.005">
+              <String ID="word_1_200" CONTENT="dich." HEIGHT="20" WIDTH="53" VPOS="1228" HPOS="268" WC="0.96" STYLEREFS="font5"/>
+              <String ID="word_1_201" CONTENT="Alli" HEIGHT="19" WIDTH="38" VPOS="1229" HPOS="341" WC="0.64" STYLEREFS="font5"/>
+              <String ID="word_1_202" CONTENT="Berj" HEIGHT="25" WIDTH="42" VPOS="1229" HPOS="399" WC="0.75" STYLEREFS="font5"/>
+              <String ID="word_1_203" CONTENT="vum" HEIGHT="12" WIDTH="48" VPOS="1237" HPOS="459" WC="0.96" STYLEREFS="font5"/>
+              <String ID="word_1_204" CONTENT="ganze" HEIGHT="17" WIDTH="69" VPOS="1238" HPOS="524" WC="0.94" STYLEREFS="font5"/>
+              <String ID="word_1_205" CONTENT="Land" HEIGHT="20" WIDTH="56" VPOS="1231" HPOS="612" WC="0.96" STYLEREFS="font5"/>
+              <String ID="word_1_206" CONTENT="han" HEIGHT="19" WIDTH="42" VPOS="1231" HPOS="685" WC="0.96" STYLEREFS="font5"/>
+              <String ID="word_1_207" CONTENT="mer" HEIGHT="13" WIDTH="43" VPOS="1238" HPOS="745" WC="0.93" STYLEREFS="font5"/>
+              <String ID="word_1_208" CONTENT="nooch" HEIGHT="20" WIDTH="66" VPOS="1231" HPOS="805" WC="0.91" STYLEREFS="font5"/>
+              <String ID="word_1_209" CONTENT="d'r" HEIGHT="20" WIDTH="30" VPOS="1231" HPOS="889" WC="0.88" STYLEREFS="font5"/>
+            </TextLine>
+            <TextLine ID="line_1_34" HEIGHT="275" WIDTH="NaN" VPOS="-8" HPOS="0.006">
+              <String ID="word_1_210" CONTENT="verschwundene" HEIGHT="21" WIDTH="175" VPOS="1256" HPOS="267" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_211" CONTENT="Prinzess" HEIGHT="21" WIDTH="92" VPOS="1257" HPOS="456" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_212" CONTENT="abgsuecht," HEIGHT="23" WIDTH="124" VPOS="1260" HPOS="562" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_213" CONTENT="un" HEIGHT="12" WIDTH="26" VPOS="1267" HPOS="701" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_214" CONTENT="uns" HEIGHT="13" WIDTH="38" VPOS="1266" HPOS="742" WC="0.93" STYLEREFS="font2"/>
+              <String ID="word_1_215" CONTENT="Blodere" HEIGHT="19" WIDTH="86" VPOS="1260" HPOS="793" WC="0.93" STYLEREFS="font2"/>
+              <String ID="word_1_216" CONTENT="an" HEIGHT="13" WIDTH="27" VPOS="1266" HPOS="891" WC="0.96" STYLEREFS="font2"/>
+            </TextLine>
+            <TextLine ID="line_1_35" HEIGHT="275" WIDTH="NaN" VPOS="-7" HPOS="0.012">
+              <String ID="word_1_217" CONTENT="d&#8217;" HEIGHT="20" WIDTH="20" VPOS="1284" HPOS="268" WC="0.66" STYLEREFS="font2"/>
+              <String ID="word_1_218" CONTENT="Fuess" HEIGHT="20" WIDTH="62" VPOS="1284" HPOS="303" WC="0.89" STYLEREFS="font2"/>
+              <String ID="word_1_219" CONTENT="geloffe," HEIGHT="25" WIDTH="87" VPOS="1285" HPOS="378" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_220" CONTENT="un..." HEIGHT="13" WIDTH="48" VPOS="1293" HPOS="480" WC="0.96" STYLEREFS="font2"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_18" HEIGHT="27" WIDTH="638" VPOS="1318" HPOS="207">
+            <TextLine ID="line_1_36" HEIGHT="215" WIDTH="NaN" VPOS="-8" HPOS="0.006">
+              <String ID="word_1_221" CONTENT="Alli" HEIGHT="19" WIDTH="40" VPOS="1319" HPOS="207" WC="0.91" STYLE="bold" STYLEREFS="font2"/>
+              <String ID="word_1_222" CONTENT="Mickeymiesle:" HEIGHT="25" WIDTH="168" VPOS="1318" HPOS="262" WC="0.88" STYLE="bold" STYLEREFS="font2"/>
+              <String ID="word_1_223" CONTENT="Geloffe," HEIGHT="25" WIDTH="91" VPOS="1319" HPOS="442" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_224" CONTENT="geloffe," HEIGHT="24" WIDTH="86" VPOS="1321" HPOS="546" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_225" CONTENT="Blodere," HEIGHT="24" WIDTH="92" VPOS="1321" HPOS="648" WC="0.91" STYLEREFS="font2"/>
+              <String ID="word_1_226" CONTENT="Blodere," HEIGHT="20" WIDTH="90" VPOS="1321" HPOS="755" WC="0.4" STYLEREFS="font2"/>
+            </TextLine>
+          </TextBlock>
+        </ComposedBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

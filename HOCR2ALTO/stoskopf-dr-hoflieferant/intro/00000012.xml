@@ -1,0 +1,42 @@
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v3#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# https://www.loc.gov/standards/alto/v4/alto.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName/>
+    </sourceImageInformation>
+    <OCRProcessing ID="IdOcr">
+      <ocrProcessingStep>
+        <processingSoftware>
+          <softwareName>tesseract 4.1.0</softwareName>
+        </processingSoftware>
+      </ocrProcessingStep>
+    </OCRProcessing>
+  </Description>
+  <Styles><TextStyle ID="font0" FONTSIZE="41.0" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font1" FONTSIZE="34.700211" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/></Styles><Layout>
+    <Page ID="page_1" PHYSICAL_IMG_NR="1" HEIGHT="1" WIDTH="1">
+      <PrintSpace HEIGHT="1" WIDTH="1" VPOS="0" HPOS="0">
+        <ComposedBlock ID="carea_1_1" HEIGHT="224" WIDTH="915" VPOS="872" HPOS="233">
+          <TextBlock ID="par_1_1" HEIGHT="224" WIDTH="915" VPOS="872" HPOS="233">
+            <TextLine ID="line_1_1" HEIGHT="241" WIDTH="NaN" VPOS="-8" HPOS="-0.001">
+              <String ID="word_1_1" CONTENT="Alle" HEIGHT="31" WIDTH="76" VPOS="902" HPOS="233" WC="0.89" STYLEREFS="font0"/>
+              <String ID="word_1_2" CONTENT="Rechte," HEIGHT="40" WIDTH="133" VPOS="901" HPOS="333" WC="0.85" STYLEREFS="font0"/>
+              <String ID="word_1_3" CONTENT="besonders" HEIGHT="32" WIDTH="173" VPOS="901" HPOS="491" WC="0.85" STYLEREFS="font0"/>
+              <String ID="word_1_4" CONTENT="das" HEIGHT="32" WIDTH="57" VPOS="901" HPOS="689" WC="0.83" STYLEREFS="font0"/>
+              <String ID="word_1_5" CONTENT="der" HEIGHT="31" WIDTH="57" VPOS="901" HPOS="770" WC="0.87" STYLEREFS="font0"/>
+              <String ID="word_1_6" CONTENT="Auff&#252;hrung" HEIGHT="42" WIDTH="208" VPOS="899" HPOS="852" WC="0.71" STYLEREFS="font0"/>
+              <String ID="word_1_7" CONTENT="und" HEIGHT="31" WIDTH="65" VPOS="901" HPOS="1083" WC="0.89" STYLEREFS="font0"/>
+            </TextLine>
+            <TextLine ID="line_1_2" HEIGHT="461" WIDTH="NaN" VPOS="-9" HPOS="-0.002">
+              <String ID="word_1_8" CONTENT="&#220;bersetzung," HEIGHT="48" WIDTH="237" VPOS="965" HPOS="452" WC="0.81" STYLEREFS="font0"/>
+              <String ID="word_1_9" CONTENT="vorbehalten." HEIGHT="33" WIDTH="220" VPOS="972" HPOS="715" WC="0.84" STYLEREFS="font0"/>
+            </TextLine>
+            <TextLine ID="line_1_3" HEIGHT="855" WIDTH="NaN" VPOS="-1" HPOS="-0.004">
+              <String ID="word_1_10" CONTENT="G." HEIGHT="27" WIDTH="34" VPOS="1068" HPOS="854" WC="0.83" STYLEREFS="font1"/>
+              <String ID="word_1_11" CONTENT="STOSKOPF." HEIGHT="29" WIDTH="208" VPOS="1067" HPOS="909" WC="0.83" STYLEREFS="font1"/>
+            </TextLine>
+          </TextBlock>
+        </ComposedBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

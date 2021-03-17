@@ -1,0 +1,489 @@
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v3#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# https://www.loc.gov/standards/alto/v4/alto.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName/>
+    </sourceImageInformation>
+    <OCRProcessing ID="IdOcr">
+      <ocrProcessingStep>
+        <processingSoftware>
+          <softwareName>tesseract 4.1.0</softwareName>
+        </processingSoftware>
+      </ocrProcessingStep>
+    </OCRProcessing>
+  </Description>
+  <Styles><TextStyle ID="font0" FONTSIZE="22.0" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font1" FONTSIZE="17.333332" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font2" FONTSIZE="16.0" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font3" FONTSIZE="25.75" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font4" FONTSIZE="25.613636" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font5" FONTSIZE="21.0" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font6" FONTSIZE="15.259259" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/></Styles><Layout>
+    <Page ID="page_1" PHYSICAL_IMG_NR="1" HEIGHT="1" WIDTH="1">
+      <PrintSpace HEIGHT="1" WIDTH="1" VPOS="0" HPOS="0">
+        <ComposedBlock ID="carea_1_3" HEIGHT="17" WIDTH="103" VPOS="108" HPOS="94">
+          <TextBlock ID="par_1_3" HEIGHT="17" WIDTH="103" VPOS="108" HPOS="94">
+            <TextLine ID="line_1_3" HEIGHT="94" WIDTH="NaN" VPOS="0" HPOS="0">
+              <String ID="word_1_3" CONTENT="NUMISTRAL" HEIGHT="17" WIDTH="103" VPOS="108" HPOS="94" WC="0.92" STYLEREFS="font0"/>
+            </TextLine>
+          </TextBlock>
+        </ComposedBlock>
+        <ComposedBlock ID="carea_1_4" HEIGHT="1014" WIDTH="492" VPOS="192" HPOS="257">
+          <TextBlock ID="par_1_4" HEIGHT="35" WIDTH="480" VPOS="192" HPOS="269">
+            <TextLine ID="line_1_4" HEIGHT="272" WIDTH="NaN" VPOS="-3" HPOS="-0.002">
+              <String ID="word_1_4" CONTENT="Bastian," HEIGHT="15" WIDTH="59" VPOS="192" HPOS="269" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_5" CONTENT="Ferdinand" HEIGHT="13" WIDTH="75" VPOS="192" HPOS="337" WC="0.95" STYLEREFS="font1"/>
+              <String ID="word_1_6" CONTENT="(1868-1944)." HEIGHT="16" WIDTH="97" VPOS="192" HPOS="421" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_7" CONTENT="Auteur" HEIGHT="13" WIDTH="53" VPOS="192" HPOS="525" WC="0.95" STYLEREFS="font1"/>
+              <String ID="word_1_8" CONTENT="du" HEIGHT="13" WIDTH="18" VPOS="192" HPOS="585" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_9" CONTENT="texte." HEIGHT="12" WIDTH="44" VPOS="193" HPOS="610" WC="0.93" STYLEREFS="font1"/>
+              <String ID="word_1_10" CONTENT="D'r" HEIGHT="12" WIDTH="21" VPOS="192" HPOS="662" WC="0.91" STYLEREFS="font1"/>
+              <String ID="word_1_11" CONTENT="Hofnarr" HEIGHT="13" WIDTH="58" VPOS="192" HPOS="691" WC="0.92" STYLEREFS="font1"/>
+            </TextLine>
+            <TextLine ID="line_1_5" HEIGHT="272" WIDTH="NaN" VPOS="-3" HPOS="-0.002">
+              <String ID="word_1_12" CONTENT="Heidideldum," HEIGHT="15" WIDTH="101" VPOS="211" HPOS="269" WC="0.91" STYLEREFS="font2"/>
+              <String ID="word_1_13" CONTENT="Maerel" HEIGHT="13" WIDTH="52" VPOS="211" HPOS="379" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_14" CONTENT="in" HEIGHT="12" WIDTH="11" VPOS="211" HPOS="440" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_15" CONTENT="6" HEIGHT="13" WIDTH="9" VPOS="211" HPOS="459" WC="0.93" STYLEREFS="font2"/>
+              <String ID="word_1_16" CONTENT="Bilder" HEIGHT="13" WIDTH="44" VPOS="211" HPOS="475" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_17" CONTENT="in" HEIGHT="12" WIDTH="11" VPOS="211" HPOS="527" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_18" CONTENT="2" HEIGHT="12" WIDTH="9" VPOS="211" HPOS="546" WC="0.93" STYLEREFS="font2"/>
+              <String ID="word_1_19" CONTENT="Verwandlunge." HEIGHT="16" WIDTH="115" VPOS="211" HPOS="562" WC="0.9" STYLEREFS="font2"/>
+              <String ID="word_1_20" CONTENT="1997." HEIGHT="13" WIDTH="40" VPOS="211" HPOS="686" WC="0.91" STYLEREFS="font2"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_5" HEIGHT="33" WIDTH="490" VPOS="273" HPOS="258">
+            <TextLine ID="line_1_6" HEIGHT="262" WIDTH="NaN" VPOS="-4" HPOS="0.002">
+              <String ID="word_1_21" CONTENT="Numistral" HEIGHT="13" WIDTH="74" VPOS="273" HPOS="258" WC="0.92" STYLEREFS="font3"/>
+              <String ID="word_1_22" CONTENT="est" HEIGHT="12" WIDTH="21" VPOS="274" HPOS="340" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_23" CONTENT="la" HEIGHT="13" WIDTH="12" VPOS="273" HPOS="371" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_24" CONTENT="biblioth&#232;que" HEIGHT="16" WIDTH="99" VPOS="273" HPOS="390" WC="0.76" STYLEREFS="font3"/>
+              <String ID="word_1_25" CONTENT="num&#233;rique" HEIGHT="16" WIDTH="84" VPOS="273" HPOS="497" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_26" CONTENT="patrimoniale" HEIGHT="16" WIDTH="100" VPOS="273" HPOS="587" WC="0.83" STYLEREFS="font3"/>
+              <String ID="word_1_27" CONTENT="du" HEIGHT="13" WIDTH="18" VPOS="273" HPOS="694" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_28" CONTENT="site" HEIGHT="13" WIDTH="28" VPOS="273" HPOS="720" WC="0.94" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_7" HEIGHT="259" WIDTH="NaN" VPOS="-1" HPOS="0.003">
+              <String ID="word_1_29" CONTENT="universitaire" HEIGHT="13" WIDTH="97" VPOS="293" HPOS="258" WC="0.7" STYLEREFS="font3"/>
+              <String ID="word_1_30" CONTENT="alsacien." HEIGHT="13" WIDTH="66" VPOS="293" HPOS="362" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_31" CONTENT="Numistral" HEIGHT="13" WIDTH="74" VPOS="293" HPOS="437" WC="0.92" STYLEREFS="font3"/>
+              <String ID="word_1_32" CONTENT="donne" HEIGHT="13" WIDTH="49" VPOS="293" HPOS="519" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_33" CONTENT="acc&#232;s" HEIGHT="13" WIDTH="43" VPOS="293" HPOS="575" WC="0.91" STYLEREFS="font3"/>
+              <String ID="word_1_34" CONTENT="&#224;" HEIGHT="13" WIDTH="9" VPOS="293" HPOS="624" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_35" CONTENT=":" HEIGHT="9" WIDTH="3" VPOS="296" HPOS="640" WC="0.93" STYLEREFS="font3"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_6" HEIGHT="136" WIDTH="491" VPOS="333" HPOS="257">
+            <TextLine ID="line_1_8" HEIGHT="260" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_36" CONTENT="+" HEIGHT="5" WIDTH="5" VPOS="337" HPOS="257" WC="0.85" STYLEREFS="font4"/>
+              <String ID="word_1_37" CONTENT="des" HEIGHT="13" WIDTH="27" VPOS="333" HPOS="271" WC="0.85" STYLEREFS="font4"/>
+              <String ID="word_1_38" CONTENT="reproductions" HEIGHT="16" WIDTH="106" VPOS="333" HPOS="304" WC="0.91" STYLEREFS="font4"/>
+              <String ID="word_1_39" CONTENT="num&#233;riques" HEIGHT="16" WIDTH="90" VPOS="333" HPOS="415" WC="0.94" STYLEREFS="font4"/>
+              <String ID="word_1_40" CONTENT="provenant" HEIGHT="15" WIDTH="76" VPOS="334" HPOS="510" WC="0.96" STYLEREFS="font4"/>
+              <String ID="word_1_41" CONTENT="des" HEIGHT="13" WIDTH="27" VPOS="333" HPOS="593" WC="0.96" STYLEREFS="font4"/>
+              <String ID="word_1_42" CONTENT="collections" HEIGHT="13" WIDTH="81" VPOS="333" HPOS="625" WC="0.95" STYLEREFS="font4"/>
+              <String ID="word_1_43" CONTENT="de" HEIGHT="13" WIDTH="18" VPOS="333" HPOS="711" WC="0.96" STYLEREFS="font4"/>
+              <String ID="word_1_44" CONTENT="la" HEIGHT="13" WIDTH="12" VPOS="333" HPOS="736" WC="0.94" STYLEREFS="font4"/>
+            </TextLine>
+            <TextLine ID="line_1_9" HEIGHT="261" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_45" CONTENT="Biblioth&#232;que" HEIGHT="16" WIDTH="93" VPOS="353" HPOS="258" WC="0.94" STYLEREFS="font4"/>
+              <String ID="word_1_46" CONTENT="nationale" HEIGHT="13" WIDTH="68" VPOS="353" HPOS="356" WC="0.96" STYLEREFS="font4"/>
+              <String ID="word_1_47" CONTENT="et" HEIGHT="12" WIDTH="13" VPOS="354" HPOS="428" WC="0.96" STYLEREFS="font4"/>
+              <String ID="word_1_48" CONTENT="universitaire" HEIGHT="13" WIDTH="91" VPOS="353" HPOS="449" WC="0.9" STYLEREFS="font4"/>
+              <String ID="word_1_49" CONTENT="de" HEIGHT="13" WIDTH="18" VPOS="353" HPOS="544" WC="0.9" STYLEREFS="font4"/>
+              <String ID="word_1_50" CONTENT="Srasbourg" HEIGHT="16" WIDTH="79" VPOS="353" HPOS="567" WC="0.73" STYLEREFS="font4"/>
+              <String ID="word_1_51" CONTENT="(Bnu)." HEIGHT="16" WIDTH="41" VPOS="353" HPOS="652" WC="0.9" STYLEREFS="font4"/>
+              <String ID="word_1_52" CONTENT="Celles-" HEIGHT="13" WIDTH="48" VPOS="353" HPOS="699" WC="0.88" STYLEREFS="font4"/>
+            </TextLine>
+            <TextLine ID="line_1_10" HEIGHT="260" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_53" CONTENT="ci" HEIGHT="13" WIDTH="11" VPOS="373" HPOS="257" WC="0.8" STYLEREFS="font4"/>
+              <String ID="word_1_54" CONTENT="sont" HEIGHT="12" WIDTH="30" VPOS="374" HPOS="273" WC="0.8" STYLEREFS="font4"/>
+              <String ID="word_1_55" CONTENT="signal&#233;es" HEIGHT="34" WIDTH="66" VPOS="362" HPOS="309" WC="0.9" STYLEREFS="font4"/>
+              <String ID="word_1_56" CONTENT="par" HEIGHT="34" WIDTH="24" VPOS="362" HPOS="380" WC="0.96" STYLEREFS="font4"/>
+              <String ID="word_1_57" CONTENT="la" HEIGHT="13" WIDTH="12" VPOS="373" HPOS="410" WC="0.96" STYLEREFS="font4"/>
+              <String ID="word_1_58" CONTENT="mention" HEIGHT="13" WIDTH="59" VPOS="373" HPOS="427" WC="0.86" STYLEREFS="font4"/>
+              <String ID="word_1_59" CONTENT="&#8220;Source" HEIGHT="13" WIDTH="57" VPOS="373" HPOS="492" WC="0.66" STYLEREFS="font4"/>
+              <String ID="word_1_60" CONTENT=":" HEIGHT="9" WIDTH="3" VPOS="376" HPOS="554" WC="0.92" STYLEREFS="font4"/>
+              <String ID="word_1_61" CONTENT="Biblioth&#232;que" HEIGHT="16" WIDTH="93" VPOS="373" HPOS="563" WC="0.93" STYLEREFS="font4"/>
+              <String ID="word_1_62" CONTENT="nationale" HEIGHT="13" WIDTH="68" VPOS="373" HPOS="661" WC="0.96" STYLEREFS="font4"/>
+              <String ID="word_1_63" CONTENT="et" HEIGHT="12" WIDTH="13" VPOS="374" HPOS="733" WC="0.95" STYLEREFS="font4"/>
+            </TextLine>
+            <TextLine ID="line_1_11" HEIGHT="261" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_64" CONTENT="universitaire" HEIGHT="13" WIDTH="100" VPOS="393" HPOS="258" WC="0.95" STYLEREFS="font4"/>
+              <String ID="word_1_65" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="393" HPOS="365" WC="0.93" STYLEREFS="font4"/>
+              <String ID="word_1_66" CONTENT="Strasbourg&quot;." HEIGHT="16" WIDTH="97" VPOS="393" HPOS="392" WC="0.95" STYLEREFS="font4"/>
+              <String ID="word_1_67" CONTENT="Ces" HEIGHT="13" WIDTH="29" VPOS="393" HPOS="498" WC="0.96" STYLEREFS="font4"/>
+              <String ID="word_1_68" CONTENT="documents" HEIGHT="13" WIDTH="89" VPOS="393" HPOS="533" WC="0.96" STYLEREFS="font4"/>
+              <String ID="word_1_69" CONTENT="sont" HEIGHT="12" WIDTH="33" VPOS="394" HPOS="628" WC="0.92" STYLEREFS="font4"/>
+              <String ID="word_1_70" CONTENT="librement" HEIGHT="13" WIDTH="75" VPOS="393" HPOS="671" WC="0.96" STYLEREFS="font4"/>
+            </TextLine>
+            <TextLine ID="line_1_12" HEIGHT="262" WIDTH="NaN" VPOS="-4" HPOS="0.002">
+              <String ID="word_1_71" CONTENT="r&#233;utilisables" HEIGHT="13" WIDTH="90" VPOS="413" HPOS="258" WC="0.94" STYLEREFS="font4"/>
+              <String ID="word_1_72" CONTENT="selon" HEIGHT="13" WIDTH="38" VPOS="413" HPOS="352" WC="0.96" STYLEREFS="font4"/>
+              <String ID="word_1_73" CONTENT="la" HEIGHT="13" WIDTH="13" VPOS="413" HPOS="397" WC="0.9" STYLEREFS="font4"/>
+              <String ID="word_1_74" CONTENT="Licence" HEIGHT="13" WIDTH="54" VPOS="413" HPOS="415" WC="0.88" STYLEREFS="font4"/>
+              <String ID="word_1_75" CONTENT="Ouverte" HEIGHT="13" WIDTH="70" VPOS="413" HPOS="474" WC="0.93" STYLEREFS="font4"/>
+              <String ID="word_1_76" CONTENT="/" HEIGHT="34" WIDTH="6" VPOS="402" HPOS="540" WC="0.9" STYLEREFS="font4"/>
+              <String ID="word_1_77" CONTENT="Open" HEIGHT="16" WIDTH="39" VPOS="413" HPOS="551" WC="0.93" STYLEREFS="font4"/>
+              <String ID="word_1_78" CONTENT="Licence," HEIGHT="15" WIDTH="58" VPOS="413" HPOS="597" WC="0.85" STYLEREFS="font4"/>
+              <String ID="word_1_79" CONTENT="et" HEIGHT="12" WIDTH="13" VPOS="414" HPOS="661" WC="0.93" STYLEREFS="font4"/>
+              <String ID="word_1_80" CONTENT="&#224;" HEIGHT="13" WIDTH="9" VPOS="413" HPOS="681" WC="0.96" STYLEREFS="font4"/>
+              <String ID="word_1_81" CONTENT="ce" HEIGHT="10" WIDTH="17" VPOS="416" HPOS="694" WC="0.85" STYLEREFS="font4"/>
+              <String ID="word_1_82" CONTENT="titre" HEIGHT="13" WIDTH="32" VPOS="413" HPOS="716" WC="0.85" STYLEREFS="font4"/>
+            </TextLine>
+            <TextLine ID="line_1_13" HEIGHT="262" WIDTH="NaN" VPOS="-4" HPOS="0.002">
+              <String ID="word_1_83" CONTENT="librement" HEIGHT="13" WIDTH="73" VPOS="433" HPOS="258" WC="0.92" STYLEREFS="font4"/>
+              <String ID="word_1_84" CONTENT="r&#233;utilisables" HEIGHT="13" WIDTH="94" VPOS="433" HPOS="340" WC="0.94" STYLEREFS="font4"/>
+              <String ID="word_1_85" CONTENT="sous" HEIGHT="10" WIDTH="36" VPOS="436" HPOS="439" WC="0.95" STYLEREFS="font4"/>
+              <String ID="word_1_86" CONTENT="r&#233;serve" HEIGHT="13" WIDTH="57" VPOS="433" HPOS="481" WC="0.95" STYLEREFS="font4"/>
+              <String ID="word_1_87" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="433" HPOS="544" WC="0.94" STYLEREFS="font4"/>
+              <String ID="word_1_88" CONTENT="mention" HEIGHT="13" WIDTH="62" VPOS="433" HPOS="570" WC="0.96" STYLEREFS="font4"/>
+              <String ID="word_1_89" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="433" HPOS="640" WC="0.96" STYLEREFS="font4"/>
+              <String ID="word_1_90" CONTENT="source" HEIGHT="10" WIDTH="52" VPOS="436" HPOS="665" WC="0.76" STYLEREFS="font4"/>
+              <String ID="word_1_91" CONTENT="(en" HEIGHT="16" WIDTH="22" VPOS="433" HPOS="724" WC="0.95" STYLEREFS="font4"/>
+            </TextLine>
+            <TextLine ID="line_1_14" HEIGHT="260" WIDTH="NaN" VPOS="-3" HPOS="-0.011">
+              <String ID="word_1_92" CONTENT="savoir" HEIGHT="13" WIDTH="46" VPOS="453" HPOS="257" WC="0.94" STYLEREFS="font5"/>
+              <String ID="word_1_93" CONTENT="plus)." HEIGHT="16" WIDTH="41" VPOS="453" HPOS="309" WC="0.96" STYLEREFS="font5"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_7" HEIGHT="115" WIDTH="492" VPOS="493" HPOS="257">
+            <TextLine ID="line_1_15" HEIGHT="260" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_94" CONTENT="+" HEIGHT="5" WIDTH="5" VPOS="497" HPOS="257" WC="0.92" STYLEREFS="font3"/>
+              <String ID="word_1_95" CONTENT="des" HEIGHT="13" WIDTH="27" VPOS="493" HPOS="272" WC="0.92" STYLEREFS="font3"/>
+              <String ID="word_1_96" CONTENT="reproductions" HEIGHT="16" WIDTH="108" VPOS="493" HPOS="305" WC="0.92" STYLEREFS="font3"/>
+              <String ID="word_1_97" CONTENT="num&#233;riques" HEIGHT="16" WIDTH="92" VPOS="493" HPOS="419" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_98" CONTENT="provenant" HEIGHT="15" WIDTH="77" VPOS="494" HPOS="516" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_99" CONTENT="des" HEIGHT="13" WIDTH="27" VPOS="493" HPOS="601" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_100" CONTENT="collections" HEIGHT="13" WIDTH="83" VPOS="493" HPOS="633" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_101" CONTENT="des" HEIGHT="13" WIDTH="27" VPOS="493" HPOS="722" WC="0.96" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_16" HEIGHT="260" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_102" CONTENT="biblioth&#232;ques" HEIGHT="16" WIDTH="109" VPOS="513" HPOS="257" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_103" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="513" HPOS="373" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_104" CONTENT="l'Universit&#233;" HEIGHT="13" WIDTH="90" VPOS="513" HPOS="400" WC="0.79" STYLEREFS="font3"/>
+              <String ID="word_1_105" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="513" HPOS="497" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_106" CONTENT="Strasbourg," HEIGHT="16" WIDTH="89" VPOS="513" HPOS="524" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_107" CONTENT="signal&#233;es" HEIGHT="16" WIDTH="73" VPOS="513" HPOS="622" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_108" CONTENT="par" HEIGHT="13" WIDTH="26" VPOS="516" HPOS="701" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_109" CONTENT="la" HEIGHT="13" WIDTH="13" VPOS="513" HPOS="735" WC="0.93" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_17" HEIGHT="262" WIDTH="NaN" VPOS="-4" HPOS="0.002">
+              <String ID="word_1_110" CONTENT="mention" HEIGHT="13" WIDTH="60" VPOS="533" HPOS="258" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_111" CONTENT="&#171;" HEIGHT="6" WIDTH="7" VPOS="538" HPOS="325" WC="0.91" STYLEREFS="font3"/>
+              <String ID="word_1_112" CONTENT="biblioth&#232;que" HEIGHT="16" WIDTH="94" VPOS="533" HPOS="337" WC="0.83" STYLEREFS="font3"/>
+              <String ID="word_1_113" CONTENT="num&#233;rique" HEIGHT="16" WIDTH="80" VPOS="533" HPOS="437" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_114" CONTENT="patrimoniale" HEIGHT="16" WIDTH="95" VPOS="533" HPOS="521" WC="0.92" STYLEREFS="font3"/>
+              <String ID="word_1_115" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="533" HPOS="620" WC="0.92" STYLEREFS="font3"/>
+              <String ID="word_1_116" CONTENT="l'universit&#233;" HEIGHT="13" WIDTH="81" VPOS="533" HPOS="644" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_117" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="533" HPOS="729" WC="0.96" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_18" HEIGHT="260" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_118" CONTENT="Strasbourg" HEIGHT="16" WIDTH="82" VPOS="553" HPOS="257" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_119" CONTENT="&#187;." HEIGHT="7" WIDTH="11" VPOS="558" HPOS="346" WC="0.92" STYLEREFS="font3"/>
+              <String ID="word_1_120" CONTENT="L'usage" HEIGHT="16" WIDTH="56" VPOS="553" HPOS="365" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_121" CONTENT="commercial" HEIGHT="13" WIDTH="88" VPOS="553" HPOS="426" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_122" CONTENT="est" HEIGHT="12" WIDTH="21" VPOS="554" HPOS="520" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_123" CONTENT="soumis" HEIGHT="13" WIDTH="67" VPOS="553" HPOS="549" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_124" CONTENT="&#224;" HEIGHT="34" WIDTH="6" VPOS="542" HPOS="610" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_125" CONTENT="une" HEIGHT="10" WIDTH="28" VPOS="556" HPOS="622" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_126" CONTENT="autorisation" HEIGHT="13" WIDTH="91" VPOS="553" HPOS="655" WC="0.95" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_19" HEIGHT="260" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_127" CONTENT="pr&#233;alable" HEIGHT="16" WIDTH="72" VPOS="573" HPOS="257" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_128" CONTENT="et" HEIGHT="12" WIDTH="13" VPOS="574" HPOS="336" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_129" CONTENT="&#224;" HEIGHT="13" WIDTH="9" VPOS="573" HPOS="357" WC="0.92" STYLEREFS="font3"/>
+              <String ID="word_1_130" CONTENT="l'acquittement" HEIGHT="16" WIDTH="111" VPOS="573" HPOS="373" WC="0.43" STYLEREFS="font3"/>
+              <String ID="word_1_131" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="573" HPOS="493" WC="0.97" STYLEREFS="font3"/>
+              <String ID="word_1_132" CONTENT="droits" HEIGHT="13" WIDTH="46" VPOS="573" HPOS="518" WC="0.91" STYLEREFS="font3"/>
+              <String ID="word_1_133" CONTENT="d'usage." HEIGHT="16" WIDTH="63" VPOS="573" HPOS="569" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_134" CONTENT="Contact" HEIGHT="13" WIDTH="57" VPOS="573" HPOS="640" WC="0.86" STYLEREFS="font3"/>
+              <String ID="word_1_135" CONTENT=":" HEIGHT="9" WIDTH="3" VPOS="576" HPOS="707" WC="0.75" STYLEREFS="font3"/>
+              <String ID="word_1_136" CONTENT="scd-" HEIGHT="13" WIDTH="30" VPOS="573" HPOS="717" WC="0.62" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_20" HEIGHT="259" WIDTH="NaN" VPOS="-2" HPOS="-0.007">
+              <String ID="word_1_137" CONTENT="bibnum@unistra.fr." HEIGHT="15" WIDTH="151" VPOS="593" HPOS="257" WC="0.81" STYLEREFS="font3"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_8" HEIGHT="153" WIDTH="492" VPOS="633" HPOS="257">
+            <TextLine ID="line_1_21" HEIGHT="260" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_138" CONTENT="+" HEIGHT="5" WIDTH="5" VPOS="637" HPOS="257" WC="0.92" STYLEREFS="font3"/>
+              <String ID="word_1_139" CONTENT="des" HEIGHT="13" WIDTH="27" VPOS="633" HPOS="272" WC="0.92" STYLEREFS="font3"/>
+              <String ID="word_1_140" CONTENT="reproductions" HEIGHT="16" WIDTH="108" VPOS="633" HPOS="305" WC="0.89" STYLEREFS="font3"/>
+              <String ID="word_1_141" CONTENT="num&#233;riques" HEIGHT="16" WIDTH="92" VPOS="633" HPOS="419" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_142" CONTENT="provenant" HEIGHT="15" WIDTH="77" VPOS="634" HPOS="516" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_143" CONTENT="des" HEIGHT="13" WIDTH="27" VPOS="633" HPOS="601" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_144" CONTENT="collections" HEIGHT="13" WIDTH="83" VPOS="633" HPOS="633" WC="0.91" STYLEREFS="font3"/>
+              <String ID="word_1_145" CONTENT="des" HEIGHT="13" WIDTH="27" VPOS="633" HPOS="722" WC="0.95" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_22" HEIGHT="260" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_146" CONTENT="biblioth&#232;ques" HEIGHT="16" WIDTH="107" VPOS="653" HPOS="257" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_147" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="653" HPOS="369" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_148" CONTENT="l'Universit&#233;" HEIGHT="13" WIDTH="87" VPOS="653" HPOS="395" WC="0.66" STYLEREFS="font3"/>
+              <String ID="word_1_149" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="653" HPOS="489" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_150" CONTENT="Haute" HEIGHT="13" WIDTH="45" VPOS="653" HPOS="515" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_151" CONTENT="Alsace," HEIGHT="15" WIDTH="53" VPOS="653" HPOS="566" WC="0.86" STYLEREFS="font3"/>
+              <String ID="word_1_152" CONTENT="signal&#233;es" HEIGHT="16" WIDTH="72" VPOS="653" HPOS="626" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_153" CONTENT="par" HEIGHT="13" WIDTH="25" VPOS="656" HPOS="703" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_154" CONTENT="la" HEIGHT="13" WIDTH="12" VPOS="653" HPOS="736" WC="0.95" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_23" HEIGHT="259" WIDTH="NaN" VPOS="-1" HPOS="0.002">
+              <String ID="word_1_155" CONTENT="mention" HEIGHT="13" WIDTH="62" VPOS="673" HPOS="258" WC="0.86" STYLEREFS="font3"/>
+              <String ID="word_1_156" CONTENT="&#171;" HEIGHT="6" WIDTH="7" VPOS="678" HPOS="328" WC="0.92" STYLEREFS="font3"/>
+              <String ID="word_1_157" CONTENT="Collection" HEIGHT="13" WIDTH="75" VPOS="673" HPOS="342" WC="0.91" STYLEREFS="font3"/>
+              <String ID="word_1_158" CONTENT="de" HEIGHT="13" WIDTH="18" VPOS="673" HPOS="425" WC="0.91" STYLEREFS="font3"/>
+              <String ID="word_1_159" CONTENT="la" HEIGHT="13" WIDTH="13" VPOS="673" HPOS="450" WC="0.91" STYLEREFS="font3"/>
+              <String ID="word_1_160" CONTENT="Soci&#233;t&#233;" HEIGHT="13" WIDTH="56" VPOS="673" HPOS="468" WC="0.9" STYLEREFS="font3"/>
+              <String ID="word_1_161" CONTENT="industrielle" HEIGHT="13" WIDTH="85" VPOS="673" HPOS="531" WC="0.86" STYLEREFS="font3"/>
+              <String ID="word_1_162" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="673" HPOS="622" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_163" CONTENT="Mulhouse" HEIGHT="13" WIDTH="75" VPOS="673" HPOS="648" WC="0.89" STYLEREFS="font3"/>
+              <String ID="word_1_164" CONTENT="en" HEIGHT="10" WIDTH="17" VPOS="676" HPOS="729" WC="0.96" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_24" HEIGHT="260" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_165" CONTENT="d&#233;p&#244;t" HEIGHT="16" WIDTH="44" VPOS="693" HPOS="257" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_166" CONTENT="&#224;" HEIGHT="13" WIDTH="9" VPOS="693" HPOS="311" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_167" CONTENT="la" HEIGHT="13" WIDTH="12" VPOS="693" HPOS="328" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_168" CONTENT="BUSIM" HEIGHT="13" WIDTH="49" VPOS="693" HPOS="348" WC="0.89" STYLEREFS="font3"/>
+              <String ID="word_1_169" CONTENT="&#187;." HEIGHT="7" WIDTH="12" VPOS="698" HPOS="408" WC="0.92" STYLEREFS="font3"/>
+              <String ID="word_1_170" CONTENT="L'usage" HEIGHT="16" WIDTH="58" VPOS="693" HPOS="430" WC="0.87" STYLEREFS="font3"/>
+              <String ID="word_1_171" CONTENT="non" HEIGHT="10" WIDTH="28" VPOS="696" HPOS="496" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_172" CONTENT="commercial" HEIGHT="13" WIDTH="91" VPOS="693" HPOS="532" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_173" CONTENT="des" HEIGHT="13" WIDTH="28" VPOS="693" HPOS="632" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_174" CONTENT="images" HEIGHT="16" WIDTH="55" VPOS="693" HPOS="667" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_175" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="693" HPOS="729" WC="0.96" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_25" HEIGHT="261" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_176" CONTENT="l'Universit&#233;" HEIGHT="13" WIDTH="84" VPOS="713" HPOS="258" WC="0.85" STYLEREFS="font3"/>
+              <String ID="word_1_177" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="713" HPOS="346" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_178" CONTENT="Haute-Alsace" HEIGHT="13" WIDTH="97" VPOS="713" HPOS="371" WC="0.69" STYLEREFS="font3"/>
+              <String ID="word_1_179" CONTENT="est" HEIGHT="12" WIDTH="21" VPOS="714" HPOS="472" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_180" CONTENT="libre" HEIGHT="13" WIDTH="33" VPOS="713" HPOS="500" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_181" CONTENT="et" HEIGHT="12" WIDTH="14" VPOS="714" HPOS="537" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_182" CONTENT="gratuit" HEIGHT="16" WIDTH="48" VPOS="713" HPOS="557" WC="0.89" STYLEREFS="font3"/>
+              <String ID="word_1_183" CONTENT="dans" HEIGHT="13" WIDTH="36" VPOS="713" HPOS="612" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_184" CONTENT="le" HEIGHT="13" WIDTH="13" VPOS="713" HPOS="652" WC="0.86" STYLEREFS="font3"/>
+              <String ID="word_1_185" CONTENT="respect" HEIGHT="15" WIDTH="52" VPOS="714" HPOS="670" WC="0.86" STYLEREFS="font3"/>
+              <String ID="word_1_186" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="713" HPOS="729" WC="0.96" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_26" HEIGHT="261" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_187" CONTENT="la" HEIGHT="13" WIDTH="12" VPOS="733" HPOS="258" WC="0.86" STYLEREFS="font3"/>
+              <String ID="word_1_188" CONTENT="l&#233;gislation" HEIGHT="16" WIDTH="72" VPOS="733" HPOS="275" WC="0.86" STYLEREFS="font3"/>
+              <String ID="word_1_189" CONTENT="en" HEIGHT="10" WIDTH="17" VPOS="736" HPOS="353" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_190" CONTENT="vigueur" HEIGHT="16" WIDTH="54" VPOS="733" HPOS="376" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_191" CONTENT="et" HEIGHT="12" WIDTH="13" VPOS="734" HPOS="435" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_192" CONTENT="avec" HEIGHT="10" WIDTH="34" VPOS="736" HPOS="454" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_193" CONTENT="l'obligation" HEIGHT="16" WIDTH="80" VPOS="733" HPOS="493" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_194" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="733" HPOS="578" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_195" CONTENT="la" HEIGHT="13" WIDTH="12" VPOS="733" HPOS="602" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_196" CONTENT="mention" HEIGHT="13" WIDTH="60" VPOS="733" HPOS="619" WC="0.88" STYLEREFS="font3"/>
+              <String ID="word_1_197" CONTENT="&#171;" HEIGHT="6" WIDTH="7" VPOS="738" HPOS="685" WC="0.88" STYLEREFS="font3"/>
+              <String ID="word_1_198" CONTENT="Source" HEIGHT="13" WIDTH="50" VPOS="733" HPOS="698" WC="0.86" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_27" HEIGHT="262" WIDTH="NaN" VPOS="-4" HPOS="0.002">
+              <String ID="word_1_199" CONTENT=":" HEIGHT="9" WIDTH="3" VPOS="756" HPOS="258" WC="0.91" STYLEREFS="font3"/>
+              <String ID="word_1_200" CONTENT="Collection" HEIGHT="13" WIDTH="74" VPOS="753" HPOS="267" WC="0.73" STYLEREFS="font3"/>
+              <String ID="word_1_201" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="753" HPOS="348" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_202" CONTENT="la" HEIGHT="13" WIDTH="13" VPOS="753" HPOS="373" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_203" CONTENT="Soci&#233;t&#233;" HEIGHT="13" WIDTH="55" VPOS="753" HPOS="391" WC="0.6" STYLEREFS="font3"/>
+              <String ID="word_1_204" CONTENT="industrielle" HEIGHT="13" WIDTH="85" VPOS="753" HPOS="452" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_205" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="753" HPOS="542" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_206" CONTENT="Mulhouse" HEIGHT="13" WIDTH="74" VPOS="753" HPOS="567" WC="0.84" STYLEREFS="font3"/>
+              <String ID="word_1_207" CONTENT="en" HEIGHT="10" WIDTH="17" VPOS="756" HPOS="647" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_208" CONTENT="d&#233;p&#244;t" HEIGHT="16" WIDTH="42" VPOS="753" HPOS="671" WC="0.72" STYLEREFS="font3"/>
+              <String ID="word_1_209" CONTENT="&#224;" HEIGHT="13" WIDTH="9" VPOS="753" HPOS="721" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_210" CONTENT="la" HEIGHT="13" WIDTH="12" VPOS="753" HPOS="736" WC="0.94" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_28" HEIGHT="259" WIDTH="NaN" VPOS="-1" HPOS="0.015">
+              <String ID="word_1_211" CONTENT="BUSIM" HEIGHT="13" WIDTH="47" VPOS="773" HPOS="258" WC="0.85" STYLEREFS="font3"/>
+              <String ID="word_1_212" CONTENT="&#187;." HEIGHT="7" WIDTH="12" VPOS="778" HPOS="314" WC="0.87" STYLEREFS="font3"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_9" HEIGHT="96" WIDTH="491" VPOS="813" HPOS="257">
+            <TextLine ID="line_1_29" HEIGHT="260" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_213" CONTENT="+" HEIGHT="5" WIDTH="5" VPOS="817" HPOS="257" WC="0.8" STYLEREFS="font3"/>
+              <String ID="word_1_214" CONTENT="des" HEIGHT="13" WIDTH="27" VPOS="813" HPOS="271" WC="0.8" STYLEREFS="font3"/>
+              <String ID="word_1_215" CONTENT="reproductions" HEIGHT="16" WIDTH="106" VPOS="813" HPOS="304" WC="0.89" STYLEREFS="font3"/>
+              <String ID="word_1_216" CONTENT="num&#233;riques" HEIGHT="16" WIDTH="90" VPOS="813" HPOS="415" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_217" CONTENT="provenant" HEIGHT="15" WIDTH="76" VPOS="814" HPOS="510" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_218" CONTENT="des" HEIGHT="13" WIDTH="27" VPOS="813" HPOS="593" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_219" CONTENT="collections" HEIGHT="13" WIDTH="81" VPOS="813" HPOS="625" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_220" CONTENT="de" HEIGHT="13" WIDTH="18" VPOS="813" HPOS="711" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_221" CONTENT="la" HEIGHT="13" WIDTH="12" VPOS="813" HPOS="736" WC="0.95" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_30" HEIGHT="262" WIDTH="NaN" VPOS="-4" HPOS="0.002">
+              <String ID="word_1_222" CONTENT="Biblioth&#232;que" HEIGHT="16" WIDTH="96" VPOS="833" HPOS="258" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_223" CONTENT="nationale" HEIGHT="13" WIDTH="70" VPOS="833" HPOS="361" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_224" CONTENT="de" HEIGHT="13" WIDTH="18" VPOS="833" HPOS="437" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_225" CONTENT="France." HEIGHT="13" WIDTH="53" VPOS="833" HPOS="462" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_226" CONTENT="Celles-ci" HEIGHT="13" WIDTH="62" VPOS="833" HPOS="522" WC="0.88" STYLEREFS="font3"/>
+              <String ID="word_1_227" CONTENT="sont" HEIGHT="12" WIDTH="30" VPOS="834" HPOS="591" WC="0.88" STYLEREFS="font3"/>
+              <String ID="word_1_228" CONTENT="signal&#233;es" HEIGHT="16" WIDTH="70" VPOS="833" HPOS="629" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_229" CONTENT="par" HEIGHT="13" WIDTH="25" VPOS="836" HPOS="704" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_230" CONTENT="la" HEIGHT="13" WIDTH="12" VPOS="833" HPOS="736" WC="0.95" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_31" HEIGHT="262" WIDTH="NaN" VPOS="-4" HPOS="0.002">
+              <String ID="word_1_231" CONTENT="mention" HEIGHT="13" WIDTH="65" VPOS="853" HPOS="258" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_232" CONTENT="&quot;Source" HEIGHT="13" WIDTH="63" VPOS="853" HPOS="332" WC="0.92" STYLEREFS="font3"/>
+              <String ID="word_1_233" CONTENT=":" HEIGHT="9" WIDTH="3" VPOS="856" HPOS="404" WC="0.91" STYLEREFS="font3"/>
+              <String ID="word_1_234" CONTENT="Biblioth&#232;que" HEIGHT="16" WIDTH="102" VPOS="853" HPOS="417" WC="0.73" STYLEREFS="font3"/>
+              <String ID="word_1_235" CONTENT="nationale" HEIGHT="13" WIDTH="75" VPOS="853" HPOS="528" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_236" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="853" HPOS="611" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_237" CONTENT="France&#8221;." HEIGHT="13" WIDTH="64" VPOS="853" HPOS="639" WC="0.8" STYLEREFS="font3"/>
+              <String ID="word_1_238" CONTENT="Leur" HEIGHT="13" WIDTH="34" VPOS="853" HPOS="714" WC="0.94" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_32" HEIGHT="261" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_239" CONTENT="r&#233;utilisation" HEIGHT="13" WIDTH="88" VPOS="873" HPOS="258" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_240" CONTENT="s'inscrit" HEIGHT="13" WIDTH="56" VPOS="873" HPOS="352" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_241" CONTENT="dans" HEIGHT="13" WIDTH="36" VPOS="873" HPOS="415" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_242" CONTENT="le" HEIGHT="13" WIDTH="12" VPOS="873" HPOS="456" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_243" CONTENT="cadre" HEIGHT="13" WIDTH="42" VPOS="873" HPOS="473" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_244" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="873" HPOS="520" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_245" CONTENT="la" HEIGHT="13" WIDTH="12" VPOS="873" HPOS="545" WC="0.89" STYLEREFS="font3"/>
+              <String ID="word_1_246" CONTENT="loi" HEIGHT="13" WIDTH="16" VPOS="873" HPOS="563" WC="0.89" STYLEREFS="font3"/>
+              <String ID="word_1_247" CONTENT="n&#176;78-758" HEIGHT="13" WIDTH="67" VPOS="873" HPOS="586" WC="0.78" STYLEREFS="font3"/>
+              <String ID="word_1_248" CONTENT="du" HEIGHT="13" WIDTH="18" VPOS="873" HPOS="658" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_249" CONTENT="17" HEIGHT="12" WIDTH="17" VPOS="873" HPOS="683" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_250" CONTENT="juillet" HEIGHT="16" WIDTH="42" VPOS="873" HPOS="704" WC="0.95" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_33" HEIGHT="261" WIDTH="NaN" VPOS="-3" HPOS="-0.006">
+              <String ID="word_1_251" CONTENT="1978" HEIGHT="13" WIDTH="36" VPOS="893" HPOS="258" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_252" CONTENT="(en" HEIGHT="16" WIDTH="22" VPOS="893" HPOS="300" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_253" CONTENT="savoir" HEIGHT="13" WIDTH="45" VPOS="893" HPOS="328" WC="0.85" STYLEREFS="font3"/>
+              <String ID="word_1_254" CONTENT="plus)" HEIGHT="16" WIDTH="35" VPOS="893" HPOS="378" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_255" CONTENT=":" HEIGHT="9" WIDTH="3" VPOS="896" HPOS="421" WC="0.93" STYLEREFS="font3"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_10" HEIGHT="133" WIDTH="491" VPOS="933" HPOS="257">
+            <TextLine ID="line_1_34" HEIGHT="258" WIDTH="NaN" VPOS="-1" HPOS="0.002">
+              <String ID="word_1_256" CONTENT="-" HEIGHT="2" WIDTH="5" VPOS="940" HPOS="257" WC="0.89" STYLEREFS="font3"/>
+              <String ID="word_1_257" CONTENT="La" HEIGHT="13" WIDTH="16" VPOS="933" HPOS="270" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_258" CONTENT="r&#233;utilisation" HEIGHT="13" WIDTH="91" VPOS="933" HPOS="292" WC="0.92" STYLEREFS="font3"/>
+              <String ID="word_1_259" CONTENT="non" HEIGHT="10" WIDTH="27" VPOS="936" HPOS="391" WC="0.88" STYLEREFS="font3"/>
+              <String ID="word_1_260" CONTENT="commerciale" HEIGHT="13" WIDTH="99" VPOS="933" HPOS="426" WC="0.9" STYLEREFS="font3"/>
+              <String ID="word_1_261" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="933" HPOS="531" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_262" CONTENT="ces" HEIGHT="10" WIDTH="25" VPOS="936" HPOS="556" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_263" CONTENT="contenus" HEIGHT="12" WIDTH="72" VPOS="934" HPOS="586" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_264" CONTENT="est" HEIGHT="12" WIDTH="21" VPOS="934" HPOS="663" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_265" CONTENT="libre" HEIGHT="13" WIDTH="33" VPOS="933" HPOS="693" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_266" CONTENT="et" HEIGHT="12" WIDTH="14" VPOS="934" HPOS="732" WC="0.94" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_35" HEIGHT="260" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_267" CONTENT="gratuite" HEIGHT="16" WIDTH="59" VPOS="953" HPOS="257" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_268" CONTENT="dans" HEIGHT="13" WIDTH="36" VPOS="953" HPOS="320" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_269" CONTENT="le" HEIGHT="13" WIDTH="12" VPOS="953" HPOS="361" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_270" CONTENT="respect" HEIGHT="15" WIDTH="52" VPOS="954" HPOS="378" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_271" CONTENT="de" HEIGHT="13" WIDTH="18" VPOS="953" HPOS="437" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_272" CONTENT="la" HEIGHT="13" WIDTH="12" VPOS="953" HPOS="461" WC="0.85" STYLEREFS="font3"/>
+              <String ID="word_1_273" CONTENT="l&#233;gislation" HEIGHT="16" WIDTH="73" VPOS="953" HPOS="478" WC="0.85" STYLEREFS="font3"/>
+              <String ID="word_1_274" CONTENT="en" HEIGHT="10" WIDTH="18" VPOS="956" HPOS="557" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_275" CONTENT="vigueur" HEIGHT="16" WIDTH="55" VPOS="953" HPOS="581" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_276" CONTENT="et" HEIGHT="12" WIDTH="13" VPOS="954" HPOS="641" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_277" CONTENT="notamment" HEIGHT="12" WIDTH="85" VPOS="954" HPOS="661" WC="0.81" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_36" HEIGHT="257" WIDTH="NaN" VPOS="0" HPOS="0">
+              <String ID="word_1_278" CONTENT="du" HEIGHT="13" WIDTH="18" VPOS="973" HPOS="257" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_279" CONTENT="maintien" HEIGHT="13" WIDTH="63" VPOS="973" HPOS="282" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_280" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="973" HPOS="351" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_281" CONTENT="la" HEIGHT="13" WIDTH="12" VPOS="973" HPOS="375" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_282" CONTENT="mention" HEIGHT="13" WIDTH="60" VPOS="973" HPOS="392" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_283" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="973" HPOS="458" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_284" CONTENT="source." HEIGHT="10" WIDTH="52" VPOS="976" HPOS="482" WC="0.96" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_37" HEIGHT="260" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_285" CONTENT="-" HEIGHT="2" WIDTH="5" VPOS="1000" HPOS="257" WC="0.89" STYLEREFS="font3"/>
+              <String ID="word_1_286" CONTENT="La" HEIGHT="13" WIDTH="16" VPOS="993" HPOS="268" WC="0.89" STYLEREFS="font3"/>
+              <String ID="word_1_287" CONTENT="r&#233;utilisation" HEIGHT="13" WIDTH="87" VPOS="993" HPOS="290" WC="0.9" STYLEREFS="font3"/>
+              <String ID="word_1_288" CONTENT="commerciale" HEIGHT="13" WIDTH="97" VPOS="993" HPOS="383" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_289" CONTENT="de" HEIGHT="13" WIDTH="18" VPOS="993" HPOS="485" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_290" CONTENT="ces" HEIGHT="10" WIDTH="25" VPOS="996" HPOS="508" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_291" CONTENT="contenus" HEIGHT="12" WIDTH="70" VPOS="994" HPOS="537" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_292" CONTENT="est" HEIGHT="12" WIDTH="20" VPOS="994" HPOS="611" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_293" CONTENT="payante" HEIGHT="15" WIDTH="60" VPOS="994" HPOS="638" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_294" CONTENT="et" HEIGHT="12" WIDTH="13" VPOS="994" HPOS="703" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_295" CONTENT="fait" HEIGHT="13" WIDTH="23" VPOS="993" HPOS="723" WC="0.94" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_38" HEIGHT="261" WIDTH="NaN" VPOS="-3" HPOS="-0.002">
+              <String ID="word_1_296" CONTENT="l'objet" HEIGHT="16" WIDTH="43" VPOS="1013" HPOS="258" WC="0.87" STYLEREFS="font3"/>
+              <String ID="word_1_297" CONTENT="d'une" HEIGHT="13" WIDTH="41" VPOS="1013" HPOS="308" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_298" CONTENT="licence." HEIGHT="13" WIDTH="54" VPOS="1013" HPOS="354" WC="0.87" STYLEREFS="font3"/>
+              <String ID="word_1_299" CONTENT="Est" HEIGHT="13" WIDTH="19" VPOS="1013" HPOS="414" WC="0.94" STYLEREFS="font3"/>
+              <String ID="word_1_300" CONTENT="entendue" HEIGHT="13" WIDTH="71" VPOS="1013" HPOS="439" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_301" CONTENT="par" HEIGHT="13" WIDTH="24" VPOS="1016" HPOS="515" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_302" CONTENT="r&#233;utilisation" HEIGHT="13" WIDTH="86" VPOS="1013" HPOS="544" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_303" CONTENT="commerciale" HEIGHT="13" WIDTH="95" VPOS="1013" HPOS="636" WC="0.95" STYLEREFS="font3"/>
+              <String ID="word_1_304" CONTENT="la" HEIGHT="13" WIDTH="12" VPOS="1013" HPOS="736" WC="0.94" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_39" HEIGHT="261" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_305" CONTENT="revente" HEIGHT="12" WIDTH="60" VPOS="1034" HPOS="258" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_306" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="1033" HPOS="325" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_307" CONTENT="contenus" HEIGHT="12" WIDTH="73" VPOS="1034" HPOS="351" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_308" CONTENT="sous" HEIGHT="10" WIDTH="36" VPOS="1036" HPOS="431" WC="0.86" STYLEREFS="font3"/>
+              <String ID="word_1_309" CONTENT="forme" HEIGHT="13" WIDTH="47" VPOS="1033" HPOS="473" WC="0.93" STYLEREFS="font3"/>
+              <String ID="word_1_310" CONTENT="de" HEIGHT="13" WIDTH="20" VPOS="1033" HPOS="527" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_311" CONTENT="produits" HEIGHT="16" WIDTH="67" VPOS="1033" HPOS="554" WC="0.92" STYLEREFS="font3"/>
+              <String ID="word_1_312" CONTENT="&#233;labor&#233;s" HEIGHT="13" WIDTH="69" VPOS="1033" HPOS="627" WC="0.38" STYLEREFS="font3"/>
+              <String ID="word_1_313" CONTENT="ou" HEIGHT="10" WIDTH="18" VPOS="1036" HPOS="702" WC="0.96" STYLEREFS="font3"/>
+              <String ID="word_1_314" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="1033" HPOS="729" WC="0.96" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_40" HEIGHT="257" WIDTH="NaN" VPOS="0" HPOS="-0.006">
+              <String ID="word_1_315" CONTENT="fourniture" HEIGHT="13" WIDTH="81" VPOS="1053" HPOS="257" WC="0.76" STYLEREFS="font6"/>
+              <String ID="word_1_316" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="1053" HPOS="345" WC="0.96" STYLEREFS="font6"/>
+              <String ID="word_1_317" CONTENT="service." HEIGHT="13" WIDTH="58" VPOS="1053" HPOS="372" WC="0.9" STYLEREFS="font6"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_12" HEIGHT="113" WIDTH="492" VPOS="1093" HPOS="257">
+            <TextLine ID="line_1_41" HEIGHT="260" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_318" CONTENT="+" HEIGHT="5" WIDTH="5" VPOS="1097" HPOS="257" WC="0.87" STYLEREFS="font1"/>
+              <String ID="word_1_319" CONTENT="des" HEIGHT="13" WIDTH="30" VPOS="1093" HPOS="276" WC="0.94" STYLEREFS="font1"/>
+              <String ID="word_1_320" CONTENT="reproductions" HEIGHT="16" WIDTH="121" VPOS="1093" HPOS="316" WC="0.94" STYLEREFS="font1"/>
+              <String ID="word_1_321" CONTENT="de" HEIGHT="13" WIDTH="20" VPOS="1093" HPOS="446" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_322" CONTENT="documents" HEIGHT="13" WIDTH="94" VPOS="1093" HPOS="477" WC="0.95" STYLEREFS="font1"/>
+              <String ID="word_1_323" CONTENT="conserv&#233;s" HEIGHT="13" WIDTH="86" VPOS="1093" HPOS="580" WC="0.94" STYLEREFS="font1"/>
+              <String ID="word_1_324" CONTENT="dans" HEIGHT="13" WIDTH="40" VPOS="1093" HPOS="675" WC="0.95" STYLEREFS="font1"/>
+              <String ID="word_1_325" CONTENT="les" HEIGHT="13" WIDTH="23" VPOS="1093" HPOS="726" WC="0.95" STYLEREFS="font1"/>
+            </TextLine>
+            <TextLine ID="line_1_42" HEIGHT="260" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_326" CONTENT="biblioth&#232;ques" HEIGHT="16" WIDTH="107" VPOS="1113" HPOS="257" WC="0.82" STYLEREFS="font1"/>
+              <String ID="word_1_327" CONTENT="ou" HEIGHT="10" WIDTH="18" VPOS="1116" HPOS="369" WC="0.94" STYLEREFS="font1"/>
+              <String ID="word_1_328" CONTENT="autres" HEIGHT="12" WIDTH="50" VPOS="1114" HPOS="395" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_329" CONTENT="institutions" HEIGHT="13" WIDTH="88" VPOS="1113" HPOS="451" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_330" CONTENT="partenaires." HEIGHT="16" WIDTH="92" VPOS="1113" HPOS="544" WC="0.93" STYLEREFS="font1"/>
+              <String ID="word_1_331" CONTENT="Celles-ci" HEIGHT="13" WIDTH="63" VPOS="1113" HPOS="644" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_332" CONTENT="sont" HEIGHT="12" WIDTH="32" VPOS="1114" HPOS="714" WC="0.96" STYLEREFS="font1"/>
+            </TextLine>
+            <TextLine ID="line_1_43" HEIGHT="260" WIDTH="NaN" VPOS="-3" HPOS="-0.002">
+              <String ID="word_1_333" CONTENT="signal&#233;es" HEIGHT="16" WIDTH="73" VPOS="1133" HPOS="257" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_334" CONTENT="par" HEIGHT="13" WIDTH="26" VPOS="1136" HPOS="335" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_335" CONTENT="la" HEIGHT="13" WIDTH="13" VPOS="1133" HPOS="369" WC="0.95" STYLEREFS="font2"/>
+              <String ID="word_1_336" CONTENT="mention" HEIGHT="13" WIDTH="63" VPOS="1133" HPOS="389" WC="0.96" STYLEREFS="font2"/>
+              <String ID="word_1_337" CONTENT="&quot;Source" HEIGHT="13" WIDTH="61" VPOS="1133" HPOS="460" WC="0.9" STYLEREFS="font2"/>
+              <String ID="word_1_338" CONTENT="gallica.bnf.fr" HEIGHT="16" WIDTH="99" VPOS="1133" HPOS="528" WC="0.89" STYLEREFS="font2"/>
+              <String ID="word_1_339" CONTENT="/" HEIGHT="13" WIDTH="5" VPOS="1133" HPOS="634" WC="0.92" STYLEREFS="font2"/>
+              <String ID="word_1_340" CONTENT="Biblioth&#232;que" HEIGHT="16" WIDTH="99" VPOS="1133" HPOS="649" WC="0.94" STYLEREFS="font2"/>
+            </TextLine>
+            <TextLine ID="line_1_44" HEIGHT="261" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_341" CONTENT="municipale" HEIGHT="16" WIDTH="83" VPOS="1153" HPOS="258" WC="0.95" STYLEREFS="font1"/>
+              <String ID="word_1_342" CONTENT="de" HEIGHT="13" WIDTH="18" VPOS="1153" HPOS="347" WC="0.93" STYLEREFS="font1"/>
+              <String ID="word_1_343" CONTENT="..." HEIGHT="2" WIDTH="12" VPOS="1163" HPOS="372" WC="0.84" STYLEREFS="font1"/>
+              <String ID="word_1_344" CONTENT="(ou" HEIGHT="16" WIDTH="23" VPOS="1153" HPOS="392" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_345" CONTENT="autre" HEIGHT="12" WIDTH="41" VPOS="1154" HPOS="422" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_346" CONTENT="partenaire)." HEIGHT="16" WIDTH="89" VPOS="1153" HPOS="469" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_347" CONTENT="L'utilisateur" HEIGHT="13" WIDTH="89" VPOS="1153" HPOS="567" WC="0.95" STYLEREFS="font1"/>
+              <String ID="word_1_348" CONTENT="est" HEIGHT="12" WIDTH="21" VPOS="1154" HPOS="662" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_349" CONTENT="invit&#233;" HEIGHT="13" WIDTH="41" VPOS="1153" HPOS="692" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_350" CONTENT="&#224;" HEIGHT="13" WIDTH="9" VPOS="1153" HPOS="739" WC="0.96" STYLEREFS="font1"/>
+            </TextLine>
+            <TextLine ID="line_1_45" HEIGHT="260" WIDTH="NaN" VPOS="-3" HPOS="0">
+              <String ID="word_1_351" CONTENT="s'informer" HEIGHT="13" WIDTH="80" VPOS="1173" HPOS="257" WC="0.78" STYLEREFS="font1"/>
+              <String ID="word_1_352" CONTENT="aupr&#232;s" HEIGHT="16" WIDTH="53" VPOS="1173" HPOS="344" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_353" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="1173" HPOS="402" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_354" CONTENT="ces" HEIGHT="10" WIDTH="25" VPOS="1176" HPOS="428" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_355" CONTENT="biblioth&#232;ques" HEIGHT="16" WIDTH="107" VPOS="1173" HPOS="459" WC="0.75" STYLEREFS="font1"/>
+              <String ID="word_1_356" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="1173" HPOS="572" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_357" CONTENT="leurs" HEIGHT="13" WIDTH="38" VPOS="1173" HPOS="598" WC="0.96" STYLEREFS="font1"/>
+              <String ID="word_1_358" CONTENT="conditions" HEIGHT="13" WIDTH="82" VPOS="1173" HPOS="641" WC="0.95" STYLEREFS="font1"/>
+              <String ID="word_1_359" CONTENT="de" HEIGHT="13" WIDTH="19" VPOS="1173" HPOS="729" WC="0.96" STYLEREFS="font1"/>
+            </TextLine>
+            <TextLine ID="line_1_46" HEIGHT="258" WIDTH="NaN" VPOS="0" HPOS="-0.01">
+              <String ID="word_1_360" CONTENT="r&#233;utilisation." HEIGHT="13" WIDTH="97" VPOS="1193" HPOS="258" WC="0.96" STYLEREFS="font2"/>
+            </TextLine>
+          </TextBlock>
+        </ComposedBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

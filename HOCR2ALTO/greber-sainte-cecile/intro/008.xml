@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v3#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# https://www.loc.gov/standards/alto/v4/alto.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName/>
+    </sourceImageInformation>
+    <OCRProcessing ID="IdOcr">
+      <ocrProcessingStep>
+        <processingSoftware>
+          <softwareName>tesseract 4.1.0</softwareName>
+        </processingSoftware>
+      </ocrProcessingStep>
+    </OCRProcessing>
+  </Description>
+  <Layout>
+    <Page ID="page_1" PHYSICAL_IMG_NR="1" HEIGHT="1" WIDTH="1">
+      <PrintSpace HEIGHT="1" WIDTH="1" VPOS="0" HPOS="0">
+        <ComposedBlock ID="carea_1_2" HEIGHT="86" WIDTH="318" VPOS="315" HPOS="334">
+          <TextBlock ID="par_1_2" HEIGHT="86" WIDTH="318" VPOS="315" HPOS="334">
+            <TextLine ID="caption_1_1" HEIGHT="347" WIDTH="NaN" VPOS="-13" HPOS="-0.013">
+              <String ID="word_1_2" CONTENT="Sainte-Cécile!" HEIGHT="86" WIDTH="318" VPOS="315" HPOS="334" WC="0.9" STYLE="bold"/>
+            </TextLine>
+          </TextBlock>
+        </ComposedBlock>
+        <ComposedBlock ID="carea_1_3" HEIGHT="44" WIDTH="538" VPOS="484" HPOS="226">
+          <TextBlock ID="par_1_3" HEIGHT="44" WIDTH="538" VPOS="484" HPOS="226">
+            <TextLine ID="line_1_2" HEIGHT="234" WIDTH="NaN" VPOS="-8" HPOS="-0.013">
+              <String ID="word_1_3" CONTENT="Lustspiel" HEIGHT="41" WIDTH="159" VPOS="487" HPOS="226" WC="0.9"/>
+              <String ID="word_1_4" CONTENT="in" HEIGHT="31" WIDTH="33" VPOS="487" HPOS="412" WC="0.96"/>
+              <String ID="word_1_5" CONTENT="einem" HEIGHT="31" WIDTH="105" VPOS="486" HPOS="472" WC="0.92"/>
+              <String ID="word_1_6" CONTENT="Aufzuge" HEIGHT="40" WIDTH="159" VPOS="484" HPOS="605" WC="0.92"/>
+            </TextLine>
+          </TextBlock>
+        </ComposedBlock>
+        <ComposedBlock ID="carea_1_4" HEIGHT="23" WIDTH="241" VPOS="592" HPOS="375">
+          <TextBlock ID="par_1_4" HEIGHT="23" WIDTH="241" VPOS="592" HPOS="375">
+            <TextLine ID="line_1_3" HEIGHT="379" WIDTH="NaN" VPOS="-4" HPOS="-0.012">
+              <String ID="word_1_7" CONTENT="in" HEIGHT="17" WIDTH="16" VPOS="594" HPOS="375" WC="0.93"/>
+              <String ID="word_1_8" CONTENT="Straßburger" HEIGHT="22" WIDTH="115" VPOS="593" HPOS="405" WC="0.93"/>
+              <String ID="word_1_9" CONTENT="Mundart" HEIGHT="17" WIDTH="83" VPOS="592" HPOS="533" WC="0.96"/>
+            </TextLine>
+          </TextBlock>
+        </ComposedBlock>
+        <ComposedBlock ID="carea_1_5" HEIGHT="9" WIDTH="26" VPOS="680" HPOS="484">
+          <TextBlock ID="par_1_5" HEIGHT="9" WIDTH="26" VPOS="680" HPOS="484">
+            <TextLine ID="line_1_4" HEIGHT="484" WIDTH="NaN" VPOS="0" HPOS="-0.038">
+              <String ID="word_1_10" CONTENT="von" HEIGHT="9" WIDTH="26" VPOS="680" HPOS="484" WC="0.96"/>
+            </TextLine>
+          </TextBlock>
+        </ComposedBlock>
+        <ComposedBlock ID="carea_1_6" HEIGHT="36" WIDTH="274" VPOS="751" HPOS="360">
+          <TextBlock ID="par_1_6" HEIGHT="36" WIDTH="274" VPOS="751" HPOS="360">
+            <TextLine ID="line_1_5" HEIGHT="366" WIDTH="NaN" VPOS="-6" HPOS="-0.015">
+              <String ID="word_1_11" CONTENT="Julius" HEIGHT="34" WIDTH="117" VPOS="753" HPOS="360" WC="0.95" STYLE="bold"/>
+              <String ID="word_1_12" CONTENT="Greber." HEIGHT="29" WIDTH="135" VPOS="751" HPOS="499" WC="0.95" STYLE="bold"/>
+            </TextLine>
+          </TextBlock>
+        </ComposedBlock>
+        <ComposedBlock ID="carea_1_8" HEIGHT="98" WIDTH="486" VPOS="1131" HPOS="261">
+          <TextBlock ID="par_1_8" HEIGHT="28" WIDTH="191" VPOS="1131" HPOS="408">
+            <TextLine ID="line_1_7" HEIGHT="412" WIDTH="NaN" VPOS="-4" HPOS="-0.016">
+              <String ID="word_1_14" CONTENT="Straßburg" HEIGHT="26" WIDTH="120" VPOS="1133" HPOS="408" WC="0.91"/>
+              <String ID="word_1_15" CONTENT="i." HEIGHT="20" WIDTH="15" VPOS="1133" HPOS="544" WC="0.95"/>
+              <String ID="word_1_16" CONTENT="E." HEIGHT="22" WIDTH="24" VPOS="1131" HPOS="575" WC="0.95"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_10" HEIGHT="28" WIDTH="486" VPOS="1170" HPOS="261">
+            <TextLine ID="line_1_8" HEIGHT="265" WIDTH="NaN" VPOS="-4" HPOS="-0.014">
+              <String ID="word_1_17" CONTENT="Verlag" HEIGHT="22" WIDTH="84" VPOS="1176" HPOS="261" WC="0.92"/>
+              <String ID="word_1_18" CONTENT="von" HEIGHT="12" WIDTH="41" VPOS="1180" HPOS="362" WC="0.96"/>
+              <String ID="word_1_19" CONTENT="Schlesier" HEIGHT="22" WIDTH="108" VPOS="1173" HPOS="421" WC="0.76"/>
+              <String ID="word_1_20" CONTENT="&amp;" HEIGHT="18" WIDTH="8" VPOS="1172" HPOS="554" WC="0.93"/>
+              <String ID="word_1_21" CONTENT="Schweikhardt." HEIGHT="24" WIDTH="168" VPOS="1170" HPOS="579" WC="0.7"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_9" HEIGHT="18" WIDTH="42" VPOS="1211" HPOS="484">
+            <TextLine ID="line_1_9" HEIGHT="488" WIDTH="NaN" VPOS="-4" HPOS="-0.018">
+              <String ID="word_1_22" CONTENT="1897." HEIGHT="18" WIDTH="42" VPOS="1211" HPOS="484" WC="0.95"/>
+            </TextLine>
+          </TextBlock>
+        </ComposedBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

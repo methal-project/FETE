@@ -1,0 +1,46 @@
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v3#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# https://www.loc.gov/standards/alto/v4/alto.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName/>
+    </sourceImageInformation>
+    <OCRProcessing ID="IdOcr">
+      <ocrProcessingStep>
+        <processingSoftware>
+          <softwareName>tesseract 4.1.0</softwareName>
+        </processingSoftware>
+      </ocrProcessingStep>
+    </OCRProcessing>
+  </Description>
+  <Styles><TextStyle ID="font0" FONTSIZE="34.0" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font1" FONTSIZE="40.857143" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font2" FONTSIZE="33.695236" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/></Styles><Layout>
+    <Page ID="page_1" PHYSICAL_IMG_NR="1" HEIGHT="1" WIDTH="1">
+      <PrintSpace HEIGHT="1" WIDTH="1" VPOS="0" HPOS="0">
+        <ComposedBlock ID="carea_1_2" HEIGHT="34" WIDTH="309" VPOS="621" HPOS="350">
+          <TextBlock ID="par_1_2" HEIGHT="34" WIDTH="309" VPOS="621" HPOS="350">
+            <TextLine ID="line_1_2" HEIGHT="357" WIDTH="NaN" VPOS="-7" HPOS="0">
+              <String ID="word_1_2" CONTENT="Mym" HEIGHT="34" WIDTH="74" VPOS="621" HPOS="350" WC="0.92" STYLEREFS="font0"/>
+              <String ID="word_1_3" CONTENT="liewe" HEIGHT="26" WIDTH="77" VPOS="622" HPOS="442" WC="0.92" STYLEREFS="font0"/>
+              <String ID="word_1_4" CONTENT="Brueder" HEIGHT="26" WIDTH="120" VPOS="622" HPOS="539" WC="0.92" STYLEREFS="font0"/>
+            </TextLine>
+          </TextBlock>
+        </ComposedBlock>
+        <ComposedBlock ID="carea_1_3" HEIGHT="32" WIDTH="427" VPOS="706" HPOS="290">
+          <TextBlock ID="par_1_3" HEIGHT="32" WIDTH="427" VPOS="706" HPOS="290">
+            <TextLine ID="line_1_3" HEIGHT="291" WIDTH="NaN" VPOS="-1" HPOS="0.002">
+              <String ID="word_1_5" CONTENT="DR" HEIGHT="31" WIDTH="49" VPOS="706" HPOS="290" WC="0.82" STYLE="bold" STYLEREFS="font1"/>
+              <String ID="word_1_6" CONTENT="WALDY" HEIGHT="31" WIDTH="194" VPOS="707" HPOS="364" WC="0.92" STYLE="bold" STYLEREFS="font1"/>
+              <String ID="word_1_7" CONTENT="JOST" HEIGHT="31" WIDTH="136" VPOS="707" HPOS="581" WC="0.96" STYLE="bold" STYLEREFS="font1"/>
+            </TextLine>
+          </TextBlock>
+        </ComposedBlock>
+        <ComposedBlock ID="carea_1_5" HEIGHT="26" WIDTH="138" VPOS="790" HPOS="660">
+          <TextBlock ID="par_1_5" HEIGHT="26" WIDTH="138" VPOS="790" HPOS="660">
+            <TextLine ID="line_1_5" HEIGHT="682" WIDTH="NaN" VPOS="-22" HPOS="0.002">
+              <String ID="word_1_10" CONTENT="dediziert." HEIGHT="26" WIDTH="138" VPOS="790" HPOS="660" WC="0.88" STYLEREFS="font2"/>
+            </TextLine>
+          </TextBlock>
+        </ComposedBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

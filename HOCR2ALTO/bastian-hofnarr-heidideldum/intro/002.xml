@@ -1,0 +1,66 @@
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v3#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# https://www.loc.gov/standards/alto/v4/alto.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName/>
+    </sourceImageInformation>
+    <OCRProcessing ID="IdOcr">
+      <ocrProcessingStep>
+        <processingSoftware>
+          <softwareName>tesseract 4.1.0</softwareName>
+        </processingSoftware>
+      </ocrProcessingStep>
+    </OCRProcessing>
+  </Description>
+  <Styles><TextStyle ID="font0" FONTSIZE="185.0" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font1" FONTSIZE="96.0" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font2" FONTSIZE="23.0" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font3" FONTSIZE="25.0" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font4" FONTSIZE="16.0" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/><TextStyle ID="font5" FONTSIZE="28.333334" FONTFAMILY="jbnolc+helvetica-bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="#WWWWff" FONTSTYLE="bold"/></Styles><Layout>
+    <Page ID="page_1" PHYSICAL_IMG_NR="1" HEIGHT="1" WIDTH="1">
+      <PrintSpace HEIGHT="1" WIDTH="1" VPOS="0" HPOS="0">
+        <ComposedBlock ID="carea_1_6" HEIGHT="188" WIDTH="528" VPOS="450" HPOS="232">
+          <TextBlock ID="par_1_9" HEIGHT="188" WIDTH="528" VPOS="450" HPOS="232">
+            <TextLine ID="line_1_7" HEIGHT="232" WIDTH="NaN" VPOS="0" HPOS="0">
+              <String ID="word_1_24" CONTENT="HOFNARR" HEIGHT="94" WIDTH="528" VPOS="450" HPOS="232" WC="1" STYLE="bold" STYLEREFS="font0"/>
+            </TextLine>
+            <TextLine ID="line_1_8" HEIGHT="239" WIDTH="NaN" VPOS="0" HPOS="0">
+              <String ID="word_1_25" CONTENT="HEIDIDELDUM" HEIGHT="93" WIDTH="518" VPOS="545" HPOS="239" WC="1" STYLE="bold" STYLEREFS="font1"/>
+            </TextLine>
+          </TextBlock>
+        </ComposedBlock>
+        <ComposedBlock ID="carea_1_1" HEIGHT="162" WIDTH="347" VPOS="645" HPOS="330">
+          <TextBlock ID="par_1_6" HEIGHT="69" WIDTH="347" VPOS="645" HPOS="330">
+            <TextLine ID="line_1_4" HEIGHT="454" WIDTH="NaN" VPOS="0" HPOS="0">
+              <String ID="word_1_16" CONTENT="M&#196;REL" HEIGHT="26" WIDTH="96" VPOS="645" HPOS="454" WC="1" STYLEREFS="font2"/>
+            </TextLine>
+            <TextLine ID="line_1_5" HEIGHT="330" WIDTH="NaN" VPOS="0" HPOS="0">
+              <String ID="word_1_17" CONTENT="IN" HEIGHT="22" WIDTH="26" VPOS="676" HPOS="330" WC="1" STYLEREFS="font3"/>
+              <String ID="word_1_18" CONTENT="6" HEIGHT="22" WIDTH="17" VPOS="674" HPOS="357" WC="1" STYLEREFS="font3"/>
+              <String ID="word_1_19" CONTENT="BILDER" HEIGHT="19" WIDTH="74" VPOS="674" HPOS="377" WC="1" STYLEREFS="font3"/>
+              <String ID="word_1_20" CONTENT="UN" HEIGHT="18" WIDTH="28" VPOS="678" HPOS="454" WC="1" STYLEREFS="font3"/>
+              <String ID="word_1_21" CONTENT="2" HEIGHT="20" WIDTH="18" VPOS="676" HPOS="487" WC="1" STYLEREFS="font3"/>
+              <String ID="word_1_22" CONTENT="VERWANDLUNGE" HEIGHT="28" WIDTH="171" VPOS="670" HPOS="506" WC="1" STYLEREFS="font3"/>
+            </TextLine>
+            <TextLine ID="line_1_6" HEIGHT="485" WIDTH="NaN" VPOS="0" HPOS="0">
+              <String ID="word_1_23" CONTENT="VUN" HEIGHT="17" WIDTH="38" VPOS="697" HPOS="485" WC="1" STYLEREFS="font4"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_2" HEIGHT="44" WIDTH="276" VPOS="719" HPOS="364">
+            <TextLine ID="caption_1_3" HEIGHT="364" WIDTH="NaN" VPOS="0" HPOS="0">
+              <String ID="word_1_8" CONTENT="FERD.BASTIAN" HEIGHT="44" WIDTH="276" VPOS="719" HPOS="364" WC="0.8" STYLE="bold" STYLEREFS="font4"/>
+            </TextLine>
+          </TextBlock>
+          <TextBlock ID="par_1_10" HEIGHT="28" WIDTH="291" VPOS="779" HPOS="359"/>
+        </ComposedBlock>
+        <ComposedBlock ID="carea_1_4" HEIGHT="24" WIDTH="442" VPOS="1122" HPOS="284">
+          <TextBlock ID="par_1_4" HEIGHT="24" WIDTH="442" VPOS="1122" HPOS="284">
+            <TextLine ID="line_1_2" HEIGHT="285" WIDTH="NaN" VPOS="-1" HPOS="0">
+              <String ID="word_1_10" CONTENT="SELBSTVERLAA" HEIGHT="23" WIDTH="144" VPOS="1123" HPOS="284" WC="0.9" STYLEREFS="font5"/>
+              <String ID="word_1_11" CONTENT="UN" HEIGHT="13" WIDTH="22" VPOS="1133" HPOS="437" WC="0.9" STYLEREFS="font5"/>
+              <String ID="word_1_12" CONTENT="IN" HEIGHT="13" WIDTH="16" VPOS="1133" HPOS="470" WC="0.89" STYLEREFS="font5"/>
+              <String ID="word_1_13" CONTENT="ALLE" HEIGHT="14" WIDTH="39" VPOS="1132" HPOS="495" WC="0.83" STYLEREFS="font5"/>
+              <String ID="word_1_14" CONTENT="BUECHHANDLUNGE" HEIGHT="24" WIDTH="180" VPOS="1122" HPOS="546" WC="0.72" STYLEREFS="font5"/>
+            </TextLine>
+          </TextBlock>
+        </ComposedBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>
