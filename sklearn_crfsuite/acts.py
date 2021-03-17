@@ -15,24 +15,28 @@ import os
 
 import re
 
+DEBUG = False
+
+# TODO : est-ce que tous ces remplacements sont nécessaires / souhaitables ?
 def finaggle(s):
   return s.replace("‘", "'").replace("’", "'").replace("}", ")").replace("“","\"").replace("—","-").replace("”", "\"").replace("―", "-").replace("„", ",").replace("…", "...").replace("=", "-").replace("{", "(")
 
-def fixquotes(tokens):
-  last = False
-  i = 0
-  while i < len(tokens):
-    if tokens[i] == "'":
-      if last:
-        tokens[i-1] = "“"
-        tokens.pop(i)
-        i -= 1
-        last = False
-      else:
-        last = True
-    else:
-      last = False 
-    i += 1
+#def fixquotes(tokens):
+#  last = False
+#  i = 0
+#  while i < len(tokens):
+#    if tokens[i] == "'":
+#      if last:
+#        print("We changed smth")
+#        tokens[i-1] = "“"
+#        tokens.pop(i)
+#        i -= 1
+#        last = False
+#      else:
+#        last = True
+#    else:
+#      last = False 
+#    i += 1
 
 # Extraire le texte d'un élément XML en format ALTO
 # TODO : extraire aussi les données de taille et d'indentation
@@ -60,7 +64,7 @@ def remove_page_number(node):
   if not bool(re.search('[A-Za-z]', result)):
     # Supprimer
     for string in text_line:
-      string.set("CONTENT", "")
+      string.set("CONTENT", " ")
   
   
 # Extraire les données brutes d'une pièce d'un ensemble de
@@ -78,29 +82,55 @@ def extract_play_data(play_dir):
       play += extract_raw_data(root)
   return play
 
+# Trouver le texte correspondant à chaque token dans le fichier TEI
+# Assortir ces tokens d'une étiquette selon l'élément dans lequel
+# le texte correspondant apparaît (comme décrit pour get_labels ci-dessous)
 def match_text(tokens, text, tag, labels, start_token, t_i, in_parent):
+
   c_i = 0
   text = finaggle(text)
+
   while c_i < len(text) and start_token < len(tokens):
+
     c = text[c_i]
-    print(c, tokens[start_token][t_i])
-    if c == tokens[start_token][t_i]:
+    curr_str = tokens[start_token]
+
+    if DEBUG:
+      print(c, curr_str[t_i])
+
+    # C'est le même caractère, on avance au prochain
+    if c == curr_str[t_i]:
       t_i += 1
       c_i += 1
+    # On saute les espaces supplémentaires dans le TEI
+    # TODO : Les deux-points sont souvent mal alignés ...
     elif c.isspace() or c == ":":
       c_i += 1
+    # On a trouvé un caractère qui existe dans l'ALTO mais pas dans le TEI
+    # On le saute en espérant pouvoir continuer
+    # (Cela peut arriver avec les numéros de page par exemple)
     else:
-        print("Warning: extraneous text in ALTO :", tokens[start_token][t_i])
+        if DEBUG:
+          print("Warning: extraneous text in ALTO :", tokens[start_token][t_i])
         t_i += 1
-    if t_i == len(tokens[start_token]):
+
+    # On a atteint la fin de ce token
+    if t_i == len(curr_str):
+      # Il faut étiquetter ce token
       if in_parent and tag in labels:
         tokens[start_token] = (tokens[start_token], labels[tag])
+      # Il ne faut pas l'étiquetter
       else:
         tokens[start_token] = (tokens[start_token], "")
       start_token += 1
+
+      # Sauter les tokens vides
       while start_token < len(tokens) and len(tokens[start_token]) < 1:
         start_token += 1
+
+      curr_token = tokens[start_token]
       t_i = 0
+
   return start_token, t_i
 
 
@@ -115,22 +145,57 @@ def match_text(tokens, text, tag, labels, start_token, t_i, in_parent):
 # étiquette vide
 def get_labels(tokens, tei_body, parent, labels, 
                start_token=0, t_i=0, in_parent=False):
+
+  # Chercher dans le texte au-dessus des éléments
   if tei_body.text is not None:
     start_token, t_i = match_text(tokens, tei_body.text, tei_body.tag, 
                              labels, start_token, t_i, in_parent)
   
-  # TODO : is this reference equality?
-  child_in_parent = (tei_body.tag == parent.tag and 
-                     tei_body.attrib == parent.attrib)
+  # Est-ce que l'élément en cours de traitement est le parent recherché ?
+  child_in_parent = tei_body.tag == parent.tag or parent.tag == "NONE"
+  for attr in parent.attrib:
+    if tei_body.get(attr) != parent.get(attr):
+      child_in_parent = False
 
+  # Itérer sur les sous-éléments
   for child in tei_body:
+    # Chercher dans ce sous-élément
     start_token, t_i = get_labels(tokens, child, parent, labels,
                              start_token=start_token, t_i=t_i,
                              in_parent=child_in_parent)
+
+    # Chercher dans le texte après ce sous-élément
     if child.tail is not None:
       start_token, t_i = match_text(tokens, child.tail, tei_body.tag,
                                labels, start_token, t_i, in_parent)
   return start_token, t_i
+
+def get_labels_acts(tokens, tei_body):
+  act_div = etree.Element("{http://www.tei-c.org/ns/1.0}div", 
+                          attrib={"type" : "act"})
+  
+  get_labels(tokens, tei_body, act_div, 
+             {"{http://www.tei-c.org/ns/1.0}head" : "act_head"})
+
+def get_labels_scenes(tokens, tei_body):
+  scene_div = etree.Element("{http://www.tei-c.org/ns/1.0}div", 
+                            attrib={"type" : "scene"})
+  
+  get_labels(tokens, tei_body, scene_div, 
+             {"{http://www.tei-c.org/ns/1.0}head" : "scene_head"})
+
+def get_labels_speakers(tokens, tei_body):
+  sp_div = etree.Element("{http://www.tei-c.org/ns/1.0}sp", attrib={})
+  
+  get_labels(tokens, tei_body, sp_div, 
+             {"{http://www.tei-c.org/ns/1.0}speaker" : "speaker"})
+
+def get_labels_stage(tokens, tei_body):
+  no_parent = etree.Element("NONE", attrib={})
+  
+  get_labels(tokens, tei_body, no_parent, 
+             {"{http://www.tei-c.org/ns/1.0}stage" : "stage"}, in_parent=True)
+
 
 tei_root = etree.parse(sys.argv[2]).getroot()
 
@@ -140,13 +205,9 @@ tei_body = tei_text.find("{http://www.tei-c.org/ns/1.0}body")
 
 tokens = extract_play_data(sys.argv[1])
 
-fixquotes(tokens)
-
 assert(len(tokens) > 0)
 
-act_div = etree.Element("{http://www.tei-c.org/ns/1.0}div", attrib={"type" : "act"})
-
-get_labels(tokens, tei_body, act_div, {"{http://www.tei-c.org/ns/1.0}head" : "act_head"})
+get_labels_stage(tokens, tei_body)
 
 print(tokens)
 
