@@ -17,36 +17,97 @@ import re
 
 DEBUG = False
 
+# Extraire un dictionnaire qui envoie chaque styleref à sa taille
+def get_fsizes(xml_doc):
+
+  styles = xml_doc.find("{http://www.loc.gov/standards/alto/ns-v3#}Styles")
+  if styles is None:
+    print("Warning: missing font info for some files")
+    return {}
+
+  result = {}
+  for text_style in styles:
+    result[text_style.get("ID")] = float(text_style.get("FONTSIZE"))
+
+  return result
+
+class TokenRawData:
+  def __init__(self, string, hpos, fsize):
+    self.string = string
+    self.hpos = hpos
+    self.fsize = fsize
+
+  def __str__(self):
+    return ("('" + self.string + "', " + str(self.hpos) + ", " + 
+                                          str(self.fsize) + ")")
+ 
+  def __repr__(self):
+    return str(self)
+
+INCREASE = "INCREASE"
+CONSTANT = "CONSTANT"
+DECREASE = "DECREASE"
+
+def features_default(raw_tokens, i, indent_threshold):
+  word = raw_tokens[i].string
+
+  fsize = CONSTANT
+  if i > 0:
+    if raw_tokens[i].fsize > raw_tokens[i-1].fsize:
+      fsize = INCREASE
+    elif raw_tokens[i].fsize < raw_tokens[i-1].fsize:
+      fsize = DECREASE
+    
+  features = {
+    'word': word,
+    'word.lower()': word.lower(),
+    'word[0].isupper()': word[0].isupper(),
+    'indent': CONSTANT, # TODO
+    'fsize': fsize,
+    'word_contains_period' : '.' in word,
+    'word_contains_colon' : ':' in word,
+    'word_contains_lparen' : '(' in word,
+    'word_contains_rparen' : ')' in word, 
+    'word_contains_digit' : bool(re.search('[0-9]', word)),
+     # Autres idées : est-ce que le mot contient des diacritiques présents seulement en alsacien/français ?
+     # Je pense que les auteurs font usage de tous les diacritiques allemands en écrivant l'alsacien
+  }
+
 # TODO : est-ce que tous ces remplacements sont nécessaires / souhaitables ?
 def finaggle(s):
   return s.replace("‘", "'").replace("’", "'").replace("}", ")").replace("“","\"").replace("—","-").replace("”", "\"").replace("―", "-").replace("„", ",").replace("…", "...").replace("=", "-").replace("{", "(")
 
-#def fixquotes(tokens):
-#  last = False
-#  i = 0
-#  while i < len(tokens):
-#    if tokens[i] == "'":
-#      if last:
-#        print("We changed smth")
-#        tokens[i-1] = "“"
-#        tokens.pop(i)
-#        i -= 1
-#        last = False
-#      else:
-#        last = True
-#    else:
-#      last = False 
-#    i += 1
 
 # Extraire le texte d'un élément XML en format ALTO
 # TODO : extraire aussi les données de taille et d'indentation
 # retourne une liste des tokens (<String>) trouvés dans l'élément donné
-def extract_raw_data(node):
+def extract_raw_data(node, fsizes):
+
   result = []
   if node.tag == "{http://www.loc.gov/standards/alto/ns-v3#}String":
-    result.append(finaggle(node.get("CONTENT")))
+    string = finaggle(node.get("CONTENT"))
+
+    if string.isspace() or string == '':
+      print("Warning: empty token, ignoring")
+      return result
+
+    if DEBUG:
+      print(node.attrib)
+
+    hpos = int(node.get("HPOS"))
+
+    if fsizes == {}:
+      fsize = 0.0 # Valeur factice qui signale le manque de données de taille
+    else:
+      fsize = fsizes[node.get("STYLEREFS")]
+
+    n_token = TokenRawData(string, hpos, fsize)
+
+    result.append(n_token)
+
   for child in node:
-    result += extract_raw_data(child) 
+    result += extract_raw_data(child, fsizes) 
+
   return result
 
 # Enlever le numéro de page en haut d'une page donnée
@@ -79,7 +140,7 @@ def extract_play_data(play_dir):
                         "{http://www.loc.gov/standards/alto/ns-v3#}Layout")
                         .find(
                         "{http://www.loc.gov/standards/alto/ns-v3#}Page"))
-      play += extract_raw_data(root)
+      play += extract_raw_data(root, get_fsizes(root))
   return play
 
 # Trouver le texte correspondant à chaque token dans le fichier TEI
@@ -93,12 +154,12 @@ def match_text(tokens, text, tag, labels, start_token, t_i, in_parent):
   while c_i < len(text) and start_token < len(tokens):
 
     c = text[c_i]
-    curr_str = tokens[start_token]
+    curr_str = tokens[start_token].string
 
     if DEBUG:
       print(c, curr_str[t_i])
 
-    # C'est le même caractère, on avance au prochain
+    # C'est le même caractèee, on avance au prochain
     if c == curr_str[t_i]:
       t_i += 1
       c_i += 1
@@ -125,10 +186,13 @@ def match_text(tokens, text, tag, labels, start_token, t_i, in_parent):
       start_token += 1
 
       # Sauter les tokens vides
-      while start_token < len(tokens) and len(tokens[start_token]) < 1:
+      while start_token < len(tokens) and len(tokens[start_token].string) < 1:
         start_token += 1
 
-      curr_token = tokens[start_token]
+      if start_token == len(tokens):
+        return start_token, 0
+
+      curr_token = tokens[start_token].string
       t_i = 0
 
   return start_token, t_i
@@ -157,7 +221,7 @@ def get_labels(tokens, tei_body, parent, labels,
     if tei_body.get(attr) != parent.get(attr):
       child_in_parent = False
 
-  # Itérer sur les sous-éléments
+  # Itérer à travers les sous-éléments
   for child in tei_body:
     # Chercher dans ce sous-élément
     start_token, t_i = get_labels(tokens, child, parent, labels,
@@ -210,5 +274,4 @@ assert(len(tokens) > 0)
 get_labels_stage(tokens, tei_body)
 
 print(tokens)
-
 
