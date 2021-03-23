@@ -421,7 +421,104 @@ def get_play_data_all_labels(alto_dir, tei_file):
 
   return X, Y
 
-# Extraire les caractéristiques et les étiquettes de chaque pièce
+def find_heads(labels, tag):
+  result = []
+  last_tag = ""
+  for i in range(len(labels)):
+    y = labels[i]
+    if y == tag and last_tag != tag:
+      result.append(i)
+    last_tag = y
+  return result
+
+def find_scene_heads(labels):
+  return find_heads(labels, "scene_head")
+
+def find_act_heads(labels):
+  return find_heads(labels, "act_head")
+
+# Choisir des tokens auxquels séparer une séquence
+# en une partie test et une partie entrainement
+def choose_rand_head(act_heads, scene_heads, len_seq):
+  act_head = -1
+  if len(act_heads) > 0:
+    act_head = random.randrange(len(act_heads))
+
+  scene_head = -1
+  if len(scene_head) > 0:
+    scene_head = random.randrange(len(scene_heads))
+
+  token = random.randrange(len_seq)
+
+  return act_head, scene_head, token
+
+def split_test_train(head_indices, heads, XYs):
+  location = 0 
+
+  X_train = []
+  X_test = []
+  Y_train = []
+  Y_test = []
+
+  for head_index, head, XY in zip(head_indices, heads, XYs):
+
+    X, Y = XY
+    act_head, scene_head, token = head_index
+    act_heads, scene_heads = head
+    location = 0
+
+    if act_head != -1:
+      location = act_heads[act_head]
+    elif scene_head != -1:
+      location = scene_heads[scene_head]
+    else:
+      assert(token != -1)
+      location = token
+
+    percent_10 = len(X)//10
+
+    start = location - percent_10//2
+    end = location + percent_10//2
+
+    if start < 0:
+      start = 0
+      end = percent_10
+    elif end > len(X):
+      end = len(X) 
+      start = len(X) - percent_10
+
+    # Ajuster start et end pour qu'ils se trouvent
+    # au début d'un tour de parole
+    while start > 0 and not (Y[start] == "speaker" and Y[start-1] != "speaker"):
+      start -= 1
+
+    while end < len(X) and not (Y[end] == "speaker" and Y[end-1] != "speaker"):
+      end += 1
+
+    X_train_before = X[0:start]
+    Y_train_before = Y[0:start]
+
+    X_test_n = X[start:end]
+    Y_test_n = Y[start:end]
+
+    X_train_after = X[end:len(X)]
+    Y_train_after = Y[end:len(X)]
+
+    if len(X_train_before) != 0:
+      X_train.append(X_train_before)
+      Y_train.append(Y_train_before)
+
+    if len(X_train_after) != 0:
+      X_train.append(X_train_after)
+      Y_train.append(Y_train_after)
+
+    X_test.append(X_test_n)
+    Y_test.append(Y_test_n)
+
+  assert(len(X_train) == len(Y_train))
+  assert(len(X_test) == len(Y_test))
+
+  return X_train, Y_train, X_test, Y_test
 
 plays = [
          #"arnold-der-pfingstmontag", 
@@ -443,38 +540,20 @@ for play in plays:
 act_heads = []
 scene_heads = []
 
-# Division test/entrainement
+###############################################################################
+# Division test/entrainement -------------------------------------------------#
+###############################################################################
+
 for play in plays_XY:
-  last_tag = "NONE"
   X, Y = play
-  act_head_count = 0
-  scene_head_count = 0
-  n_act_heads = []
-  n_scene_heads = []
-  for i in range(len(Y)):
-    y = Y[i]
-    if y == "act_head" and last_tag != "act_head":
-      act_head_count += 1
-      n_act_heads.append(i)
-    elif y == "scene_head" and last_tag != "scene_head":
-      scene_head_count += 1
-      n_scene_heads.append(i)
-    last_tag = y
+
+  n_act_heads = find_act_heads(Y)
+  n_scene_heads = find_scene_heads(Y)
 
   act_heads.append(n_act_heads)
   scene_heads.append(n_scene_heads)
 
-  #if act_head_count > 0:
-  #  print(random.randrange(act_head_count))
-  #else:
-  #  print(-1)
-
-  #if scene_head_count > 0:
-  #  print(random.randrange(scene_head_count))
-  #else:
-  #  print(-1)
-
-  #print(random.randrange(len(Y)))
+  #print(choose_rand_head(act_heads, scene_heads, len(Y)))
 
 # On enlève 10 pourcent des tours de paroles d'une pièce donnée autour du 
 # début d'un acte choisi au hasard (choisi par le code ci-dessus)
@@ -483,65 +562,63 @@ acts_remove = [2, -1, -1, -1, 0, 0, 1]
 scenes_remove = [-1, -1, 9, 5, -1, -1, -1]
 random_remove = [-1, 3952, -1, -1, -1, -1, -1]
 
-X_train = []
-Y_train = []
+X_train, Y_train, X_test, Y_test = split_test_train(
+                    zip(acts_remove, scenes_remove, random_remove), 
+                    zip(act_heads, scene_heads), plays_XY)
 
-X_test = []
-Y_test = [] 
-
-for i in range(len(plays)):
-  location = 0
-  X, Y = plays_XY[i]
-  assert(len(X) == len(Y))
-  if acts_remove[i] != -1:
-    location = act_heads[i][acts_remove[i]]
-  elif scenes_remove[i] != -1:
-    location = scene_heads[i][scenes_remove[i]]
-  # Il n'y a aucune délimitation explicite de scènes/actes,
-  # On choisit un token au hasard
-  else:
-    assert(random_remove[i] != -1)
-    location = random_remove[i]
-
-  percent_10 = len(X)//10
-
-  start = location - percent_10//2
-  end = location + percent_10//2
-
-  if start < 0:
-    start = 0
-    end = percent_10
-  elif end > len(X):
-    end = len(X) 
-    start = len(X) - percent_10
-
-  # Ajuster start et end pour qu'ils se trouvent
-  # au début d'un tour de parole
-  while start > 0 and not (Y[start] == "speaker" and Y[start-1] != "speaker"):
-    start -= 1
-
-  while end < len(X) and not (Y[end] == "speaker" and Y[end-1] != "speaker"):
-    end += 1
-
-  X_train_before = X[0:start]
-  Y_train_before = Y[0:start]
-
-  X_test_n = X[start:end]
-  Y_test_n = Y[start:end]
-
-  X_train_after = X[end:len(X)]
-  Y_train_after = Y[end:len(X)]
-
-  if len(X_train_before) != 0:
-    X_train.append(X_train_before)
-    Y_train.append(Y_train_before)
-
-  if len(X_train_after) != 0:
-    X_train.append(X_train_after)
-    Y_train.append(Y_train_after)
-
-  X_test.append(X_test_n)
-  Y_test.append(Y_test_n)
+#for i in range(len(plays)):
+#  location = 0
+#  X, Y = plays_XY[i]
+#  assert(len(X) == len(Y))
+#  if acts_remove[i] != -1:
+#    location = act_heads[i][acts_remove[i]]
+#  elif scenes_remove[i] != -1:
+#    location = scene_heads[i][scenes_remove[i]]
+#  # Il n'y a aucune délimitation explicite de scènes/actes,
+#  # On choisit un token au hasard
+#  else:
+#    assert(random_remove[i] != -1)
+#    location = random_remove[i]
+#
+#  percent_10 = len(X)//10
+#
+#  start = location - percent_10//2
+#  end = location + percent_10//2
+#
+#  if start < 0:
+#    start = 0
+#    end = percent_10
+#  elif end > len(X):
+#    end = len(X) 
+#    start = len(X) - percent_10
+#
+#  # Ajuster start et end pour qu'ils se trouvent
+#  # au début d'un tour de parole
+#  while start > 0 and not (Y[start] == "speaker" and Y[start-1] != "speaker"):
+#    start -= 1
+#
+#  while end < len(X) and not (Y[end] == "speaker" and Y[end-1] != "speaker"):
+#    end += 1
+#
+#  X_train_before = X[0:start]
+#  Y_train_before = Y[0:start]
+#
+#  X_test_n = X[start:end]
+#  Y_test_n = Y[start:end]
+#
+#  X_train_after = X[end:len(X)]
+#  Y_train_after = Y[end:len(X)]
+#
+#  if len(X_train_before) != 0:
+#    X_train.append(X_train_before)
+#    Y_train.append(Y_train_before)
+#
+#  if len(X_train_after) != 0:
+#    X_train.append(X_train_after)
+#    Y_train.append(Y_train_after)
+#
+#  X_test.append(X_test_n)
+#  Y_test.append(Y_test_n)
 
 print(len(X_train))
 print(len(Y_train))
