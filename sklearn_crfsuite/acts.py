@@ -9,11 +9,17 @@ import sklearn_crfsuite
 from sklearn_crfsuite import scorers
 from sklearn_crfsuite import metrics
 
+import pycrfsuite
+
+import scipy
+
 import sys
 from lxml import etree
 import os
 
 import re
+
+import random
 
 DEBUG = False
 
@@ -32,14 +38,16 @@ def get_fsizes(xml_doc):
   return result
 
 class TokenRawData:
-  def __init__(self, string, hpos, fsize):
+  def __init__(self, string, hpos, fsize, is_line_start, line_start_hpos):
     self.string = string
     self.hpos = hpos
     self.fsize = fsize
+    self.is_line_start = is_line_start
+    self.line_start_hpos = line_start_hpos
 
   def __str__(self):
     return ("('" + self.string + "', " + str(self.hpos) + ", " + 
-                                          str(self.fsize) + ")")
+                                          str(self.fsize) + ")") # TODO
  
   def __repr__(self):
     return str(self)
@@ -57,12 +65,34 @@ def features_default(raw_tokens, i, indent_threshold):
       fsize = INCREASE
     elif raw_tokens[i].fsize < raw_tokens[i-1].fsize:
       fsize = DECREASE
-    
+
+  line_start_hpos = raw_tokens[i].line_start_hpos
+
+  # Trouver le début de la ligne précédante
+  j = i
+  in_last_line = False
+  last_line_start_hpos = -1
+  while j >= 0:
+    if in_last_line:
+      last_line_start_hpos = raw_tokens[j].line_start_hpos
+      break
+    else:
+      if raw_tokens[j].is_line_start:
+        in_last_line = True
+    j -= 1
+
+  indent = CONSTANT
+  if last_line_start_hpos != -1:
+    if line_start_hpos - last_line_start_hpos > indent_threshold:
+      indent = INCREASE
+    elif line_start_hpos - last_line_start_hpos < -indent_threshold:
+      indent = DECREASE
+
   features = {
     'word': word,
     'word.lower()': word.lower(),
     'word[0].isupper()': word[0].isupper(),
-    'indent': CONSTANT, # TODO
+    'indent': indent,
     'fsize': fsize,
     'word_contains_period' : '.' in word,
     'word_contains_colon' : ':' in word,
@@ -71,42 +101,76 @@ def features_default(raw_tokens, i, indent_threshold):
     'word_contains_digit' : bool(re.search('[0-9]', word)),
      # Autres idées : est-ce que le mot contient des diacritiques présents seulement en alsacien/français ?
      # Je pense que les auteurs font usage de tous les diacritiques allemands en écrivant l'alsacien
+     # Premier mot d'une page ?
   }
 
-# TODO : est-ce que tous ces remplacements sont nécessaires / souhaitables ?
+  if i > 0:
+    word1 = raw_tokens[i-1].string
+    features.update({
+      '-1word': word1,
+      '-1word.lower()': word1.lower(),
+      '-1word[0].isupper()': word1[0].isupper(),
+      '-1word_contains_period' : '.' in word1,
+      '-1word_contains_colon' : ':' in word1,
+      '-1word_contains_lparen' : '(' in word1,
+      '-1word_contains_rparen' : ')' in word1, 
+      '-1word_contains_digit' : bool(re.search('[0-9]', word1)),
+    }) 
+
+  if i < len(raw_tokens)-1:
+    word1 = raw_tokens[i+1].string
+    features.update({
+      '+1word': word1,
+      '+1word.lower()': word1.lower(),
+      '+1word[0].isupper()': word1[0].isupper(),
+      '+1word_contains_period' : '.' in word1,
+      '+1word_contains_colon' : ':' in word1,
+      '+1word_contains_lparen' : '(' in word1,
+      '+1word_contains_rparen' : ')' in word1, 
+      '+1word_contains_digit' : bool(re.search('[0-9]', word1)),
+    }) 
+
+  return features
+
 def finaggle(s):
-  return s.replace("‘", "'").replace("’", "'").replace("}", ")").replace("“","\"").replace("—","-").replace("”", "\"").replace("―", "-").replace("„", ",").replace("…", "...").replace("=", "-").replace("{", "(")
+  return s.replace("‘", "'").replace("’", "'").replace("}", ")").replace("“","\"").replace("—","-").replace("”", "\"").replace("―", "-").replace("„", "\"").replace("…", "...").replace("=", "-").replace("{", "(")
 
 
 # Extraire le texte d'un élément XML en format ALTO
-# TODO : extraire aussi les données de taille et d'indentation
 # retourne une liste des tokens (<String>) trouvés dans l'élément donné
 def extract_raw_data(node, fsizes):
 
   result = []
-  if node.tag == "{http://www.loc.gov/standards/alto/ns-v3#}String":
-    string = finaggle(node.get("CONTENT"))
+  if node.tag == "{http://www.loc.gov/standards/alto/ns-v3#}TextLine":
+    is_line_start = True
+    line_start_hpos = 0
+    for str_node in node: 
+      string = finaggle(str_node.get("CONTENT"))
 
-    if string.isspace() or string == '':
-      print("Warning: empty token, ignoring")
-      return result
+      if string.isspace() or string == '':
+        continue
 
-    if DEBUG:
-      print(node.attrib)
+      if DEBUG:
+        print(str_node.attrib)
 
-    hpos = int(node.get("HPOS"))
+      hpos = int(str_node.get("HPOS"))
 
-    if fsizes == {}:
-      fsize = 0.0 # Valeur factice qui signale le manque de données de taille
-    else:
-      fsize = fsizes[node.get("STYLEREFS")]
+      if is_line_start:
+        line_start_hpos = hpos
 
-    n_token = TokenRawData(string, hpos, fsize)
+      if fsizes == {}:
+        fsize = 0.0 # Valeur factice qui signale le manque de données de taille
+      else:
+        fsize = fsizes[str_node.get("STYLEREFS")]
 
-    result.append(n_token)
+      n_token = TokenRawData(string, hpos, fsize, is_line_start, line_start_hpos)
 
-  for child in node:
-    result += extract_raw_data(child, fsizes) 
+      result.append(n_token)
+
+      is_line_start = False
+  else:
+    for child in node:
+      result += extract_raw_data(child, fsizes) 
 
   return result
 
@@ -125,16 +189,16 @@ def remove_page_number(node):
   if not bool(re.search('[A-Za-z]', result)):
     # Supprimer
     for string in text_line:
-      string.set("CONTENT", " ")
+      string.set("CONTENT", "")
   
   
 # Extraire les données brutes d'une pièce d'un ensemble de
 # fichiers ALTO dans un dossier
 def extract_play_data(play_dir):
   play = []
-  for filename in os.listdir(sys.argv[1]):
+  for filename in os.listdir(play_dir):
     if filename.endswith(".xml"):
-      root = etree.parse(os.path.join(sys.argv[1], filename)).getroot()
+      root = etree.parse(os.path.join(play_dir, filename)).getroot()
       # Layout, Page
       remove_page_number(root.find(
                         "{http://www.loc.gov/standards/alto/ns-v3#}Layout")
@@ -159,7 +223,7 @@ def match_text(tokens, text, tag, labels, start_token, t_i, in_parent):
     if DEBUG:
       print(c, curr_str[t_i])
 
-    # C'est le même caractèee, on avance au prochain
+    # C'est le même caractère, on avance au prochain
     if c == curr_str[t_i]:
       t_i += 1
       c_i += 1
@@ -172,7 +236,7 @@ def match_text(tokens, text, tag, labels, start_token, t_i, in_parent):
     # (Cela peut arriver avec les numéros de page par exemple)
     else:
         if DEBUG:
-          print("Warning: extraneous text in ALTO :", tokens[start_token][t_i])
+          print("Warning: extraneous text in ALTO :", curr_str[t_i])
         t_i += 1
 
     # On a atteint la fin de ce token
@@ -182,15 +246,13 @@ def match_text(tokens, text, tag, labels, start_token, t_i, in_parent):
         tokens[start_token] = (tokens[start_token], labels[tag])
       # Il ne faut pas l'étiquetter
       else:
-        tokens[start_token] = (tokens[start_token], "")
+        tokens[start_token] = (tokens[start_token], "O")
       start_token += 1
-
-      # Sauter les tokens vides
-      while start_token < len(tokens) and len(tokens[start_token].string) < 1:
-        start_token += 1
 
       if start_token == len(tokens):
         return start_token, 0
+
+      assert(len(tokens[start_token].string) > 0)
 
       curr_token = tokens[start_token].string
       t_i = 0
@@ -224,6 +286,7 @@ def get_labels(tokens, tei_body, parent, labels,
   # Itérer à travers les sous-éléments
   for child in tei_body:
     # Chercher dans ce sous-élément
+    # Ignorer les italiques dans la TEI
     start_token, t_i = get_labels(tokens, child, parent, labels,
                              start_token=start_token, t_i=t_i,
                              in_parent=child_in_parent)
@@ -238,7 +301,7 @@ def get_labels_acts(tokens, tei_body):
   act_div = etree.Element("{http://www.tei-c.org/ns/1.0}div", 
                           attrib={"type" : "act"})
   
-  get_labels(tokens, tei_body, act_div, 
+  last_token, t_i = get_labels(tokens, tei_body, act_div,
              {"{http://www.tei-c.org/ns/1.0}head" : "act_head"})
 
 def get_labels_scenes(tokens, tei_body):
@@ -260,18 +323,288 @@ def get_labels_stage(tokens, tei_body):
   get_labels(tokens, tei_body, no_parent, 
              {"{http://www.tei-c.org/ns/1.0}stage" : "stage"}, in_parent=True)
 
+def get_labels_stage_p(tokens, tei_body):
+  parent = etree.Element("{http://www.tei-c.org/ns/1.0}stage", attrib={})
+  
+  get_labels(tokens, tei_body, parent, 
+             {"{http://www.tei-c.org/ns/1.0}p" : "stage"})
 
-tei_root = etree.parse(sys.argv[2]).getroot()
+def get_labels_p(tokens, tei_body):
+  sp_parent = etree.Element("{http://www.tei-c.org/ns/1.0}sp", attrib={})
+  
+  get_labels(tokens, tei_body, sp_parent, 
+             {"{http://www.tei-c.org/ns/1.0}p" : "p"})
 
-tei_text = tei_root.find("{http://www.tei-c.org/ns/1.0}text")
+def get_labels_l(tokens, tei_body):
+  no_parent = etree.Element("NONE", attrib={})
+  
+  get_labels(tokens, tei_body, no_parent, 
+             {"{http://www.tei-c.org/ns/1.0}l" : "chanson"})
 
-tei_body = tei_text.find("{http://www.tei-c.org/ns/1.0}body")
+# Ignorer les éléments seg, emph et span
+def ignore_tags(root):
+  removals = set()
+  for i in range(len(root) - 1, -1, -1):
+    #print(i, root[i].tag)
+    if (root[i].tag == "{http://www.tei-c.org/ns/1.0}emph" 
+       or root[i].tag == "{http://www.tei-c.org/ns/1.0}seg"
+       or root[i].tag == "{http://www.tei-c.org/ns/1.0}span"):
+      #print(etree.ElementTree.dump(root[i]))
+      if i > 0:
+        if root[i-1].tail is None:
+          root[i-1].tail = ""
+        if root[i].text is not None:
+          root[i-1].tail += root[i].text
+        if root[i].tail is not None:
+          root[i-1].tail += root[i].tail
+      else:
+        if root.text is None:
+          root.text = ""
+        if root[i].text is not None:
+          root.text += root[i].text
+        if root[i].tail is not None:
+          root.text += root[i].tail
+      removals.add(root[i])
 
-tokens = extract_play_data(sys.argv[1])
+  for r in removals:
+    root.remove(r)
 
-assert(len(tokens) > 0)
+  for child in root:
+    ignore_tags(child)
 
-get_labels_stage(tokens, tei_body)
+def get_play_data_all_labels(alto_dir, tei_file):
+  tei_root = etree.parse(tei_file).getroot()
+  
+  tei_text = tei_root.find("{http://www.tei-c.org/ns/1.0}text")
+  
+  tei_body = tei_text.find("{http://www.tei-c.org/ns/1.0}body")
 
-print(tokens)
+  ignore_tags(tei_body)
+  
+  tokens = extract_play_data(alto_dir)
+  
+  
+  assert(len(tokens) > 0)
+
+  label_funcs = [get_labels_acts, get_labels_scenes, get_labels_speakers, 
+                 get_labels_stage,  get_labels_p, get_labels_stage_p, 
+                 get_labels_l]
+
+  result = [(t, "O") for t in tokens]
+
+  for f in label_funcs:
+    f(tokens, tei_body)
+    # TODO: this is garbage
+    # Enlever les tokens non-étiquettés
+    tokens = [t for t in tokens if not isinstance(t, TokenRawData)]
+    result = result[0:len(tokens)]
+    labels = [t[1] for t in tokens]
+    tokens = [t[0] for t in tokens]
+    for i in range(len(labels)):
+      if labels[i] != "O":
+        if result[i][1] != "O":
+          print("Intersect:", labels[i], result[i][1])
+        result[i] = (result[i][0], labels[i])
+  
+  #get_labels_stage(tokens, tei_body)
+
+  features = [features_default(tokens, i, 30) for i in range(len(tokens))]
+  
+  X = features
+  Y = [tok[1] for tok in result]
+
+  # Normalement, chaque token est étiquetté
+  for y in Y:
+    assert(y != "O")
+
+  assert(len(X) == len(Y))
+
+  return X, Y
+
+# Extraire les caractéristiques et les étiquettes de chaque pièce
+
+plays = [
+         #"arnold-der-pfingstmontag", 
+         "bastian-hofnarr-heidideldum", "clemens-chrischtowe", "greber-sainte-cecile", "hart-dr-poetisch-oscar", "jost-daa-im-narrehuss", "stoskopf-dr-hoflieferant", "stoskopf-ins-ropfers-apothek"]
+
+plays_XY = []
+
+for play in plays:
+  print(os.path.join(sys.argv[1], play), os.path.join(sys.argv[2], play + ".xml"))
+  X, Y = get_play_data_all_labels(os.path.join(sys.argv[1], play), os.path.join(sys.argv[2], play + ".xml"))
+
+  print(play)
+    
+  #for x, y, in zip(X, Y):
+  #    print(x, y, play)
+
+  plays_XY.append((X, Y))
+
+act_heads = []
+scene_heads = []
+
+# Division test/entrainement
+for play in plays_XY:
+  last_tag = "NONE"
+  X, Y = play
+  act_head_count = 0
+  scene_head_count = 0
+  n_act_heads = []
+  n_scene_heads = []
+  for i in range(len(Y)):
+    y = Y[i]
+    if y == "act_head" and last_tag != "act_head":
+      act_head_count += 1
+      n_act_heads.append(i)
+    elif y == "scene_head" and last_tag != "scene_head":
+      scene_head_count += 1
+      n_scene_heads.append(i)
+    last_tag = y
+
+  act_heads.append(n_act_heads)
+  scene_heads.append(n_scene_heads)
+
+  #if act_head_count > 0:
+  #  print(random.randrange(act_head_count))
+  #else:
+  #  print(-1)
+
+  #if scene_head_count > 0:
+  #  print(random.randrange(scene_head_count))
+  #else:
+  #  print(-1)
+
+  #print(random.randrange(len(Y)))
+
+# On enlève 10 pourcent des tours de paroles d'une pièce donnée autour du 
+# début d'un acte choisi au hasard (choisi par le code ci-dessus)
+# Pour les pièces qui n'ont qu'un seul acte, on choisit une scène à la place
+acts_remove = [2, -1, -1, -1, 0, 0, 1]
+scenes_remove = [-1, -1, 9, 5, -1, -1, -1]
+random_remove = [-1, 3952, -1, -1, -1, -1, -1]
+
+X_train = []
+Y_train = []
+
+X_test = []
+Y_test = [] 
+
+for i in range(len(plays)):
+  location = 0
+  X, Y = plays_XY[i]
+  assert(len(X) == len(Y))
+  if acts_remove[i] != -1:
+    location = act_heads[i][acts_remove[i]]
+  elif scenes_remove[i] != -1:
+    location = scene_heads[i][scenes_remove[i]]
+  # Il n'y a aucune délimitation explicite de scènes/actes,
+  # On choisit un token au hasard
+  else:
+    assert(random_remove[i] != -1)
+    location = random_remove[i]
+
+  percent_10 = len(X)//10
+
+  start = location - percent_10//2
+  end = location + percent_10//2
+
+  if start < 0:
+    start = 0
+    end = percent_10
+  elif end > len(X):
+    end = len(X) 
+    start = len(X) - percent_10
+
+  # Ajuster start et end pour qu'ils se trouvent
+  # au début d'un tour de parole
+  while start > 0 and not (Y[start] == "speaker" and Y[start-1] != "speaker"):
+    start -= 1
+
+  while end < len(X) and not (Y[end] == "speaker" and Y[end-1] != "speaker"):
+    end += 1
+
+  X_train_before = X[0:start]
+  Y_train_before = Y[0:start]
+
+  X_test_n = X[start:end]
+  Y_test_n = Y[start:end]
+
+  X_train_after = X[end:len(X)]
+  Y_train_after = Y[end:len(X)]
+
+  if len(X_train_before) != 0:
+    X_train.append(X_train_before)
+    Y_train.append(Y_train_before)
+
+  if len(X_train_after) != 0:
+    X_train.append(X_train_after)
+    Y_train.append(Y_train_after)
+
+  X_test.append(X_test_n)
+  Y_test.append(Y_test_n)
+
+print(len(X_train))
+print(len(Y_train))
+
+print(len(X_test))
+print(len(Y_test))
+
+print("nombre d'étiquettes chanson test", sum([y.count("chanson") for y in Y_test]))
+print("nombre d'étiquettes chanson entrainement", sum([y.count("chanson") for y in Y_train]))
+
+X_tv = [pycrfsuite.ItemSequence(x) for x in X_train]
+
+Y_tv = Y_train
+
+#valid_part = random.randrange(len(X_train))
+
+for valid_part in range(len(X_tv)):
+
+  print("valid fold:", valid_part)
+
+
+  X_valid = [X_tv[valid_part]]
+  Y_valid = [Y_tv[valid_part]]
+
+  print("nombre d'étiquettes chanson valid", sum([y.count("chanson") for y in Y_valid]))
+  
+  X_train = X_tv[0:valid_part] + X_tv[valid_part+1:len(X_tv)]
+  Y_train = Y_tv[0:valid_part] + Y_tv[valid_part+1:len(Y_tv)]
+  
+  assert(X_valid[0] not in X_train)
+  
+  crf = sklearn_crfsuite.CRF(
+      algorithm='lbfgs',
+      max_iterations=1000,
+      all_possible_transitions=True
+  )
+  
+  crf.fit(X_train, Y_train)
+  
+  #print('best params:', rs.best_params_)
+  #print('best CV score:', rs.best_score_)
+  #print('model size: {:0.2f}M'.format(rs.best_estimator_.size_ / 1000000))
+  
+  labels = list(crf.classes_)
+  
+  y_valid_pred = crf.predict(X_valid)
+  
+  print("F1 valid:", metrics.flat_f1_score(Y_valid, y_valid_pred,
+                        average='weighted', labels=labels))
+
+  print(metrics.flat_classification_report(
+    Y_valid, y_valid_pred, labels=labels, digits=3
+  ))
+  
+  mistakes = 0
+  for y, y_pred in zip(Y_valid[0], y_valid_pred[0]):
+    if y != y_pred:
+      #print(y, y_pred)
+      mistakes += 1
+  
+  print("% d'erreurs validation:", 100*mistakes/len(Y_valid[0]))
+  
+  y_train_pred = crf.predict(X_train)
+  print("F1 train:", metrics.flat_f1_score(Y_train, y_train_pred,
+                        average='weighted', labels=labels))
 

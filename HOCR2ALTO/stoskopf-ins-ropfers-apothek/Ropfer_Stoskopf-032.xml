@@ -261,7 +261,7 @@
           <TextBlock ID="par_1_12" HEIGHT="404" WIDTH="3030" VPOS="3712" HPOS="853">
             <TextLine ID="line_1_24" HEIGHT="1165" WIDTH="NaN" VPOS="-53" HPOS="0.014">
               <String ID="word_1_153" CONTENT="Ropfer:" HEIGHT="122" WIDTH="421" VPOS="3712" HPOS="1112" WC="0.92" STYLE="bold" STYLEREFS="font10"/>
-              <String ID="word_1_154" CONTENT=",Pardon“," HEIGHT="115" WIDTH="551" VPOS="3722" HPOS="1615" WC="0.33" STYLEREFS="font10"/>
+              <String ID="word_1_154" CONTENT="„Pardon“," HEIGHT="115" WIDTH="551" VPOS="3722" HPOS="1615" WC="0.33" STYLEREFS="font10"/>
               <String ID="word_1_155" CONTENT="Frau," HEIGHT="114" WIDTH="292" VPOS="3728" HPOS="2237" WC="0.92" STYLEREFS="font10"/>
               <String ID="word_1_156" CONTENT="&#8216;s" HEIGHT="115" WIDTH="96" VPOS="3714" HPOS="2612" WC="0.81" STYLEREFS="font10"/>
               <String ID="word_1_157" CONTENT="Jeanne" HEIGHT="121" WIDTH="391" VPOS="3739" HPOS="2758" WC="0.92" STYLEREFS="font10"/>

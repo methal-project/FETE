@@ -279,8 +279,8 @@
           <TextBlock ID="par_1_15" HEIGHT="117" WIDTH="2404" VPOS="3900" HPOS="804">
             <TextLine ID="line_1_27" HEIGHT="820" WIDTH="NaN" VPOS="-16" HPOS="-0.004">
               <String ID="word_1_164" CONTENT="Susanne:" HEIGHT="92" WIDTH="496" VPOS="3908" HPOS="804" WC="0.68" STYLE="bold" STYLEREFS="font5"/>
-              <String ID="word_1_165" CONTENT="&#8218;,Mon" HEIGHT="113" WIDTH="308" VPOS="3904" HPOS="1379" WC="0.26" STYLEREFS="font5"/>
-              <String ID="word_1_166" CONTENT="Dieu!&#8221;" HEIGHT="92" WIDTH="358" VPOS="3904" HPOS="1754" WC="0" STYLEREFS="font5"/>
+              <String ID="word_1_165" CONTENT="„Mon" HEIGHT="113" WIDTH="308" VPOS="3904" HPOS="1379" WC="0.26" STYLEREFS="font5"/>
+              <String ID="word_1_166" CONTENT="Dieu!„" HEIGHT="92" WIDTH="358" VPOS="3904" HPOS="1754" WC="0" STYLEREFS="font5"/>
               <String ID="word_1_167" CONTENT="Miner" HEIGHT="92" WIDTH="329" VPOS="3904" HPOS="2183" WC="0.91" STYLEREFS="font5"/>
               <String ID="word_1_168" CONTENT="Hochzitter!" HEIGHT="96" WIDTH="621" VPOS="3900" HPOS="2587" WC="0.81" STYLEREFS="font5"/>
             </TextLine>

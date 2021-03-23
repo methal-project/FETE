@@ -212,7 +212,7 @@
               <String ID="word_1_128" CONTENT="Ropfer" HEIGHT="121" WIDTH="387" VPOS="3220" HPOS="800" WC="0.84" STYLE="bold" STYLEREFS="font11"/>
               <String ID="word_1_129" CONTENT="(sehr" HEIGHT="116" WIDTH="271" VPOS="3229" HPOS="1258" WC="0.91" STYLEREFS="font11"/>
               <String ID="word_1_130" CONTENT="zerstreut):" HEIGHT="112" WIDTH="584" VPOS="3233" HPOS="1591" WC="0.85" STYLEREFS="font11"/>
-              <String ID="word_1_131" CONTENT=",Parfaitement.“" HEIGHT="112" WIDTH="883" VPOS="3229" HPOS="2250" WC="0.23" STYLEREFS="font11"/>
+              <String ID="word_1_131" CONTENT="„Parfaitement.“" HEIGHT="112" WIDTH="883" VPOS="3229" HPOS="2250" WC="0.23" STYLEREFS="font11"/>
               <String ID="word_1_132" CONTENT="-" HEIGHT="13" WIDTH="129" VPOS="3295" HPOS="3196" WC="0.96" STYLEREFS="font11"/>
             </TextLine>
           </TextBlock>
@@ -260,7 +260,7 @@
           <TextBlock ID="par_1_9" HEIGHT="161" WIDTH="3032" VPOS="3916" HPOS="533">
             <TextLine ID="line_1_26" HEIGHT="818" WIDTH="NaN" VPOS="-27" HPOS="0.008">
               <String ID="word_1_160" CONTENT="Ropfer:" HEIGHT="121" WIDTH="425" VPOS="3941" HPOS="791" WC="0.75" STYLE="bold" STYLEREFS="font2"/>
-              <String ID="word_1_161" CONTENT=",Parfaitement“..." HEIGHT="159" WIDTH="1175" VPOS="3916" HPOS="1270" WC="0.4" STYLEREFS="font2"/>
+              <String ID="word_1_161" CONTENT="„Parfaitement“..." HEIGHT="159" WIDTH="1175" VPOS="3916" HPOS="1270" WC="0.4" STYLEREFS="font2"/>
             </TextLine>
           </TextBlock>
         </ComposedBlock>

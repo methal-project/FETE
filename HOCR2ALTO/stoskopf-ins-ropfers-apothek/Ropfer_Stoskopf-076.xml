@@ -199,7 +199,7 @@
             <TextLine ID="line_1_19" HEIGHT="842" WIDTH="NaN" VPOS="-17" HPOS="0.003">
               <String ID="word_1_116" CONTENT="un" HEIGHT="59" WIDTH="129" VPOS="2922" HPOS="825" WC="0.93" STYLEREFS="font8"/>
               <String ID="word_1_117" CONTENT="mache" HEIGHT="96" WIDTH="345" VPOS="2888" HPOS="1021" WC="0.91" STYLEREFS="font8"/>
-              <String ID="word_1_118" CONTENT=",toilette&quot;." HEIGHT="106" WIDTH="547" VPOS="2891" HPOS="1440" WC="0.14" STYLEREFS="font8"/>
+              <String ID="word_1_118" CONTENT="„toilette&quot;." HEIGHT="106" WIDTH="547" VPOS="2891" HPOS="1440" WC="0.14" STYLEREFS="font8"/>
             </TextLine>
           </TextBlock>
         </ComposedBlock>
