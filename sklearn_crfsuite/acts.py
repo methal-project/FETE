@@ -56,6 +56,9 @@ INCREASE = "INCREASE"
 CONSTANT = "CONSTANT"
 DECREASE = "DECREASE"
 
+def only_alpha(word):
+  return re.sub('[^A-Za-z]', '', word)
+
 def features_default(raw_tokens, i, indent_threshold):
   word = raw_tokens[i].string
 
@@ -88,8 +91,34 @@ def features_default(raw_tokens, i, indent_threshold):
     elif line_start_hpos - last_line_start_hpos < -indent_threshold:
       indent = DECREASE
 
+  def is_acty(word):
+    lex = ['akt', 'bild', 'aufzug']
+    result = False
+    oa = only_alpha(word.lower())
+    for l in lex:
+      result = result or l == oa
+    
+    return result
+
+  def is_sceney(word):
+    lex = ['ufftritt', 'scène', 'szene']
+    result = False
+    oa = only_alpha(word.lower())
+    for l in lex:
+      result = result or l == oa
+    
+    return result
+
+  def is_rom_num(word):
+    result = True
+    oa = only_alpha(word.lower())
+    for c in oa:
+      result = result and c in 'ivx'
+    return result
+
   features = {
     'word': word,
+    'line_start': raw_tokens[i].is_line_start,
     'word.lower()': word.lower(),
     'word[0].isupper()': word[0].isupper(),
     'indent': indent,
@@ -99,6 +128,10 @@ def features_default(raw_tokens, i, indent_threshold):
     'word_contains_lparen' : '(' in word,
     'word_contains_rparen' : ')' in word, 
     'word_contains_digit' : bool(re.search('[0-9]', word)),
+    'word_is_acty' : is_acty(word),
+    'word_is_sceney' : is_sceney(word),
+    'word_rom_num' : is_rom_num(word),
+    'hpos' : raw_tokens[i].hpos,
      # Autres idées : est-ce que le mot contient des diacritiques présents seulement en alsacien/français ?
      # Je pense que les auteurs font usage de tous les diacritiques allemands en écrivant l'alsacien
      # Premier mot d'une page ?
@@ -108,6 +141,7 @@ def features_default(raw_tokens, i, indent_threshold):
     word1 = raw_tokens[i-1].string
     features.update({
       '-1word': word1,
+      '-1line_start': raw_tokens[i-1].is_line_start,
       '-1word.lower()': word1.lower(),
       '-1word[0].isupper()': word1[0].isupper(),
       '-1word_contains_period' : '.' in word1,
@@ -115,12 +149,17 @@ def features_default(raw_tokens, i, indent_threshold):
       '-1word_contains_lparen' : '(' in word1,
       '-1word_contains_rparen' : ')' in word1, 
       '-1word_contains_digit' : bool(re.search('[0-9]', word1)),
+      '-1word_is_acty' : is_acty(word1),
+      '-1word_is_sceney' : is_sceney(word1),
+      '-1word_rom_num' : is_rom_num(word1),
+      '-1hpos' : raw_tokens[i-1].hpos,
     }) 
 
   if i < len(raw_tokens)-1:
     word1 = raw_tokens[i+1].string
     features.update({
       '+1word': word1,
+      '+1line_start': raw_tokens[i+1].is_line_start,
       '+1word.lower()': word1.lower(),
       '+1word[0].isupper()': word1[0].isupper(),
       '+1word_contains_period' : '.' in word1,
@@ -128,6 +167,10 @@ def features_default(raw_tokens, i, indent_threshold):
       '+1word_contains_lparen' : '(' in word1,
       '+1word_contains_rparen' : ')' in word1, 
       '+1word_contains_digit' : bool(re.search('[0-9]', word1)),
+      '+1word_is_acty' : is_acty(word1),
+      '+1word_is_sceney' : is_sceney(word1),
+      '+1word_rom_num' : is_rom_num(word1),
+      '+1hpos' : raw_tokens[i+1].hpos,
     }) 
 
   return features
@@ -204,7 +247,13 @@ def extract_play_data(play_dir):
                         "{http://www.loc.gov/standards/alto/ns-v3#}Layout")
                         .find(
                         "{http://www.loc.gov/standards/alto/ns-v3#}Page"))
+
       play += extract_raw_data(root, get_fsizes(root))
+  # normaliser les hpos de la pièce
+  max_hpos = max([t.hpos for t in play])
+  for t in play:
+    t.hpos /= max_hpos
+    t.line_start_hpos /= max_hpos
   return play
 
 # Trouver le texte correspondant à chaque token dans le fichier TEI
@@ -408,7 +457,7 @@ def get_play_data_all_labels(alto_dir, tei_file):
   
   #get_labels_stage(tokens, tei_body)
 
-  features = [features_default(tokens, i, 30) for i in range(len(tokens))]
+  features = [features_default(tokens, i, 0.1) for i in range(len(tokens))]
   
   X = features
   Y = [tok[1] for tok in result]
@@ -441,11 +490,11 @@ def find_act_heads(labels):
 # en une partie test et une partie entrainement
 def choose_rand_head(act_heads, scene_heads, len_seq):
   act_head = -1
-  if len(act_heads) > 0:
+  if len(act_heads) > 1:
     act_head = random.randrange(len(act_heads))
 
   scene_head = -1
-  if len(scene_head) > 0:
+  if len(scene_heads) > 1:
     scene_head = random.randrange(len(scene_heads))
 
   token = random.randrange(len_seq)
@@ -463,6 +512,7 @@ def split_test_train(head_indices, heads, XYs):
   for head_index, head, XY in zip(head_indices, heads, XYs):
 
     X, Y = XY
+    print(head_index)
     act_head, scene_head, token = head_index
     act_heads, scene_heads = head
     location = 0
@@ -553,7 +603,7 @@ for play in plays_XY:
   act_heads.append(n_act_heads)
   scene_heads.append(n_scene_heads)
 
-  #print(choose_rand_head(act_heads, scene_heads, len(Y)))
+  #print(choose_rand_head(n_act_heads, n_scene_heads, len(Y)))
 
 # On enlève 10 pourcent des tours de paroles d'une pièce donnée autour du 
 # début d'un acte choisi au hasard (choisi par le code ci-dessus)
@@ -566,60 +616,6 @@ X_train, Y_train, X_test, Y_test = split_test_train(
                     zip(acts_remove, scenes_remove, random_remove), 
                     zip(act_heads, scene_heads), plays_XY)
 
-#for i in range(len(plays)):
-#  location = 0
-#  X, Y = plays_XY[i]
-#  assert(len(X) == len(Y))
-#  if acts_remove[i] != -1:
-#    location = act_heads[i][acts_remove[i]]
-#  elif scenes_remove[i] != -1:
-#    location = scene_heads[i][scenes_remove[i]]
-#  # Il n'y a aucune délimitation explicite de scènes/actes,
-#  # On choisit un token au hasard
-#  else:
-#    assert(random_remove[i] != -1)
-#    location = random_remove[i]
-#
-#  percent_10 = len(X)//10
-#
-#  start = location - percent_10//2
-#  end = location + percent_10//2
-#
-#  if start < 0:
-#    start = 0
-#    end = percent_10
-#  elif end > len(X):
-#    end = len(X) 
-#    start = len(X) - percent_10
-#
-#  # Ajuster start et end pour qu'ils se trouvent
-#  # au début d'un tour de parole
-#  while start > 0 and not (Y[start] == "speaker" and Y[start-1] != "speaker"):
-#    start -= 1
-#
-#  while end < len(X) and not (Y[end] == "speaker" and Y[end-1] != "speaker"):
-#    end += 1
-#
-#  X_train_before = X[0:start]
-#  Y_train_before = Y[0:start]
-#
-#  X_test_n = X[start:end]
-#  Y_test_n = Y[start:end]
-#
-#  X_train_after = X[end:len(X)]
-#  Y_train_after = Y[end:len(X)]
-#
-#  if len(X_train_before) != 0:
-#    X_train.append(X_train_before)
-#    Y_train.append(Y_train_before)
-#
-#  if len(X_train_after) != 0:
-#    X_train.append(X_train_after)
-#    Y_train.append(Y_train_after)
-#
-#  X_test.append(X_test_n)
-#  Y_test.append(Y_test_n)
-
 print(len(X_train))
 print(len(Y_train))
 
@@ -629,31 +625,39 @@ print(len(Y_test))
 print("nombre d'étiquettes chanson test", sum([y.count("chanson") for y in Y_test]))
 print("nombre d'étiquettes chanson entrainement", sum([y.count("chanson") for y in Y_train]))
 
-X_tv = [pycrfsuite.ItemSequence(x) for x in X_train]
+X_tv = X_train
 
 Y_tv = Y_train
 
 #valid_part = random.randrange(len(X_train))
 
-for valid_part in range(len(X_tv)):
+for i in range(10):
 
-  print("valid fold:", valid_part)
+  print("valid fold:", i)
 
+  act_heads = [find_act_heads(Y) for Y in Y_tv]
+  scene_heads = [find_scene_heads(Y) for Y in Y_tv]
 
-  X_valid = [X_tv[valid_part]]
-  Y_valid = [Y_tv[valid_part]]
+  X_train, Y_train, X_valid, Y_valid = split_test_train(
+                                     [choose_rand_head(a, s, l) for a, s, l in zip(
+                                      act_heads, scene_heads, [len(y) for y in Y_tv])],
+                                     zip(act_heads, scene_heads), zip(X_tv, Y_tv))
 
   print("nombre d'étiquettes chanson valid", sum([y.count("chanson") for y in Y_valid]))
+  print("nombre d'étiquettes act_head entrainement", sum([y.count("act_head") for y in Y_train]))
+  print("nombre d'étiquettes scene_head entrainement", sum([y.count("scene_head") for y in Y_train]))
   
-  X_train = X_tv[0:valid_part] + X_tv[valid_part+1:len(X_tv)]
-  Y_train = Y_tv[0:valid_part] + Y_tv[valid_part+1:len(Y_tv)]
-  
-  assert(X_valid[0] not in X_train)
+  for x in X_valid:
+    assert(x not in X_train)
+
+  X_train = [pycrfsuite.ItemSequence(x) for x in X_train]
+  X_valid = [pycrfsuite.ItemSequence(x) for x in X_valid]
   
   crf = sklearn_crfsuite.CRF(
       algorithm='lbfgs',
       max_iterations=1000,
-      all_possible_transitions=True
+      all_possible_transitions=True,
+      c2=0.0
   )
   
   crf.fit(X_train, Y_train)
@@ -667,21 +671,24 @@ for valid_part in range(len(X_tv)):
   y_valid_pred = crf.predict(X_valid)
   
   print("F1 valid:", metrics.flat_f1_score(Y_valid, y_valid_pred,
-                        average='weighted', labels=labels))
+                        average='weighted'))
 
   print(metrics.flat_classification_report(
-    Y_valid, y_valid_pred, labels=labels, digits=3
+    Y_valid, y_valid_pred, digits=3
   ))
   
   mistakes = 0
-  for y, y_pred in zip(Y_valid[0], y_valid_pred[0]):
-    if y != y_pred:
-      #print(y, y_pred)
-      mistakes += 1
+  for i in range(len(Y_valid)):
+    for y, y_pred, x in zip(Y_valid[i], y_valid_pred[i], X_valid[i].items()):
+      if y != y_pred:
+        #print(y, y_pred)
+        mistakes += 1
+        if y == "chanson" or y_pred == "chanson":
+          print(x, y, y_pred)
   
-  print("% d'erreurs validation:", 100*mistakes/len(Y_valid[0]))
+  print("% d'erreurs validation:", 100*mistakes/sum([len(Y) for Y in Y_valid]))
   
   y_train_pred = crf.predict(X_train)
   print("F1 train:", metrics.flat_f1_score(Y_train, y_train_pred,
-                        average='weighted', labels=labels))
+                        average='weighted'))
 
