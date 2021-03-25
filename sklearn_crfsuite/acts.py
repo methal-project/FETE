@@ -21,6 +21,8 @@ import re
 
 import random
 
+import time
+
 DEBUG = False
 
 # Extraire un dictionnaire qui envoie chaque styleref à sa taille
@@ -457,9 +459,9 @@ def get_play_data_all_labels(alto_dir, tei_file):
   
   #get_labels_stage(tokens, tei_body)
 
-  features = [features_default(tokens, i, 0.1) for i in range(len(tokens))]
+  #features = [features_default(tokens, i, 0.1) for i in range(len(tokens))]
   
-  X = features
+  X = tokens
   Y = [tok[1] for tok in result]
 
   # Normalement, chaque token est étiquetté
@@ -512,7 +514,7 @@ def split_test_train(head_indices, heads, XYs):
   for head_index, head, XY in zip(head_indices, heads, XYs):
 
     X, Y = XY
-    print(head_index)
+    #print(head_index)
     act_head, scene_head, token = head_index
     act_heads, scene_heads = head
     location = 0
@@ -631,64 +633,67 @@ Y_tv = Y_train
 
 #valid_part = random.randrange(len(X_train))
 
-for i in range(10):
+for feature_func in [features_default]:
+  start = time.time()
+  for i in range(10):
+  
+    print("valid fold:", i)
+  
+    act_heads = [find_act_heads(Y) for Y in Y_tv]
+    scene_heads = [find_scene_heads(Y) for Y in Y_tv]
+  
+    X_train, Y_train, X_valid, Y_valid = split_test_train(
+                                       [choose_rand_head(a, s, l) for a, s, l in zip(
+                                        act_heads, scene_heads, [len(y) for y in Y_tv])],
+                                       zip(act_heads, scene_heads), zip(X_tv, Y_tv))
+    
+    # TODO: meilleure vérification
+    for x in X_valid:
+      assert(x not in X_train)
+  
+    X_train = [[feature_func(x, i, 0.1) for i in range(len(x))] for x in X_train]
+    X_valid = [[feature_func(x, i, 0.1) for i in range(len(x))] for x in X_valid] 
 
-  print("valid fold:", i)
-
-  act_heads = [find_act_heads(Y) for Y in Y_tv]
-  scene_heads = [find_scene_heads(Y) for Y in Y_tv]
-
-  X_train, Y_train, X_valid, Y_valid = split_test_train(
-                                     [choose_rand_head(a, s, l) for a, s, l in zip(
-                                      act_heads, scene_heads, [len(y) for y in Y_tv])],
-                                     zip(act_heads, scene_heads), zip(X_tv, Y_tv))
-
-  print("nombre d'étiquettes chanson valid", sum([y.count("chanson") for y in Y_valid]))
-  print("nombre d'étiquettes act_head entrainement", sum([y.count("act_head") for y in Y_train]))
-  print("nombre d'étiquettes scene_head entrainement", sum([y.count("scene_head") for y in Y_train]))
+    X_train = [pycrfsuite.ItemSequence(x) for x in X_train]
+    X_valid = [pycrfsuite.ItemSequence(x) for x in X_valid]
+    
+    crf = sklearn_crfsuite.CRF(
+        algorithm='lbfgs',
+        max_iterations=1000,
+        all_possible_transitions=True,
+        c2=0.0
+    )
+    
+    crf.fit(X_train, Y_train)
+    
+    #print('best params:', rs.best_params_)
+    #print('best CV score:', rs.best_score_)
+    #print('model size: {:0.2f}M'.format(rs.best_estimator_.size_ / 1000000))
+    
+    labels = list(crf.classes_)
+    
+    y_valid_pred = crf.predict(X_valid)
+    
+    #print("F1 valid:", metrics.flat_f1_score(Y_valid, y_valid_pred,
+    #                      average='weighted'))
   
-  for x in X_valid:
-    assert(x not in X_train)
-
-  X_train = [pycrfsuite.ItemSequence(x) for x in X_train]
-  X_valid = [pycrfsuite.ItemSequence(x) for x in X_valid]
-  
-  crf = sklearn_crfsuite.CRF(
-      algorithm='lbfgs',
-      max_iterations=1000,
-      all_possible_transitions=True,
-      c2=0.0
-  )
-  
-  crf.fit(X_train, Y_train)
-  
-  #print('best params:', rs.best_params_)
-  #print('best CV score:', rs.best_score_)
-  #print('model size: {:0.2f}M'.format(rs.best_estimator_.size_ / 1000000))
-  
-  labels = list(crf.classes_)
-  
-  y_valid_pred = crf.predict(X_valid)
-  
-  print("F1 valid:", metrics.flat_f1_score(Y_valid, y_valid_pred,
-                        average='weighted'))
-
-  print(metrics.flat_classification_report(
-    Y_valid, y_valid_pred, digits=3
-  ))
-  
-  mistakes = 0
-  for i in range(len(Y_valid)):
-    for y, y_pred, x in zip(Y_valid[i], y_valid_pred[i], X_valid[i].items()):
-      if y != y_pred:
-        #print(y, y_pred)
-        mistakes += 1
-        if y == "chanson" or y_pred == "chanson":
-          print(x, y, y_pred)
-  
-  print("% d'erreurs validation:", 100*mistakes/sum([len(Y) for Y in Y_valid]))
-  
-  y_train_pred = crf.predict(X_train)
-  print("F1 train:", metrics.flat_f1_score(Y_train, y_train_pred,
-                        average='weighted'))
+    #print(metrics.flat_classification_report(
+    #  Y_valid, y_valid_pred, digits=3
+    #))
+    
+    mistakes = 0
+    for i in range(len(Y_valid)):
+      for y, y_pred, x in zip(Y_valid[i], y_valid_pred[i], X_valid[i].items()):
+        if y != y_pred:
+          #print(y, y_pred)
+          mistakes += 1
+          #if y == "chanson" or y_pred == "chanson":
+          #  print(x, y, y_pred)
+    
+    print("% d'erreurs validation:", 100*mistakes/sum([len(Y) for Y in Y_valid]))
+    
+    #y_train_pred = crf.predict(X_train)
+    #print("F1 train:", metrics.flat_f1_score(Y_train, y_train_pred,
+    #                    average='weighted'))
+  print("Time elapsed for 10 folds:", time.time() - start)
 
