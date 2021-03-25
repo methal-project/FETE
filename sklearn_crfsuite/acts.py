@@ -23,6 +23,8 @@ import random
 
 import time
 
+from tei_gen import *
+
 DEBUG = False
 
 # Extraire un dictionnaire qui envoie chaque styleref à sa taille
@@ -242,6 +244,7 @@ def remove_page_number(node):
 def extract_play_data(play_dir):
   play = []
   for filename in os.listdir(play_dir):
+    print(filename)
     if filename.endswith(".xml"):
       root = etree.parse(os.path.join(play_dir, filename)).getroot()
       # Layout, Page
@@ -607,6 +610,8 @@ for play in plays_XY:
 
   #print(choose_rand_head(n_act_heads, n_scene_heads, len(Y)))
 
+  
+
 # On enlève 10 pourcent des tours de paroles d'une pièce donnée autour du 
 # début d'un acte choisi au hasard (choisi par le code ci-dessus)
 # Pour les pièces qui n'ont qu'un seul acte, on choisit une scène à la place
@@ -691,9 +696,14 @@ for feature_func in [features_default]:
           #  print(x, y, y_pred)
     
     print("% d'erreurs validation:", 100*mistakes/sum([len(Y) for Y in Y_valid]))
+
+    X_tv_ = [[feature_func(x, i, 0.1) for i in range(len(x))] for x in X_tv]
+    X_tv_ = [pycrfsuite.ItemSequence(x) for x in X_tv_]
+    print(etree.tostring(generate_TEI_body([x.string for x in X_tv[0]], crf.predict(X_tv_)[0]), pretty_print=True))
     
     #y_train_pred = crf.predict(X_train)
     #print("F1 train:", metrics.flat_f1_score(Y_train, y_train_pred,
     #                    average='weighted'))
   print("Time elapsed for 10 folds:", time.time() - start)
+
 
