@@ -18,7 +18,8 @@ class MyHTMLParser(HTMLParser):
       attrs[k] = v
 
     if tag == "span":
-      if attrs["class"] == "ocr_line":
+      if (attrs["class"] == "ocr_line" or attrs["class"] == "ocr_header" or
+          attrs["class"] == "ocr_textfloat" or attrs["class"] == "ocr_caption"):
         title = attrs["title"]
         title_toks = title.split()
 
