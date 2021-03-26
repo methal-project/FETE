@@ -1,5 +1,18 @@
 from lxml import etree
 
+import re
+
+def speaker_id(character):
+  result = character.lower()
+
+  for a, b in zip(" äöüàèìòùáéíóúâêîôû", "_aouaeiouaeiou"):
+    result = result.replace(a, b)
+
+  return re.sub('[^a-z_]', '', result)
+
+def gen_speaker_ids(characters):
+  return [speaker_id(c) for c in characters]
+
 label_tag_map = {"scene_head" : "head", "act_head" : "head", "p" : "p", 
                  "chanson" : "l", "stage" : "stage", "speaker" : "speaker"}
 
