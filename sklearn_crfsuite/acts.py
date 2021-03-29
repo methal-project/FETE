@@ -1,5 +1,7 @@
 from itertools import chain
 
+from html.parser import HTMLParser
+
 import sklearn
 from sklearn.metrics import make_scorer
 from sklearn.model_selection import cross_val_score
@@ -390,12 +392,14 @@ def extract_raw_data(node, fsizes):
       if DEBUG:
         print(str_node.attrib)
 
-      hpos = int(str_node.get("HPOS"))
+      hpos = 0
+      if str_node.get("HPOS") is not None:
+        hpos = int(str_node.get("HPOS"))
 
       if is_line_start:
         line_start_hpos = hpos
 
-      if fsizes == {}:
+      if fsizes == {} or str_node.get("STYLEREFS") is None:
         fsize = 0.0 # Valeur factice qui signale le manque de données de taille
       else:
         fsize = fsizes[str_node.get("STYLEREFS")]
@@ -427,10 +431,45 @@ def remove_page_number(node):
     # Supprimer
     for string in text_line:
       string.set("CONTENT", "")
-  
+
+class HOCRText(HTMLParser):
+
+  def __init__(self):
+    self.result = []
+    self.curr_size = 0
+    self.hpos = 0
+    self.active = False
+    super().__init__()
+
+  def handle_starttag(self, tag, attrs_):
+    if self.active:
+      # récolter les attributs sous forme de dictionnaire
+      attrs = {}
+      for k, v in attrs_:
+        attrs[k] = v
+
+      if tag == "span":
+        title = attrs["title"]
+        if title is not None:
+          title = title.split(";")
+          var_map = {}
+          for var in title:
+            s = var.strip().split(" ")
+            if len(s) > 1:
+              var_map[s[0]] = s[1:]
+
+          if "bbox" in var_map:
+            self.hpos = int(var_map["bbox"][0]) 
+          elif "x_size" in var_map:
+            self.curr_size = float(var_map["x_size"][0])
+    elif tag == "body":
+      self.active = True
+
+  def handle_data(self, data):
+    data = finaggle(data)
   
 # Extraire les données brutes d'une pièce d'un ensemble de
-# fichiers ALTO dans un dossier
+# fichiers ALTO ou hOCR dans un dossier
 def extract_play_data(play_dir):
   play = []
   for filename in os.listdir(play_dir):
@@ -444,6 +483,8 @@ def extract_play_data(play_dir):
                         "{http://www.loc.gov/standards/alto/ns-v3#}Page"))
 
       play += extract_raw_data(root, get_fsizes(root))
+    #elif filename.endswith(".html"):
+      
   # normaliser les hpos de la pièce
   max_hpos = max([t.hpos for t in play])
   for t in play:
@@ -765,167 +806,52 @@ def split_test_train(head_indices, heads, XYs):
 
   return X_train, Y_train, X_test, Y_test
 
-plays = [
-         #"arnold-der-pfingstmontag", 
-         "bastian-hofnarr-heidideldum", "clemens-chrischtowe", "greber-sainte-cecile", "hart-dr-poetisch-oscar", "jost-daa-im-narrehuss", "stoskopf-dr-hoflieferant", "stoskopf-ins-ropfers-apothek"]
-
-plays_XY = []
-
-for play in plays:
-  print(os.path.join(sys.argv[1], play), os.path.join(sys.argv[2], play + ".xml"))
-  X, Y = get_play_data_all_labels(os.path.join(sys.argv[1], play), os.path.join(sys.argv[2], play + ".xml"))
-
-  print(play)
-    
-  #for x, y, in zip(X, Y):
-  #    print(x, y, play)
-
-  plays_XY.append((X, Y))
-
-act_heads = []
-scene_heads = []
-
-###############################################################################
-# Division test/entrainement -------------------------------------------------#
-###############################################################################
-
-for play in plays_XY:
-  X, Y = play
-
-  n_act_heads = find_act_heads(Y)
-  n_scene_heads = find_scene_heads(Y)
-
-  act_heads.append(n_act_heads)
-  scene_heads.append(n_scene_heads)
-
-  #print(choose_rand_head(n_act_heads, n_scene_heads, len(Y)))
-
+def get_data_sets():
+  plays = [
+           #"arnold-der-pfingstmontag", 
+           "bastian-hofnarr-heidideldum", "clemens-chrischtowe", "greber-sainte-cecile", "hart-dr-poetisch-oscar", "jost-daa-im-narrehuss", "stoskopf-dr-hoflieferant", "stoskopf-ins-ropfers-apothek"]
   
-
-# On enlève 10 pourcent des tours de paroles d'une pièce donnée autour du 
-# début d'un acte choisi au hasard (choisi par le code ci-dessus)
-# Pour les pièces qui n'ont qu'un seul acte, on choisit une scène à la place
-acts_remove = [2, -1, -1, -1, 0, 0, 1]
-scenes_remove = [-1, -1, 9, 5, -1, -1, -1]
-random_remove = [-1, 3952, -1, -1, -1, -1, -1]
-
-X_train, Y_train, X_test, Y_test = split_test_train(
-                    zip(acts_remove, scenes_remove, random_remove), 
-                    zip(act_heads, scene_heads), plays_XY)
-
-print(len(X_train))
-print(len(Y_train))
-
-print(len(X_test))
-print(len(Y_test))
-
-print("nombre d'étiquettes chanson test", sum([y.count("chanson") for y in Y_test]))
-print("nombre d'étiquettes chanson entrainement", sum([y.count("chanson") for y in Y_train]))
-
-X_tv = X_train
-
-Y_tv = Y_train
-
-#valid_part = random.randrange(len(X_train))
-
-best_seuil = 0.0
-best_c1 = 0.0
-best_c2 = 0.0
-best_f = None
-
-best_valid_error = 1.0
-
-for seuil in [0.1, 0.2, 0.3, 0.4]:
-  for c1 in [0.0, 0.25, 0.5, 1.0]:
-    for c2 in [0.0, 0.25, 0.5, 1.0]:
-      for feature_func in [features_default, features_no_context, features_no_lex]:
-        start = time.time()
-        valid_error_total = 0.0
-        print("c1", c1)
-        print("seuil", seuil)
-        print("c2", c2)
-        print("feature_func", feature_func)
-        for i in range(5):
-        
-          print("valid fold:", i)
-        
-          act_heads = [find_act_heads(Y) for Y in Y_tv]
-          scene_heads = [find_scene_heads(Y) for Y in Y_tv]
-        
-          X_train, Y_train, X_valid, Y_valid = split_test_train(
-                                             [choose_rand_head(a, s, l) for a, s, l in zip(
-                                              act_heads, scene_heads, [len(y) for y in Y_tv])],
-                                             zip(act_heads, scene_heads), zip(X_tv, Y_tv))
-          
-          # TODO: meilleure vérification
-          for x in X_valid:
-            assert(x not in X_train)
-        
-          X_train = [[feature_func(x, i, seuil) for i in range(len(x))] for x in X_train]
-          X_valid = [[feature_func(x, i, seuil) for i in range(len(x))] for x in X_valid] 
+  plays_XY = []
+  
+  for play in plays:
+    print(os.path.join(sys.argv[1], play), os.path.join(sys.argv[2], play + ".xml"))
+    X, Y = get_play_data_all_labels(os.path.join(sys.argv[1], play), os.path.join(sys.argv[2], play + ".xml"))
+  
+    print(play)
       
-          X_train = [pycrfsuite.ItemSequence(x) for x in X_train]
-          X_valid = [pycrfsuite.ItemSequence(x) for x in X_valid]
-          
-          crf = sklearn_crfsuite.CRF(
-              algorithm='lbfgs',
-              max_iterations=1000,
-              all_possible_transitions=True,
-              c1=c1,
-              c2=c2,
-          )
-          
-          crf.fit(X_train, Y_train)
-          
-          #print('best params:', rs.best_params_)
-          #print('best CV score:', rs.best_score_)
-          #print('model size: {:0.2f}M'.format(rs.best_estimator_.size_ / 1000000))
-          
-          labels = list(crf.classes_)
-          
-          y_valid_pred = crf.predict(X_valid)
-          
-          #print("F1 valid:", metrics.flat_f1_score(Y_valid, y_valid_pred,
-          #                      average='weighted'))
-        
-          #print(metrics.flat_classification_report(
-          #  Y_valid, y_valid_pred, digits=3
-          #))
-          
-          mistakes = 0
-          for i in range(len(Y_valid)):
-            for y, y_pred, x in zip(Y_valid[i], y_valid_pred[i], X_valid[i].items()):
-              if y != y_pred:
-                #print(y, y_pred)
-                mistakes += 1
-                #if y == "chanson" or y_pred == "chanson":
-                #  print(x, y, y_pred)
-          
-          valid_error = mistakes/sum([len(Y) for Y in Y_valid])
-          valid_error_total += valid_error
-
-
-          print("% d'erreurs validation:", 100*mistakes/sum([len(Y) for Y in Y_valid]))
-      
-          #X_tv_ = [[feature_func(x, i, 0.1) for i in range(len(x))] for x in X_tv]
-          #X_tv_ = [pycrfsuite.ItemSequence(x) for x in X_tv_]
-          #print(etree.tostring(generate_TEI_body([x.string for x in X_tv[0]], crf.predict(X_tv_)[0]), pretty_print=True))
-          
-          #y_train_pred = crf.predict(X_train)
-          #print("F1 train:", metrics.flat_f1_score(Y_train, y_train_pred,
-          #                    average='weighted'))
-        print("avg_valid_error", valid_error_total/5)
-        if valid_error_total/5 < best_valid_error:
-          best_seuil = seuil
-          best_c1 = c1
-          best_c2 = c2
-          best_f = feature_func
-          best_valid_error = valid_error
-        print("Time elapsed for 5 folds:", time.time() - start)
-
-print("best seuil:", best_seuil)
-print("best c1:", best_c1)
-print("best c2:", best_c2)
-print("best f:", best_f)
-print("best valid error:", best_valid_error)
-
+    #for x, y, in zip(X, Y):
+    #    print(x, y, play)
+  
+    plays_XY.append((X, Y))
+  
+  act_heads = []
+  scene_heads = []
+  
+  ###############################################################################
+  # Division test/entrainement -------------------------------------------------#
+  ###############################################################################
+  
+  for play in plays_XY:
+    X, Y = play
+  
+    n_act_heads = find_act_heads(Y)
+    n_scene_heads = find_scene_heads(Y)
+  
+    act_heads.append(n_act_heads)
+    scene_heads.append(n_scene_heads)
+  
+    #print(choose_rand_head(n_act_heads, n_scene_heads, len(Y)))
+  
+    
+  
+  # On enlève 10 pourcent des tours de paroles d'une pièce donnée autour du 
+  # début d'un acte choisi au hasard (choisi par le code ci-dessus)
+  # Pour les pièces qui n'ont qu'un seul acte, on choisit une scène à la place
+  acts_remove = [2, -1, -1, -1, 0, 0, 1]
+  scenes_remove = [-1, -1, 9, 5, -1, -1, -1]
+  random_remove = [-1, 3952, -1, -1, -1, -1, -1]
+  
+  return split_test_train(
+                      zip(acts_remove, scenes_remove, random_remove), 
+                      zip(act_heads, scene_heads), plays_XY)
+  

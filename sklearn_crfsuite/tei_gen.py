@@ -2,6 +2,8 @@ from lxml import etree
 
 import re
 
+import Levenshtein
+
 def speaker_id(character):
   result = character.lower()
 
@@ -13,114 +15,140 @@ def speaker_id(character):
 def gen_speaker_ids(characters):
   return [speaker_id(c) for c in characters]
 
-label_tag_map = {"scene_head" : "head", "act_head" : "head", "p" : "p", 
+
+class TEIGen:
+
+  def __init__(self, tokens, labels, characters):
+    self.tokens = tokens
+    self.labels = labels
+
+    self.sid_map = {}
+    for c in characters:
+      self.sid_map[c] = speaker_id(c)
+
+    self.label_tag_map = {"scene_head" : "head", "act_head" : "head", "p" : "p", 
                  "chanson" : "l", "stage" : "stage", "speaker" : "speaker"}
 
-def insert_all_of_same_tag(text, tokens, labels, i):
-  if text == None:
-    text = ""
+  def find_speaker_id(self, speaker):
+    #min_dist = 100000
+    #best_id = ""
+    #for c in self.sid_map:
+    #  dist = Levenshtein.distance(c, speaker)
+    #  if dist < min_dist:
+    #    min_dist = dist
+    #    best_id = c
+    #return best_id
+    for c in self.sid_map:
+      if speaker.replace(":", "") in c:
+        return self.sid_map[c]
 
-  tag = labels[i]
-  text += tokens[i]
-  i += 1
-  while i < len(labels) and labels[i] == tag:
-    text += " " + tokens[i]
-    i += 1
-  return text, i
+    return "UNKNOWN"
 
-def generate_contiguous(tokens, labels, i):
-  element_tag = label_tag_map[labels[i]]
+  def insert_all_of_same_tag(self, text):
+    if text is None:
+      text = ""
+  
+    tag = self.labels[self.i]
+    text += self.tokens[self.i]
+    self.i += 1
+    while self.i < len(self.labels) and self.labels[self.i] == tag:
+      text += " " + self.tokens[self.i]
+      self.i += 1
 
-  el = etree.Element(element_tag)
-  el.text, i = insert_all_of_same_tag(el.text, tokens, labels, i)
-  return el, i
-
-def generate_p(tokens, labels, i):
-  p = etree.Element("p")
-
-  while i < len(labels) and (labels[i] == "chanson" or labels[i] == "p" or labels[i] == "stage"):
-    if labels[i] == "p":
-      if len(p) == 0:
-        p.text, i = insert_all_of_same_tag(p.text, tokens, labels, i)
+    return text
+  
+  def generate_contiguous(self):
+    element_tag = self.label_tag_map[self.labels[self.i]]
+  
+    el = etree.Element(element_tag)
+    el.text = self.insert_all_of_same_tag(el.text)
+    return el
+  
+  def generate_p(self):
+    p = etree.Element("p")
+  
+    while self.i < len(self.labels) and (self.labels[self.i] == "chanson" 
+                                    or self.labels[self.i] == "p" 
+                                    or self.labels[self.i] == "stage"):
+      if self.labels[self.i] == "p":
+        if len(p) == 0:
+          p.text = self.insert_all_of_same_tag(p.text)
+        else:
+          p[-1].tail = self.insert_all_of_same_tag(p[-1].tail)
       else:
-        p[-1].tail, i = insert_all_of_same_tag(p[-1].tail, tokens, labels, i)
-    else:
-      # TODO: il faut un <l> pour chaque vers (chaque ligne)
-      l, i = generate_contiguous(tokens, labels, i)
-      p.append(l)
+        # TODO: il faut un <l> pour chaque vers (chaque ligne)
+        l = self.generate_contiguous()
+        p.append(l)
+  
+    return p
+  
+  def generate_sp(self):
+    sp = etree.Element("sp")
+  
+    speaker = etree.SubElement(sp, "speaker")
+    speaker.text = self.insert_all_of_same_tag(speaker.text) 
 
-  return p, i
-
-def generate_sp(tokens, labels, i):
-  sp = etree.Element("sp")
-
-  speaker = etree.SubElement(sp, "speaker")
-  speaker.text, i = insert_all_of_same_tag(speaker.text, tokens, labels, i)
-
-  # TODO: ajouter le champs "who" à l'élément sp
-  # en se basant sur la liste de personnages
-
-  while i < len(labels) and (labels[i] == "stage" or labels[i] == "p"
-        or labels[i] == "chanson"):
-    if labels[i] == "p" or labels[i] == "chanson":
-      p, i = generate_p(tokens, labels, i)
-      sp.append(p)
-    elif labels[i] == "stage":
-      el, i = generate_contiguous(tokens, labels, i)
-      sp.append(el)
-
-  return sp, i
-
-# traiter les parties de la pièce qui ne sont ni des
-# act_head ni des scene_head
-def process_body(parent, tokens, labels, i):
-  while (i < len(labels) and labels[i] != "scene_head" 
-         and labels[i] != "act_head"):
-    if labels[i] == "speaker":
-      sp, i = generate_sp(tokens, labels, i)
-      parent.append(sp)
-    else:
-      el, i = generate_contiguous(tokens, labels, i)
-      parent.append(el)
-  return i
-
-def generate_scene(tokens, labels, i):
-  scene = etree.Element("div")
-  scene.set("type", "scene")
-
-  # <head>
-  if labels[i] == "scene_head":
-    head = etree.SubElement(scene, "head")
-    head.text, i = insert_all_of_same_tag(head.text, tokens, labels, i)
-    scene.append(head)
-
-  i = process_body(scene, tokens, labels, i)
-  return scene, i
-
-def generate_act(tokens, labels, i):
-  act = etree.Element("div")
-  act.set("type", "act")
- 
-  # <head>
-  if labels[i] == "act_head":
-    head = etree.SubElement(act, "head")
-    head.text, i = insert_all_of_same_tag(head.text, tokens, labels, i)
-    act.append(head)
-
-  while i < len(labels) and labels[i] != "act_head":
-    if labels[i] == "scene_head":
-      scene, i = generate_scene(tokens, labels, i)
-      act.append(scene)
-    else:
-      i = process_body(act, tokens, labels, i)
-
-  return act, i
-
-def generate_TEI_body(tokens, labels):
-  body = etree.Element("body")
-  i = 0
-  while i < len(tokens):
-    act, i = generate_act(tokens, labels, i)
-    body.append(act)
-
-  return body
+    sp.set("who", self.find_speaker_id(speaker.text))
+  
+    while self.i < len(self.labels) and (self.labels[self.i] == "stage" 
+                                         or self.labels[self.i] == "p"
+                                         or self.labels[self.i] == "chanson"):
+      if self.labels[self.i] == "p" or self.labels[self.i] == "chanson":
+        p = self.generate_p()
+        sp.append(p)
+      elif self.labels[self.i] == "stage":
+        el = self.generate_contiguous()
+        sp.append(el)
+  
+    return sp
+  
+  # traiter les parties de la pièce qui ne sont ni des
+  # act_head ni des scene_head
+  def process_body(self, parent):
+    while (self.i < len(self.labels) and self.labels[self.i] != "scene_head" 
+           and self.labels[self.i] != "act_head"):
+      if self.labels[self.i] == "speaker":
+        sp = self.generate_sp()
+        parent.append(sp)
+      else:
+        el = self.generate_contiguous()
+        parent.append(el)
+  
+  def generate_scene(self):
+    scene = etree.Element("div")
+    scene.set("type", "scene")
+  
+    # <head>
+    if self.labels[self.i] == "scene_head":
+      head = etree.SubElement(scene, "head")
+      head.text = self.insert_all_of_same_tag(head.text)
+  
+    self.process_body(scene)
+    return scene
+  
+  def generate_act(self):
+    act = etree.Element("div")
+    act.set("type", "act")
+   
+    # <head>
+    if self.labels[self.i] == "act_head":
+      head = etree.SubElement(act, "head")
+      head.text = self.insert_all_of_same_tag(head.text)
+  
+    while self.i < len(self.labels) and self.labels[self.i] != "act_head":
+      if self.labels[self.i] == "scene_head":
+        scene = self.generate_scene()
+        act.append(scene)
+      else:
+        self.process_body(act)
+  
+    return act
+  
+  def generate_TEI_body(self):
+    body = etree.Element("body")
+    self.i = 0
+    while self.i < len(self.tokens):
+      act = self.generate_act()
+      body.append(act)
+  
+    return body
