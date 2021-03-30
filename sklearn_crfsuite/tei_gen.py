@@ -18,9 +18,11 @@ def gen_speaker_ids(characters):
 
 class TEIGen:
 
-  def __init__(self, tokens, labels, characters):
+  def __init__(self, tokens, labels, characters, page_nums, offset):
     self.tokens = tokens
     self.labels = labels
+    self.page_nums = page_nums
+    self.offset = offset
 
     self.sid_map = {}
     for c in characters:
@@ -44,24 +46,43 @@ class TEIGen:
 
     return "UNKNOWN"
 
-  def insert_all_of_same_tag(self, text):
+  def insert_all_of_same_tag_text(self, text):
     if text is None:
       text = ""
   
     tag = self.labels[self.i]
     text += self.tokens[self.i]
     self.i += 1
-    while self.i < len(self.labels) and self.labels[self.i] == tag:
+    while (self.i < len(self.labels) and self.labels[self.i] == tag
+          and self.page_nums[self.i] == -1):
       text += " " + self.tokens[self.i]
       self.i += 1
 
     return text
+
+  def catch_page_number(self, parent):
+    if self.page_nums[self.i] != -1:
+      pb = etree.SubElement(parent, "pb")
+      pb.set("n", str(self.page_nums[self.i] + self.offset))
+      self.page_nums[self.i] = -1
+
+  def insert_all_of_same_tag(self, el):
+    tag = self.labels[self.i]
+    while self.i < len(self.labels) and self.labels[self.i] == tag:
+      if self.page_nums[self.i] != -1:
+        pb = etree.SubElement(el, "pb")
+        pb.set("n", str(self.page_nums[self.i] + self.offset))
+
+      if len(el) == 0:
+        el.text = self.insert_all_of_same_tag_text(el.text)
+      else:
+        el[-1].tail = self.insert_all_of_same_tag_text(el[-1].tail)
   
   def generate_contiguous(self):
     element_tag = self.label_tag_map[self.labels[self.i]]
   
     el = etree.Element(element_tag)
-    el.text = self.insert_all_of_same_tag(el.text)
+    self.insert_all_of_same_tag(el)
     return el
   
   def generate_p(self):
@@ -71,10 +92,7 @@ class TEIGen:
                                     or self.labels[self.i] == "p" 
                                     or self.labels[self.i] == "stage"):
       if self.labels[self.i] == "p":
-        if len(p) == 0:
-          p.text = self.insert_all_of_same_tag(p.text)
-        else:
-          p[-1].tail = self.insert_all_of_same_tag(p[-1].tail)
+        self.insert_all_of_same_tag(p)
       else:
         # TODO: il faut un <l> pour chaque vers (chaque ligne)
         l = self.generate_contiguous()
@@ -85,10 +103,19 @@ class TEIGen:
   def generate_sp(self):
     sp = etree.Element("sp")
   
+    self.catch_page_number(sp)
     speaker = etree.SubElement(sp, "speaker")
-    speaker.text = self.insert_all_of_same_tag(speaker.text) 
+    self.insert_all_of_same_tag(speaker) 
 
-    sp.set("who", self.find_speaker_id(speaker.text))
+    if speaker.text is None:
+      speaker.text = ""
+
+    speaker_all_text = speaker.text
+
+    for c in speaker:
+      speaker_all_text += " " + c.tail
+
+    sp.set("who", self.find_speaker_id(speaker_all_text))
   
     while self.i < len(self.labels) and (self.labels[self.i] == "stage" 
                                          or self.labels[self.i] == "p"
@@ -107,6 +134,7 @@ class TEIGen:
   def process_body(self, parent):
     while (self.i < len(self.labels) and self.labels[self.i] != "scene_head" 
            and self.labels[self.i] != "act_head"):
+      self.catch_page_number(parent)
       if self.labels[self.i] == "speaker":
         sp = self.generate_sp()
         parent.append(sp)
@@ -121,7 +149,7 @@ class TEIGen:
     # <head>
     if self.labels[self.i] == "scene_head":
       head = etree.SubElement(scene, "head")
-      head.text = self.insert_all_of_same_tag(head.text)
+      self.insert_all_of_same_tag(head)
   
     self.process_body(scene)
     return scene
@@ -133,10 +161,11 @@ class TEIGen:
     # <head>
     if self.labels[self.i] == "act_head":
       head = etree.SubElement(act, "head")
-      head.text = self.insert_all_of_same_tag(head.text)
+      self.insert_all_of_same_tag(head)
   
     while self.i < len(self.labels) and self.labels[self.i] != "act_head":
       if self.labels[self.i] == "scene_head":
+        self.catch_page_number(act)
         scene = self.generate_scene()
         act.append(scene)
       else:
@@ -148,6 +177,7 @@ class TEIGen:
     body = etree.Element("body")
     self.i = 0
     while self.i < len(self.tokens):
+      self.catch_page_number(body)
       act = self.generate_act()
       body.append(act)
   
