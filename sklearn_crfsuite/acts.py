@@ -50,6 +50,7 @@ class TokenRawData:
     self.fsize = fsize
     self.is_line_start = is_line_start
     self.line_start_hpos = line_start_hpos
+    self.page_num = -1
 
   def __str__(self):
     return ("('" + self.string + "', " + str(self.hpos) + ", " + 
@@ -472,6 +473,7 @@ class HOCRText(HTMLParser):
 # fichiers ALTO ou hOCR dans un dossier
 def extract_play_data(play_dir):
   play = []
+  i = 0
   for filename in os.listdir(play_dir):
     print(filename)
     if filename.endswith(".xml"):
@@ -482,8 +484,12 @@ def extract_play_data(play_dir):
                         .find(
                         "{http://www.loc.gov/standards/alto/ns-v3#}Page"))
 
-      play += extract_raw_data(root, get_fsizes(root))
+      n = extract_raw_data(root, get_fsizes(root))
+      n[0].page_num = i
+      play += n
     #elif filename.endswith(".html"):
+
+    i += 1
       
   # normaliser les hpos de la pièce
   max_hpos = max([t.hpos for t in play])
