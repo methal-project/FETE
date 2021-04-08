@@ -17,6 +17,8 @@ import scipy
 
 import sys
 from lxml import etree
+from lxml import html
+
 import os
 
 import re
@@ -64,7 +66,7 @@ CONSTANT = "CONSTANT"
 DECREASE = "DECREASE"
 
 def only_alpha(word):
-  return re.sub('[^A-Za-z]', '', word)
+  return re.sub('[^A-Za-zè]', '', word)
 
 def features_no_context(raw_tokens, i, indent_threshold):
   word = raw_tokens[i].string
@@ -256,6 +258,201 @@ def features_no_lex(raw_tokens, i, indent_threshold):
 
   return features
 
+def features_syl(raw_tokens, i, indent_threshold):
+  word = raw_tokens[i].string
+
+  fsize = CONSTANT
+  if i > 0:
+    if raw_tokens[i].fsize > raw_tokens[i-1].fsize:
+      fsize = INCREASE
+    elif raw_tokens[i].fsize < raw_tokens[i-1].fsize:
+      fsize = DECREASE
+
+  line_start_hpos = raw_tokens[i].line_start_hpos
+
+  line_end = i
+  # Trouver la fin de la ligne
+  while line_end < len(raw_tokens) - 1:
+    if raw_tokens[line_end + 1].is_line_start:
+      break
+    line_end += 1
+
+  next_line_end = line_end + 1
+  while next_line_end < len(raw_tokens) - 1:
+    if raw_tokens[next_line_end + 1].is_line_start:
+      break
+    next_line_end += 1
+
+  # Trouver le début de la ligne précédante
+  j = i
+  in_last_line = False
+  last_line_start_hpos = -1
+  last_line_end : int
+  while j >= 0:
+    if in_last_line:
+      last_line_start_hpos = raw_tokens[j].line_start_hpos
+      break
+    else:
+      if raw_tokens[j].is_line_start:
+        in_last_line = True
+    j -= 1
+ 
+  last_line_end = j
+
+  last_line_start = last_line_end
+  while last_line_start >= 0:
+    if raw_tokens[last_line_start].is_line_start:
+      break
+    last_line_start -= 1
+
+  next_line_start = line_end + 1
+
+  line_start = last_line_end + 1
+
+  indent = CONSTANT
+  if last_line_start_hpos != -1:
+    if line_start_hpos - last_line_start_hpos > indent_threshold:
+      indent = INCREASE
+    elif line_start_hpos - last_line_start_hpos < -indent_threshold:
+      indent = DECREASE
+
+  def is_acty(word):
+    lex = ['akt', 'bild', 'aufzug']
+    result = False
+    oa = only_alpha(word.lower())
+    for l in lex:
+      result = result or l == oa
+    
+    return result
+
+  def is_sceney(word):
+    lex = ['ufftritt', 'scène', 'szene']
+    result = False
+    oa = only_alpha(word.lower())
+    for l in lex:
+      result = result or l == oa
+    
+    return result
+
+  def is_rom_num(word):
+    result = True
+    oa = only_alpha(word.lower())
+    for c in oa:
+      result = result and c in 'ivx'
+    return result
+
+  features = {
+    'word': word,
+    'line_start': raw_tokens[i].is_line_start,
+    'word.lower()': word.lower(),
+    'word[0].isupper()': word[0].isupper(),
+    'indent': indent,
+    'fsize': fsize,
+    'word_contains_period' : '.' in word,
+    'word_contains_colon' : ':' in word,
+    'word_contains_lparen' : '(' in word,
+    'word_contains_rparen' : ')' in word, 
+    'word_contains_digit' : bool(re.search('[0-9]', word)),
+    'word_is_acty' : is_acty(word),
+    'word_is_sceney' : is_sceney(word),
+    'word_rom_num' : is_rom_num(word),
+    'hpos' : raw_tokens[i].hpos,
+    'fsize_norm' : raw_tokens[i].fsize,
+    'line_end_hpos' : raw_tokens[line_end].hpos,
+     # Autres idées : est-ce que le mot contient des diacritiques présents seulement en alsacien/français ?
+     # Je pense que les auteurs font usage de tous les diacritiques allemands en écrivant l'alsacien
+     # Premier mot d'une page ?
+  }
+
+  if i > 0:
+    word1 = raw_tokens[i-1].string
+    features.update({
+      '-1word': word1,
+      '-1line_start': raw_tokens[i-1].is_line_start,
+      '-1word.lower()': word1.lower(),
+      '-1word[0].isupper()': word1[0].isupper(),
+      '-1word_contains_period' : '.' in word1,
+      '-1word_contains_colon' : ':' in word1,
+      '-1word_contains_lparen' : '(' in word1,
+      '-1word_contains_rparen' : ')' in word1, 
+      '-1word_contains_digit' : bool(re.search('[0-9]', word1)),
+      '-1word_is_acty' : is_acty(word1),
+      '-1word_is_sceney' : is_sceney(word1),
+      '-1word_rom_num' : is_rom_num(word1),
+      '-1hpos' : raw_tokens[i-1].hpos,
+    }) 
+
+  if i < len(raw_tokens)-1:
+    word1 = raw_tokens[i+1].string
+    features.update({
+      '+1word': word1,
+      '+1line_start': raw_tokens[i+1].is_line_start,
+      '+1word.lower()': word1.lower(),
+      '+1word[0].isupper()': word1[0].isupper(),
+      '+1word_contains_period' : '.' in word1,
+      '+1word_contains_colon' : ':' in word1,
+      '+1word_contains_lparen' : '(' in word1,
+      '+1word_contains_rparen' : ')' in word1, 
+      '+1word_contains_digit' : bool(re.search('[0-9]', word1)),
+      '+1word_is_acty' : is_acty(word1),
+      '+1word_is_sceney' : is_sceney(word1),
+      '+1word_rom_num' : is_rom_num(word1),
+      '+1hpos' : raw_tokens[i+1].hpos,
+    }) 
+
+    if next_line_end != line_end and next_line_end < len(raw_tokens):
+
+      this_word = re.sub('[!"\,\.\?]', '', raw_tokens[line_end].string)
+      next_word = re.sub('[!"\,\.\?]', '', raw_tokens[next_line_end].string)
+
+      if len(this_word) > 0 and len(next_word) > 0:
+
+        features.update({
+          '+1rhyme_1' : this_word[-1] == next_word[-1],
+          '+1rhyme_2' : this_word[-2:] == next_word[-2:],
+          '+1rhyme_3' : this_word[-3:] == next_word[-3:], 
+          '+1line_end_hpos' : raw_tokens[next_line_end].hpos,
+        })
+
+    if last_line_end != line_end and last_line_end >= 0:
+
+      this_word = re.sub('[!"\,\.\?]', '', raw_tokens[last_line_end].string)
+      next_word = re.sub('[!"\,\.\?]', '', raw_tokens[line_end].string)
+
+      if len(this_word) > 0 and len(next_word) > 0:
+
+        features.update({
+          '-1rhyme_1' : this_word[-1] == next_word[-1],
+          '-1rhyme_2' : this_word[-2:] == next_word[-2:],
+          '-1rhyme_3' : this_word[-3:] == next_word[-3:], 
+          '-1line_end_hpos' : raw_tokens[last_line_end].hpos,
+        })
+
+    def approx_nuclei(line):
+      line = " ".join([x.string for x in line])
+      count = 0
+      in_nucleus = False
+      for c in line:
+        if c.lower() in "aeiouàèìòùáéíóúäöüïëâêîûô":
+          if not in_nucleus:
+            count += 1
+            in_nucleus = True
+        else:
+          in_nucleus = False
+      return count
+
+    curr_line_nuc = approx_nuclei(raw_tokens[line_start:next_line_start])
+
+    if next_line_start < len(raw_tokens):
+      next_line_nuc = approx_nuclei(raw_tokens[next_line_start:next_line_end + 1])
+      features.update({'+1syl_diff' : abs(curr_line_nuc - next_line_nuc)})
+
+    if last_line_start >= 0:
+      last_line_nuc = approx_nuclei(raw_tokens[last_line_start:line_start])
+      features.update({'-1syl_diff' : abs(curr_line_nuc - last_line_nuc)})
+
+  return features
+
 def features_default(raw_tokens, i, indent_threshold):
   word = raw_tokens[i].string
 
@@ -329,6 +526,7 @@ def features_default(raw_tokens, i, indent_threshold):
     'word_is_sceney' : is_sceney(word),
     'word_rom_num' : is_rom_num(word),
     'hpos' : raw_tokens[i].hpos,
+    'fsize_norm' : raw_tokens[i].fsize
      # Autres idées : est-ce que le mot contient des diacritiques présents seulement en alsacien/français ?
      # Je pense que les auteurs font usage de tous les diacritiques allemands en écrivant l'alsacien
      # Premier mot d'une page ?
@@ -390,6 +588,8 @@ def extract_raw_data(node, fsizes):
       if string.isspace() or string == '':
         continue
 
+      assert(len(string) > 0)
+
       if DEBUG:
         print(str_node.attrib)
 
@@ -416,65 +616,113 @@ def extract_raw_data(node, fsizes):
 
   return result
 
+def extract_raw_data_html(node, font_size=0.0, is_line_start=False, line_start_hpos=0.0):
+  result = []
+  if node.tag == "span":
+    cl = node.get("class")
+    if cl == "ocr_line":
+      title = node.get("title")
+      title = title.replace(";", "").split()
+      idx = title.index("x_size")
+      font_size = float(title[idx + 1])
+      is_line_start = True
+    elif cl == "ocrx_word":
+      if node.text is not None:
+        content = finaggle(node.text)
+        if content.isspace() or content == '':
+          return []
+        title = node.get("title")
+        title = title.replace(";", "").split()
+        bbox = title.index("bbox")
+        hpos = int(title[bbox + 1])
+        n_token = TokenRawData(content, hpos, font_size, is_line_start, 
+                               line_start_hpos)
+        result.append(n_token)
+  
+  for c in node:
+    result += extract_raw_data_html(c, font_size=font_size, 
+                                    is_line_start=is_line_start,
+                                    line_start_hpos=line_start_hpos)
+    if len(result) > 0:
+      if is_line_start:
+        line_start_hpos = result[-1].hpos
+        result[-1].line_start_hpos = result[-1].hpos
+    is_line_start = False
+
+  return result
+      
+
 # Enlever le numéro de page en haut d'une page donnée
+#def remove_page_number(node):
+#  assert(node.tag == "{http://www.loc.gov/standards/alto/ns-v3#}Page")
+#  # PrintSpace, ComposedBlock, TextBlock, TextLine
+#  if len(node) < 1 or len(node[0]) < 1 or len(node[0][0]) < 1 or len(node[0][0][0]) < 1:
+#    return
+#  text_line = node[0][0][0][0]
+#
+#  result = ""
+#  for string in text_line:
+#    result += string.get("CONTENT")
+#
+#  if not bool(re.search('[A-Za-z]', result)):
+#    # Supprimer
+#    for string in text_line:
+#      string.set("CONTENT", "")
+
 def remove_page_number(node):
-  assert(node.tag == "{http://www.loc.gov/standards/alto/ns-v3#}Page")
-  # PrintSpace, ComposedBlock, TextBlock, TextLine
-  if len(node) < 1 or len(node[0]) < 1 or len(node[0][0]) < 1 or len(node[0][0][0]) < 1:
-    return
-  text_line = node[0][0][0][0]
 
-  result = ""
-  for string in text_line:
-    result += string.get("CONTENT")
+  for c in node:
+    if c.tag == "{http://www.loc.gov/standards/alto/ns-v3#}TextLine":
+      
+      result = ""
+      for string in c:
+        result += string.get("CONTENT")
 
-  if not bool(re.search('[A-Za-z]', result)):
-    # Supprimer
-    for string in text_line:
-      string.set("CONTENT", "")
 
-class HOCRText(HTMLParser):
+      if result.isspace() or result == "":
+        continue
 
-  def __init__(self):
-    self.result = []
-    self.curr_size = 0
-    self.hpos = 0
-    self.active = False
-    super().__init__()
+      if not bool(re.search('[A-Za-z]', result)):
+        print(result)
+        # Supprimer
+        for string in c:
+          string.set("CONTENT", "")
+        return True
+    else:
+      if remove_page_number(c):
+        return True
 
-  def handle_starttag(self, tag, attrs_):
-    if self.active:
-      # récolter les attributs sous forme de dictionnaire
-      attrs = {}
-      for k, v in attrs_:
-        attrs[k] = v
+  return False
 
-      if tag == "span":
-        title = attrs["title"]
-        if title is not None:
-          title = title.split(";")
-          var_map = {}
-          for var in title:
-            s = var.strip().split(" ")
-            if len(s) > 1:
-              var_map[s[0]] = s[1:]
+def remove_page_number_html(node):
+  for c in node:
+    if c.tag == "span" and c.get("class") == "ocrx_line":
 
-          if "bbox" in var_map:
-            self.hpos = int(var_map["bbox"][0]) 
-          elif "x_size" in var_map:
-            self.curr_size = float(var_map["x_size"][0])
-    elif tag == "body":
-      self.active = True
+      result = ""
+      for string in c:
+        result += string.text
 
-  def handle_data(self, data):
-    data = finaggle(data)
+      if result.isspace() or result == "":
+        continue
+
+      if not bool(re.search('[A-Za-z]', result)):
+        print(result)
+        # Supprimer
+        for string in c:
+          string.text = ""
+        return True
+    else:
+      if remove_page_number(c):
+        return True
+
+  return False
   
 # Extraire les données brutes d'une pièce d'un ensemble de
 # fichiers ALTO ou hOCR dans un dossier
 def extract_play_data(play_dir):
   play = []
   i = 0
-  for filename in os.listdir(play_dir):
+  for filename in sorted(os.listdir(play_dir)):
     print(filename)
     if filename.endswith(".xml"):
       root = etree.parse(os.path.join(play_dir, filename)).getroot()
@@ -485,10 +733,21 @@ def extract_play_data(play_dir):
                         "{http://www.loc.gov/standards/alto/ns-v3#}Page"))
 
       n = extract_raw_data(root, get_fsizes(root))
-      n[0].page_num = i
+      if len(n) > 0:
+        n[0].page_num = i
       play += n
-    #elif filename.endswith(".html"):
+    elif filename.endswith(".html"):
+      root = html.parse(os.path.join(play_dir, filename)).getroot()
 
+      ignore_tags(root)
+
+      remove_page_number_html(root)
+
+      n = extract_raw_data_html(root)
+      if len(n) > 0:
+        n[0].page_num = i
+      play += n
+      
     i += 1
       
   # normaliser les hpos de la pièce
@@ -496,6 +755,12 @@ def extract_play_data(play_dir):
   for t in play:
     t.hpos /= max_hpos
     t.line_start_hpos /= max_hpos
+
+  # normaliser les tailles de caractères de la pièce
+  max_fsize = max([t.fsize for t in play])
+  for t in play:
+    t.fsize /= max_fsize
+
   return play
 
 # Trouver le texte correspondant à chaque token dans le fichier TEI
@@ -526,7 +791,7 @@ def match_text(tokens, text, tag, labels, start_token, t_i, in_parent):
     # On le saute en espérant pouvoir continuer
     # (Cela peut arriver avec les numéros de page par exemple)
     else:
-        if curr_str[t_i] not in ':-!;' and DEBUG:
+        if curr_str[t_i] not in ':-!;' and True:
           print("Warning: extraneous text in ALTO :", curr_str[t_i])
         t_i += 1
 
@@ -639,7 +904,8 @@ def ignore_tags(root):
     #print(i, root[i].tag)
     if (root[i].tag == "{http://www.tei-c.org/ns/1.0}emph" 
        or root[i].tag == "{http://www.tei-c.org/ns/1.0}seg"
-       or root[i].tag == "{http://www.tei-c.org/ns/1.0}span"):
+       or root[i].tag == "{http://www.tei-c.org/ns/1.0}span"
+       or root[i].tag == "strong"):
       #print(etree.ElementTree.dump(root[i]))
       if i > 0:
         if root[i-1].tail is None:
