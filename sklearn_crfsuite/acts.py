@@ -575,7 +575,6 @@ def finaggle(s):
 
 
 # Extraire le texte d'un élément XML en format ALTO
-# retourne une liste des tokens (<String>) trouvés dans l'élément donné
 def extract_raw_data(node, fsizes):
 
   result = []
@@ -651,24 +650,6 @@ def extract_raw_data_html(node, font_size=0.0, is_line_start=False, line_start_h
 
   return result
       
-
-# Enlever le numéro de page en haut d'une page donnée
-#def remove_page_number(node):
-#  assert(node.tag == "{http://www.loc.gov/standards/alto/ns-v3#}Page")
-#  # PrintSpace, ComposedBlock, TextBlock, TextLine
-#  if len(node) < 1 or len(node[0]) < 1 or len(node[0][0]) < 1 or len(node[0][0][0]) < 1:
-#    return
-#  text_line = node[0][0][0][0]
-#
-#  result = ""
-#  for string in text_line:
-#    result += string.get("CONTENT")
-#
-#  if not bool(re.search('[A-Za-z]', result)):
-#    # Supprimer
-#    for string in text_line:
-#      string.set("CONTENT", "")
-
 def remove_page_number(node):
 
   for c in node:
@@ -696,11 +677,12 @@ def remove_page_number(node):
 
 def remove_page_number_html(node):
   for c in node:
-    if c.tag == "span" and c.get("class") == "ocrx_line":
-
+    if c.tag == "span" and c.get("class") in ["ocr_line",  "ocr_caption", "ocr_header", "ocr_textfloat"]:
       result = ""
       for string in c:
-        result += string.text
+        if string.text is not None:
+          result += string.text
+
 
       if result.isspace() or result == "":
         continue
@@ -712,7 +694,7 @@ def remove_page_number_html(node):
           string.text = ""
         return True
     else:
-      if remove_page_number(c):
+      if remove_page_number_html(c):
         return True
 
   return False
@@ -792,6 +774,7 @@ def match_text(tokens, text, tag, labels, start_token, t_i, in_parent):
     # (Cela peut arriver avec les numéros de page par exemple)
     else:
         if curr_str[t_i] not in ':-!;' and True:
+          print(c)
           print("Warning: extraneous text in ALTO :", curr_str[t_i])
         t_i += 1
 
@@ -905,7 +888,7 @@ def ignore_tags(root):
     if (root[i].tag == "{http://www.tei-c.org/ns/1.0}emph" 
        or root[i].tag == "{http://www.tei-c.org/ns/1.0}seg"
        or root[i].tag == "{http://www.tei-c.org/ns/1.0}span"
-       or root[i].tag == "strong"):
+       or root[i].tag == "strong" or root[i].tag == "em"):
       #print(etree.ElementTree.dump(root[i]))
       if i > 0:
         if root[i-1].tail is None:
