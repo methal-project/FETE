@@ -18,10 +18,11 @@ def gen_speaker_ids(characters):
 
 class TEIGen:
 
-  def __init__(self, tokens, labels, characters, page_nums, offset):
+  def __init__(self, tokens, labels, characters, page_nums, offset, line_starts):
     self.tokens = tokens
     self.labels = labels
     self.page_nums = page_nums
+    self.line_starts = line_starts
     self.offset = offset
 
     self.sid_map = {}
@@ -68,6 +69,7 @@ class TEIGen:
 
   def insert_all_of_same_tag(self, el):
     tag = self.labels[self.i]
+    self.catch_page_number(el)
     while self.i < len(self.labels) and self.labels[self.i] == tag:
       if self.page_nums[self.i] != -1:
         pb = etree.SubElement(el, "pb")
@@ -79,11 +81,30 @@ class TEIGen:
         el[-1].tail = self.insert_all_of_same_tag_text(el[-1].tail)
   
   def generate_contiguous(self):
+
+    if self.labels[self.i] == "chanson":
+      return self.generate_lg()
+
     element_tag = self.label_tag_map[self.labels[self.i]]
   
     el = etree.Element(element_tag)
+    self.catch_page_number(el)
     self.insert_all_of_same_tag(el)
     return el
+
+  def generate_lg(self):
+    lg = etree.Element("lg")
+    l = None
+    while self.i < len(self.labels) and self.labels[self.i] == "chanson":
+      self.catch_page_number(lg)
+      if self.line_starts[self.i] or l is None:
+        l = etree.SubElement(lg, "l")
+        l.text = ""
+      if len(l.text) > 0:
+        l.text += " "
+      l.text += self.tokens[self.i]
+      self.i += 1
+    return lg
   
   def generate_p(self):
     p = etree.Element("p")
@@ -92,9 +113,10 @@ class TEIGen:
                                     or self.labels[self.i] == "p" 
                                     or self.labels[self.i] == "stage"):
       if self.labels[self.i] == "p":
+        self.catch_page_number(p)
         self.insert_all_of_same_tag(p)
       else:
-        # TODO: il faut un <l> pour chaque vers (chaque ligne)
+        self.catch_page_number(p)
         l = self.generate_contiguous()
         p.append(l)
   
@@ -120,10 +142,10 @@ class TEIGen:
     while self.i < len(self.labels) and (self.labels[self.i] == "stage" 
                                          or self.labels[self.i] == "p"
                                          or self.labels[self.i] == "chanson"):
-      if self.labels[self.i] == "p" or self.labels[self.i] == "chanson":
+      if self.labels[self.i] == "p":
         p = self.generate_p()
         sp.append(p)
-      elif self.labels[self.i] == "stage":
+      elif self.labels[self.i] == "stage" or self.labels[self.i] == "chanson":
         el = self.generate_contiguous()
         sp.append(el)
   

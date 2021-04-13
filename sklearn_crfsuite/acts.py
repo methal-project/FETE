@@ -571,7 +571,7 @@ def features_default(raw_tokens, i, indent_threshold):
   return features
 
 def finaggle(s):
-  return s.replace("‘", "'").replace("’", "'").replace("}", ")").replace("“","\"").replace("—","-").replace("”", "\"").replace("―", "-").replace("„", "\"").replace("…", "...").replace("=", "-").replace("{", "(")
+  return s.replace("‘", "'").replace("’", "'").replace("}", ")").replace("“","\"").replace("—","-").replace("”", "\"").replace("―", "-").replace("„", "\"").replace("…", "...").replace("=", "-").replace("{", "(").replace(",,", "\"")
 
 
 # Extraire le texte d'un élément XML en format ALTO
@@ -677,7 +677,9 @@ def remove_page_number(node):
 
 def remove_page_number_html(node):
   for c in node:
-    if c.tag == "span" and c.get("class") in ["ocr_line",  "ocr_caption", "ocr_header", "ocr_textfloat"]:
+    if ((c.tag == "span" and c.get("class") in ["ocr_line",  "ocr_caption", "ocr_header", "ocr_textfloat", "ocr_par"])
+        or (c.tag == "p" and c.get("class") == "ocr_par" and 
+            sum([len(p) for p in c]) == 0)):
       result = ""
       for string in c:
         if string.text is not None:
@@ -756,7 +758,7 @@ def match_text(tokens, text, tag, labels, start_token, t_i, in_parent):
   while c_i < len(text) and start_token < len(tokens):
 
     c = text[c_i]
-    curr_str = tokens[start_token].string
+    curr_str = tokens[start_token].string.replace("\n", "")
 
     if DEBUG:
       print(c, curr_str[t_i])
@@ -772,10 +774,13 @@ def match_text(tokens, text, tag, labels, start_token, t_i, in_parent):
     # On a trouvé un caractère qui existe dans l'ALTO mais pas dans le TEI
     # On le saute en espérant pouvoir continuer
     # (Cela peut arriver avec les numéros de page par exemple)
+    elif curr_str[t_i].isspace():
+      t_i += 1
     else:
         if curr_str[t_i] not in ':-!;' and True:
-          print(c)
-          print("Warning: extraneous text in ALTO :", curr_str[t_i])
+          print("Warning: extraneous text in ALTO :", bytes(curr_str[t_i], encoding="utf-8"))
+
+          print(tokens[start_token-4:start_token+4], "THEN", text[c_i-100:c_i+10])
         t_i += 1
 
     # On a atteint la fin de ce token
@@ -813,6 +818,8 @@ def get_labels(tokens, tei_body, parent, labels,
 
   # Chercher dans le texte au-dessus des éléments
   if tei_body.text is not None:
+    #for t in tei_body.text.split():
+      #print("(", t)
     start_token, t_i = match_text(tokens, tei_body.text, tei_body.tag, 
                              labels, start_token, t_i, in_parent)
   
@@ -832,6 +839,8 @@ def get_labels(tokens, tei_body, parent, labels,
 
     # Chercher dans le texte après ce sous-élément
     if child.tail is not None:
+      #for t in child.tail.split():
+        #print("(", t)
       start_token, t_i = match_text(tokens, child.tail, tei_body.tag,
                                labels, start_token, t_i, in_parent)
   return start_token, t_i
@@ -883,12 +892,16 @@ def get_labels_l(tokens, tei_body):
 # Ignorer les éléments seg, emph et span
 def ignore_tags(root):
   removals = set()
+  for child in root:
+    ignore_tags(child)
   for i in range(len(root) - 1, -1, -1):
     #print(i, root[i].tag)
     if (root[i].tag == "{http://www.tei-c.org/ns/1.0}emph" 
        or root[i].tag == "{http://www.tei-c.org/ns/1.0}seg"
        or root[i].tag == "{http://www.tei-c.org/ns/1.0}span"
-       or root[i].tag == "strong" or root[i].tag == "em"):
+       or root[i].tag == "strong" or root[i].tag == "em"
+       or root[i].tag == "{http://www.tei-c.org/ns/1.0}quote" 
+       or root[i].tag == "{http://www.tei-c.org/ns/1.0}note"):
       #print(etree.ElementTree.dump(root[i]))
       if i > 0:
         if root[i-1].tail is None:
@@ -909,8 +922,6 @@ def ignore_tags(root):
   for r in removals:
     root.remove(r)
 
-  for child in root:
-    ignore_tags(child)
 
 def get_play_data_all_labels(alto_dir, tei_file):
   tei_root = etree.parse(tei_file).getroot()
@@ -922,7 +933,6 @@ def get_play_data_all_labels(alto_dir, tei_file):
   ignore_tags(tei_body)
   
   tokens = extract_play_data(alto_dir)
-  
   
   assert(len(tokens) > 0)
 
@@ -954,8 +964,11 @@ def get_play_data_all_labels(alto_dir, tei_file):
   Y = [tok[1] for tok in result]
 
   # Normalement, chaque token est étiquetté
-  for y in Y:
-    assert(y != "O")
+  #print(Y)
+  for i, y in enumerate(Y):
+    if y == "O":
+      print(X[i-3:i+3])
+    #assert(y != "O")
 
   assert(len(X) == len(Y))
 
@@ -1064,7 +1077,10 @@ def split_test_train(head_indices, heads, XYs):
 def get_data_sets():
   plays = [
            #"arnold-der-pfingstmontag", 
-           "bastian-hofnarr-heidideldum", "clemens-chrischtowe", "greber-sainte-cecile", "hart-dr-poetisch-oscar", "jost-daa-im-narrehuss", "stoskopf-dr-hoflieferant", "stoskopf-ins-ropfers-apothek"]
+           "bastian-hofnarr-heidideldum", "clemens-chrischtowe", "greber-sainte-cecile", "hart-dr-poetisch-oscar", "jost-daa-im-narrehuss", "stoskopf-dr-hoflieferant", 
+           "stoskopf-ins-ropfers-apothek",
+           "schnockeloch"
+           ]
   
   plays_XY = []
   
@@ -1095,16 +1111,16 @@ def get_data_sets():
     act_heads.append(n_act_heads)
     scene_heads.append(n_scene_heads)
   
-    #print(choose_rand_head(n_act_heads, n_scene_heads, len(Y)))
+   # print(choose_rand_head(n_act_heads, n_scene_heads, len(Y)))
   
     
   
   # On enlève 10 pourcent des tours de paroles d'une pièce donnée autour du 
   # début d'un acte choisi au hasard (choisi par le code ci-dessus)
   # Pour les pièces qui n'ont qu'un seul acte, on choisit une scène à la place
-  acts_remove = [2, -1, -1, -1, 0, 0, 1]
-  scenes_remove = [-1, -1, 9, 5, -1, -1, -1]
-  random_remove = [-1, 3952, -1, -1, -1, -1, -1]
+  acts_remove = [2, -1, -1, -1, 0, 0, 1, 2]
+  scenes_remove = [-1, -1, 9, 5, -1, -1, -1, -1]
+  random_remove = [-1, 3952, -1, -1, -1, -1, -1, -1]
   
   return split_test_train(
                       zip(acts_remove, scenes_remove, random_remove), 
