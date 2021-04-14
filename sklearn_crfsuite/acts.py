@@ -604,6 +604,8 @@ def extract_raw_data(node, fsizes):
       else:
         fsize = fsizes[str_node.get("STYLEREFS")]
 
+      # Some page numbers may have slipped
+      string = re.sub("-[0-9]+-", "", string)
       n_token = TokenRawData(string, hpos, fsize, is_line_start, line_start_hpos)
 
       result.append(n_token)
@@ -634,6 +636,7 @@ def extract_raw_data_html(node, font_size=0.0, is_line_start=False, line_start_h
         title = title.replace(";", "").split()
         bbox = title.index("bbox")
         hpos = int(title[bbox + 1])
+        content = re.sub("-[0-9]+-", "", content)
         n_token = TokenRawData(content, hpos, font_size, is_line_start, 
                                line_start_hpos)
         result.append(n_token)
@@ -779,8 +782,9 @@ def match_text(tokens, text, tag, labels, start_token, t_i, in_parent):
     else:
         if curr_str[t_i] not in ':-!;' and True:
           print("Warning: extraneous text in ALTO :", bytes(curr_str[t_i], encoding="utf-8"))
+          print(c, curr_str[t_i])
 
-          print(tokens[start_token-4:start_token+4], "THEN", text[c_i-100:c_i+10])
+          print(tokens[start_token-4:start_token+4], "THEN", text[max(0, c_i-100):c_i+10])
         t_i += 1
 
     # On a atteint la fin de ce token
