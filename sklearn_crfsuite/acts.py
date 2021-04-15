@@ -46,13 +46,16 @@ def get_fsizes(xml_doc):
   return result
 
 class TokenRawData:
-  def __init__(self, string, hpos, fsize, is_line_start, line_start_hpos):
+  def __init__(self, string, hpos, fsize, is_line_start, line_start_hpos,  
+               word_id):
     self.string = string
     self.hpos = hpos
     self.fsize = fsize
     self.is_line_start = is_line_start
     self.line_start_hpos = line_start_hpos
     self.page_num = -1
+    self.filename = ""
+    self.word_id = word_id
 
   def __str__(self):
     return ("('" + self.string + "', " + str(self.hpos) + ", " + 
@@ -606,7 +609,7 @@ def extract_raw_data(node, fsizes):
 
       # Some page numbers may have slipped
       string = re.sub("-[0-9]+-", "", string)
-      n_token = TokenRawData(string, hpos, fsize, is_line_start, line_start_hpos)
+      n_token = TokenRawData(string, hpos, fsize, is_line_start, line_start_hpos, "")
 
       result.append(n_token)
 
@@ -638,7 +641,7 @@ def extract_raw_data_html(node, font_size=0.0, is_line_start=False, line_start_h
         hpos = int(title[bbox + 1])
         content = re.sub("-[0-9]+-", "", content)
         n_token = TokenRawData(content, hpos, font_size, is_line_start, 
-                               line_start_hpos)
+                               line_start_hpos, node.get("id"))
         result.append(n_token)
   
   for c in node:
@@ -734,6 +737,8 @@ def extract_play_data(play_dir):
       if len(n) > 0:
         n[0].page_num = i
       play += n
+      for t in n:
+        t.filename = filename
       
     i += 1
       
@@ -782,9 +787,12 @@ def match_text(tokens, text, tag, labels, start_token, t_i, in_parent):
     else:
         if curr_str[t_i] not in ':-!;' and True:
           print("Warning: extraneous text in ALTO :", bytes(curr_str[t_i], encoding="utf-8"))
+          print("TOKEN:", tokens[start_token].string)
+          print("Filename: ", tokens[start_token].filename)
+          print("id: ", tokens[start_token].word_id)
           print(c, curr_str[t_i])
 
-          print(tokens[start_token-4:start_token+4], "THEN", text[max(0, c_i-100):c_i+10])
+          print("CONTEXT: ", text[max(0, c_i-10):] + '%')
         t_i += 1
 
     # On a atteint la fin de ce token
@@ -893,6 +901,12 @@ def get_labels_l(tokens, tei_body):
   get_labels(tokens, tei_body, no_parent, 
              {"{http://www.tei-c.org/ns/1.0}l" : "chanson"})
 
+def get_labels_l_head(tokens, tei_body):
+  lg = etree.Element("{http://www.tei-c.org/ns/1.0}lg", attrib={})
+  
+  get_labels(tokens, tei_body, lg, 
+             {"{http://www.tei-c.org/ns/1.0}head" : "chanson"})
+
 # Ignorer les éléments seg, emph et span
 def ignore_tags(root):
   removals = set()
@@ -932,7 +946,10 @@ def get_play_data_all_labels(alto_dir, tei_file):
   
   tei_text = tei_root.find("{http://www.tei-c.org/ns/1.0}text")
   
-  tei_body = tei_text.find("{http://www.tei-c.org/ns/1.0}body")
+  if tei_text is None:
+    tei_body = tei_root.find("{http://www.tei-c.org/ns/1.0}body")
+  else:
+    tei_body = tei_text.find("{http://www.tei-c.org/ns/1.0}body")
 
   ignore_tags(tei_body)
   
@@ -942,7 +959,7 @@ def get_play_data_all_labels(alto_dir, tei_file):
 
   label_funcs = [get_labels_acts, get_labels_scenes, get_labels_speakers, 
                  get_labels_stage,  get_labels_p, get_labels_stage_p, 
-                 get_labels_l]
+                 get_labels_l, get_labels_l_head]
 
   result = [(t, "O") for t in tokens]
 
@@ -1084,7 +1101,8 @@ def get_data_sets():
            #"arnold-der-pfingstmontag", 
            "bastian-hofnarr-heidideldum", "clemens-chrischtowe", "greber-sainte-cecile", "hart-dr-poetisch-oscar", "jost-daa-im-narrehuss", "stoskopf-dr-hoflieferant", 
            "stoskopf-ins-ropfers-apothek",
-           "schnockeloch"
+           "schnockeloch",
+           "charlot",
            ]
   
   plays_XY = []
@@ -1116,16 +1134,16 @@ def get_data_sets():
     act_heads.append(n_act_heads)
     scene_heads.append(n_scene_heads)
   
-   # print(choose_rand_head(n_act_heads, n_scene_heads, len(Y)))
+    print(choose_rand_head(n_act_heads, n_scene_heads, len(Y)))
   
     
   
   # On enlève 10 pourcent des tours de paroles d'une pièce donnée autour du 
   # début d'un acte choisi au hasard (choisi par le code ci-dessus)
   # Pour les pièces qui n'ont qu'un seul acte, on choisit une scène à la place
-  acts_remove = [2, -1, -1, -1, 0, 0, 1, 2]
-  scenes_remove = [-1, -1, 9, 5, -1, -1, -1, -1]
-  random_remove = [-1, 3952, -1, -1, -1, -1, -1, -1]
+  acts_remove = [2, -1, -1, -1, 0, 0, 1, 2, -1]
+  scenes_remove = [-1, -1, 9, 5, -1, -1, -1, -1, 1]
+  random_remove = [-1, 3952, -1, -1, -1, -1, -1, -1, -1]
   
   return split_test_train(
                       zip(acts_remove, scenes_remove, random_remove), 
