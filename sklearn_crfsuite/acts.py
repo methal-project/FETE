@@ -971,6 +971,7 @@ def get_play_data_all_labels(alto_dir, tei_file):
   #print(Y)
   for i, y in enumerate(Y):
     if y == "O":
+      print(X[i], "missing label")
       print(X[i-3:i+3])
     #assert(y != "O")
 
