@@ -29,6 +29,8 @@ import time
 
 from tei_gen import *
 
+from collatex import *
+
 DEBUG = False
 
 # Extraire un dictionnaire qui envoie chaque styleref à sa taille
@@ -755,6 +757,7 @@ def extract_play_data(play_dir):
 
   return play
 
+match_text_context = ""
 # Trouver le texte correspondant à chaque token dans le fichier TEI
 # Assortir ces tokens d'une étiquette selon l'élément dans lequel
 # le texte correspondant apparaît (comme décrit pour get_labels ci-dessous)
@@ -762,6 +765,10 @@ def match_text(tokens, text, tag, labels, start_token, t_i, in_parent):
 
   c_i = 0
   text = finaggle(text)
+
+  global match_text_context
+
+  match_text_context_size = 100
 
   while c_i < len(text) and start_token < len(tokens):
 
@@ -775,24 +782,143 @@ def match_text(tokens, text, tag, labels, start_token, t_i, in_parent):
     if c == curr_str[t_i]:
       t_i += 1
       c_i += 1
+      match_text_context += c
+      if len(match_text_context) > match_text_context_size:
+        match_text_context = match_text_context[1:]
     # On saute les espaces supplémentaires dans le TEI
     # TODO : Les deux-points sont souvent mal alignés ...
     elif c.isspace() or c == ":":
       c_i += 1
+      match_text_context += c
+      if len(match_text_context) > match_text_context_size:
+        match_text_context = match_text_context[1:]
     # On a trouvé un caractère qui existe dans l'ALTO mais pas dans le TEI
     # On le saute en espérant pouvoir continuer
     # (Cela peut arriver avec les numéros de page par exemple)
     elif curr_str[t_i].isspace():
       t_i += 1
     else:
-        if curr_str[t_i] not in ':-!;' and True:
+        if False and curr_str[t_i] not in ':-!;' and True:
           print("Warning: extraneous text in ALTO :", bytes(curr_str[t_i], encoding="utf-8"))
           print("TOKEN:", tokens[start_token].string)
           print("Filename: ", tokens[start_token].filename)
           print("id: ", tokens[start_token].word_id)
           print(c, curr_str[t_i])
 
-          print("CONTEXT: ", text[max(0, c_i-10):] + '%')
+          context = text[max(0, c_i-10):c_i+15]
+
+          print("CONTEXT: ", context + '%')
+
+          collation = Collation()
+          collation.add_plain_witness("TEI",  match_text_context + text[c_i:c_i+15])
+          start_ocr_context = max(0, start_token - 6)
+          hocr = " ".join([x.string for x in tokens[start_ocr_context:start_token]])
+          collation.add_plain_witness("hOCR", hocr + " " + " ".join([x.string for x in tokens[start_token:start_token+5]]))
+          table = collate(collation, segmentation=False, near_match=True, layout="vertical")
+
+          print(table)
+
+          hocr_segments = table.rows[1].to_list_of_strings()
+          print(tokens[start_token].string)
+          # Trouver la suite de segments dans la collation qui compose
+          # le token qu'on veut corriger
+          token_idx = start_ocr_context
+          char_idx = 0
+          first_segment = -1
+          last_segment = 0
+          for i, segment in enumerate(hocr_segments):
+            #print(segment)
+            if segment is None:
+              continue
+            for j, c in enumerate(segment):
+              if c == " ":
+                continue
+              while tokens[token_idx].string[char_idx] == " ":
+                char_idx += 1
+                if char_idx == len(tokens[token_idx].string):
+                  token_idx += 1
+                  char_idx = 0
+                if token_idx == start_token:
+                  break
+              print(c, tokens[token_idx].string[char_idx])
+              char_idx += 1
+              if char_idx == len(tokens[token_idx].string):
+                token_idx += 1
+                char_idx = 0
+              if token_idx == start_token:
+                if first_segment == -1: 
+                  print("j:", j)
+                  if j == len(segment.strip()) - 1:
+                    first_segment = i + 1
+                  else: 
+                    first_segment = i
+              elif token_idx == start_token + 1:
+                print(i)
+                last_segment = i + 1
+                break
+            if token_idx == start_token + 1:
+              break
+
+          tei_segments = table.rows[0].to_list_of_strings()
+          if (first_segment > 0 
+              and "".join(hocr_segments[first_segment - 1].split())
+                  != "".join(tei_segments[first_segment - 1].split())):
+              print("REPLACE:", hocr_segments[first_segment - 1], "%")
+              print("WITH:", tei_segments[first_segment - 1], "%")
+          else:
+              print("REPLACE:", hocr_segments[first_segment:last_segment], "%")
+              print("WITH:", table.rows[0].to_list_of_strings()[first_segment:last_segment], "%")
+
+          exit()
+
+          #token_idx = start_ocr_context
+          #char_idx = 0
+          #first_segment_idx = 0
+          #print(table.rows[1].to_list_of_strings())
+          #for i, segment in enumerate(table.rows[1].to_list_of_strings()):
+          #  if segment is None:
+          #    continue
+          #  seg_len = len(segment.strip().replace(" ", "").replace("\t", ""))
+          #  print(tokens[token_idx][0].string.strip(), tokens[token_idx][0].string.strip()[char_idx:])
+          #  while (token_idx < start_token 
+          #        and seg_len >= len(tokens[token_idx][0].string.strip().replace(" ", "").replace("\t", "")) - char_idx):
+          #    seg_len -= len(tokens[token_idx][0].string.strip().replace(" ", "").replace("\t", "")) - char_idx
+          #    char_idx = 0
+          #    token_idx += 1
+          #    if token_idx == start_token:
+          #      break
+          #  char_idx = seg_len
+          #  if token_idx == start_token:
+          #    first_segment_idx = i
+          #    print(segment)
+          #    break 
+
+          #assert(token_idx == start_token)
+
+          #last_segment_idx = first_segment_idx + 1
+          #while (last_segment_idx < len(table.rows[1].to_list_of_strings()) 
+          #      and char_idx < len(tokens[token_idx].string.strip().replace(" ", "").replace("\t", ""))):
+          #  n = table.rows[1].to_list_of_strings()[last_segment_idx]
+          #  char_idx += len(n) if n is not None else 0
+          #  last_segment_idx += 1
+
+          #print(first_segment_idx)
+
+          #print(table)
+
+          #print(table.rows[0].to_list_of_strings())
+          ##if table.rows[0].to_list_of_strings()[first_segment_idx] is None:
+          #  #print("Proposed correction", tokens[start_token+1].string, None)
+          #if table.rows[1].to_list_of_strings()[first_segment_idx] is None:
+          #  if tokens[start_token-1][0].string.strip() != table.rows[0].to_list_of_strings()[first_segment_idx - 1].strip():
+          #    print("Proposed correction", tokens[start_token-1][0].string, table.rows[0].to_list_of_strings()[first_segment_idx - 1])
+          #  else:
+          #    print("Proposed correction", tokens[start_token-1][0].string,
+          #                               tokens[start_token-1][0].string + " " + table.rows[0].to_list_of_strings()[first_segment_idx])
+          #else:  
+          #  print("Proposed correction:", tokens[start_token].string, 
+          #        "to", table.rows[0].to_list_of_strings()[first_segment_idx:last_segment_idx])
+
         t_i += 1
 
     # On a atteint la fin de ce token
@@ -895,6 +1021,12 @@ def get_labels_p(tokens, tei_body):
   get_labels(tokens, tei_body, sp_parent, 
              {"{http://www.tei-c.org/ns/1.0}p" : "p"})
 
+def get_labels_sp(tokens, tei_body):
+  no_parent = etree.Element("NONE", attrib={})
+  
+  get_labels(tokens, tei_body, no_parent, 
+             {"{http://www.tei-c.org/ns/1.0}sp" : "p"})
+
 def get_labels_l(tokens, tei_body):
   no_parent = etree.Element("NONE", attrib={})
   
@@ -959,7 +1091,7 @@ def get_play_data_all_labels(alto_dir, tei_file):
 
   label_funcs = [get_labels_acts, get_labels_scenes, get_labels_speakers, 
                  get_labels_stage,  get_labels_p, get_labels_stage_p, 
-                 get_labels_l, get_labels_l_head]
+                 get_labels_l, get_labels_l_head, get_labels_sp]
 
   result = [(t, "O") for t in tokens]
 
@@ -1023,6 +1155,7 @@ def choose_rand_head(act_heads, scene_heads, len_seq):
   if len(scene_heads) > 1:
     scene_head = random.randrange(len(scene_heads))
 
+  print("len_seq", len_seq)
   token = random.randrange(len_seq)
 
   return act_head, scene_head, token
@@ -1103,7 +1236,13 @@ def get_data_sets():
            "stoskopf-ins-ropfers-apothek",
            "schnockeloch",
            "charlot",
+           "maischter",
+           "yo-yo",
+           "gift",
+           "itzig",
            ]
+
+  match_text_context = ""
   
   plays_XY = []
   
@@ -1141,9 +1280,9 @@ def get_data_sets():
   # On enlève 10 pourcent des tours de paroles d'une pièce donnée autour du 
   # début d'un acte choisi au hasard (choisi par le code ci-dessus)
   # Pour les pièces qui n'ont qu'un seul acte, on choisit une scène à la place
-  acts_remove = [2, -1, -1, -1, 0, 0, 1, 2, -1]
-  scenes_remove = [-1, -1, 9, 5, -1, -1, -1, -1, 1]
-  random_remove = [-1, 3952, -1, -1, -1, -1, -1, -1, -1]
+  acts_remove = [2, -1, -1, -1, 0, 0, 1, 2, -1, -1, -1, -1, -1]
+  scenes_remove = [-1, -1, 9, 5, -1, -1, -1, -1, 1, 5, 10, 10, 9]
+  random_remove = [-1, 3952, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
   
   return split_test_train(
                       zip(acts_remove, scenes_remove, random_remove), 
