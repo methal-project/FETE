@@ -860,7 +860,7 @@ def match_text(tokens, text, tag, labels, start_token, t_i, in_parent):
               break
 
           tei_segments = table.rows[0].to_list_of_strings()
-          if (first_segment > 0 
+          if (first_segment > 0 and hocr_segments[first_segment - 1] is not None and tei_segments[first_segment - 1] is not None
               and "".join(hocr_segments[first_segment - 1].split())
                   != "".join(tei_segments[first_segment - 1].split())):
               print("REPLACE:", hocr_segments[first_segment - 1], "%")
@@ -1015,7 +1015,14 @@ def get_labels_stage_p(tokens, tei_body):
   get_labels(tokens, tei_body, parent, 
              {"{http://www.tei-c.org/ns/1.0}p" : "stage"})
 
+def get_labels_div_p(tokens, tei_body):
+  sp_parent = etree.Element("{http://www.tei-c.org/ns/1.0}div", attrib={})
+  
+  get_labels(tokens, tei_body, sp_parent, 
+             {"{http://www.tei-c.org/ns/1.0}p" : "p"})
+
 def get_labels_p(tokens, tei_body):
+
   sp_parent = etree.Element("{http://www.tei-c.org/ns/1.0}sp", attrib={})
   
   get_labels(tokens, tei_body, sp_parent, 
@@ -1091,7 +1098,7 @@ def get_play_data_all_labels(alto_dir, tei_file):
 
   label_funcs = [get_labels_acts, get_labels_scenes, get_labels_speakers, 
                  get_labels_stage,  get_labels_p, get_labels_stage_p, 
-                 get_labels_l, get_labels_l_head, get_labels_sp]
+                 get_labels_l, get_labels_l_head, get_labels_sp, get_labels_div_p]
 
   result = [(t, "O") for t in tokens]
 
@@ -1240,6 +1247,8 @@ def get_data_sets():
            "yo-yo",
            "gift",
            "itzig",
+           "paradies",
+           "bureaukrate",
            ]
 
   match_text_context = ""
@@ -1280,9 +1289,9 @@ def get_data_sets():
   # On enlève 10 pourcent des tours de paroles d'une pièce donnée autour du 
   # début d'un acte choisi au hasard (choisi par le code ci-dessus)
   # Pour les pièces qui n'ont qu'un seul acte, on choisit une scène à la place
-  acts_remove = [2, -1, -1, -1, 0, 0, 1, 2, -1, -1, -1, -1, -1]
-  scenes_remove = [-1, -1, 9, 5, -1, -1, -1, -1, 1, 5, 10, 10, 9]
-  random_remove = [-1, 3952, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+  acts_remove = [2, -1, -1, -1, 0, 0, 1, 2, -1, -1, -1, -1, -1, -1, -1]
+  scenes_remove = [-1, -1, 9, 5, -1, -1, -1, -1, 1, 5, 10, 10, 9, 2, 1]
+  random_remove = [-1, 3952, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
   
   return split_test_train(
                       zip(acts_remove, scenes_remove, random_remove), 

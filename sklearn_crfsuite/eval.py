@@ -10,16 +10,12 @@ crf = pickle.load(crf_file)
 
 crf_file.close()
 
-X = [[features_default(x, i, 0.1) for i in range(len(x))] for x in X_test]
+X = [[features_syl(x, i, 0.1) for i in range(len(x))] for x in X_test]
 X = [pycrfsuite.ItemSequence(x) for x in X]
 
-pred = crf.predict(X)[0]
+pred = crf.predict(X)
 
-assert(len(pred) == len(Y_test[0]))
+print(metrics.flat_classification_report(
+  Y_test, pred, digits=3
+))
 
-mistakes = 0
-for y_pred, y in zip(pred, Y_test[0]):
-  if y_pred != y:
-    mistakes += 1
-
-print(mistakes / len(Y_test[0]))
