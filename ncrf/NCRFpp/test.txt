@@ -1,0 +1,2 @@
+Seed num: 42
+MODEL: train
