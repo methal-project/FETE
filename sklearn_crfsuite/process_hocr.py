@@ -24,9 +24,10 @@ def extract_raw_data_html(node, font_size=0.0,
         title = title.replace(";", "").split()
         bbox = title.index("bbox")
         hpos = int(title[bbox + 1])
+        vpos = int(title[bbox + 2])
         content = re.sub("-[0-9]+-", "", content)
         n_token = TokenRawData(content, hpos, font_size, is_line_start, 
-                               line_start_hpos, node.get("id"))
+                               line_start_hpos, node.get("id"), vpos)
         result.append(n_token)
   
   for c in node:

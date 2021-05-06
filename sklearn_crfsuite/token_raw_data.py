@@ -1,6 +1,6 @@
 class TokenRawData:
   def __init__(self, string, hpos, fsize, is_line_start, line_start_hpos,  
-               word_id):
+               word_id, vpos):
     self.string = string
     self.hpos = hpos
     self.fsize = fsize
@@ -9,6 +9,7 @@ class TokenRawData:
     self.page_num = -1
     self.filename = ""
     self.word_id = word_id
+    self.vpos = vpos
 
   def __str__(self):
     return ("('" + self.string + "', " + str(self.hpos) + ", " + 

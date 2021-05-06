@@ -25,7 +25,7 @@ tokens = [extract_play_data(sys.argv[2])]
 #    #print(t.string, t.string.replace(".", ":"))
 #    tokens[0][i].string = t.string.replace(".", ":")
 
-X = [[features_syl(x, i, 0.3) for i in range(len(x))] for x in tokens]
+X = [[features_vpos(x, i, 0.3) for i in range(len(x))] for x in tokens]
 X = [pycrfsuite.ItemSequence(x) for x in X]
 
 pred = crf.predict(X)[0]
