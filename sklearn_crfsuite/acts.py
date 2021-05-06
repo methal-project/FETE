@@ -86,6 +86,11 @@ def extract_play_data(play_dir):
     t.hpos /= max_hpos
     t.line_start_hpos /= max_hpos
 
+  # normaliser les vpos de la pièce
+  max_vpos = max([t.vpos for t in play])
+  for t in play:
+    t.vpos /= max_vpos
+
   # normaliser les tailles de caractères de la pièce
   max_fsize = max([t.fsize for t in play])
   for t in play:
@@ -432,6 +437,7 @@ def get_data_sets():
            "itzig",
            "paradies",
            "bureaukrate",
+           "hochzittsreis",
            ]
 
   match_text_context = ""
@@ -470,9 +476,9 @@ def get_data_sets():
   # On enlève 10 pourcent des tours de paroles d'une pièce donnée autour du 
   # début d'un acte choisi au hasard (choisi par le code ci-dessus)
   # Pour les pièces qui n'ont qu'un seul acte, on choisit une scène à la place
-  acts_remove = [2, -1, -1, -1, 0, 0, 1, 2, -1, -1, -1, -1, -1, -1, -1]
-  scenes_remove = [-1, -1, 9, 5, -1, -1, -1, -1, 1, 5, 10, 10, 9, 2, 1]
-  random_remove = [-1, 3952, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+  acts_remove = [2, -1, -1, -1, 0, 0, 1, 2, -1, -1, -1, -1, -1, -1, -1, -1]
+  scenes_remove = [-1, -1, 9, 5, -1, -1, -1, -1, 1, 5, 10, 10, 9, 2, 1, 6]
+  random_remove = [-1, 3952, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
   
   return split_test_train(
                       zip(acts_remove, scenes_remove, random_remove), 
