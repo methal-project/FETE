@@ -1,0 +1,1416 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/css" href="../../../css/tei-drama.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader/>
+<body>
+  <pb n="5"/>
+  <div type="scene">
+    <head>1. Scen.</head>
+    <stage type="character">Jules</stage>
+    <sp who="UNKNOWN">
+      <speaker>Jules</speaker>
+      <p><stage>(sitzt auf dem Canapé und liest eine Zeitung - liest laut):</stage>
+    « Prinz Yo-Yo! Wie eine Epidemie hast du die neue und die alte Welt angefallen ! Yo-Yo ist Trumpf !</p>
+    <stage>(steht auf und wirft die Zeitung weg).</stage>
+    <p>Nit ellein die nej und d'alt Welt het diss verruckte Ding üwerfalle, nein, au in mini ménage het sich diss Lumpeding iing'schlieche. Un wer het's eringe- brocht ? Mini lieb un herzensgüet Schwe- jeres ! Uessgere- chent sie prowiert schunzitter 3 Wuche do in minere ménage Yo-Yo! Sie spielt am Morje wenn sie uff- steht, am Middaa wärenem Esse, de ganze Middaa, ja viellicht noch sogar z'Nacht-s im Bett. Un do solle eim nit d'Nerfe durichgehn ? s'Galee hab ich in minere Wohnung un dis alles numme, will mini lieb<pb n="6"/>un herzensgüet Schwe- jermamme Yo-Yo spiele will. » <stage>(Es klopft.)</stage></p></sp>
+  </div>
+  <div type="scene">
+    <head>2. Scen.</head>
+    <stage type="character"> Jules un Marie.</stage>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+    <p>« Entrez! »</p></sp>
+    <sp who="UNKNOWN">
+      <speaker>Marie</speaker>
+      <stage>(kommt hinten herein):</stage>
+      <p>« De Herr Dokter Schmitt isch do un will mit Ihne redde. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Er soll glich do eriin kumme. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Marie :</speaker>
+      <p>« Güet Mösjö. » <stage>(hinten ab)</stage></p>
+    </sp>
+    </div>
+    
+    <div type="scene">
+      <head>3. Scen.</head>
+      <stage type="character">Jules un Robert</stage>
+      <sp who="UNKNOWN">
+        <speaker>Robert</speaker>
+        <p><stage>(kommt hinten herein - Hut in der Hand):</stage>
+        « Sälüt Jules! Was isch denn pas- siert ? »</p>
+      </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Roby, düe bisch mini letscht Hoff- nung, düe müesch mir helfe. » </p>
+    </sp>
+      
+       <sp> <speaker>Robert : </speaker>
+        <p>« Wo fehlt's denn ? Bisch krank ? »</p>
+       </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Krank ? Aba. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Ja, was isch denn no los ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Setz dich emol. »<stage>(Geht an die Türen und horcht).</stage></p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert</speaker>
+      <stage>(beobachtet Jules):</stage>
+      <p> « Jo-jo Jules, was hesch denn düe..... »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Was Yo-Yo ? Kennsch düe's denn au schun ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Was denn ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Ei diss neuje verruckte Spiel ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Ich weiss nit was düe meinsch, ich möcht numme gern wisse, werum düe mich rüefe hesch lonn. »</p>
+    </sp>
+    <pb n="7"/>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Güet, ich will dir's saawe. Roby, liewer Frind, ich bin arich unglücklich. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Unglücklich ? Ja werum denn ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Mini Schwejeres spielt Yo--Yo! »</p>
+    </sp>
+     <sp who="UNKNOWN">
+       <speaker>Robert :</speaker>
+       <p>« Sie spielt Yo-Yo ? Ja un weje dem losch düe mich hole ? »</p>
+     </sp>
+    
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Ja findsch düe, dass diss nix isch, wenn eim jemand de ganze Daa in d'r mé- nage Yo-Yo spielt ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Yo-Yo ? Was isch denn diss eigent- lich ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Diss weisch düe nit ? Ah düe weisch nit was Yo-Yo isch. Glücklicher Mensch ! »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Nein, ich weiss es nit. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« D'ganz Welt spielt doch Yo-Yo! Alli Kini un Kaiser, alli Kinostar, alli Köche, alli Kinder, alli Kindermaidle un au mini Schwejermamme spielt Yo-Yo! »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Awer jetzt weiss ich's jo als noch nit. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Alli Zytunge schriewe devun un d'Illustrierte bringe Bilder. Yo-Yo isch Trumpf. Yo-Yo isch e Epidemie. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« E Eipidemie ? ? Ja no isch's jo e Krankheit ! »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Zäll nit, awer die wo züelüeje kenne krank devun wäre. Es isch e Spiel. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« E Spiel? Wurd's getrette od'r g'stosse ? Isch's e Balle od'r e Art Domino. Od'r setzt m'r sich druff un fahrt furt mit ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« M'r merigt, dass noch nit verhyrot bisch. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Werum, wieso ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Wenn düe e Schwejeres hättsch, wo au de ganze Daa Yo-Yo spiele dät, no wischt düe's au was es isch. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Ja no saa mir's doch jetzt emol was es isch. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <stage>(holt aus einer Tasche ein Yo-Yo)</stage>
+      <p> « So do isch jetzt emol e Yo-Yo » <stage>(holt noch<pb n="8"/>einige Yo-Yo aus seinen Taschen).</stage> « Do isch noch eins, un do noch eins, un do noch eins. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Düe hesch jo alli Säck voll! »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Die hab ich alli minere Schwejeres eweggeputzt, will ich gedänkt hab, sie spielt no nimi. Ja do, sie het sich no immer e anders kauft ».</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Also diss isch jetzt e so e Yo-Yo ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p> « Diss sin sogar e paar Yo-Yo! »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Un mit so eme Ding spielt dini belle-mère ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p> « Sie nit ellein, au mini Frau fangt so langsam aan un s'Dienschtmaidel hett au schun eins g'schenkt bekumme. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Ja wie geht denn diss Ding eigent- lich ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules</speaker>
+      <stage>(steckt alle Yo-Yo schnell ein) :</stage>
+      <p>« Nan, dir zeij ich diss nit.</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Ja un werum denn nit ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Am End spielsch düe mir no au. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Diss isch doch sicher ebs harm- loses. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Ebs harmloses ? Eh bien merci. 3 Vase, e Suppeschüssel un 2 Spiejel un sogar min Radio sin dodurich kapütt gange. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Wieso denn ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Ei will mini Schwejeres nit acht gibt, wenn sie yoyotiert. Sie rennt emol do un emol dert debie an. No isch do ebs füti un dert au. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Ja isch denn diss Spiel so arich kumpliziert ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Ewe nit, awer sie schickt sich so arich daub debie. »</p> 
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker> 
+      <p>« Jules, zeij mir doch emol so e Yo-Yo. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Nix ze mache. Es isch e Schnürele dran un mit dem macht m'rs danze. Siehsch eso <stage>(zeigt es).</stage>Als uff un nab hüpst diss Yo-Yo. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Ja un weje dem hesch düe mich rüefe lonn ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Ja, denn düe müesch mir helfe mini Schwejeres küriere. Sie müess uffhöre mit 
+        <pb n="9"/>
+        dem Spiel. Am liebschte wär mir's jo wenn sie wieder ganz heime züe sich gehn dät. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Na, na, Jules. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Ich hab jo noch nie ebs degeje g'het, wenn sie kumme isch. Was awer züe viel isch, isch ewe züe viel. 's letscht Johr, wo mir doch küm g'hyrot sin g'sin, het sie 14 Daa bliewe wöelle. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Ja un? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« No sin nummme 14 Wuche drüss worre. Düe weisch's jo noch, gäll. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Ja. Allerdings isch diss jo e bissel arich viel g'sinn. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Güet. Ich hab nix g'saat g'het, will ich gern de Friedde im Hüss hab. Diss Johr isch sie jetzt awer au schun wieder fascht 10 Wuche do. Ja un diss nit ellein, sie kum- mediert hyt schun s'ganze Hüss. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Jo allewej. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Ich kann dir e Liedel singe Roby. Ich derf nimmi ellein furt, will sie's nit will han, mir müen alli esse was ihre schmeckt, mini Frau het sie geje mich uffg'stupft, sie macht was sie einfach will, turnt sogar un spielt jetzt zitter 3 Wuche de ganze liewe lange Daa Yo-Yo. Ah no noch ebs. Sie het mini Frau üwerredd sich e nejs Kleid mache zu lonn, wo Yo-Yo heisst. Was saasch düe jetzt do dezüe ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Armer Jules, ja bisch denn düe mit dinnere belle-mère g'hyrot ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>Diss hab ich jo au schun hundert Mol g'saat. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert : </speaker>
+      <p>« Na also, redd doch emol e anständigs Wort mit ihre. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Ich hab schun alles prowiert - im Güete un im Böse - s'nutzt awer alles nix. Sie isch by ihre Doochter het sie mir emol frech in's G'sicht niin g'saat. Robert, was ich dir saa, wenn düe je emol hyrotsch, no gib vor alle Dinge uff dini zükünftig Schwe-
+        <pb n="10"/> jeres acht. Wenn die Hoor uff de Zähn het, no hyrot ihri Doochter liewer nit.</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« 's Bescht wurd sin, m'r hyrot e Waiselmaidel. » </p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Awer füer d'Redd nit ze vergesse,dü müesch mir helfe Roby, düe bisch Dokter, düe weisch ganz sicher ebs wo zejt, wo m'r mit d'Schwejeres züm Hüss nüss kriejt. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Ebs wo zejt meinsch düe ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Ja. Gall düe weisch schun ebs ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Ebs wo arich güet zejt isch e Karte- blaa. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules</speaker>
+      <stage>(verwundert) :</stage>
+      <p>« E Karteblaa ? Ja was soll ich denn mit dem ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert</speaker>
+      <stage>(lachend) :</stage>
+      <p>« Dü hesch mir doch ebs verlangt wo zejt ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« So isch diss nit gemeint g'sin. Düe weisch ganz güet was ich mein.</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Ja uff so Sache hab ich nit stüdiert. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Awer düe müesch mir einfach helfe, dass mini Schwejermame so bal wie möjlich nimmi vor mine Auwe rumyoyotiert.</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Het dich dini Frau gern ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Wie kannsch düe numme fröje, züem Fresse het sie mich gern. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Un düe sie au ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Nadierlich. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Wie steht dini belle-mère züe dir ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Wie Hund un Katz, un numme dorum, will sie immer ihre Dickkopf durich setze will un au kann. Ich glaub sie kann üwer- haupt kan Mann liede. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« No isch die Sach ganz einfach. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Diss meinsch numme düe. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Einfach. Düe müesch emol dinnere Frau Gelejeheit gänn, dass sie sieht, wie ihri Maman üwer dich denkt. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Die Idee isch jo grossartig, awer wie soll ich diss numme mache ? » </p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Ebs einfachers wie diss gibt's j nit. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Nit? »</p>
+    </sp>
+    <pb n="11"/>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Düe stellsch dich emol füer e Viertel Stündel füer verruckt - ich kumm dezüe un mach de Rescht. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Dini Roll isch nit schwer, awer wie soll ich denne Verruckte markiere ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Robert :</speaker>
+      <p>« Düe spielsch ewe au e Düür Yo-Yo, lachsch un singsch viellicht noch dezüe. Die Sitüation müesch düe üssnutze wie sie sich grad dir presentiert. »
+        <stage>(Man hört draussen sprechen.)</stage></p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Ich glaub es kummt jemand ! Roby, schnell, versteckel dich. Geh doch do hinter de Paravent, es derf dich do niemes sähn. » 
+        Robert<stage>(geht schnell hinter den Paravent).</stage></p>
+    </sp>
+    <div type="scene">
+    <head>4 Scen.</head>
+    <stage type="character">D'Vorige un Germaine</stage>
+    <stage>Germaine (kommt hin- ten herein - Hut auf - spielt Yo-Yo).</stage>  
+    <sp who="UNKNOWN">
+      <speaker>Jules</speaker>
+      <stage>(für sich):</stage>
+      <p>« Es spielt au Yo-Yo! »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Germaine :</speaker>
+      <p>« Isch mini Maman nit do Ju- lot ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules</speaker>
+      <stage>(lieb) :</stage>
+      <p>« Nein Lie- wi. Wie düe awer schun so güet Yo-Yo spiele kannsch ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Germaine</speaker>
+      <stage>(ist schon wie- der an der Türe):</stage>
+      <p>« D'Maman turnt ganz sicher.<stage>(Kommt wieder zurück).</stage>Weisch Julot, diss neje Kleid geht mir wunderbar. Ich kumm grad vun de erschte Anprob. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Was isch diss füer e nejs Kleid ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Germarne :</speaker>
+      <p>« Ei s'Modell YO-YO! D'Maman wurd sicher e Plaisir dran han, gar wo sie mir g'saat het, dass ich's nämme soll. Un dir wurd's au sicher g'falle. »</p>
+    </sp>
+    <pb n="12"/>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Miiiir ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Germaine :</speaker>
+      <p>« Nädierlich dir au. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Ich glaub nit, dass es mir g'falle wurd. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Germaine :</speaker>
+      <p>« Ja un werum denn nit ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Werum ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Germaine :</speaker>
+      <p>« Ja? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Will ich ewe genüej hab, wenn dinni Maman do hinne alles kummediert. Ich hab's satt noch ihre Pfiff ze danze. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Germaine :</speaker>
+      <p>« Awer d'Maman meint's jo numme güet mit uns. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Ah sie meint's au noch güet mit uns ? Ja siehsch düe denn nit, was ich immer füer Wüet schlucke müess ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Germaine :</speaker>
+      <p>« Wüet? Ja wie so denn ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Saa Germaine, könne mir zwei do hinne noch mache wie mir wölle, zitter dass dinni Mamman by uns isch ? Han mir zwei viellicht eini Minüd im Daa, wo mir saawe könne, sie isch unser ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Germaine</speaker>
+      <stage>(weint) :</stage>
+      <p>Düe kannsch einfach minni Maman nit liede ! »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Vun dem isch jetzt nit d'Redd. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Germaine :</speaker>
+      <p>« Doch, doch. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Güet nämme mir aan, ich kann dinni Maman nit liede wie düe saasch. Hesch düe viellicht awer schun gemerigt, dass dinni Maman mich güet liede kann ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Germaine :</speaker>
+      <p>« Sie het ewe so e Charakter. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Ah so, sie het e so e Charakter . »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Germaine :</speaker>
+      <p>« Ja, sie isch au immer mit'm Papa so g'sinn, wo er noch geläbt het. »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Un wohrschint's vorhere au mit dene andere zwei Männer, wo sie vor dim Papa uff de Gottsacker gebrocht het ! »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Germaine</speaker>
+      <stage>(tritt mit dem Fuss auf den Boden) :</stage>
+      <p>« Jules, düe beleidigsch minni Maman ! »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Ich ? »</p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Germaine :</speaker>
+      <p>« Ja düe ! » <stage>(Geht schnell hinten ab).</stage></p>
+    </sp>
+    <sp who="UNKNOWN">
+      <speaker>Jules :</speaker>
+      <p>« Hopplaa, do hammer's jo schun wieder. Hesch g'hört Roby ? »</p>
+    </sp>
+    </div>
+    <pb n="13"/>
+    <div type="scene">
+      <head>5. Scen.</head>
+      <stage type="character">Jules un Robert</stage>
+      <sp who="UNKNOWN">
+        <speaker>Robert </speaker>
+        <stage>(kommt hinter dem Paravent hervor) :</stage>
+      <p>« Ja Jules. » <stage>(lacht).</stage></p></sp>
+      
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Düe lachsch ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert :</speaker>
+        <p>« Düe hesch ewe malchance g'het mit dinnere Schwejermamme. Was! un au schun 3 Männer het sie g'het ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Ja denk emol. Ich bin viellicht ihr viert's Opfer. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert :</speaker>
+        <p>« Do kann numme e Gewaltkür helfe. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Diss isch s'richtige Wort. Ich will jetzt emol die Schwejeres mit Gewalt kü- riere. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert :</speaker>
+        <p>« No will ich awer schnell verschwinde, denn ich will uff keine Fall Zeje sinn. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Düe kummsch awer wieder ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert :</speaker>
+        <p>« Wie lang witt düe die Komedie triewe ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Meinsch langt e halb Stund ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert :</speaker>
+        <p>« Uewerüss. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Güet, ze fange mir glich aan, denn weisch es wurd nit lang düüre ze steht sie schun do. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert :</speaker>
+        <p>« Also no bonne chance ! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Kumm geh grad durich de Garde, un druck mir de Dümme. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert :</speaker>
+        <p>« Do hesch düe erecht. Allez salüt. »<stage>(geht rechts ab).</stage></p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Salüt Robes! »</p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>6. Scen.</head>
+      <stage type="character">Jules</stage>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Ja, wie fang ich jetzt diss Theäterle aan ? Halt, ich glaub, ich setz mich am beschte nuff uff de Tisch. Do kummt sie nit so schnell züe mir<stage>(stellt einen Stuhl auf den Tisch, setzt sich auf diesen Stuhl und beginnt Yo-Yo zu spielen)</stage>Yo-Yo! Ja, jo, jo! So jetzt fehlt numme noch..... aha, ich glaub es kummt jemand. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette</speaker>
+        <stage>(draussen) :</stage>
+        <p>« Ja, wo steckt er denn ? »</p>
+      </sp>
+    </div>
+    <pb n="14"/>
+    <div type="scene">
+      <head>7. Scen.</head>
+      <stage type="character">Jules un Henriette</stage>
+      <sp who="UNKNOWN">
+      <speaker>Henriette</speaker>
+      <stage>(kommt hinten herein - spielt wäh- rend der ganzen Scene Yo-Yo):</stage>
+      <p>« Wo isch denn minner Herr Schwejer- sohn, wo so Sache üwer mich saat ?
+      <stage>(sieht J. auf dem Tisch).</stage>
+      Ja was sinn denn diss anfangs füer Maniere ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules</speaker>
+        <stage>(spielt auch wäh- rend der ganzen Scene, d.h. bis Robert wieder kommt Yo-Yo):</stage>
+        <p>« Yo- Yo! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Müen denn Sie uff de Tisch für Yo-Yo ze spiele ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Yo-Yo! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Herr Kleitz, sie brüche nit mit Gewalt die Möwel kapütt ze mache, wo ich minere Doochter kauft hab, wo sie Sie g'hyrot het, verstehn Sie mich ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules</speaker>
+        <stage>(lacht) :</stage>
+        <p>« Yo-Yo! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Ja sinn Sie denn gebickt ? Mösjö Kleitz, mache Sie, dass Sie sofort do vun dem Stüehl un dem Tisch erunter kumme, sunscht hol ich Sie eijehändig erunter, sie Daa- dieb !! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Yo-Yo! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Do hört doch alles uff ! So e Frech- heit. »<stage>(Geht nahe an den Tisch heran).</stage></p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Yo-Yo !<stage>(macht das Yo-Yo Henriette direckt vor der Nase herum tanzen).</stage> <stage>(Lacht)</stage> « Yo-Yo! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette</speaker>
+        <stage>(brüllt) :</stage>
+        <p>« Herr... Kleitz !!! »<stage>(reisst das Yo-Yo Jules aus der Hand und geht vom Tisch weg).</stage></p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Ooooh!! »<stage>(holt ein anderes Yo-Yo aus der Tasche und spielt weiter)</stage>: « Yo-Yo, isch wieder doooo ! Bravoooo !<stage>(lacht)</stage></p>
+      </sp>
+      <pb n="15"/>
+      <sp who="UNKNOWN">
+        <speaker>Henriette</speaker>
+        <stage>(sieht nun, dass Jules wieder ein Yo-Yo hat):</stage>
+        <p>« Ja was isch denn diss? ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Yo-Yo! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette</speaker>
+        <stage>(geht schnell an die Türe hinten).</stage>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules</speaker>
+        <stage>(für sich) :</stage>
+        <p>« Es schinnt ze zeje ! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Marie! ..... Marie ! !<stage>(bleibt an der Türe stehen).</stage>Marie ! ! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Marie</speaker>
+        <stage>(draussen) :</stage>
+        <p>« Ja Madame Fleischmann. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Hole sie emol schnell minni Dooch- ter do here. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Marie :</speaker>
+        <p>« Ja Madame Fleischmann. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette</speaker>
+        <stage>(kommt wieder nach vorn) :</stage>
+        <p>« Un diss will e Mann sinn ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Yo-Yo! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette</speaker>
+        <stage>(geht wieder nach hinten):</stage>
+        <p>« Wo bliet numme s'Germaine ? »</p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>8. Scen.</head>
+      <stage type="character">D'Vorige un Germaine</stage>
+      <sp who="UNKNOWN">
+        <speaker>Germaine</speaker>
+        <stage>(kommt aufgeregt hinten herein - ohne Hut - hat ein Taschentuch in der Hand - sie hat geweint) :</stage>
+        <p>Was soll denn sin Maman ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette</speaker>
+        <stage>(zeigt auf Jules) :</stage>
+        <p>« Do luej emol ! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules</speaker>
+        <stage>(spielt immer weiter) :</stage>
+        <p>« Yo-Yo! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Ja was isch denn diss ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Yo-Yo! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Dim Mann isch e Rädel im Kopf luck worre. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine</speaker>
+        <stage>(am Tisch) :</stage>
+        <p>« Ja Jules, was machsch denn do ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Yo-Yo! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Jules, Jules ! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Loss düe ne numme, er wurd schun wieder züe sich kumme. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules</speaker>
+        <stage>(lacht ganz laut) :</stage>
+        <p>« Yo-Yo!! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine</speaker>
+        <stage>(bittend) :</stage>
+        <p>« Jules was hesch düe denn um de Gotteswille ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules</speaker>
+        <stage>(lacht und singt - holt aus seiner Tasche ein weiteres Yo-Yo und spielt nun mit beiden).</stage>
+      </sp>
+          <pb n="16"/>
+      <sp who="UNKNOWN">
+       <speaker> Henriette :</speaker>
+        <p>« Ja was isch denn diss ? Die Yo-Yo sin jo alli mine. Do het sie also d'Katz doch nit verschleift, wie's immer g'heisse het. Miner Schwejersohn vergrifft sich also au noch an mim Eijetum ! Es kummt jo immer scheener do hinne ! ! ».</p></sp>
+      
+      <sp who="UNKNOWN">
+        <speaker>Jules</speaker>
+        <stage>(steht nun auf den Stuhl und spielt weiter):</stage>
+        <p>: « Yo-Yo! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Maman, Maman er fallt ganz sicher noch erunter. Mir müen ne erunterhole. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Los düe numme, wenn sich sini Nerve berüehigt han, no kummt er schun ellein erunter. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Yo-Yo! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Jules, min liewer Jules, kumm düe doch do erunter. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Ja was isch denn diss mit dir Germaine ? Schämmsch düe dich nit so by'm e Mann anzehalte, wo nit wert isch, dass m'r numme e Finger wäje ihm rührt ! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Awer Maman ! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Blie stille! Er isch e Nixnutz, e Füllenzer. E Mann wie sinere lieb Schwejer- mame ihri Sache nimmt isch züe allem fähig. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Yo-Yo! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Ich bin sicher er markiert numme. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Un wenn's awer nit wohr wär Maman ? Wenn er awer krank wär ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Krank ? »<stage>(lacht).</stage>« Der un krank ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« So ebs het er doch noch nie gemacht. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Do isch e kalti Dusch d'aller- bescht Medizin füer ihne<stage>(geht an die Türe - öffnet und ruft hinaus)</stage> Marie,bringe sie emol sofort e Eimer ganz kalts Wasser. ».</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Yo-Yo. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Was witt düe denn mache, Ma- man ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« De Kopf will ich ihm in kalts Wasse dunke, dass er wieder züe sich kummt. »</p>
+      </sp>
+      <pb n="17"/>
+      <sp who="UNKNOWN">
+        <speaker>Jules</speaker>
+        <stage>(für sich):</stage>
+        <p>« Zersch müesch hesch ! Yo-Yo! » </p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Nein Maman, so ebs lied ich nit. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Diss liedsch düe nit ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Nein Maman ! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Was bisch doch düe füer e dumms Kind ! Wenn düe au emol de dritt od'r de viert Mann hesch, no wursch düe au an- dersch mit ne. Die Männer müess m'r immer mit Gewalt in Zucht un Ordnung halte. So Plän wie er do macht derf m'r einfach nit uffkumme lonn. Merik düe dir diss, düe Gänsel ! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Yo-Yo! »</p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>9. Scen</head>
+      <stage type="character">D'Vorige un Marie.</stage>
+      <sp who="UNKNOWN">
+        <speaker>Marie</speaker>
+        <stage>(kommt mit einem Eimer hinten herein) :</stage>
+        <p>So Madame Fleischmann !<stage>(sieht Jules)</stage>: Oh Jesses, d'r Herr!! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Yo-Yo! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Marie :</speaker>
+        <p>« Er isch doch vorhere noch by sich g'sin ! »</p>
+      </sp>
+      <pb n="18"/>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Marie, hole sie sofort e Dokter. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Diss het noch Zytt. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Marie :</speaker>
+        <p>« Ja der Herr Dokter Schmitt isch jo schun bym Herr g'sin. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« De Herr Dokter Schmitt ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Marie :</speaker>
+        <p>« Ja Madame. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Sott er am End g'spiert han, dass er krank isch ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Plän vun Paris. Marie hälfe sie mir de Herr do runter hole. »</p> 
+        <stage>(Es klingelt.)</stage>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Wer isch jetzt diss ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Marie lüeje sie schnell, un lonn sie niemes do eriin. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Marie :</speaker>
+        <p>« Güet Madame. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Madame Fleischmann heiss ich. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Marie :</speaker>
+        <p>« Ja Madame Fleischmann. »<stage>(hinten ab).</stage></p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Yo-Yo! »</p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>10. Scen.</head>
+      <stage type="character">D'Vorige ohne Marie</stage> 
+      <sp who="UNKNOWN">
+       <speaker> Germaine</speaker>
+      <p><stage>(am Tisch:)</stage>« Jules, liewer Jules. Was hesch dü denn? Kumm doch do erunter. »</p></sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Ich hol ne no schun erunter. Warte sie numme, sie min liewer Schwe- jersohn. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Yo-Yo! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine</speaker>
+        <stage>(weint, setzt sich auf's Canapé).</stage>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Ich glaub düe hielsch au noch! So einer wie der bekummsch düe immer noch. Ich süech dir emol sälwer einer, wenns e so witt isch. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Yo-Yo! »</p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>11. Scen.</head>
+      <stage type="character">D'Vorige un Marie</stage>
+      <sp who="UNKNOWN">
+        <speaker>Marie</speaker>
+        <stage>(kommt hinten herein).</stage>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Wer isch's denn ? »</p>
+      </sp>
+      <pb n="19"/>
+      <sp who="UNKNOWN">
+        <speaker>Marie :</speaker>
+        <p>« Ei der Herr Dokter Schmitt isch noch emol kumme. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Er soll glich eriinkumme. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Füer was denn ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Marie gehn sie. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Marie :</speaker>
+        <p>« Güet Madame. »<stage>(geht hinten ab).</stage>
+        </p>
+      </sp>
+        <sp who="UNKNOWN">
+           <speaker>Henriette :</speaker>
+            <p>« Düe wursch dinner läbdes Daa nit g'schejt. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Yo-Yo ! »</p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>12. Scen</head>
+      <stage type="character">D'Vorige mit Marie un Robert</stage> 
+     <sp who="UNKNOWN"> 
+       <speaker>Marie</speaker> <stage>(macht die Türe auf und lässt Robert herein - kommt dann auch herein).</stage></sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert :</speaker>
+        <p>« Bonjour Mesdames. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Güet, dass sie kumme sinn Herr Dokter. Minner Mann... o Gott! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Yo-Yo ! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert :</speaker>
+        <p>« Ich hab's doch vorhin schun gedenkt, wo ich do bin g'sinn. Ich bin dorum au noch emol kumme. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Gälle sie, er isch krank? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert :</speaker>
+        <p>« Sicher e schlimmer Fall, Ma- dame Kleitz. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« O Gott! »<stage>(setzt sich weinend auf das Canapé).</stage></p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert</speaker>
+        <stage>(geht an den Tisch) :</stage>
+        <p>« Jules... Jules! Zeij hör emol. Ich hab dich ebs fröje wölle. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules</speaker>
+        <stage>(betrachtet Robert).</stage>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert :</speaker>
+        <p>« Kumm doch emol do erunter. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Ja ich kumm glich. Yo-Yo !<stage>(geht vom Tisch herunter)</stage>Yo-Yo! »</p>
+      </sp>
+      <pb n="20"/>
+      <sp who="UNKNOWN">
+        <speaker>Robert</speaker>
+        <stage>(zu Henriette) :</stage>
+        <p>« Mir müen arich vor- sichtig mit ihm sinn. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine</speaker>
+        <stage>(steht auf):</stage>
+        <p>« Nadierlich. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert</speaker>
+        <stage>(führt Jules an das Canapé - macht ihn sitzen):</stage>
+        <p>« Bringe sie mir doch schnell e kalts Tüch füer um de Kopf. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Marie</speaker>
+        <stage>(holt schnell ein grosses Tuch).</stage>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert</speaker>
+        <stage>(fühlt in der Zwischenzeit den Puls von Jules) :</stage>
+        <p>« De Puls isch ganz normal. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Isch's denn schlimm, Herr Dok- ter? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert :</speaker>
+        <p>« Ich kann noch nix saawe. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Marie</speaker>
+        <stage>(bringt nun das Tuch).</stage>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert</speaker>
+        <stage>(bindet das Tuch Jules um den Kopf - lässt Jules dann sitzen - geht auf die andere Seite - winkt Germaine).</stage>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette</speaker>
+        <stage>(zu Marie):</stage>
+        <p>Sie könne jetzt gehn. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Marie</speaker>
+        <stage>(geht hinten ab).</stage>
+   
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine</speaker>
+        <stage>(geht zu Robert):</stage>
+        <p>« Was meine Sie, Herr Dokter ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette</speaker>
+        <stage>(zu Robert):</stage>
+        <p>« Wurd er nimmi güet ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert :</speaker>
+        <p>« Unter Umstände kann der Züstand lang anhalte. »</p>
+      </sp> 
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker> 
+       <p> « No müesch düe dich ewe scheide lonn. Düe kannsch nit din ganze Läwe bym e Narr sinn. »</p></sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Awer Maman ! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert :</speaker>
+        <p>« Hett er sich denn in de letschte Zyt viel uffgerejt ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Ja manichmol. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Wie kannsch düe numme so dumm babble. Ich hab mich mit ihm als uffreje müen. Er isch ewe krank. Wenn ich nit immer nochgänn hät, ze wär jo nie in dem Hüss Friede g'sinn. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine</speaker>
+        <stage>(geht zu Jules - betrachtet ihn - geht wieder zu Robert) :</stage>
+        <p>« Er schlooft jetzt. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert :</speaker>
+        <p>« Um so besser. Ich mach ihne jetzt folgender Vorschlaa. Ich hab doch noch e
+          <pb n="21"/> Commission un geh no glich bym'e Spezia- lischt füer Nerve durich. Ich bring ne glich mit. Sott sich de Züstand nit bal bessere no mien mir ne in d'Nerveklinik mache. Ich will uff alli Fäll au s'Auto b'stelle. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Zäll wurd üwerhaupt s'beschte sinn. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Robert :</speaker>
+        <p>« Also ich bin bal wieder do. »<stage>(geht hinten ab).</stage></p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>13. Scen.</head>
+      <stage type="character">Jules, Germaine un Henriette</stage>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« So hesch düe müen niinfalle ! Hesch e Mann un doch keiner. S'bescht wär, wenn er bal sterwe dät. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Wie kannsch düe numme so redde, Maman. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Ja, was witt düe denn mit-eme Mann wo narrisch isch ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Viellicht wurd er doch wieder guet. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« So Kranki wäre nie wieder ganz guet.<stage>(geht nach hinten)</stage>Ich hab weijer diss Johr kein scheeni Ferie by dir. »<stage>(hinten ab).</stage></p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>14. Scen.</head>
+      <stage type="character">Jules un Germaine</stage> <sp who="UNKNOWN">
+        <speaker>Germaine</speaker>
+        <stage>(geht zu Jules - setzt sich neben ihn) :</stage>
+      <p>« Jules min liewer Jules! Un ich hab vorhin au noch wäje de Maman mit dir so dischpetiert ! Was isch doch e Mensch ? Eini Minüd isch m-r g'sund un lacht un glich druff kann m'r schwer krank sinn. Wie wurd die Krankheit üssgehn. »</p>
+      <stage>(nimmt Jules in ihre Arme).</stage></sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules</speaker>
+        <stage>(lehnt seinen Kopf an die Schulter von Germaine).</stage></sp>
+       <sp who="UNKNOWN"> 
+         <speaker>Germaine :</speaker>
+        <p>Un ich hab dich doch so arich gern g'het.<stage>(küsst Jules)</stage>Min liewer Jules !<stage>(küsst Jules).</stage></p>
+      </sp>
+      <pb n="22"/>
+      <sp who="UNKNOWN">
+        <speaker>Jules</speaker>
+        <stage>(küsst Germaine).</stage>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Er het mir e Schmutz gänn. Isch am End die Krankheit doch nit so schimm wie de Dokter meint ? Jules!<stage>(küsst Jules wieder auf den Mund). »</stage></p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules</speaker>
+        <stage>(küsst Germaine).</stage>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Jetzt schun wieder. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules</speaker>
+        <stage>(öffnet die Augen - stöhnt - schaut nun Germaine an):</stage>
+        <p>« Germaine ! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Kennsch mich Jules ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Ja. »<stage>(macht das Tuch vom Kopfe weg).</stage></p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Loss, Jules, loss. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Werum denn ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« loss diss Tuech Jules. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Ich brüch's jetzt nimmi. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Doch Jules, min liewer Jules. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Min liebs Ger- maine, min herzigs Kind. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Was denn ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Mir zwei han uns doch gern ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine. :</speaker>
+        <p>« Nadierlich Jules ! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« No soll dinni Mamman widder heime gehn. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Awer Jules. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules</speaker>
+        <stage>(sitzt aufrecht) :</stage>
+        <p>« Ja Germaine, es isch besser, wenn sie widder geht. Düe wursch doch jetzt au iinsehn wie mich dinni Maman liede kann. Hesch düe nit g'hört, was sie alles üwer mich g'saat het ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Ja bisch dûe denn nit krank ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Nein Liebs. Die Komedie hab ich ewe numme g'spielt füer dir emol ze zeije, wie dinni Maman vun mir denkt. »</p>
+      </sp>
+      <pb n="23"/>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Meinsch, wenn sie alles merigt ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Jetzt, wo ich weiss, dass düe endlich fescht züe mir haltsch, hab ich kein Angscht meh. Los düe sie numme kumme ! Ich saa ihre no schun emol mini Meinung. »<stage>(Beide küssen sich lange.)</stage></p>
+      </sp>
+    </div>
+      <div type="scene">
+          <head>15. Scen.</head>
+        <stage type="character">D'Vorige un Henriette</stage>
+      <sp who="UNKNOWN">
+        <speaker>Henriette</speaker>
+        <stage>(von hinten - hat Hut auf - ist fertig zum Ausgehen - sieht wie sich Germaine und Jules so lange küssen - er- staunt) :</stage>
+        <p>Ja was isch denn mit euch zwei do los ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules</speaker>
+        <stage>(steht auf):</stage>
+        <p>« Sie wölle furt Schwejer- mame ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Ich will mit inne no in d'Nerve- klinik fahre, wenn de Dokter mit-m Auto kummt. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Zäll wurd nit notwendig sin, denn ich bin jo gar nit krank. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Germaine, hab ich dir nit g'saat, er spielt Theater ! Schämme Sie sich, Mösjö Kleitz. Eine eso aanzelüeje. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Werum denn, Madame Fleisch- mann ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Düe losch dich scheide Germaine. De Dokter isch dir Zeje, dass er krank isch. So simeliere kann kein Mensch. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Germaine :</speaker>
+        <p>« Nein Maman, diss niemols, ich hab de Jules viel ze gern un er mich jo au. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Mit dem Dokter als Zeje han sie kein Chance, liewi Schwejermamme. Er isch minner Frind un het alles gewüsst. Sie könne hyt noch lang warte, bis er mit'm Auto kummt. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henriette :</speaker>
+        <p>« Die ganz Affaire glicht jo ihne emol widder, Mösjö Kleitz. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules</speaker>
+        <stage>(geht an die Türe - öffnet - ruft):</stage>
+        <p>« Marie. »</p>
+      </sp>
+          <pb n="24"/>
+        <sp who="UNKNOWN">
+          <speaker>Henriette</speaker> 
+          <p>« Ja was soll's denn jetzt noch gänn ? »</p>
+        </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Ein Moment, chère Madame Fleisch- mann. »</p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>16. Scen.</head>
+      <stage type="character">D'Vorige un Marie</stage>
+      <sp who="UNKNOWN">
+        <speaker>Marie</speaker><stage> (kommt hinten herein) :</stage>
+      <p>« Was beliebt Mösjö ? Sinn sie nimmi krank ? »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Nit g'sinn un wur's hoffentlich au nie wäre. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Marie :</speaker>
+        <p>« Gott sej Dank. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Also Marie, sie packe jetzt sofort alli Köffer vun de Madame Fleischmann. Sie will bis in 10 Minüde verreise. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Marie :</speaker>
+        <p>« Mitem gröschte Vergnüeje. In fünef Minüde bin ich schun ferti. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Je schneller, je liewer.<stage>(holt aus seiner Tasche einige Yo-Yo).</stage>Un die do packe sie au mit ihn. »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Marie</speaker>
+        <stage>(nimmt die Yo-Yo) :</stage>
+        <p>« Diss sinn jo alles Yo-Yo! »</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Jules :</speaker>
+        <p>« Ja, ja. Diss sinn de chère Madame Fleischmann ihri Yo-Yo!! » </p>
+      </sp>
+        <stage>Schluss.</stage>
+    </div>
+  </div>
+</body>
+</TEI>

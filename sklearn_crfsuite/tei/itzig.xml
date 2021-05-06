@@ -1,0 +1,805 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/css" href="tei-drama.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader/>
+<body>
+  <pb n="5"/>
+    <div type="scene">
+      <head>1. Szene.</head>
+      <stage>(Henri sitzt in der Werkstatt und arbeitet an einer Fasstaube. Wenn der Vorhang aufgeht, singt er die zwei ersten Strophen des Liedes:«Freund,ich bins zufrieden.») </stage>
+      <sp who="UNKNOWN">
+        <speaker>Henri</speaker>
+        <p>As esch doch a prachtigs Handwarik, d'Kieferei un s'Fassbinde. I gat net um Millione met me andere Stand duesche. Wette gat i, dass ich der glecklichst Gsell bin von ganz Frankrich, ju vo ganz Europa. Un wann i noch amol uff ıd'Walt kam, ich gat weder Fassbinder ware. In keim andere Beruef gebts eso gscheiti un gelehrti Litt wie in unserem Stand. Un wurum des? Will der Fassbinder alles, «reiflich» <stage>(hält dabei einen Reif in die Höhe)</stage>ewerlejt und un en andere Litt sini Plan licht un «fasslich»<stage>(hält dabei ein Fässchen in die Höhe)</stage>expliziere kann. Weller Stand het aso ne nowler Uehrahn als wie mer? Dr Noeen dr Arich isch dr erscht Fassbinder gsen. Un wann mer in dr Bewel zwesche de Zille kann lase, esch dr Noe meh als einmol am Fasshahnel hanke gebliwe. Die Gewohnheit esch Gott sei Dank als kostbares Erb- steck en unserem Handwarik erhalte gebliwe. Un das esch dr Stolz von unserm Stand; liewer wott i starwe als en unserm Beruf Unehr mache.</p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>2. Szene.</head>
+      <stage>Henri und Arwegascht </stage>
+      <sp who="UNKNOWN"> 
+        <speaker>Arwegascht :</speaker>
+      <stage>(tritt ein und klopft Henri auf die Schulter)</stage> 
+      <p>Allah bonheur Henri! A so Redde her i garn. Wer als Gsell so stolz uff siner Stand esch, wurd em oi als Meischter Ehr mache</p>
+      <stage>(nimmt den Hut vom Kopfe und wischt sich den Schweiss vun der Stirne).</stage> 
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henri :</speaker>
+        <p>Ech glauib, Ehr schwetze, Meischter? Jetz em Hornung esch doch noch kei Watter zuem Schwetze?</p>
+      </sp>
+      <pb n="6"/>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <p>Dü hesch meh as racht. Awer wann dü aso wie ich a Hetzjagd durich s'Stadtel gemacht hatsch, dmo hatsch oi Hetze bekumme.<stage>(setzt sich ermüdet auf eine Bank)</stage>O misère! Un des alles waje dam vermalefizte Galdjud.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henri :</speaker>
+        <p>Ehr meine doch net ebbe dr Itzig?</p>
+        </sp>
+      <sp who="UNKNOWN"> 
+        <speaker>Arwegascht :</speaker>  
+        <p>Grad waje dam eschs. Well der elande Halsabschnieder hitt noch von mer die 5000 Livres, wu ni bi nem gelehnt hab, oder ar losst mer 's Hisel met samt dr Buedik versteigere.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henri :</speaker>
+        <p>Awer Meischter, Ehr han em doch vor 3 Wuche do vor mir gsait, dass Ejere Erbschaftsprozess am Erschte entschiede wurd un dass Ehr ganz sicher ware gewenne. I mein, er kennt doch noch acht Taj warte, s'Gald esch em jo sicher.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <p>Ei natierlich! So ball dr Prozass entschiede esch, zahl ich em sin Gald mit Zinse un Zinseszinse zeruck. Awer met dam esch der verdrait Luekas net zefredde, ar sait: prozediere un gewenne esch zweiereli. Ar wott mech par force zuem Verkauif zwenge, dass ar min Anwase fer a Spottpries kennt en dr Sack stecke. Eso Sache kenne eim schon warm mache<stage>(wischt sich erneut den Schweiss von der Stirne).</stage></p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henri :</speaker>
+        <stage>(schwingt drohend den Hammer)</stage>
+        <p>Wart nur, du habgieriger Gald- kraemer. Ech hab em ju nie racht getrojt, awer fer aso falsch hat i ne doch net g'halte. Hat ich dane Karl nur 10 Minüte uf dare Bank lege, dam dat echs Henderg'scher schun inschmere.</p>
+      </sp>
+      <sp who="UNKNOWN"> 
+        <speaker>Arwegascht :</speaker>
+        <stage>(steht eilig auf und blickt scharf zuem Fenster hinaus)</stage>
+        <p>Was seh ich Henri? Ich glauib do kommt ar d'Stross eruff. Rechtig ar eschs. Was jetz anfange, bezahle kann i ne nett. Ei, ei, ei.</p>
+      </sp>
+     <sp who="UNKNOWN">
+     <speaker>Henri :</speaker>
+         <p>Here Meischter, ich hab a Idee. Mer zwei senn ju do en dr Bue- dick allein met em Itzig. Wie wars, wann mer ne do uff d'Howelbank gatte lege und em s'Gald met ere Fassdub uff de Hosebode datte zähle?</p>
+      </sp>
+      <pb n="7"/>
+      <sp who="UNKNOWN">
+        <speaker>Arwegastht :</speaker>
+        <p>Verdient hatt ex's. Awer es gab a dire Gschpass, dann morje war ar schun am Gerecht. I wells noch amol bi guetem met em ver- sueche, ob ar net noch 8 Taj Ufschueb gett<stage>(es klopft).</stage>Aha, ar esch schun do, loss uns jetz allein.<stage>(Henri hinter Itzig mit der Faust drohend ab.)</stage></p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>3. Szene.</head>
+      <stage>Arwegascht und Itzig.</stage>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+      <stage>(hastig eintretend, trägt ein Handköfferchen bei sich.)</stage>
+      <p>Guete Tag Arwegascht! Wie stehts met minem Gald? Haschs gerescht? Ich brauchs heit abend noch.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <p>Leider net, Itzig. Ich hab alles moegliche versuecht, fer Gald uff- zebrenge, awer as esch met em beschte Welle net gange. Geb iner noch 8 Taj Ufschueb, bess dohin esch miner Prozess ent- schiede.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Was heisst Aufschub! Was heisst Prozess! Hab ich Euich schon gesagt, dass Ehr auch kenne verliere de Prozess.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <p>Doch Itzig, miner Advocat hett mer gescht erscht gschriwe, ech gat ne sicher gewenne.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Nu, was heisst sicher? Sicher isch s'bare Geld, wo mer het en sine Haend.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <p>Warte noch 8 Taj un Ehr ware sehn, dass ich d'Wohret gsait hab.</p>
+        </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+         <p>Nu, was heisst d'Wohrheit sage. Ich will habe uff d'r Stell mei Geld oder ich lass dier versteigere dein Hues mit der ganze Werk-statt. Bezahlsch jetz oder bezahlsch net?<stage>(Hält ihm den Schuld- schein hin)</stage></p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <p>Itzig, han doch a bessel Insahns. Ehr selle Eier Gald han so ball als as mer meglich esch. Awer ich kann doch net gan, was ich net hab.</p>
+      </sp>
+      <pb n="8"/>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <stage>(den Schein einsteckend)</stage>
+        <p>Nu, also geh ich halt sofort ans Gericht. Ich will hawe mei Geld un wenn du oi Bankrott wirsch<stage>(geht ab, vergisst aber beim Fortgehen sein Handköfferchen mitzunehmen)</stage></p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <stage>(ihm nachrufend)</stage>
+        <p>Itzig, ich bett dich, hab doch Erbarme. Ehr ruiniere mech ju. Awer nai, ar hert net, der Galdjager het ken Harz. Ar well mer d'Gurigel zuedrucke, ar well mich ens Elend brenge,<stage>(Setzt sich und stützt seinen Kopf in die Hände).</stage></p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>4. Szene.</head>
+      <stage>Arwegascht und Henri.</stage>
+      <sp who="UNKNOWN">
+        <speaker>Henri :</speaker>
+        <stage>(tritt hastig ein, mit einer Depesche in der Hand)</stage>
+        <p>Meischter, Meisch- ter, a Depesche vo Colmer! Die esch sicher vum Advocat. Ehr hann gewiss de Prozass gewonne! Djuche! Vive la Justice!</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <stage>(eiligst die Depesche öffnend)</stage>
+        <p>Gott sei Dank! Dr Prozass esch gewunne, ich kann sofort s'Gald uff dr Bank abhewe. O, was a Freid! Um a Haarel hatt mech dar eland Itzig an de Battel- stab gebroch. Wann dü ghert hatsch, wie dar Judas mich hett welle ens Elend brenge. Nai, das vergiss ich em nem. Ass wurd oi amol a Zitt kumme, wu ich's em heimzahle kann. O, wie mer jetz licht ums Harz esch! Doch halt, as esch kei Minüt ze verliere, ich muess em Itzig glich nochranne vor eb ass ar mech am Gerecht verklajt. Uff dr Stell zahl ich ne üss. Also, ich gang schnell, Henri. Hiet guet zettr! As wurd wohl sechs ware bes ich weder do ben, dann ich well nu nochher zue mim Brueder fahre, drusse uff'm Schaferhof, fer em die Nouvelle ze bringe.<stage>(ab.)</stage></p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henri :</speaker>
+        <p>Das heisst mer Chance han un noch ohne dass mer en d'Lotterie Nationale setzt. Ich ben doch froh fer dr Meischter, dass ar vorm Bannkrott gerettet esch. Awer dam Itzig mache mer oi d'Höell heiss. Revanche wurd genumme, un a ganz saftigi, das garantier ich em, so wohr ech Henri Strectefenger heiss. Hett dar mine arm Meischter en Angscht un Schracke gejaijt, so soll ar oi sine Anteil bekumme. Ass wurd sich schun a Gelajeheit fende, wart nur, Mannele.</p>
+      </sp>
+    </div>
+    <pb n="9"/>
+    <div type="scene">
+      <head>5. Szene.</head>
+      <stage>Henri. (macht sich wieder an die Arbeit. Er schlägt um ein grosses Fass zwei Reifen und singt dabei zwei Strophen des Liedes «D'r Hans em Schnockeloch». Die erste Strophe wie gewöhnlich, die zweite mit folgendem Text :)</stage>
+      <sp who="UNKNOWN">
+      <lg>
+        <l>D'r Itzig Veilchenduft,</l>
+        <l>Däm isch's bigosch ze wohl,</l>
+        <l>Bringt alli Litt fascht uff de Hund</l>
+        <l>Macht sich drbie de Geldsack gsund,</l>
+        <l>Oh, Itzig Veilchenduft,</l>
+        <l>Dess rächt sich schwär emool.</l>
+      </lg>  
+        I weiss net, wie's andere ze Muet esch bim Schaffe. Wann ich eins seng, drno lauift mer d'Arwet grad üss de Hand. Un miner Meischter het sini Spass dran. - So, jetz war des Fass ball fertig. Noch de Deckel druffschlaje un nu hat ses.
+      <stage>(Sieht in der Ecke das Koefferchen, das Itzig vergessen hat)</stage>
+      Tiens lueg do, was steht dann do fer a Kefferl. Am And hetts gar dr Itzig do stehn lohn, wun ar schnall ab esch fer uffs Gerecht.
+      <stage>(Be- trachtet es näher.)</stage>
+      Rechtig, do steht siner Name; Itzig Veilchen- duft. Hm, von dam sin fine Parfum haw ich aui noch nix ge- merkt. Knowliduft dat besser fer ne passe. Do het ar am And noch a so ne Portion Schuldschin drenne, der verdrait Galdkrae- mer oder gar a Hueffe Banknote. Ich wells amol guet versteckle, dann wann ar's merkt, ze wurd ar ball do son fer's ze hole
+      <stage>(ver- steckt es draussen im Nebenraum)</stage>
+      Ich hab's en dr Gais en d'Fuet- terkripfe gsteckt, dert suecht ar's sicher net.
+      <stage>(Es klopft.)</stage>
+      Aha, do kommt a Klient oder villicht gar d'r Itzig? Na, mer wares glich sahn. Entrez!
+      </sp>
+    </div>
+    <div type="scene">
+      <head>6. Szene.</head>
+      <stage>Henri, Itzig. </stage>
+      <sp who="UNKNOWN">
+      <speaker>Itzig :</speaker> 
+      <stage>(streckt vorsichtig den Kopf herein, sich nach allen Seiten um- sehend)</stage>
+      <p>Nu, Henri, bisch ganz sicher allein oder esch d'r Meisch- ter schun zeruck?</p>
+        </sp>
+      <pb n="10"/>
+      <sp who="UNKNOWN">
+        <speaker>Henri :</speaker>
+        <p>kumme nur erin, Itzig, 's esch niemmer d'heim als wie ich. D'r Meischter esch noch ze sim Brueder g'fahre, wo Foerschter esch am Schaferhof. Ar well s'em malde, dass dr Prozass gewunne esch. Was wann Ehr bi uns? Wann Ehr am And noch Wucher- zense nochhole vun dare Schuld? Dr Meischter het i doch s'Gald sicher glich uesgezahlt. Oder wett viellicht gar a nei Fass kauife?</p>
+        </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Ich kumm net waje Geschäftche. D'r Arwegascht hat m'r glich. gäwwe mei 5000 Fränkelisch. Awwer er hat mir sein Haus ver- botte. Wenn er mich noch einmal verwitsch in seim Haus, nu dann schlaat'r mich daut, hatt'r gsagt. Oh, ich hab a grosser Kummer. Denk dir, Henri, wie ich heim be kumme zue der Sarah, do hab ich ihre welle mache à Gschenk met me farwige Halstuch, wo ich mit dier Geld hab kauift hit morge in Basel. Do seh ich zu mim grosse Schrecke, dass ich hab irgendwo stehn losse mei Kofferche. Ich bin fascht sicher, dass ich's met do erin gebrocht hab, wu ich kumme bin wegenem Geld. Du sollsch hawe a anständigs Trenk- geld, wenn du mer duesch verschaffe min Kefferle.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Henri :</speaker>
+          <p>Dass ehr's wesse, Eier Kefferle steht en unserem Huess. Awer voreb ich's hol, well ich wesse, wieviel Trenkgald dü erüswechsch.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Nu, ich mein, dü kannsch zefredde sen met me Franke. Das esch meisechs viel Geld bei dene teire Zeite.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henri :</speaker>
+        <p>Was a Franke? Schamsch di net a so ne Angebot ze mache. Geh fuit Itzig! Ich hab kei Zitt ze verliere met a so Plan. Ich muess an mini Arwet, sunsch steht dr Meischter ewer einmol do un ich hab noch nix gschafft.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Grausser Gott, ejere Meischter derf mich dodrenne net antraffe, sunsch weh armer Itzig. Do hasch zehn Franke, hol mer schnell mei Kefferche.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henri :</speaker>
+        <stage>(lachend)</stage>
+        <p>Ehr han net latz Angscht vorm Meischter, mer gat meine. ar esch a Menschefrasser. Un wann'r ejch s'Hüss verbotte hett. no mache dass'r schleunigscht verschwinde, dann wann ar Eich do andat traffe, ze wot i net en ejere Huet stacke.</p>
+      </sp>
+      <pb n="11"/>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <stage>(ängstlich nach der Türe blickend)</stage>
+        <p>Da hasch noch fuenf Franke dazue, Henri. Geh un hol schnell. mei Kefferche, dass ich aus dieser Löwegrub erüsskumm. Denn der Arwegascht hat e Wuet uff mich, dass er mache würd d'r Itzig kapores.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henri :</speaker>
+        <stage>(für sich)</stage>
+        <p>Na, des Rezept het doch guet gewerikt. Ich wells Kefferle glich hole. Ich dank d'Gais werds na net uffg'frasse han<stage>(geht hinaus).</stage></p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Gerechter Gott, was muss ich here, s'Halstuech fer mei liewe Sa- rah steckt em Gaisestall.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henri :</speaker>
+        <stage>(kommt mit dem Köfferchen zurück, an dem noch Grünfutter hängt)</stage>
+        <p>Do heschs Itzig. Un mach di jetz ab, sunsch, weh dir, wann dich dr Patron do antrefft<stage>(schaut zum Fenster hinaus)</stage>Herrjeh noch emol, do vorne kummt ju dr Meischter schun. Jetz Itzig verschwind, sunscht gebts a Ungleck.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <stage>(schaut verzweifelt zum Fenster hinaus, von einem Bein auf das andere springend)</stage>
+        <p>Au waih! au waih! Itzig, wie wirds der gehn. Ar schlagt mi tot, ar macht mi kapores.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henri :</speaker>
+        <p>Nur ruehig Bluet, Itzig. So schlemm wurds net ware. Awer, dass Ehr eijer Fett abbekumme, das esch sicher.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <stage>(springt ängstlich im Zimmer umher, während der Geselle lacht)</stage>
+        <p>Es gett a Ungleck, es gett a Totschlag; au waih, au wauih. Lie- wer Henri, ich geb dir 100 Franke, wann du mech zu dam Hüss nüssbringsch.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henri :</speaker>
+        <p>Zu em Huess kenne Ehr jetz nem nuess. Dr Meischter esch schun an dr Hüsster. Ehr muen Eich irgendwo verstecke, em Gaisstall oder em Kaller oder uff der Behn. Awer uff der Stell, so schnall as a Geis trett.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p><stage>(sieht sich ueberall um)</stage>Gueter Henri, rett mich, helf mer, sunsch bin i kapores. O mei armi Sarah!</p>
+        </sp>
+          <pb n="12"/>
+          <sp who="UNKNOWN">
+            <speaker>Henri :</speaker>
+          <p>Ich weiss kei andere Rot, als dass due schnall en des Fass do schlupfsch. As gebt kei andere Ueswag meh, abba!</p>
+          </sp>
+          <sp who="UNKNOWN">
+          <speaker>Itzig :</speaker> 
+          <p>Gerechter Gott! Ins Fass?<stage>(läuft zitternd auf und ab)</stage>Ins Fass! O Sarah mei liewes Weib! O Samuel, mei Sehnche, o Rebbeck- che, mei Techterche!</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henri :</speaker>
+        <p>Allez hob, als drin gsprunge, sunsch besch verlore.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <stage>(Henri zieht ihn zuem Fass, dann steigt Itzig auf die Bank und klettert ins Fass)</stage>
+        <p>So will ich springe ins Fass. Awer mei liewer Henri, verrat mich net. Dü sollsch morje hawe die 100 Franke un noch Trenkgald derzue.<stage>(Streckt den Kopf über den Rand und ruft)</stage>Wenn dr Meischter awer furt, losch mi gleich wieder erüss.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henri :</speaker>
+        <stage>(lachend)</stage>
+        <p>As esch schu racht. Ich wurd alles guet bsorje. U jetz ducke nab.</p>
+      </sp>
+    </div>       
+    <div type="scene">
+      <head>7. Szene.</head>
+      <stage>Henri, Arwegascht, Itzig (im Fass).</stage>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <stage>(eintretend)</stage>
+        <p>Saa, Henril Eschs wohr, dass dr Itzig, der eland Halsabschnieder, do en dr Budik esch gsenn?</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henri :</speaker>
+        <stage>(gibt ihm durch Gebärden zu wissen, dass Itzig im Fass sitzt)</stage>
+        <p>Zu, was danke Ehr dann, Patron. Meine Ehr, dass dr Itzig noch amol de Muet hat, en ejer Hiesel ze kumme<stage>(zeigt auf das Köf- ferchen und flüstert dem Meister etwas ins Ohr, worauf dieser nickt).</stage></p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <p>Do hett dr Nochber, der Schuehmacher sich trompiert. Ich wotts dam Gizkraje net rote, sich unter min Dach noch amol blecke ze lon. Dann i gat ne eso jammerlich vermewle, dass er in ken Sardineladel meh nin dat passe. Zeig, Henri, helf mer jetzt mer wann des Fass noch schnall fertig mache, dr Winhandler brüchts hit Owe noch. Lang dr Deckel hare, dass mer ne druff schlaje<stage><pb n="13"/>(während dieser Arbeit drücken beide ihre Schadenfreude aus durch allerlei Gebärden).</stage></p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henri :</speaker>
+        <stage>(holt den Deckel, steigt auf die Bank und sagt leise zu Itzig)</stage>
+        <p>Still und muck Dich net, sunsch besch verlore.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <stage>(hat unterdessen seinen Frack ausgezogen und Hammer und Rei- fen genommen)</stage>
+        <p>Was hoert mer do? Ich mein, es het a Katz ge- miaut. Setzt am End eini em Fass drene? Zeij lueg emol. Henri: Doch, ech hab au ebbs ghert. Awer do em Fass setzt se nett. Di huckt allewai drewe em Gaisestall.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <p>Allez hopp jetzt flenk an d'Arwet<stage>(er legt den letzten Reifen über und schlägt ihn mit dem Gesellen fest)</stage>Hatt ech nure d'r Itzig un- ter d'Hand bekumme hit owe, dam hat ich s'Fall gegarbt.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Henri :</speaker>
+        <p>Wie ich vernemm, Meischter, sen Ehr noch guet gelade uff dane Spetzbüe.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <stage>(innehaltend)</stage>
+        <p>Das well i meine, aso ebbs vergesst mer net ne schnall. Wann ich dane Erzhalunk, unter mini Klauie bekumm, i riss em minsechs d'Nas uessm Gsecht un d'Ohre vom Kopf. So, jetz war unseri Arwet schon fertig. Kumm, mer gehn jetz newer en d'Stub und laare a Kriejel Win metenander. Bis en era Will wurd's dr Winhandler schon hole.<stage>(Beide lächelnd ab.)</stage></p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>8. Szene.</head>
+      <stage>Itzig allein. </stage> 
+        <sp who="UNKNOWN">
+          <speaker>Itzig :</speaker>
+          <stage>(spricht zum Spundlock heraus </stage>
+        <p>Aui waih, au waih! ich armer Mann! Bin ich nicht noch ärmer als d'r Daniel in dr Lewegrub? Setz ich do in dem Staellche wie ne Gans 8 Tag vor Martini. Va- ter Abraham rett mich, teire Sarah! Samuel, mei Lewe! Rebecche, mei Herzblättche, helfe mer! Eiere Ette sterbt, er sterbt!</p>
+          </sp>
+    </div>
+    <pb n="14"/>
+    <div type="scene">
+      <head>9. Szene.</head>
+      <stage>Itzig, Aaron. </stage>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <stage>(von links eintretend)</stage>
+        <p>Wo nur dr Itzig bleibt. Es werd mer ganz angst und bang um mine Cousin. Schon ewer a Stund esch ar zuem Fassbender gange un esch noch net zeruck. Grausser Gott! se werene doch net daut gemacht han.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <stage>(ruft durchs Spundloch)</stage>
+        <p>Aaron! Aaron!</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <stage>(sieht sich erschrocken nach allen Seiten um)</stage>
+        <p>Was isch das? Mein ich doch, es hat einer gerufe meine Name.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <stage>(lauter)</stage>
+        <p>Aaron! Aaron!</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <stage>(fällt vor Schrecken auf den Rücken)</stage>
+        <p>Grausser Gott, en dere Büdik sen Gespenster.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <stage>(ruft deutlich)</stage>
+        <p>Aaron! kei Gespenster, helf am arme Itzig!</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <stage>(starr vor Verwunderung)</stage>
+        <p>Wahrhaftiger Gott, es isch de Stimm vom Itzig. Er ruft um Helf<stage>(erhebt sich langsam und ruft)</stage>It- zig, wo bisch du?</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <stage>(streckt die Hand durchs Spundloch)</stage>
+        <p>Hier em Fass!</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <stage>(greift sich an de Kopf)</stage>
+        <p>Mer gruselts? Das esch gewess d'Stemm vom tote Geischt vom Itzig, den se gemacht hawe kapores. Ich lauf fort un sags dr Sarah<stage>(will fort)</stage></p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <stage>(ruft laut, indem er zugleich gegen das Fass stampft)</stage>
+        <p>Jau, jau, Aaron, ich ben net daut, ich ben eingsperrt in das Fass, Hier esch mei Hand. D'Itzig esch em Fass.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <stage>(kommt zögernd näher und bückt sich zum Spundloch)</stage>
+        <p>Gott der Gerechte, dr Cousin lebt, er esch net daut. Awer Itzig, sag mer, wie bisch denn du komme en des Fass?</p></sp>
+          <pb n="15"/>
+          <sp who="UNKNOWN">
+            <speaker>Itzig :</speaker>
+          <p>Was a Frog? Sollsch du doch dran denke, wie ich komm eraus. Ich ben gsprunge en des Fass üess Angscht vorm Meischter Arwe- gascht. Awer hilf mer schnell oder ich versteck. <stage>(Henri horcht im Hintergrund und streckt hie un da voll Schadenfreude den Kopf hervor). </stage>  
+     </p></sp>
+          <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Itzig, wenn dü willsch hawe, dass ich der helf, so musch du mer zuerscht bezahle die fenf Franke, um die du mich geschtert hasch beschummelt.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Cousin, bleib mer vom Leib mit dem dumme Gschwaetz. Die fenf Franke geb ich der net.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Drno rehr ich kein Fenger zu deiner Errettung un wenn du geist kapores.<stage>(will fort)</stage></p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Aaron bleib da, du sollsch hawe dei Geld.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Awer ich wills hawe in di Hand uff dr Stell.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <stage>(reicht ihm Geld durch das Spundloch)</stage>
+        <p>Da haschte!</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <stage>(zählt es rasch)</stage>
+        <p>Das sein nur vier un a halwe Franke, es fehle noch fenzig Centimes.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Mach doch kei Gschichte Aaron, du kannsch zufriede sein.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>:<stage>(aufstehend)</stage>Du gibsch mir noch a halwe Franke oder ich lass dich sitze.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Nu do hasch se. Her, Cousin, du gehsch jetz zuem Fassbinder -</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <stage>(erschreckt)</stage>
+        <p>Gott soll mich bewahre!</p>
+        </sp>
+      <sp who="UNKNOWN">
+      <speaker>Itzig :</speaker>
+       <p>Du brauchsch net ze ferchte, de Meischter Arwegascht, er fresst dich net. Geh un frag ne, ob er der net well borge des Fass fer a Stund<stage>(Henri winkt ab)</stage></p></sp>
+         <pb n="16"/>
+         <sp who="UNKNOWN">
+         <speaker>Aaron :</speaker>              
+      <p>Wenn er awer net will borge des Fass?</p>
+           </sp>
+        <sp who="UNKNOWN">
+       <speaker>Itzig :</speaker> 
+       <p>Dann muesch mache a Masematte metem Fassbinder un's abkaufe. Aber billig, hersch, so bellig wie meglich <stage>(Henri eilt unbemerkt zur Türe hinaus)</stage> </p></sp>
+                 <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Wieviel soll ich em biete?</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Wenig sag ech dr, wenig! Zuem Aufschlage hasch immer noch Zeit. Geh gleich un kafs, awer geb net ze viel.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <stage>(abgehend)</stage>
+        <p>Wer ich schon wisse, wie mer macht a Gschaeftche. Au revoir guter Cousin un langwill dech net en dim Asyl. Ich well sehn wo ich dr Meischter Arwegascht fend<stage>(geht nach rechts ab).</stage></p>
+      </sp>
+</div>
+    <div type="scene">
+      <head>10. Szene.</head>
+      <stage>Arwegascht, Henri, Aaron, Itzig (em Fass) (Arwegascht und Henri treten von links ein. Beide reden im Flüsterton miteinander. Henri teilt dem Patron mit, was er er- lauscht hat, indem er mit Gesten das V orgefallene illustriert. Dabei nickt der Meister öfters mit dem Kopfe, lacht, schüttelt den Kopf usw. Unterdessen klopft es an der rechten Tür.)</stage>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <stage>(eintretend)</stage>
+        <p>Bonjour Meischter Arwegascht! Wie geits? Han Ehr allewil viel Arwet?</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <p>A so lala! Bi dane Zitte esch mer oi met wenig ze fredde. Wann mer nur fer sini Familie uffbrengt.<stage>(in kaltem Tone)</stage>Was welle Ehr von mer?</p>
+        </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Ich hab vom Winhaendler ghert, dass Sie han a schens Fass en ehre Buedick.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <p>Ja, wotte Ehrs ebbe kauife?</p>
+          <pb n="17"/>
+          <speaker>Aaron :</speaker>
+          <p>Nu, was heisst kauife? Viellicht kennt ichs hawe auf Borjs fer a paar Stund.</p>
+     </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <p>Nix do. Ich lehn ke Fass uess am wenigschte an aso Galdkramer wie due. Dann ich weiss, due besch vom namliche Holz wie dr eland Itzig.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Nue ruehig Bluet, Meischter Arwegascht. Ich kauf Ejch des Fass ab.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <p>Das esch bes mache, dann des Fass esch schon fascht so guet wie verkauft. Dr Winhandler am Rothuesplatz bruechts hit Owe noch.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Aaron :</speaker>
+          <p>Nu, die Uessrede kenn ich. Ehr welle nur Spass mache met mer fer de Priess zu triwe en d'Höh.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <p>Do besch bi mer an de latze gerote. Ah, du meinsch i trib oi eso vermalefiziti Judemanewer wie Ehr Halunke. Ich ben a ehrlicher a Handwariksmann un geb mech nett ab met eso Pratike. Drum bei Entweder kauifsch due bim a andere Fassbinder a Fass oder due wartsch noch drei Tag, bes ich a nejs gemacht hab.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Beschter Meischter, kei anders Fass will ich hawe als des do. Ich brauchs heit noch unbedingt. Ich bezahl ders bar uff dr Stell. Nu, was esch der Pris?</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <stage>(sich einige Momente besinnend)</stage>
+        <p>Na, so well i nochgahn un des Fass verkauife. Dr Winhandler wurd sech noch kenne behalfe fer zwei Taj. I mach em a neis derfer.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <stage>(freudig)</stage>
+        <p>Dr Gott Abraham soll's Ejch vergelte! Wieviel witt fer dess Fass?</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <p>Toissig Franke un ken Centimes wenjer. Wann's der ze viel isch, dert esch d'Ter.</p>
+      </sp>
+      <pb n="18"/>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Awer Meischter bedenke doch, 1000 Franke fer aso ne einfaeligs Fass.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <p>Ei, wann's Eich ze einfaltig esch, ze lohns doch stehen, ich hab Eich net geruefe.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Tausend Franke! Esch des Eier letschtes Wort?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Arwegascht :</speaker>
+        <p>Min letzschtes<stage>(geht ab nach rechts).</stage></p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>11. Szene.</head>
+      <stage>Aaron, Itzig (em Fass).</stage>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Wahrhaftig, er lässt mich stehen. Was sell ich mache? Ich mues hawe das Fass, sunsch geht dr Itzig kapores. Ich will selwer frage d'Itzig em Fass.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <stage>(schreit aus Leibeskräften)</stage>
+        <p>Sarah, rett mich! Der Ette sterbt! Aa- ron mach schnell, ich verstick !</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <stage>(legt sich ans Spundloch)</stage>
+        <p>Worum tusch denn immer so saifze ?</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Gerechter Gott. Mer soll net saifze, wenn mer mues sitze stunde- lang im a Backofe un muess anhere si eignes Todesurteil. Au waih! dr Itzig sterbt! Helfe! Helfe!</p>
+        </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>            
+       <p>Nu, sei doch vernninftig, Itzig, du sterbsch noch net. Geb mer schnell dei Geld, ich will kaufe das Fass un wenn's auch sott koschte 1000 Franke. Schnell, geb mer's Geld!</p>
+      </sp>          
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+         <p>O Aaaron, da werd ich sein bankrott. Das viel Geld dauert mich. Lieber soll mich der Meischter Arwegascht haue windel- weich, als dass ich bezahl die grosse Summ.</p>
+      </sp>
+      <pb n="19"/>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Her, Itzig, du besch meschuegge. Dr Arwegascht werd der gewe so grausame Makkes, das de gehsch dabei kapores. Was hasch dann vu deim Geld? Gib mer schnell dei Brieftasch, du hasch genug Geld bei dır.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Au waih! au waih! Aaron: Grad her ich de Fassbinder komme, noch a Minut un du besch verlore. Itzig, gib mer dei Geld!</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <stage>(reicht ihm die Brieftasche zum Spundloch heraus)</stage>
+        <p>Aaron, da hasch mei Portefeuille mit em Geld. Ich gebts met schwerem Her- ze. Awer vergiss net zu begehre a Quittung. O Sarah! O Sa- muel! O Rebecche!</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Jetz halt dein Maul un tu nimm saifze! Dr Meischter kummt.</p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>12. Szene.</head>
+      <stage>Arwegascht, Aaron, Itzig (im Fass).</stage>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <stage>(das Portefeuille in der Hand)</stage>
+        <p>Nu, Meischter, habt Ihr Eich b'sonne? Wieviel lasst Ehr mir nach uff die 1000 Franke? Arwegascht : Ich bruech mech net ze bsenne. Bi mer wurd net gemarikt. Es blit bi dane 1000 Franke, wie's abgemacht esch wore.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Nu, wenn ihr das Wuchergeld partout welle, so selle Ehrs han. Awer Ehr miesse mir gewe a Quittung.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <stage>(für sich)</stage>
+        <p>Einer Spetzbue troijt em andere net. Fer was a so Umstand? Ihr gan mers Gald un namme d'War glich met. Drno sen mer quitt.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <stage>(sich verlegen am Kopfe kratzend)</stage>
+        <p>D'r Itzig well awer a Quit- tung han.</p>
+      </sp>
+      <pb n="20"/>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <stage>(auffahrend)</stage>
+        <p>Was saje Ehr do. A fer de Itzig wann Ihr des Fass kauife. Nai, dar bekummt nix von mer. Das esch der grescht Halunk wu uff'm Erdbode erumlauift. Drno wurd uessm Gschaft nix. Ab met der üss dere Büdik.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Do eschs Geld, ich verzicht auf d' Quittung<stage>(zahlt ihm die 10 Hun- dertfrankenscheine schnell auf die Hobelbank, Arwegascht steckt es kopfnickend ein)</stage>So jetz eschs Fass mein. Awer kann ichs Fass auch selber wegschiewe?</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Arwegascht :</speaker>
+        <p>Das versteht sich. Dü kannsch met em Fass mache, was de wet für sich) A so ne Gschaft macht mer net jede Taj<stage>(geht ab.)</stage></p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>13. Szene.</head>
+      <stage>Aaron, Itzig.</stage> 
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Sarah! Sarah! 1000 Franke von unserem Vermege sain geworfe en de Rhein. Dein Itzig weint blutigi Traene. O ich sterb, ich sterb.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Ach was, dü sterbsch noch net. Ich schieb jetz das Fass eweg un gleich wirsch du bekomme Luft. Pass uff, jetz will ich um- sterze des Fass<stage>(er legt vorsichtig das Fass um und schiebt es eine kleine Strecke vor sich her)</stage></p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Au waih! Au waih. Mach langsam Aaron. Au meine Rippe, ich bin zerschlage am ganze Leib.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Nu, das Lamentiere kann der nix helfe, mer welle mache, das mer heim kumme zu dr Sarah.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Halt! Aaron! Es wird mir so übel, als hett ich die Seekrankheit. Au wai! ich geh kapores!</p>
+      </sp>
+      <pb n="21"/>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Itzig, trest dich, mer sen bal dheim<stage>(rollt das Fass bis an die Türe, aber das Fass geht nicht hinaus)</stage>Halt, da komm ich net naus, ich wills auf dr andere Seit probiere<stage>(rollt das Fass gegen die andere Türe)</stage>Itzig, es geht nit. Die Tür isch viel zu eng. Was sell ich jetzt mache?</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Au waih! Au waih! Ich muess sterbe. O Sarah, leb wohl! Der Ette sterbt.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Halt, tzig, ich habs. Ich nimm dr Hammer vom Meischter Arwe- gascht und schlag de Deckel herunter. Dann bisch du frei<stage>(holt Hammer und Meissel in der Werkstatt und fängt an zu arbeiten).</stage></p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Mach schnell, Aaron! Ich erstick! Ich halt's nem aus! O Vater Abraham, helf mer un rett mich! Au waih, au waih!</p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>14. Szene.</head>
+      <stage>Aaron, Itzig, Polizist.</stage>
+      <sp who="UNKNOWN">
+        <speaker>Polizist :</speaker>
+        <stage>(rasch einiretend)</stage> 
+        <p>Was esch dann dohene fer a Spektakel? Drüsse von dr Stross her haw ich here schreie, wie wann einer gat umge- brocht ware. Was mache denn ehr do, en dare Buedik vom Arwe- gascht? Wart, Mannele, desmol hett's gschlaje. A due bisch am Inbrache. Due besch allewei der Spitzbue, wo ni schun lang suech.</p>
+      </sp>
+        <sp who="UNKNOWN">
+          <speaker>Aaron :</speaker>
+           <p>Pardon, Polizei. Ich bin kei Dieb un kei Inbracher. Ich hab kauft des Fass vom Fassbinder un hab welle sehn, wie aussieht in- newendig.</p>
+          </sp>
+      <sp who="UNKNOWN">
+        <speaker>Polizist :</speaker>
+        <p>Die Uesredde kanne mer. Due bisch uff frescher at ertappt, do nutzt ke Leigle meh. Ich fier dich uff de Stell ab ens Wachtlokal.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>           
+          <p>Au waih! au waih! Aaron, verlass mich nit, i muess sunsch sterwe, versticke, gehen kapores.</p>
+      </sp>
+      <pb n="22"/>
+      <sp who="UNKNOWN">
+        <speaker>Polizist :</speaker>
+        <stage>(erschrocken)</stage>
+        <p>Oho! Was esch dann des? Do setzt glauiwi a Mann em Fass? Ihr sen am And noch a Merder. Han Ehr viellicht gar welle eine umbrenge?</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <stage>(ganz erschrocken)</stage>
+        <p>Gerechter Gott, steh mir bei!</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Polizist :</speaker>
+        <stage>(legt Aaron die Hand auf die Schulter)</stage>
+        <p>Do esch ebs net ganz in Ordnung. Ich seh's Eich an. Uff dr Stell wurd's Fass unter- suecht.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Liewer Herr Polizei. Ich will's Eich säge, wer steckt im Fass. Es isch mei Cousin, dr Itzig. Ich hab gekoft des Fass un wills heimschaffe in min Magazin.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Au waih! au waih! Sarah hilf mer!</p>
+      </sp>
+          <sp who="UNKNOWN">
+            <speaker>Polizist :</speaker>
+          <p>Wie dr Itzig setzt in dem Fass? Wie kummi denn der do nin? Ihr kenne mer oi sage dr Teifel setzt do drenne. Nix do, des Fass muess uff dr Stell uffgemacht ware. Ich well luege, eb dr Arwe- gascht do esch, der hetts glich offe <stage>(ab). </stage></p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>15. Szene.</head>
+      <stage>Aaron, Itzig. </stage>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Aaron, du hasch mer noch net gewe mei Quittung. Wo hasch die Quittung? Lass mer se sehn!</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+       <p>Ich hab kei Quittung. Der Grobian hat mir keini gewe wolle. Was brauchsch denn du a Quittung?</p>
+        </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <stage>(zornig)</stage>
+        <p>Wozu ich se brauch? Um mich zu iwerzeige, dass du mich nit beschummelt hasch. Un des hasch dü Aaron, sonsch würdsch du hawe a Quittung. Gib her mei Geld, das du heraus- gekriegt hasch von die 1000 Franke.</p>
+      </sp>
+      <pb n="23"/>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Itzig, du bisch a Schauter! Du bisch a gfühlloser, undankbarer Mensch!</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Was heisst Gfiehl? Wie heisst Dank- Bei mir gilt nur s'bare Geld.</p>
+      </sp>
+    </div>
+    <div type="scene">
+      <head>16. Szene.</head>
+      <stage>Polizist, Aaron, Itzig. </stage>
+      <sp who="UNKNOWN">
+        <speaker>Polizist :</speaker>
+        <stage>(rasch eintretend)</stage>
+        <p>A, Ihr rede von Dank. Warte nur dane wurd Eich s'Gerecht schun üsszahle. Awer jetz ans Warik un des Fass uffgemacht. Dr Arwegascht esch nit d'heim, bloss dr Gesell. Un dar esch grad im Gaisestall und melikt d'Geiss. Allez hopp, Aaron, namme oi a Handwarikszig un halfe met fer des Fass uffmache.</p>
+      </sp>
+      <stage>(Beide hämmern tapfer darauf los.)</stage>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <stage>(schreit indessen)</stage>
+        <p>Au waih! Vater Abraham! Sarah, mei Samuel, o Rebeckche!</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>So Itzig, die Reifen sein fort, jetzt muesch du selwer de Deckel herausstosse!</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Polizist :</speaker>
+        <p>Jawohl, stosse fescht uns Fass esch offe.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <stage>(stösst den Deckel heraus und wird sichtbar. Er kriecht langsam hervor, richtet sich mühsam auf, reibt sich Arm und Bein)</stage>
+        <p>Au waih! Ich armer zerschlagener Mann. Un die Angscht, wo ich hab ausgstande, Aaron. So gewaltige Angscht wie dr Jonas em Bauch vom Walfisch.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Polizist :</speaker>
+        <p>Na, ich hab doch noch nie a Walfisch an dt Angel ghett. Un was fer a Chance. Glich zwei uffs mol. Ehr komme jetz alli zwei henters Getterle.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <stage>(jammernd)</stage>
+        <p>O beschter Herr Polizischt, ich bin ganz unschuldig.</p>
+      </sp>
+      <pb n="24"/>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>Un ich auch! So unschuldig wie e neigeborenes Kind.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Polizist :</speaker>
+        <p>Das kenne mer. Die greschte Oweramergauner schwere, dass sie d'Unschuld salwer sen. Ehr bekumme ejere Lohn schun zuediktiert vom Gericht.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <stage>(fällt vor dem Polizisten in die Knie und hebi flehend seine Hände zu ihm empor)</stage>
+        <p>Beschter Polizei. Hawe doch Erbarme mit mer! Ich bin durch Furcht komme en des Fass.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Polizist :</speaker>
+        <p>Do wurd kei Komedie gspielti. Der vorgefunde Tatbestand be- wiest klipp un klar, dass Ehr beidi nix guets em Scheld gfiert han. Ehr muen allezwei mit uff d'Wacht? S'Gerecht wurd die Sach genauer untersueche.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>Gerechter Gott, ich, dr Itzig, dr ehrlichst Handelsmann von Bucke- num soll gfiehrt ware wie a Dieb durchs Städtchen.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>O Schande, ich dr Aaron, dr betuchte Viehhändler, soll ingsperrt. werde wie a Spitzbub un a Raiwer.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Polizist :</speaker>
+        <stage>(packt beide am Kragen)</stage>
+        <p>Kein Widderred! Un jetz ab en de Kafig, ihr zwei Erzhalunke.</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Itzig :</speaker>
+        <p>O mein, Sarah, mein Rebeckche! Waer ich doch gebliewe im Fass !</p>
+      </sp>
+      <sp who="UNKNOWN">
+        <speaker>Aaron :</speaker>
+        <p>O mein Bliemche?! Das esch dr Lohn, dass ich befreit hab dr Itzig üssem Fass.<stage>(Wie der Polizist die beiden am Kragen hinausführl, kommt Henri zur anderen Tür herein und macht ihnen eine lange Nas hin- ten nach.) </stage></p><stage>(RIDEAU.)</stage>
+      </sp>
+    </div>
+   </body> 
+    </TEI>
