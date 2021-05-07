@@ -25,10 +25,10 @@ best_l_f1 = 0.0
 
 best_valid_error = 1.0
 
-for seuil in [0.1, 0.2]:
-  for c1 in [0.0, 0.25]:
-    for c2 in [0.0, 0.25]:
-      for feature_func in [features_syl, features_default]:
+for seuil in [0.1]:
+  for c1 in [0.7]:
+    for c2 in [0.0]:
+      for feature_func in [features_vpos]:
         start = time.time()
         valid_error_total = 0.0
         l_f1_total = 0.0
@@ -36,7 +36,7 @@ for seuil in [0.1, 0.2]:
         print("seuil", seuil)
         print("c2", c2)
         print("feature_func", feature_func)
-        folds = 5
+        folds = 1
         for i in range(folds):
         
           print("valid fold:", i)
@@ -49,13 +49,12 @@ for seuil in [0.1, 0.2]:
                                               act_heads, scene_heads, [len(y) for y in Y_tv])],
                                              zip(act_heads, scene_heads), zip(X_tv, Y_tv))
           
-          # TODO: meilleure vérification
           for x in X_valid:
             assert(x not in X_train)
 
         
-          X_train = [[feature_func(x, i, seuil) for i in range(len(x))] for x in X_train]
-          X_valid = [[feature_func(x, i, seuil) for i in range(len(x))] for x in X_valid] 
+          X_train = [[feature_func(x, i) for i in range(len(x))] for x in X_train]
+          X_valid = [[feature_func(x, i) for i in range(len(x))] for x in X_valid] 
 
       
           X_train = [pycrfsuite.ItemSequence(x) for x in X_train]
@@ -105,13 +104,7 @@ for seuil in [0.1, 0.2]:
 
 
           print("% d'erreurs validation:", 100*mistakes/sum([len(Y) for Y in Y_valid]))
-
-          char_f = open("bastian_char_list.txt")
-
-          characters = char_f.read().split("\n")
       
-          X_tv_ = [[feature_func(x, i, 0.1) for i in range(len(x))] for x in X_tv]
-          X_tv_ = [pycrfsuite.ItemSequence(x) for x in X_tv_]
           #tei_generator = TEIGen([x.string for x in X_tv[3]], crf.predict(X_tv_)[3], characters)
           #print(etree.tostring(tei_generator.generate_TEI_body()))
           #print(etree.tostring(generate_TEI_body([x.string for x in X_tv[0]], crf.predict(X_tv_)[0]), pretty_print=True))
