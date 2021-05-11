@@ -52,10 +52,8 @@ for seuil in [0.1]:
           for x in X_valid:
             assert(x not in X_train)
 
-        
           X_train = [[feature_func(x, i) for i in range(len(x))] for x in X_train]
           X_valid = [[feature_func(x, i) for i in range(len(x))] for x in X_valid] 
-
       
           X_train = [pycrfsuite.ItemSequence(x) for x in X_train]
           X_valid = [pycrfsuite.ItemSequence(x) for x in X_valid]
