@@ -112,6 +112,7 @@ def line_features(raw_tokens, i):
   features = {
     'line_end_hpos' : raw_tokens[line_end].hpos,
     'num_tokens_in_line' : line_end - line_start, 
+    'line_width' : raw_tokens[line_end].hpos - raw_tokens[line_start].hpos,
   }
   return features
 
@@ -201,10 +202,22 @@ def vers_features(raw_tokens, i):
   return features
     
 
+def sentence_length(raw_tokens, i):
+  start = i - 1
+  while (start >= 0
+         and not bool(re.search("[!?\.:]", raw_tokens[start].string))):
+    start -= 1
+
+  end = i
+  while (end < len(raw_tokens) and 
+        not bool(re.search("[!?\.:]", raw_tokens[end].string))):
+    end += 1
+  return end - start
+
 def features_vpos(raw_tokens, i):
   word = raw_tokens[i].string
 
-  features = {}
+  features = {"bias" : 1.0}
 
   features.update(token_features_context(raw_tokens, i))
   features.update(inter_token_features(raw_tokens, i))
@@ -213,6 +226,8 @@ def features_vpos(raw_tokens, i):
   features.update(inter_line_features(raw_tokens, i))
 
   features.update(vers_features(raw_tokens, i))
+
+  features['sentence_length'] = sentence_length(raw_tokens, i)
 
   return features
 
