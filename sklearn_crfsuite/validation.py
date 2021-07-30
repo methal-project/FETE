@@ -62,6 +62,7 @@ for seuil in [0.1]:
               algorithm='lbfgs',
               max_iterations=1000,
               all_possible_transitions=True,
+              all_possible_states=True,
               c1=c1,
               c2=c2,
           )

@@ -3,9 +3,12 @@ from acts import *
 import pickle
 
 def train():
+
+  #dataset_f = open(sys.argv[1], "rb")
+
   X_train, Y_train, X_test, Y_test = get_data_sets()
 
-  X_train = [[features_vpos(x, i) for i in range(len(x))] for x in X_train]
+  X_train = [features_set_3_glob(x) for x in X_train]
   X_train = [pycrfsuite.ItemSequence(x) for x in X_train]
 
   crf = sklearn_crfsuite.CRF(

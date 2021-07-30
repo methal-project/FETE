@@ -13,7 +13,7 @@ def is_acty(word):
   return result
 
 def is_sceney(word):
-  lex = ['ufftritt', 'scène', 'szene']
+  lex = ['ufftritt', 'scène', 'szene', 'scene']
   result = False
   oa = only_alpha(word.lower())
   for l in lex:
@@ -78,6 +78,7 @@ def token_features(token):
   features = {
     'word': word,
     'line_start': token.is_line_start,
+    'allcaps' : word.isupper(),
     'word.lower()': word.lower(),
     'word[0].isupper()': word[0].isupper(),
     'word_contains_period' : '.' in word,
@@ -96,6 +97,14 @@ def token_features(token):
 
 def token_features_context(raw_tokens, i):
   features = token_features(raw_tokens[i])
+  if i > 2:
+    features_last_word = token_features(raw_tokens[i-3])
+    features.update(prefix_map("-3", features_last_word))
+
+  if i > 1:
+    features_last_word = token_features(raw_tokens[i-2])
+    features.update(prefix_map("-2", features_last_word))
+
   if i > 0:
     features_last_word = token_features(raw_tokens[i-1])
     features.update(prefix_map("-1", features_last_word))
@@ -104,15 +113,25 @@ def token_features_context(raw_tokens, i):
     features_next_word = token_features(raw_tokens[i+1])
     features.update(prefix_map("+1", features_next_word))
 
+  if i < len(raw_tokens) - 2:
+    features_next_word = token_features(raw_tokens[i+2])
+    features.update(prefix_map("+2", features_next_word))
+
+  if i < len(raw_tokens) - 3:
+    features_next_word = token_features(raw_tokens[i+3])
+    features.update(prefix_map("+3", features_next_word))
+
   return features
 
 def line_features(raw_tokens, i):
   last_line_start, line_start, line_end, next_line_end = find_line_boundaries(
                                                                  raw_tokens, i)
+
   features = {
     'line_end_hpos' : raw_tokens[line_end].hpos,
     'num_tokens_in_line' : line_end - line_start, 
     'line_width' : raw_tokens[line_end].hpos - raw_tokens[line_start].hpos,
+    'line_end' : line_end == i,
   }
   return features
 
@@ -213,6 +232,60 @@ def sentence_length(raw_tokens, i):
         not bool(re.search("[!?\.:]", raw_tokens[end].string))):
     end += 1
   return end - start
+
+def features_set_1(raw_tokens, i):
+  word = raw_tokens[i].string
+
+  features = {"bias" : 1.0}
+
+  features.update(token_features_context(raw_tokens, i))
+
+  return features
+
+def features_set_2(raw_tokens, i):
+  word = raw_tokens[i].string
+
+  features = {"bias" : 1.0}
+
+  features.update(token_features_context(raw_tokens, i))
+  features.update(inter_token_features(raw_tokens, i))
+
+  features.update(line_features(raw_tokens, i))
+  features.update(inter_line_features(raw_tokens, i))
+
+  return features
+
+def features_set_3(raw_tokens, i, line_start_freqs):
+  word = raw_tokens[i].string
+
+  features = {"bias" : 1.0, "line_start_freq" : line_start_freqs[word]}
+
+  features.update(token_features_context(raw_tokens, i))
+  features.update(inter_token_features(raw_tokens, i))
+
+  features.update(line_features(raw_tokens, i))
+  features.update(inter_line_features(raw_tokens, i))
+
+  features.update(vers_features(raw_tokens, i))
+
+  features['sentence_length'] = sentence_length(raw_tokens, i)
+
+  return features
+
+def features_set_3_glob(raw_tokens):
+  line_start_counts = {}
+  total_counts = {}
+  for t in raw_tokens:
+    if t.string not in total_counts:
+      total_counts[t.string] = 0
+      line_start_counts[t.string] = 0
+    if t.is_line_start:
+      line_start_counts[t.string] += 1
+    total_counts[t.string] += 1
+  line_start_freqs = {}
+  for w in line_start_counts:
+    line_start_freqs[w] = line_start_counts[w] / total_counts[w]
+  return [features_set_3(raw_tokens, i, line_start_freqs) for i in range(len(raw_tokens))]
 
 def features_vpos(raw_tokens, i):
   word = raw_tokens[i].string

@@ -1,0 +1,1289 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="tei-drama.css"?>
+<TEI xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader/>
+  <body>
+    <pb n="5"/>
+    <div type="act">
+      <stage>Freundlich eingerichtetes Wohnzimmer gutsituierter Bürgersleute. Auffallend französischer Stil. Revanchebilder an den Wänden. Um das Portrait eines französischen Offiziers umflortes Trikolorentuch. Links und rechts und in der Mitte eine Türe.</stage>
+      <div type="scene">
+        <head>1. Szene.</head>
+        <stage>Zwei Totengräber mit weissen Trauerkränzen treten ein, nachdem sie draussen geklopft haben ohne Antwort zu erhalten. Einer von ihnen ist stark angetrunken und beherrscht sich nur schlecht. Er stulpert und lässt einen der Kränze zur Erde fallen.</stage>
+        <sp who="UNKNOWN">
+          <speaker> 1. Totengräber:</speaker>
+          <p> Allez, allez, Jacques, schick Dich. Nundebuckel noch emol! Süff nit meh, ass de v'rtraasch!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> 2. Totengräber:</speaker>
+          <p>Halt d'Schneik! Mit denne drej Stäje isch m'rs Bluet in d'r Kopf - - </p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>1. Totengräber:</speaker>
+          <p>Gieb m'r die Kron' erum un nemm Dich zamme.</p>
+          <stage>(Er nimmt ihm einen Totenkranz ab.)</stage>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> 2. Totengräber:</speaker>
+          <p>Alphons, bisch e gueter Kamerad, wenn Dü vor mir verrecksch, - schleif ich Dich umesunscht nüss! Parole d'honneur - ich v'rlang nix!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>1. Totengräber:</speaker>
+          <stage>(Wütend)</stage>
+          <p>Stille sollsch sinn, v'rdammi! Klopf Dinni Sprüch, wenn de Dinni Brunnebutzerklift widder an hesch.<stage>(Geht rechts zur Tür.)</stage> Dummer Kaib, do kann noch e guets Trinkgeld erüslueje!<stage>(Er pocht an)</stage></p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>2. Totengräber:</speaker>
+          <p>Nit v'rzuerne, Alphons, luej, d'r Waldemar Wolff wohnt so wuethi hoch, - alli Schwowe wohne so hoch! Ich v'rtraa die kaiwe Stäje nemmi.</p>
+        </sp>
+        <pb n="6"/>
+        <sp who="UNKNOWN">
+          <speaker>1. Totengräber:</speaker>
+          <p> Jetzt kummt ebber. Stipper Dich!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>2. Szene.</head>
+        <stage>(Nini kommt aus der rechten Türe.)</stage>
+        <sp who="UNKNOWN">
+          <speaker> Nini:</speaker>
+          <p>Bonjour.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>1. Totengräber:</speaker>
+          <p>Mademoiselle, - pardon, wohnt do d'r Herr Waldemar Wolff?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Nini:</speaker>
+          <stage>(erstaunt über die Eindringlinge)</stage>
+          <p>Je crois bien! M'r han e Schell drüsse un no wäre Sie au läse kenne?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>1. Totengräber</speaker>
+          <stage>(sehr devot):</stage>
+          <p>Mais si! Awer an d'r Tuer steht numme Wolff, Ingenieur, uff-em Toteschin isch awer Waldemar Wolff gschriewe.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>2. Totengräber:</speaker>
+          <p>Waldemar, heilicheeh, diss hawi noch nie gfresse, 's isch allewäj aaner vun Berlin, hein?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Nini:</speaker>
+          <p>Taisez-vous, s'il vous plait. Ich wurr diss in d'r Maddam v'rzehle!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>2. Totengräber:</speaker>
+          <p> Voyons, voyons! Saat Sie selbscht, Jumpfer, m'r weiss nie, wo m'r gebeschtelt worre-n-isch! Haha!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>1. Totengräber: </speaker>
+          <p> Ambetir die Mamsell nit!</p>
+        </sp>
+        <pb n="7"/>
+        <sp who="UNKNOWN">
+          <speaker> 2. Totengräber:</speaker>
+          <p>Ambetire? Ich bin üs guetem Hüss! Minner Vatter soll e Jeneral sin g'sinn. D'Mueder het vielmol g'saat, wenn sie ne sähn dhät, sie dhät ne glich widder kenne!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>1. Totengräber: </speaker>
+          <stage>(stosst seinem Kollegen mit dem Ellbogen in die Seite)</stage>
+          <p>Satanskaib! Sie müehn nit höre, was er saat, Mamsell, an de Fridäj babbelt er allewyl so daub! M'r solle do die Krone un Palme abgenn.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Nini:</speaker>
+          <p>Gänn Sie se häre.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>1. Totengräber:</speaker>
+          <p>Se kumme vum klane Buewel, wie m'r grad ewe v'rdolwe han.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>2. Totengräber:</speaker>
+          <p>Ja, schad fur denne Kneckes!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Nini:</speaker>
+          <p> Han die nit solle uff-em Gottsacker bliewe?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>1. Totengräber: </speaker>
+          <p>Abba! Bis d'r Grund sich g'setzt hett, hebt m'r sie d'ham uff. Sie v'rderwe sunsch gar glich.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Nini:</speaker>
+          <stage>(hat ihnen die Kränze nach und nach abgenommen)</stage>
+          <p>Eins, zwei, drej, vier, fünf! Han Sie ebbs ze guet?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>1. Totengräber:</speaker>
+          <p> - - - e klaans Trinkgeld, wie Sie denke, m'r han se vun St. Galle eringebroocht.</p>
+        </sp>
+        <pb n="8"/>
+        <sp who="UNKNOWN">
+          <speaker>Nini:</speaker>
+          <p>D'r Herr isch nit grad do... Sinn Se zefridde mit eme Marik jeder?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>2. Totengräber:</speaker>
+          <p>Wie d'r Narrelapp g'storwe isch, hawi e Thalerstueckel g'schnappt.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>1. Totengräber:</speaker>
+          <p>Allons, Jacques, mach's gnädig. Na ja, e Marik, 's reicht schun, Mademoiselle ...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Nini:</speaker>
+          <stage>(hat im Portemonnaie das Geld zusammengesucht)</stage>
+          <p>Voilà! Sie e Marik - un Sie aaner.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>2. Totengräber:</speaker>
+          <p> Jetz, die klaane Marik sin schintzich nit grösser...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>1. Totengräber: </speaker>
+          <p>Merci, Mademoiselle! Au revoir!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> 2. Totengräber:</speaker>
+          <p>Wenn Sie noch emol ebbs brüche! 's nägschst Dhür widder, bonjour!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>1.Totengräber</speaker>
+          <stage>(im Abgehen):</stage>
+          <p>Dich koscht's doch noch emol d'r drejecked Huet mit dym freche Müll!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>2. Totengräber:</speaker>
+          <p>Halt d'Schneik, d'r Marik han m'r doch.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Nini:</speaker>
+          <p>Pfui Deifel, rieche die Kerl nooch Schnaps!</p>
+        </sp>
+      </div>
+      <pb n="9"/>
+      <div type="scene">
+        <head>3. Szene.</head>
+        <stage>(Waldemar Wolff, vom Begräbnis kommend, begegnet noch im Hausflur den Totengräbern.)</stage>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Die han d'Krone gebroocht? </p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Nini:</speaker>
+          <p>Oui, monsieur!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p> Wieviel sin's denn?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Nini: </speaker>
+          <p>5, monsieur. E Marik Trinkgeld hawi jedem genn.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Wolff:</speaker>
+          <p>E Schand, ass m'r sich d'Krone selwersch kaufe muess ... E Marik Trinkgeld? Wurum denn?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Nini:</speaker>
+          <p>Se han's begährt!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Wolff:</speaker>
+          <p>Unv'rschämts Volik! Drüsse hett schun jeder drej Marik bekumme. Sawe Sie's in minere Frau, ass ich do bin.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Nini:</speaker>
+          <p>Oui, monsieur. Do isch denne Morje au e Brief fur Sie ankumme.<stage>(nach rechts ab)</stage></p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <stage>(entledigt sich seiner Ueberkleider und erbricht den Brief, lesend)</stage>
+          <p> Herrn Wolff! Ihres dreitägigen Urlaubs unbeschadet, muss ich Sie dringend ersuchen, Ihre am 12. ds. an unsere Bauverwaltung eingereichte Skizzierung des neuen Brückenbaues bei Kranzweiler gefl. noch einmal anzufertigen. Dieselbe ist in einem so unerhörten 
+         <pb n="10"/>
+         Schriftdeutsch abgefasst, dass der Herr Abteilungs- chef in sehr zutreffenden Worten darüber moniert hat. Die Neuanfertigung hat unverzüglich zu erfolgen. Wenn Sie auf eine definitive Anstellung bei uns reflektieren, so ist Ihnen ein fleissigeres Studium des Hochdeutschen dringend zu empfehlen. 
+         Der Inspektor.
+         En vous remerciant, Monsieur le chef! So ebbs am Daa, wo sie wisse, ich hab e Kind ze begrawe. Ruewich Bluet, Wolff. Möcht nurre wisse, was 'r jetz widder erüs- getueftelt het. Enfin -<stage>(Er verbirgt rasch den Brief)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>4. Szene.</head>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <stage> (in Trauerkleidern, geht ihrem Manne entgegen und fällt ihm weinend um den Hals. Wolff geleitet sie zum Sofa)</stage>
+          <p>Bonjour, chéri, bisch de zeruck? Wie isch's denn g'sinn? Ach, jetz isch unser Sunneschin furt. Jetz ischs kalt un finschter by uns do hinne.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff</speaker>
+          <stage>(küsst sie):</stage>
+          <p>Sèches tes yeux, Claire, nimmi grinne. Unser Goldbue flattert jetz als klaaner Engel durch unseri Stubb. Gell?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Claire:</speaker>
+          <p> 3 Johr! Hätt 'r nit glich kenne sterwe. Awer grad jetzt, wo m'r sie schun so schrecklich gern hett.<stage>(Weinend)</stage> Chéri, hesch Dü denn zuelueje kenne, wie sie ne v'rschärrt han in sin eng klein Kämmerle? Hein?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Que veus-tu, Claire, - weh het's gedhon ... So hett's mich die drej Däj nit gepackt, wo 'r do in Blueme un Kisse geläje-n-isch. Un hab Dir doch selbscht immer gepreddit, dass so e klaner unv'rständiger Molle drowe-n- am Beschte uffg'hebt isch.</p>
+        </sp>
+        <pb n="11"/>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p>Ach, chéri, unser Kind, unser jung Glueck... Amend e schlechti Vorbedyttung fur diss was noochkummt!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Claire, rej Dich nit uff, Dü hesch sechs Nächt nit g'schloofe. Kumm, sej v'rständich un laj Dich. Dü bisch jo ganz vun Kräfte.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p>Wenn ich schloofe kennt, chéri! Awer ich kann nit, ich find ken Ruej! Ich bin enerwirt! Alles Trürigkeit un Heimweh um mich erum, ah! - ich bin jo so unglücklich.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Scht! Stille, stille, Claire. Dü witt mir Affronde mache? Ich bin niemes fur Dich, n'est-pas? Luej emol, m'r kenne jo widder e so e Goldbue bekumme...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p>Ach — ich — — ich mecht jetzt furt vun hie! I hab Dir schun d'rvun geredd, Chéri, uff Bougival zeruck, wo ich Dich hab kenne lehre, dort kann ich mich v'rgesse. Siehsch, wärde m'r dort gebliewe. Dort wär unser Buwi viellicht nit krank worre un nit gstorwe.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Claire — — soll ich minni Mamme widder so muetter- seele-n-allan zerucklon? Wottsch Dü dis han?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p>Ze soll sie doch mit uns gehn...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Dü weisch, dass sie diss nit macht.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p>Diss isch Eijesinn!</p>
+        </sp>
+        <pb n="12"/>
+        <sp who="UNKNOWN">
+          <speaker>Wolff</speaker>
+          <stage>(bittend):</stage>
+          <p>Claire!...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p>Doch, chéri, diss ischs. Wurum denn dis Getues un dis Gemachs! Ass ich grad emol d'rvun redd! Wenn dini Mamme nimmi zeruck will zue ihre Lytt, wurum hesch Dü v'rgesse, dass Dü driwe dini Heimet hesch?... Do hiwe sin m'r fremd un steh'n allein, abg'schnitte vun d'r Welt, niemes fröjt nooch uns, contraire, m'r macht sich luschtig uewer uns in Dinne Kreise. Dinni Mamme hüst ab- g'schlosse wie ime Kloschter. Drum, was hebt uns noch do huewe!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Claire! Loss in d'r Mamme ihre Schmerz un ihr G'heimnis. Wenn's Zytt isch wurd sie ihr Herz schun üsläre. An mir isch's nit, d'rnoch ze fröje.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p>Offe geredd, chéri, siehsch Dü nit, - odder witt Dü nit sähn?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Was soll diss heisse?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p> Merksch Dü nit, dass d'Mamme ebbs vor Dir v'rsteckle will?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <stage>(der auf die Erde geschaut hat, sieht sie mit einem schmerzlichen Blicke an)</stage>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p> Glaabsch Dü, ass d'Mamme numme resistiert, will se nimmi an d'r Blatz zeruckwill, wo dinner Vatter ums Läwe kumme-n-isch?</p>
+        </sp>
+        <stage>Wolff schweigt.</stage>
+        <pb n="13"/>
+        <sp who="UNKNOWN">
+          <speaker> Claire:</speaker>
+          <p>Chéri, dis sin doch Märle! Glaabsch Dü uewerhaupt an die G'schicht mit Dim Vatter? — d'r Mamme ihrem Cousin, wo bym Uesfall üs Paris g'falle-n-isch?... Ich nit. Welle m'r uns denn immer selbscht anlieje un um diss G'spräch erumgeh'n, wie wenn m'r Angscht d'rvor hätte? Wurum soll die Sach immer wie e G'spenscht zwische-n- uns steh'n, wo niemes anlueje un anruehre tröjt, wo m'r uffschnüft, wenn d'r Daa erum isch un m'r hett nit d'rvun geredd!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <stage>(nach einer Pause)</stage>
+          <p>- - - Naan, ass ich Dir's numme g'steh! Ich weiss genau, dass ich ze leddige Zytte vun minnere Mamme uff d'Welt kumme bin! Was sunscht Unkloors d'rby isch, mouvirt mich nit! Ich fröj au nit d'rnoch. Ich hab gar ken Verlanges noch eme Vatter, hab au nit d'ambition, e Vatter g'hett ze han. In de Kinderjohre viellicht, ja - awer jetz nimmi. Do druewer bin ich nüss, ich will hoffe, ass au Dü's bisch! Ich wisst hyt même nit, wie ich e Vatter gern sott han. Wyl ich nur e grossi, e strahlendi Muetterlieb hab kenne lehre, wäje dem fröj ich noch mim Vatter nit...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p>Chéri! Diss isch nit wohr! Dü hesch dinner Vatter gern g'hett, wenn Dü ne au nit gekennt hesch! Ob's der jetz isch, wie dort owe hängt <stage>(zeigt auf eine umflorte Photographie)</stage> odder ebs e-n-anderer isch. Dü hesch ne gern g'hett. Dü hesch ihm ze lieb din Herz mit Hass ang'fuellt geje alles, was sich eruewergewälzt un uns Unglueck gebroocht het. Dü hesch ihm ze lieb Dich in Wuet v'rgift geje alles was ditsch isch un was mit Schwowe zammehängt. Dü hesch wäje-n-ihm lang gezeebelt, bis Dü g'foljt bisch, wie d'Mamme Dich uff Strosburry geruefe het. Saa m'r nit, ass Dü nit wischtsch, wie m'r e Vatter gern sott han. Wenn
+          <pb n="14"/> 'r hytt käm, chéri, Dü dhätsch ne gern han un kämt 'r als Bettler erin.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Claire, - was soll denn diss, wurum witt Dü denn V'rgesses widder uffwuehle?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p>Wurum? Wil nix v'rgesse soll sin, il n'y a pas d'oubli! Wil Dü dran glauwe sollsch, ass Dinner Vatter gemord worre-n-isch, wil Dü d'Schwowe wäje däm hasse sollsch, un wil Dü zeruck sollsch kumme mit mir! M'r welle nimmi in Strosburry bliewe, han m'r denn hie schun e frohi Stund g'hett? Chéri, kumm, kumm zeruck ins Frankrejch.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Naan, Claire... d'r Mamme derf ich diss nit andhuen!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Claire: </speaker>
+          <p>D'Mamme-n-uewer alles, chéri, un ich nix d'rnäwe. Ich hab alles uffgenn, fur Dir zwei Johr lang in d'Ver- bannung ze folje, jetz opfer Dü diss einte un loss Dir kloore Win ynschenke, worum mir diss Läwe hie wittersch fuehre solle. Hett d'Mamme in junge Johr e Fehltritt gemacht, ze muess dis hytt längscht v'rgesse sin!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Claire, ich kann nit d'rnoch fröje un will nit fröje. Spare m'r in d'r Mamme e so schrecklichi Bicht gejenuewer ihrem Kind...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p>Hätt die Sach e raisonnabler Grund, eh bien, no dhät ichs v'rstehn! Awer so, m'r sieht jo nieneds hell, nix hinte un nix vorne-n-an V' rtröje. M'r sin doch ken Kinder meh, m'r kann uns doch sawe wie's steht.</p>
+        </sp>
+        <pb n="15"/>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Dü weisch, dass d'Mamme üs'm Elsass stammt; ass m'r in Bougival nur gezwunge d'Aerm noch ihre üsstreckt, weisch au. Wie lang han m'r sie noch, Claire... ich krej in Bougival au kenn emplacement wie ichs will, siehsch, dhue mirs ze lieb, muesch nit furt v'rlange vun Strosburri. M'r weiss jo gar nit, wie schlimm diss isch, was d'Mamme druckt...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p>Enfin, ich saa nur diss: d'Mamme kummt uns in nix ergeje. Dü siehsch, wie sie Dich zwingt, unter Mensche Din Läwe zuezebringe, wie Dir 's Läwe v'rsüre! Par exemple die Anstellung, wo Dü genumme hesch! Denk an die Schikane, wie Dir Dinner Chef vun Stund an gemacht het!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>D'Mamme weiss, ass 's ebbs sichers isch.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p> Ebbs süfers, diss Sichere. Sicher isch Dir numme d'r ewich Aerjer un d'r dadäjli Wuet, denn 's kummt Dings vor, wie Dü mir noch nit emol saasch. Un no d'r Namme, wie Sie Dir genn het! Waldemar! Sie weiss, dass Dü ne nit schmecke kannsch un bsteht druff, dass unser Buwi so heisse soll wie d'r Vatter. Un Dü gisch alles zue!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff</speaker>
+          <stage>(mit scherzhaftem Anflug):</stage>
+          <p>C'est oubli, Claire. Ich heiss jo au noch René, 's isch jo nit wie by arme Lytt. In d'r Kindtaifsfraid hett jo alles diss kenn Roll meh g'spielt.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p>V'rschmerzt, v'rgesse! Dü wurrsch noch d'pür Zefridde- heit mittles in d'r Misère drinne. C'est un vrai Steckel- bourgeois que tu deviens!</p>
+        </sp>
+        <pb n="16"/>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Claire, enragier Dich nit. Ich kann Dinni Uffrejung nit v'rsteh'n!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p>Ach, loss mich mit Fridde! Schwerfällig bisch worre, dicks Bluet bekummsch de! Un fruejer, wie han mir zwei unsere Passione d'Zuejel schiesse lon, wie han mir mitnand g'schwärmt vun unserem Land un han uns gschwore, ass mir 's Fyer vun d'r Begeischterung wach halte welle. Tout est oubli! 's schlooft merkwürdig schnell yn do hinne, ich kenn Dich küm widder. D'r dickscht Schwob denkt ehnder noch an revanche pour Auerstädt wie Dü an diss denksch, was uns zwei an d'r Statue de Strasbourg näther gebroocht hett. Chéri, en un mot, Dü v'rschwäwelsch!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff</speaker>
+          <stage>(ärgerlich):</stage>
+          <p>Awer jetz bitt ich Dich! Isch denn hytt d'r Daa, fur sich gejesittig Muehj ze mache!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p>D'r Daa isch, fur sich emol d'Wohrheit ze sawe. Ich will einfach furt odder ich will wisse, was die Komödie bedytte soll! 's isch min guet Recht, 's ze v'rlange. Dü derfsch mir ken Hanswurscht wäre, chéri, wo drüsse d'Fueschte zaijt un hinne mit kennem Gedanke dran denkt, sich selbscht ernscht ze nämme. Unseri ganz Position wurd lächerlich. Dü kannsch nit v'rlange, dass m'r hie wie d'Tote läwe un vun G'selligkeit, vum geischtige Läwe un Bildung nit meh höre wie e Sträfling hinter Zuchthüsmüre. Tu es prisonnier ici, un vrai prisonnier, un diss halt ich nit üs!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Ich genuej Dir also allein nimmi! Meechtsch gern Changement han?</p>
+        </sp>
+        <pb n="17"/>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p>Ah! c'est le comble! René! des offenses?! Je te remercie!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Mais Claire!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p>Stille, - 's isch guet, ich weiss, wo ich dran bin, ich hab hytt noch meh begrawe wie unsere Bue.<stage>(Schlägt die Türe zu und geht ab)</stage></p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Voilà, diss hett m'r grad noch g'fehlt! Es zejt e Wetter eruff, - hiwe dis Gejomers un driwe zell! Ich in d'r Mitte un hab selbscht d'r Kopf voll wie e Seschter un - un - ach, e Köjel in d'r Kopf, no wärd Ruej!<stage>(Es klopft)</stage>Entrez!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>5. Szene.</head>
+        <sp who="UNKNOWN">
+          <speaker>Ein Bote.</speaker>
+          <p>Bonjour! Herr Wolff, d'r Chef schickt mich häre! Ich soll fröje, ob ich d'Abschrift vum Bruckeböj kennt han.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>So? Pressierts eso? Weiss d'r Herr Chef nit, ass ich hitt e Lycht im Hüss hab g'hett?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Bote:</speaker>
+          <p>Allewäj weiss 'rs! Hytt raucht 'r uewerhaupt schlechter Düwack! Mache ne andersch!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff</speaker>
+          <stage>(erregt):</stage>
+          <p>Enfin, sawe Sie ihm, ich - hab nit d'r Zytt g'hett, 's isch m'r unmöjlich g'sinn, ich bin krank! Ich - sawe Sie ihm, morje morje bekummt 'rs un wenn 'r nit zefridde- n-isch, ze sell 'rs bliewe lon!</p>
+        </sp>
+        <pb n="18"/>
+        <sp who="UNKNOWN">
+          <speaker>Bote:</speaker>
+          <p>C'est-ça! Ich richt's üss. Awer wäje däm brüche Sie mich nit so anzehüche! Also morje morje! Au revoir, Mr. Wolff.<stage>(Bote ab)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>6. Szene.</head>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <stage>(erschrocken während der letzten Szene aus der rechten Türe tretend)</stage>
+          <p>Was gitt's denn, René?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p> Wenn die Schikane vum Chef de bureau noch lang eso furtdüre, no weiss ich nit, wie's kummt.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Frau Wolff:</speaker>
+          <p>Calmir Dich, René. 's wurd nie so heiss gesse wie gekocht wurd. Bisch De schun lang vum enterrement zeruck?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Exküsier, Mamme, grad bin ich uff-em Sprung g'sin, fur zue D'r ze kumme.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Frau Wolff:</speaker>
+          <p> Isch kenner vum Bureau mit d'r Lycht gange?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Naan, niemes.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Un hesch jedem e faire part de deuil g'schickt g'hett?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Jo, in alle zamme.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Dü bisch v'rstimmt, René?</p>
+        </sp>
+        <pb n="19"/>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Jo, do soll m'rs nit wäre. </p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Frau Wolff: </speaker>
+          <p> Na, jetz. Diss v'rraucht au widder. Dim Chef sini Lünne wäre-n-au erumgehn. Alles geht erum!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p> Ach, wäje däm jo garnit.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff</speaker>
+          <stage>(zärtlich):</stage>
+          <p>Was hesch denn sunscht g'hett.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff</speaker>
+          <stage>(mitteilsam):</stage>
+          <p> Mammele, kumm, setz Dich zue mir. - So! - Es hett e kleini Sċène genn.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Frau Wolff: </speaker>
+          <p> Mit Dinnere Frau.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Ja!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Ich siech dem Ding schun e Wyl zue, - waisch, so durch d'Finger .....</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Bisch Dü unzefridde mit minere Frau?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Frau Wolff:</speaker>
+          <p> Na jo, - 's isch 's alte nimmi! Luej Bue, ich sieh wo d'r Butze stäckt. 's passt ihre nit do, sie will nit in- g'sperrt sin, d'ailleurs, je peux comprendre cela! Un jetz isch sie enervirt, wie d'r Klaan g'storwe-n-isch. Do kummt emol e Klanigkeit vor.</p>
+        </sp>
+        <pb n="20"/>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>'s isch nit ganz diss, Mamme: sie will partout uff Bougival zeruck!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Uff Bougival?...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Wolff:</speaker>
+          <p>Ja, - se triwelliert, m'r selle furt vun Strosburry.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Tiens! Un Dü?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff: </speaker>
+          <p>Ich, - ach ich wott au, Mamme, wenn Dü mitgehsch.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff</speaker>
+          <stage>(entschieden):</stage>
+          <p>O nein, niemols meh!!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Wolff: </speaker>
+          <p>Mamme, welle m'r nit emol ernstlich üwer die Sach redde? Viellicht, dass Dü doch ja saasch?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff: </speaker>
+          <p>Gib D'r kenn Muej, René! Ich mach jetz üs - in d'r Fremde.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Mammele!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Ne trompons pas l'un l'autre. 's isch so, Rene, es dürt nimmi so lang... Un kannsch au Dü dem Läwe hie ken G'schmack abgewinne?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>E Gotts Namme, - naan - Mamme. Ich bin tots- ungluecklich vun d'r Minüt an, wo ich d'Stuwedhuer vun<pb n="21"/>drüsse zuemach un zefridde un ruewig kann ich ererscht widder sin, wenn ich sie am Owes vun innewendig zue derf mache. ’s basst m'r nit, Mamme! 's isch, 's isch - - - wie wenn de jede Daa z'Midda bekummsch, was Dir nit g'schmeckt. Un geht's Dir besser, Mammele? Naan, ken Hoor! Was alti Famillie vun hie sin, die foutire sich un Dich principalement, wenn De nit an ere Rente erunterhungersch, wie ze wenni zuem Läwe un ze viel zuem Sterwe-n-isch. Hesch Dü Frind, hesch Dü Bekannti, - ja, bym Bäck, bym Metzjer, bym Schnieder, Alledaas- mensche, wo hytt kumme, morje gehn, Lytt wie sich erhitze bym Rätsche un bym Lyttüsmache, wie awer’s Herz kalt lonn! Hesch Dü Frind un Bekannti wo furs Gemuet ebbs biete? Naan, Dings wie owe schwimmt un fedderlicht isch. Ken Cercle, wo m'r saat, die Lytt sin nett, die v'rstehn Dich, by denne-n-ischs gemuetlich. Es gitt vun denne, awer wenn Sie höre, dass Dü schaffe muesch un nit d'r embarras un d'r genre mache kannsch, lueje sie dert nüss, un wenn se gar höre, wo ass de schaffsch, no fröje se Dich glich: "Hein? Vous excusez! Ich hör nit guet uff dem Ohr!"</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Madame Wolff:</speaker>
+          <p>René, es gitt sehr netti Famillie, wenn m'r sich nur Muej gitt, sich gejesittich ze v'rstehn un wenn m'r nit mit Preventione zue ne kummt!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Au die kenn ich wo Dü maansch! Geh m'r ewäck, Mamme, viellicht miner Chef, par exemple?? Wurum solls nit au anständichi Schwowefamillie genn? Jo, un doch basst unserans nit nyn! Affaire de goût et de point de vue. In e Rettjelefeld soll m'r kenn Ziwle setze. Sie läwe andersch ass mir! Ich muess am Owes miner Deller Supp han un bin nit zefridde mit eme Sandwich! V'rlang nit,<pb n="22"/>ass ich zwei Seidel Bier trink, wo e Gläsel gueter Roter mini Affär macht. Wenn mir soviel ander Dings im Kopf erumgeht un ich derf 's Müll nit uffmache, kann ich nit zuehöre, wenn "im trauten Familienkreise" d'Wacht am Rhein oder Heil dir im Siegerkranz g'sunge wurd, un wenn De üewerhaupt nit hochditsch reddsch wie e Läse- buech, no stehsch wie e Simpel do. Enfin, 's isch m'r v'rleid, min Beruef, mini Umgebung - ich find mich niemols drin. 's isch ze tief g'fresse un yngewurzelt, was in mich gepflanzt isch worre: Mammele, witt Dü Dich nit umstimme lon?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <stage>(schüttelt den Kopf)</stage>
+          <p>Ze siech ichs kumme, wie Kind un Mamme üsse-n- ander gehn.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Do d'rvun isch d'Redd nit, Mamme. D'Frau het im Mann ze folje. An diss myn Rächt halt ich mich au im üsserschte Fall. 's Claire hett jo nur d'rvun geredd un wenn ich ihre uff alles Antwort kennt gänn... Wurum un wieso.<stage>(entschlossen)</stage>Mamme, hättsch Dü mir nit schun lang emol ebbs sawe wotte?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>René!?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <stage>(stürzt sich seiner Mutter zu Füssen)</stage>
+          <p>Mammele, bin ich Dinner Sohn?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <stage>(erschrocken)</stage>
+          <p>Awer Kind! Kind, was reddsch Dü fur Dings!?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Wolff:</speaker>
+          <p> Naan, Mammele, naan, diss saat mir d'Stimm vun d'r Natür! Dü bisch min liebs, arms Mammele! Ich weiss nur, <pb n="23"/>dass ich ken Vatter hab, er soll uff-em champ d'honneur g'storwe sin, eb dass Ihr Ejch han hierote kenne. Un doch - - -</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Madame Wolff:</speaker>
+          <p>René...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Un doch isch diss nit wohr, Mamme! Ihr han mir v'rschwöje, wer minner Vatter isch, diss isch diss G'spenst wo in d'r Familie steht un wäje däm witt Dü nimmi uff Bougival zeruck! -</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <stage>(schluchzt auf. Pause)</stage>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff</speaker>
+          <stage>(zärtlich):</stage>
+          <p>Mamme, hawich Dir weh gedhon?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff</speaker>
+          <stage>(erstickt):</stage>
+          <p>O Bue, - wie reddsch Dü mit Dinere Mamme! Gitts e grössere Schmerz, ass dass e Muetter vor ihrem Kind rot wäre un sich schäme muess?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Awer Mamme, wie kannsch Dü so ebs sawe! Naan, froh sollsch Dü sin un mir hell in d'Aue lueje sollsch, jetz sin m'r frej, Mamme, denn jetz isch ewäck, was zwische-n-uns isch g'stande. Muedder un Kind sin eins fur immer!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <stage>(trocknet sich die Tränen)</stage>
+          <p>Ich hab jo gewisst, dass Dü alles waisch!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Un ich habs gewüsst un hab so heiss d'r Moment erwart, Mamme, wo Dü mir Din V'rtröje schenksch un <pb n="24"/>mir alles saasch! Viel schwerer fallt im Kind, sini Mamme nooch so ebs ze fröje, wie d'r Mamme schwer falle kann, ihrem Kind, wo's gern hett, alles ze sawe.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>C'est vrai, René! Mir isch e Stein vum Herze g'falle.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Un d'heim han sie Dich wäje däm v'rstosse. Arms, arms Mammele. Wäje däm witt Dü nimmi uff Bougival zeruck!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>'s isch, wie Dü saasch; e langi trürigi G'schicht... Sie hett mich s'Vatterhüs v'rgesse lehre un mir d'Fremde heimisch gemacht.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <stage>(zeigt auf das Bild)</stage>
+          <p>Un diss isch miner Vatter nit? Wer isch's, Mamme, saa, 's muess jetz au kloor wäre zwische mir un im Claire.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Frau Wolff: </speaker>
+          <p>Naan, René, zell Bild isch d’r Cousin Edouard, wo bym Uesfallsg'fächt vun Paris g'falle-n-isch un wo sie han welle han, ass mir uns hieroote... Awer Dinner Vatter ischs nit...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Ihr han ejch nit gern g'hett?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Ich hab inne nit gern g'hett. Wenn mir alli widder ruewicher worre sin, will ich Dir sawe, was ich durich- gemacht hab. D'r Wäj fur Dir alles ze v'rzähle isch mir jetzt lichter worre. Awer Dinner Vatter isch e Ehremann g'sin, René, nämm dis zuem Troscht fur hitt, wie m'r au<pb n="25"/>immer uewer ne g'scholte hett, un wärd nit Kriej g'sinn zellemols, ze wärd Dinni Mamme nit in d'Schand nin kumme. Je t'assure! </p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>O Mamme! D'r unglücksäli Kriej! Fluech alle, wie ne uewer uns gebrocht han. Ah! Jetz läbt's widder in mir uff! Jetz schiesst's m'r widder durch d'Odere! un ich v'racht alli, wie dran g'holfe han. Alli, wo ihre Schritt nuewerg'setzt han in fremds Land, alli wo Tod un Schrecke in unseri Familie v'rbreit han! Mamme, loss uns furt zeje, wenn au nit uf Bougival zeruck, was fröje mir nooch d'r Familie, wenn se nix noch Dir fröjt, awer wenigstens in d'Heimet widder. Frankrejch isch gross, Mamme. Un nix isch do, wie Dich in Strosburri hewwe kennt.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <stage>(ist erregt und erschrocken aufgestanden)</stage>
+          <p>Ken Menschehass schuere, René, Menschelieb pfleje! Loss ab, René, ze v'rdamme un zue v'rurteile! Hytt nämms als V'rmächtnis vun Dinere Muetter an: Mensche sin m'r alli un Brueder sin m'r alli! M'r han uns gejesittig ze Find gemacht in alte Zytte, d'neje Zytte solle d'Uffgab loese, wie m'r widder Frind wäre kenne. Helf mit, René, diss isch d'nowelscht Revanche fur diss, was m'r in Dinnere Mamme angedhon hett. Un vum Reise redde m'r einschtwille nimmi, gell?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Ich will m'r Muej genn, Mamme, so e bissel Hitz awer muess zeruckbliewe, sunsch g'fall ich in minere Frau nimmi. Was e Zuefall d'Welt regiert! Wärd unser Gold- käfer nit zue de-n-Engele g'flöje, ze wärds nit so witt kumme, dass mir uns jetz ganz v'rstehn.</p>
+        </sp>
+        <pb n="26"/>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <stage>(küsst ihn)</stage>
+          <p>Min alles, wo ich d'rwäje gelitte un üsg'halte hab! Geh jetz zue Dinnere Frau un v'rscheich ihri finschtere Gedanke. M'r welle uns gejesittich 's Läwe nit schwerer mache ass 's so schun isch!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>'s Kind v'rlore - un d'Mamme gewunne. Jed's Leid wurd widder uffgericht.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>7. Szene. </head>
+        <sp who="UNKNOWN">
+          <speaker>Nini:</speaker>
+          <p>Madam, e Herr wo noch ne fröjt!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p> Noch mir?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff</speaker>
+          <stage>(scherzend):</stage>
+          <p>Siehsch De, un no saat 's Claire noch allewyl, es fröjt ken Mensch noch uns!</p>
+          <stage>(Ab nach rechts, indem ihm Frau Wolff freundlich zunickt)</stage>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff</speaker>
+          <stage>(zu Nini):</stage>
+          <p>Kenn Kart?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Nini:</speaker>
+          <p>Non, Madame.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Priez-le d'entrer!</p>
+          <stage>(Sie macht sich vor einem Spiegel zurecht)</stage>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>8. Szene.</head>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <stage> (geht auf Frau Wolff zu und bleibt einige Schritte hochaufgerichtet vor ihr stehen. Sie sehen sich eine Weile an. Dann bricht Frau Wolff auf einem Stuhl mit leichtem Ausruf zusammen)</stage>
+          <p>Spreche ich mit -</p>
+        </sp>
+        <pb n="27"/>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff</speaker>
+          <stage>(nickt):</stage>
+          <p>Marguérite Wolff.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Ich bin -</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Waldemar Werneck - -</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck</speaker>
+          <stage>(mit bewegter Stimme):</stage>
+          <p>Du - Sie haben mich erkannt.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <stage>(Nickt)</stage>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck</speaker>
+          <stage>(unsicher):</stage>
+          <p>Wollen Sie mir eine Unterredung gewähren?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff</speaker>
+          <stage>(gefasst):</stage>
+          <p> Nämme Sie Blatz...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <stage>(nach einer Pause mit einem tiefen Seufzer)</stage>
+          <p>Der Zufall hat mir ein Zeitungsblatt in die Hände geführt mit einer Todesanzeige. Ein kleiner Toter<stage>(er zieht eine ausgeschnittene Todesanzeige aus der Tasche)</stage>- Waldi Wolff, dessen Angehörige in Strassburg und in Bougival trauern. Waldi, Wolff, Bougival - - das hat Gedanken, Erinnerungen und Ahnungen in mir geweckt - - - </p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Nit zue Unrecht, Monsieur!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Aber ich weiss nicht, Marguerite, wie ich Ihnen gegenüber zu treten habe; Sie tragen noch ihren Mädchen- namen Wolff?</p>
+        </sp>
+        <pb n="28"/>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Ich bin au sunsch gebliewe, was ich zellemols bin g'sin, e-n-arms, unglücklichs G'schöpf, wo mit sinem Fehl- tritt schwer durch's Läwe gewandelt isch!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Ist's möglich, Marguerite, um Gottes Willen - - - Und was haben Sie mir zu sagen, dem die Schuld an diesem Leben vorgehalten wird?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Ich? Nix.<stage>(schüttelt mit dem Kopf)</stage>Ich denk, Sie han mir ebbs ze sawe, indem Sie mich uffg'suecht han. Nur diss will ich vorüsschicke: Ich hab nit g'hofft un nit gewellt, dass mir uns widder sähn! So noht mir uns au g'stande sin, so wenni Schuld mir zwei dran trawe, wie sich unseri Wäj gekrizt un entfernt han, nooch meh als drissich Johr wärds mir liewersch g'sin, Sie hätte sich zue dem Schritt nimmi entschlosse. Ich hab e Totebaam uff Hoffnunge un souvenirs g'setzt un e Wörtel in sine Stamm gegrawe: L'oubli!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <stage>(traurig)</stage>
+          <p>Marguerite, mich hat heute ein glücklicher Zufall und mein Herz zu Ihnen geführt, wie auch damals ein reines Gefühl in der rauhen Kriegerbrust den Weg zu Ihrem Herzen fand. Lang, lang ist's her... un doch ist mir, als wars erst gestern. Ich wurde von Ihren Eltern mit meiner Werbung abgewiesen, das wissen Sie noch. Draussen donnerten die Kanonen und schmetterten die Signale. Mit totbringendem Blei grüssten sich zwei Träger der Zivilisation und Kultur! Von Pulverdampf umwölkt träumten wir unseren Liebestraum ... Mir war’s Ernst, Marguerite, Sie wissen es. Nicht beim Abschied von Vater und Mutter habe ich geweint, aber als man einen ehrlichen Kerl mit<pb n="29"/>Schimpf hinaus wies, als er darum bat, nicht das Glück zweier Menschen durch nationalen Hass zu stürzen, rann mir die Träne. Ich habe mein eisernes Kreuz in Deine Hände gelegt, Marguerite, und keinen Schuss mehr getan. So opferte ich meinem Herzen und meiner Liebe! Die Trommel rief, wir zogen weiter. Der Friede winkte - -</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Fur mich hett d'r Kampf ang'fange...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Weisst Du, dass ich nach dem Friedensschluss wieder in Bougival gewesen bin, dass ich Dich gesucht habe, dass ich verzweifelt Deinen Spuren folgte? Dass man mir sagte, Du habest gewählt und seist glücklich verheiratet?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Ich weiss alles un weiss, wie sie Dich b'handelt han, ich hab's später erfahre. Ich hab mich mit mim Bue durch- g'schlawe ghett sechs langi, bitteri Johr... no han sie d'haam v'rzeje welle. E Johr isch's zuem Uesshalte g'sinn. Was g'foljt isch, isch schrecklicher wie langsamer Dod gewese. Wie ich widder gange bin, sin sie froh drum gsin - denn 's sin gar frummi Lytt - nurre d'r Bue han se b'halte. Wil 'r guet uffg'hebt isch g'sin, besser ass by mir, hawi 'ne gelonn.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Einen Sohn haben wir, Marguerite? - - -</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Frau Wolff: </speaker>
+          <p>Nix hawi liewer g'hett uff däre Welt. Ich hab fur 'ne g'sorit un g'schafft! Wäje ihm hawi am Läwe g'halte!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck</speaker>
+          <stage>(traumverloren):</stage>
+          <p>Und nun starb er? Warum liess man mich Dich nicht finden, warum verheimlichte man mir, der fussfällig bat,<pb n="30"/>Deinen Aufenthalt? Marguerite, ich glaube, wir wären glücklich geworden. Und nun starb er?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>G'storwe, min Sohn? Herr Werneck, wo denke Sie anne? Sähn Sie diss Hoor, fruejer so keschtebrünn un frisch, isch gröj worre. Drissig Johr leje zeruck. Minner Sohn het widder e Sohn g'hett... denne han m'r hytt begrawe.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck</speaker>
+          <stage>(erwachend):</stage>
+          <p>Ja freilich, wohin verirrten sich meine Gedanken... 30 Jahre, zwei Menschenleben dazwischen - -</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Vier Menscheläwe!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Werneck:</speaker>
+          <p>Vier?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Dins un mins d'rzue! - -</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <stage>(fällt Frau Wolff zu Füssen, erschüttert)</stage>
+          <p>Marguerite, zürnst Du mir? Ich habe die 30 Jahre wie Du ertragen und mein Haar ist weiss geworden.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff</speaker>
+          <stage>(schluchzt):</stage>
+          <p>Vous n'avez pas oublié la petite Marguerite ? Dü hesch mich nit v'rgesse?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Ich bin einsam meine Strasse gezogen!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p> O diss dank ich Dir, diss macht alles v'rgesse. Diss macht mich vor mir un vor minem Kind widder ehrlich!</p>
+        </sp>
+        <pb n="31"/>
+        <sp who="UNKNOWN">
+          <speaker>Werneck: </speaker>
+          <p>Grausamer wie uns hat das Schicksal niemand mit- gespielt. Lieblicher lässt es niemand die Erinnerung in der Seele aufleben wie mir.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Bisch Dü denn zellemols vun Herze glücklich g'sin mit mir, mit ere Person, wo Dinni Sprooch nit g'sproche hett, mit eme klane unerfahrene Gänsel, wo sini Lytt Dir Affrunde gemacht han wo sie han könne?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Ich war von Herzen glücklich, Marguerite. Wer wohl hat ebenso geliebt wie wir? Wo andere sich in Hass verzehrten, ging rein und unentwegt in unseren Herzen die Saat der Liebe auf.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Un mit was fur G'fahr han mir uns getroffe, erinnersch Dü Dich noch?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Ob ich's noch weiss, Dein Waldi hat jene Bilder treu bewahrt...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff</speaker>
+          <stage>(träumerisch):</stage>
+          <p>Ja -, Waldi - -<stage>(erwachend)</stage> Herr Werneck, v'rzeje Sie, - ich bin so enervirt, so uffgerejt, - ich weiss gar nit - ich babbel am End Dings, wie ich nimm v'rant- worte kann!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Lass sie herankommen, die Erinnerungen - - Lass uns untertauchen in das Meer vergang'ner Zeiten, Marguerite.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Zelli Zytte han min Läwe üsg'fuellt.</p>
+        </sp>
+        <pb n="32"/>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Denkst Du noch des Gärtchens mit wildem Wein?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff: </speaker>
+          <p>Mit Heckerösle geziert - - -</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Oktobersonne glühte -</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff: </speaker>
+          <p>Wie ich Dir in ernschtem G'schpass d'Köjle alli genumme un Dich gebitt hab, sollsch nimm schiesse - - </p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Du hattest mich blind und willenlos gemacht - </p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Un 's klaane Gartehiesel - </p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Werneck:</speaker>
+          <p>Unser Nest, unser Traum, - unser Heim.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Wie Dü zuem erschte Mol hinter mich g'stande bisch - -</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Mit so viel offenem Mut, denn Ihr hättet uns Preussen Gift geben können.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>V'rwöje bisch wajer g'sinn, un hesch mir vun Dings geredd - -</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Von einem Kuss!</p>
+        </sp>
+        <pb n="33"/>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>E Schmutz hesch welle han... Awer, - weisch noch
+          was no g'schähne-n-isch?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Wird so etwas aus der Erinnerung schwinden!! Eine Ohrfeige gabst Du mir!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Ja! Un hab g'saat: Ça c'est pour toi, Prussien, un hab gemaant, jetz ischs um mich g'schähn! Waldi, was hab ich Aengschte-n-üsg'stande. Was sin Dinni Kamerade wuetich g'sinn! Was han sie gebruehlt un uffbegährt, Dü sollsch D'rs nit g'falle lon!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>War ich auch wütend?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Naan! Dü hesch nix g'saat un bisch in's Gartehiesel gange.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Und dann?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>'s hett mich mit Gewalt getriewe, fur Dir noch ze gehn! No hawis riskirt, hab ningeluejt ins Gartehiesel un hab Dich - grinne sähn ...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Marguerite, der Träne dankte ich alles! Sie hatte Dich mir errungen.<stage>(Sie haben sich die Hände gefasst und sitzen traumverloren da)</stage></p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Awer gell, Ihr han lang ze schaffe g'hett an Paris? Wieviel Monet nur sinn Ihr gebliewe?</p>
+        </sp>
+        <pb n="34"/>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Ach, 's war ja viel zu kurz, meinetwegen hätt's noch lange dauern dürfen!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Penses-tu? Wäje uns au... Wäje mir au!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Werneck:</speaker>
+          <p>Denn für uns zwei waren es selige Tage.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Scheen bis zue däm Sunndaa, wo - - ach, wo isch die Zytt... Herr Werneck<stage>(sie steht auf und nimmt ihn bei der Hand, um ihn vor den Spiegel zu führen)</stage>Was sähn Sie?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Ich seh durch den Spiegel 30 Jahre zurück und erblicke wie damals Marguerite Wolff vor mir!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Zwei gröji Köpf sähn Sie. Voilà tout. Welle m'r widder zue uns kumme! Herr Werneck, was hett Sie zue mir g'fuehrt?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Nicht diesen Ton, Marguerite. Verleugne nicht, dass die Zeiten schön waren. Gewiss, wir sind heute alt, wir können Versäumtes nicht mehr nachholen, nicht durch unsere Schuld, weiss Gott, dem es geklagt sei, nicht durch unsere Schuld. Vielleicht aber, dass ein bescheidener Teil uns doch noch bleibt: Marguerite, der damals liebend um Dich warb, bietet Dir heute noch in Treue seine Hand!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff</speaker>
+          <stage>(mit tränendem Blick):</stage>
+          <p>- - Waldi, jetz isch ze spoot, jetz loss uns de Rescht vum Wäj gehn wie m'r bis jetz gange sinn.<pb n="35"/>Merksch's nit, 's riecht schun nooch Danneholz! Hinter uns lejt e Läwe, villicht ruewicher un abgeklärter als wie wenn's andersch kumme wärd mit uns zwei. Ich bin v'rsöhnt un zefridde, - zefridde, Dich noch emol g'sähn ze han un - so g'sähn ze han; so alt diss Herz au worre-n-isch, 's het gezuckt un g'stoehnt im Gedanke, dass Dü mit ere-n-andere Frau wärdsch glücklich worre -- un mich v'rgesse hättsch!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Auf Ehre, bei der Aufrichtigkeit meiner jungen Liebe, Marguerite, ich glaubte, dass Du die wärest, die den Jugendtraum begrub. Man hat uns belogen, bestohlen und betrogen, - nicht um viel, nur um 30 Jahre! Herrgott, ist's möglich? Ich habe nie gehofft, Dich je wieder zu sehen. Aber nun, - ich lebe in bescheidenen Verhältnissen im Badischen. Komm an meine Seite, Marguerite, diese Liebe und Treue ist gefestigt. Du lächelst?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Waldi! Schlaa denne Gedanke-n-üss'm Kopf. Siehsch, au wenn ich wott, wenn alles andere kloor un durchsichtig vor mir leje dhät, - ze kennt ich jo nitt - ohne min Kind ze v'rliere...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Wie?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Waldi, - 'r isch nit Dinner Sohn worre, was ich uff d'Welt gebroocht hab, sie han d'r petit-fils vun sim Gross- vatter drüs gemacht. Was an Schwowehass Dü zellemols in Bougival hesch kenne lehre, in ihm läbt's furt.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck</speaker>
+          <stage>(bitter):</stage>
+          <p>Das ist mein Kind?</p>
+        </sp>
+        <pb n="36"/>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff</speaker>
+          <stage>(sehr betrübt):</stage>
+          <p>Er kennt Dich nit, Waldi, er hett kenn Ahnung vun nix! Hytt, grad hytt hett's d'r Zuefall gewellt, dass mir mitnander g'sproche hann.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck</speaker>
+          <stage>(hoffnungsvoll):</stage>
+          <p>Wenn ich mich ihm entdeckte? Marguerite. Wenn er mich lieb gewinnen könnte? Was hinderte, dass ich meine Familie im Abendrot dieses Daseins rasch noch gründete?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>M'r brüche diss nimmi, Waldi, viellicht vor 20, vor 15 Johre noch! Awer hytt? Die zwei alte Staan, mahle nimmi raan. Un Waldi, - fur sicher un gewiss, ich muesst no min Kind v'rliere...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Lass mich's versuchen, Marguerite, lass kein Fädchen entwischen, an das sich verlorenes Glück noch klammern kann. Ich werde mit Deinem, - ich werde mit unserem Sohne sprechen.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Ach Waldi - Waldi! Ich fercht, ich - dis nämmt ken guets End! Awer es soll sinn!<stage>(Sie nimmt den Flor von dem Bilde)</stage>Er hett Wohrheit un Klorheit vun mir v'rlangt, er soll sie ganz han. Waldi, ich will Dir Din yserich Kriz hole - un Dinner Sohn schicke.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <stage>(hält sie an der Hand und sieht ihr in die Augen)</stage>
+          <p>Kann ein Kind den Vater hassen? Kann es? Ich habe Dich geliebt, Marguerite, Gott weiss es, er wird sich hüten, mir diesen Schlusspunkt meines Daseins zu setzen! Ich erkämpfe mir zurück, was mir gehört!<stage>(Er giebt ihr einen langen Kuss auf die Stirn)</stage></p>
+        </sp>
+        <pb n="37"/>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <stage>(drückt auf eine Klingel, Nini erscheint)</stage>
+          <p>Miner Sohn moecht so guet sin!<stage>(sie steht unbeweglich ihm abgewendet, er ist zerknirscht auf einem Stuhl in Brüten versunken. Nach kleiner Pause erscheint Wolff. Seine Mutter geht in höchster Erregung, von Hoffnung, Schmerz und Scham verzehrt, auf ihren Sohn zu)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>9. Szene.</head>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <p>Waldi! - ich hab Dich vori gebitt, noch e Wyl Geduld ze han mit Dinnere Mamme. D'r Moment fur alles ze sawe, isch schneller kumme, wie ich gedenkt hab.</p>
+          <stage>(Fällt ihm um den Hals)</stage>
+          <p>Ich hab Dinni Lieb jo nit v'rliere welle Bue; Din Bape isch - - dort, där Mann - kann Dir vun ihm v'rzähle - - -</p>
+          <stage>(wankt ins Zimmer rechts ab)</stage>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>10. Szene.</head>
+        <sp who="UNKNOWN">
+          <speaker> Wolff:</speaker>
+          <p>Monsieur!?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <stage>(geht auf ihn zu, sieht ihm lange ins Auge und giebt ihm die Hand)</stage>
+          <p>Ihr Vater, - lässt Sie grüssen.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff</speaker>
+          <stage>(verwirrt):</stage>
+          <p>Monsieur! V'rzeje Sie, wenn ich unb'holfe bin, — ich bin so üewerrascht, 's hett hytt so manchi Uffrejung gänn - -</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Nehmen Sie sich Zeit, mir zu antworten. - - Ich habe durch Ihre Mutter in tiefe Bitternis Einblick erhalten - -<stage>(nach einer Pause)</stage>Sie sind ein vaterlandsliebender Franzose?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>So wohr Gott lebt!</p>
+        </sp>
+        <pb n="38"/>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Sie hassen, was deutsch ist? sagte mir Ihre Mutter.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Wolff:</speaker>
+          <p>Hassen? Non Monsieur, awer do hinne-n-isch nix fur sie üwrig. - - V'rzeije Sie mir, ich will Sie nit beleidige, Sie sin Gascht by minere Muetter. Uff Ihri offe Fröj nur die offe Antwort! Nämme Sie doch Blatz, Monsieur!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Ich danke, mein - mein Herr!...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Vun minem Vatter, Monsieur - - -</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Ganz recht; ich wollte von Ihrem Vater erzählen.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Lebt er noch?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Wenn Sie gestatten, erzähle ich Ihnen kurz seine Geschichte. Ihr Vater war 1870 deutscher Soldat -</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff </speaker>
+          <stage>(entsetzt):</stage>
+          <p>Was!!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck</speaker>
+          <stage>(nach einer Pause):</stage>
+          <p> Er kam während der Belagerung von Paris nach Bougival ins Quartier. Ein Gastwirt dort hatte seinen aus dem Elsass geflüchteten Bruder mit dessen Familie auf- genommen. Zu dieser Familie gehörte ein junges, reizendes Mädchen - Ihre Mutter. Zwischen Ihrer Mutter und dem Kriegsfreiwilligen, der wochenlang die Gastfreundschaft im Hause Wolff genoss, entspann sich ein Liebesverhältnis. Der Kriegsfreiwillige bat um die Hand jenes Mädchens,<pb n="39"/>wurde aber als Deutscher unerbittlich abgewiesen. Doch die Liebe, die nationale Schranken übersteigt, grünte unter männermordenden Gefechten, unter Kanonendonner und Feuerbränden, unter dem Hass und der Wut der vom Schicksal hart bedrängten Quartierleute unentwegt weiter, bis sie sich zu dem Punkte gesponnen hatte, der den Kriegsfreiwilligen dem jungen Mädchen auf immer ver- pflichtete....</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <stage>(ist aufgesprungen, hat den Kopf zwischen beide Hände genommen und ruft verzweifelt)</stage>
+          <p>Ich! Ich! O Mamme, Mamme!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck</speaker>
+          <stage>(nach einer Pause):</stage>
+          <p>Wollen Sie Ihre Mutter anklagen?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Monsieur! By allem schuldige Respekt vor ihrem Alter, vor ihre Bezejunge zue unserem Hüs! Was kumme Sie hytt do her? Was welle Sie hytt mit ihre Démarches bezwecke!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Ein Vaterherz hat mir diesen Weg gewiesen. Der schwergeprüfte Mann spricht durch mich, dem man Glück und Lebenslust zerstört. Er hat dem Zufall dankend die wieder gefunden, die ihm ein widrig Schicksal raubte. Nun steht zwischen beiden, die sich spät vereinigen wollen, die Frucht ihres zerrissenen Jugendtraumes. Die Mutter muss fürchten, den Sohn zu verlieren, der in blinder Verbitterung sein Herz nicht besiegen konnte gegen Ankämpfungen klein- licher nationaler Abneigung, die eines grossen Gemütes, eines Mannes, der so wie Sie seine Mutter lieb haben muss, unwürdig ist.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Ja, ich bitt Sie, Monsieur! Minner Vatter lebt? Er lebt?</p>
+        </sp>
+        <pb n="40"/>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <p>Er lebt seit heute wieder, da er sie wieder fand, die ihm gehörte.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Monsieur, ja isch denn so ebbs denkbar, nooch meh als drissig Johr! Hytt soll ich als Mann min ganzes Innere umwende, soll glauwe, dass ich e Vatter hab, soll ne Vatter nenne? E wildfremder Mensch, wo d'Schuld an allem draat, was min Läwe bewejt het un ihm direction hett gänn! So selle alli Grundsätz untergehn, wo ich bim Lyde vun minnere Mamme wie e-n-Evangelium uffg'stellt hab? Kann ich diss denn noch? By allere Lieb zue minere Mamme, kann ich diss noch? Isch's nit ze spoot worre do hinne in d'r Bruscht, rejt sich do hinne noch ebbs, was fur e Vatter ze hoere angenehm kann sin? Lejt nit ze viel zwische zellemols un hytt? Monsieur, do druewer kann ich Ihne ken Antwort genn. V'rzeje Sie mir.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck</speaker>
+          <stage>(bewegt):</stage>
+          <p>Vielleicht hören Sie meinen Rat! Vielleicht versuchen Sie, die familliären Bande zu halten, wenn sich ein ver- misster Zügel an seine Stelle drängt. Was darf ich Ihrem Vater sagen, dass sein Kind über ihn denkt?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff</speaker>
+          <stage>(entschlossen):</stage>
+          <p>Monsieur, - sawe Sie ihm mit dere-n-Uffrichtigkeit, wie 's Wort vun Ehremänner üszeicht: Der Vatter, wo ich min Läwe nit gekennt hab, kann uff diss Läwe ken Ynfluss meh han. Ich fur min Dheil halt's fur besser, wenn uns diss changement erspart dhät bliewe. Ich weiss nit, was minni Mamme in dem Aueblick bewejt, - ich hab sie awer viel ze lieb, als dass sich ebbs in minere Kindlichkeit ändere kennt, wenn sie ihri G'fuehler mit dem dheilt, wo mirs Läwe hett genn. Ich dhät ere Vereinigung vun mine<pb n="41"/> — vun mine Eltere niemols im Wäj stehn. Die Lösung awer brecht nadierlich jeds Zammeläwe ab.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck</speaker>
+          <stage>(erschüttert):</stage>
+          <p> Wünschen Sie Ihren Vater nicht einmal zu sprechen und zu sehen. Es gälte ja nur, wenige Lebensjahre eines gebrochenen Mannes mit Friede und Versöhnlichkeit zu verklären ?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff</speaker>
+          <stage>(nach einer Pause):</stage>
+          <p>- - Naan, ich möcht ne nit sähn.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Werneck:</speaker>
+          <stage>(erschüttert, hat seinen Hut genommen und nach Frau Wolffs Türe einen schmerzlichen Blick gerichtet)</stage>
+          <p>So werde ich ihm das ausrichten. Wollen Sie das Ihrer Mutter abgeben, - ich muss leider abreisen.<stage>(zieht ein Medaillon an einem rotweissblauen Bande heraus und hängt es über Wolffs Schulter)</stage> Lebt alle wohl!<stage>(Damit wankt er rasch zur Türe hinaus)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>11. Szene.</head>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <stage>(Blieb in Gedanken versunken stehen. Beim Abschied des alten Mannes scheint er seinen Vater in demselben zu erkennen. Er ruft ihm nach)</stage>
+          <p>Monsieur!</p>
+          <stage>(dann öffnet er das Medaillon und sagt)</stage>
+          <p>Mamme!!</p>
+          <stage>(zur Türe gehend)</stage>
+          <p>Vatter??</p>
+          <stage>(Sinkt weinend am Tische nieder und begräbt das Gesicht in beiden Händen)</stage>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>12. Szene.</head>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <stage>(Erscheint in der Türe)</stage>
+          <p>Chéri?! Qu'est-ce que tu fais. Chéri, - ah! tu pleures? Bin ich Schuld dran? V'rzej m'r, ich hab Dich jo so lieb!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <stage>(Betrachtet sie erst feindselig, dann versöhnt)</stage>
+          <p>Claire, ich kann Dir jetzt uff alles Antwort genn, was Dü mich hesch fröje welle!</p>
+        </sp>
+        <pb n="42"/>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p>Hesch mit d'r Mamme geredd?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Un mit-em Vatter!...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Claire:</speaker>
+          <p>Comment, qu'est-ce que tu parles, chéri, - geh grin doch nit, chéri, ich will jo nimmi so geje Dich sin, ich will jo gar nimm furt vun hie, ich will jo by d'r bliewe, awer v'rzehl m'r doch, chéri?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Ich kann jetz nit, Claire! Do hinne isch's jo zuem Springe voll.<stage>(Es klopft)</stage></p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>13. Szene.</head>
+        <sp who="UNKNOWN">
+          <stage>Der Bote:</stage>
+          <p>Mr. Wolff, e billet doux vum Chef, ich v'rmuet mir nit, dass ebs Guets drin steht...</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <stage>(ist ihm entgegengegangen und nimmt ihm den Brief ab)</stage>
+          <p>Je m'en fous!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Der Bote:</speaker>
+          <p>Au revoir, Monsieur Dame!</p>
+          <stage>(ab)</stage>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>14. Szene.</head>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <stage>(schaut mit dem Kopf aus ihrer Türe, tritt dann, als sie die Abwesenheit Werneck's bemerkt, erschrocken ganz heraus. An einem rotweissschwarzen Bande trägt sie ein eisernes Kreuz in der Hand)</stage>
+          <p>Waldi, wo isch d'r - wo isch d'r Herr Werneck annegange?</p>
+        </sp>
+        <pb n="43"/>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <stage>(giebt ihr das Medaillon und fällt seiner Mutter schluchzend um den Hals)</stage>
+          <p>Arms Mammele, - ich hab Dich jo so gern!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>15. Szene.</head>
+        <sp who="UNKNOWN">
+          <speaker>Nini:</speaker>
+          <stage> (ist mit einem prachtvollen Totenkranz hereingetreten. Sie übergiebt Frau Wolff ein Kärtchen)</stage>
+          <p>Pour vous, Madame.</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <stage>(erbricht den Brief und liest)</stage>
+          <p>Auf das Grab unserer Erinnerungen und Nachkommen. Ich liess Dir Deinen Sohn. Leb wohl, Marguerite!<stage>(Sie nimmt das Medaillon und das eiserne Kreuz, mengt die Bänder in ihren Händen und weint)</stage> L'oubli! L'oubli??</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Wolff:</speaker>
+          <p>Mamme, hytt hawich Dir zweimol weh gemacht, gell?</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker>Frau Wolff:</speaker>
+          <stage>(ist aufgestanden und hat ihre Kinder in die Arme genommen, mit schmerzlicher und tränenerstickter Stimme)</stage>
+          <p>Mes enfants; je suis d'accord! Ich geh mit Ejch uff Bougival zeruck!</p>
+        </sp>
+        <sp who="UNKNOWN">
+          <speaker> Wolff: </speaker>
+          <p>Arms, liebs Mammele... </p>
+        </sp>
+        <stage>Der Vorhang fällt.</stage>
+      </div>
+    </div>
+  </body>
+</TEI>

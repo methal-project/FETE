@@ -350,7 +350,6 @@ def choose_rand_head(act_heads, scene_heads, len_seq):
   if len(scene_heads) > 1:
     scene_head = random.randrange(len(scene_heads))
 
-  print("len_seq", len_seq)
   token = random.randrange(len_seq)
 
   return act_head, scene_head, token
@@ -438,6 +437,8 @@ def get_data_sets():
            "paradies",
            "bureaukrate",
            "hochzittsreis",
+           "oubli",
+           "amerikaner",
            ]
 
   match_text_context = ""
@@ -476,9 +477,9 @@ def get_data_sets():
   # On enlève 10 pourcent des tours de paroles d'une pièce donnée autour du 
   # début d'un acte choisi au hasard (choisi par le code ci-dessus)
   # Pour les pièces qui n'ont qu'un seul acte, on choisit une scène à la place
-  acts_remove = [2, -1, -1, -1, 0, 0, 1, 2, -1, -1, -1, -1, -1, -1, -1, -1]
-  scenes_remove = [-1, -1, 9, 5, -1, -1, -1, -1, 1, 5, 10, 10, 9, 2, 1, 6]
-  random_remove = [-1, 3952, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+  acts_remove = [2, -1, -1, -1, 0, 0, 1, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1]
+  scenes_remove = [-1, -1, 9, 5, -1, -1, -1, -1, 1, 5, 10, 10, 9, 2, 1, 6, 7, -1]
+  random_remove = [-1, 3952, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
   
   return split_test_train(
                       zip(acts_remove, scenes_remove, random_remove), 
