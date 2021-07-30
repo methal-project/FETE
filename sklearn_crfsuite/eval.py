@@ -23,11 +23,11 @@ X_train, Y_train, X_test, Y_test = get_data_sets()
 
 crf_file = open(sys.argv[3], "rb")
 
-crf = pickle.load(crf_file)
+(feature_func, crf) = pickle.load(crf_file)
 
 crf_file.close()
 
-X = [features_set_3_glob(x) for x in X_test]
+X = [feature_func(x) for x in X_test]
 X = [pycrfsuite.ItemSequence(x) for x in X]
 
 pred = crf.predict(X)

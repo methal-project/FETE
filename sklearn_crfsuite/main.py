@@ -4,7 +4,7 @@ import pickle
 
 crf_file = open(sys.argv[1], "rb")
 
-crf = pickle.load(crf_file)
+(feature_function, crf) = pickle.load(crf_file)
 
 crf_file.close()
 
@@ -25,7 +25,7 @@ tokens = [extract_play_data(sys.argv[2])]
 #    #print(t.string, t.string.replace(".", ":"))
 #    tokens[0][i].string = t.string.replace(".", ":")
 
-X = [[features_vpos(x, i) for i in range(len(x))] for x in tokens]
+X = [feature_function(x) for x in tokens]
 X = [pycrfsuite.ItemSequence(x) for x in X]
 
 pred = crf.predict(X)[0]

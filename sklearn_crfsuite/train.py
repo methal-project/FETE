@@ -2,13 +2,15 @@ from acts import *
 
 import pickle
 
+feature_function = features_set_3_glob
+
 def train():
 
   #dataset_f = open(sys.argv[1], "rb")
 
   X_train, Y_train, X_test, Y_test = get_data_sets()
 
-  X_train = [features_set_3_glob(x) for x in X_train]
+  X_train = [feature_function(x) for x in X_train]
   X_train = [pycrfsuite.ItemSequence(x) for x in X_train]
 
   crf = sklearn_crfsuite.CRF(
@@ -26,6 +28,6 @@ crf = train()
 
 f = open(sys.argv[3], "wb")
 
-pickle.dump(crf, f)
+pickle.dump((feature_function, crf), f)
 
 f.close()
