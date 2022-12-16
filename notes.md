@@ -14,11 +14,15 @@ Not a real README, but we're testing the application and want to document it, so
 
 To generate TEI based on a directory of HOCR files, use the following command from within the `sklearn_crfsuite` directory:
 
-```python main.py MODEL_PATH HOCR_DIRECTORY OUTPUT_TEI_PATH```
+```
+python main.py MODEL_PATH HOCR_DIRECTORY OUTPUT_TEI_PATH
+```
 
 For instance:
 
-```python main.py ../example/models/model-exp3-20221226.crf ../example/inputs/hocr-verbotte-fahne ../example/outputs/verbotte-fahne-exp3.xml```
+```
+python main.py ../example/models/model-exp3-20221226.crf ../example/inputs/hocr-verbotte-fahne ../example/outputs/verbotte-fahne-exp3.xml
+```
 
 This will predict the `../example/outputs/verbotte-fahne-exp3.xml` TEI file based on HOCR at `../example/inputs/hocr-verbotte-fahne`
 
