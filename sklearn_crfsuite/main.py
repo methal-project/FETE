@@ -1,5 +1,6 @@
 from acts import *
 
+import html
 import pickle
 
 crf_file = open(sys.argv[1], "rb")
@@ -39,4 +40,36 @@ f = open(sys.argv[3], "wb")
 etree.ElementTree(tei).write(f, encoding='UTF-8')
 
 f.close()
+
+# indent XML and add CSS
+formatted_name = os.path.splitext(sys.argv[3])[0] + "_f.xml"
+formatted_unescaped = os.path.splitext(formatted_name)[0] + "_fu.xml"
+os.system(f"xmllint --format {sys.argv[3]} > {formatted_name}")
+
+TEI_HEADER = """<teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title></title>
+    </titleStmt>
+    <publicationStmt>
+      <publisher></publisher>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl></bibl>
+    </sourceDesc>
+  </fileDesc>
+</teiHeader>"""
+
+with open(formatted_name, mode="r", encoding="utf-8") as ixml,\
+    open(formatted_unescaped, mode="w", encoding="utf-8") as oxml:
+    txt = ixml.read()
+    # need a TEI root for CSS to add margins
+    oxml.write(html.unescape(txt).replace('<?xml version="1.0"?>',
+                                          """<?xml version="1.0"?>\n""" 
+                                          """<?xml-stylesheet type='text/css' href='../../../css/tei-drama.css' ?>\n""" +
+                                          """<TEI xmlns="http://www.tei-c.org/ns/1.0">\n{}\n<text>""".format(
+                                           TEI_HEADER)).replace("</body>", "</body>\n</text>\n</TEI>"))
+
+os.system(f"mv {formatted_unescaped} {sys.argv[3]}")
+os.system(f"rm {formatted_name}")
 
