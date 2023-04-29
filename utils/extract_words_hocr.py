@@ -1,3 +1,5 @@
+"""Extracts text of elements with @class ocrx_word given HOCR input"""
+
 from lxml import html
 import sys
 

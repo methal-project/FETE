@@ -6,6 +6,8 @@ import sys
 # Script qui tente de mettre les mots d'un fichier HOCR dans le bon ordre
 # Usage : python reorder_hocr.py <fichier_hocr>
 # L'HOCR modifié sortira sur stdout
+# Version modifiée par rapport à `reorder_hocr.py` pour l'adapter à certaines
+# caractéristiques des sorties des outils Tesseract et gImageReader
 
 class BoundingBox:
     def __init__(self, title_attrib):

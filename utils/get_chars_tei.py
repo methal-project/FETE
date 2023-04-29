@@ -1,3 +1,8 @@
+"""
+Gets text of persName elements in TEI (correspond to theater characters
+in this application.
+"""
+
 from lxml import etree
 
 import sys
