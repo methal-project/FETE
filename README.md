@@ -76,7 +76,7 @@ Given a corpus of HOCR plays and their corresponding TEI-encoding versions, the 
 
 The software may be cited as:
 
-- Briand, Andrew & Ruiz Fabo, Pablo (2023). FETE. Fast Encoding of Theater in TEI.
+- Briand, Andrew & Ruiz Fabo, Pablo (2023). FETE: Fast Encoding of Theater in TEI.
 
 You can also cite a related publication:
 
