@@ -1,6 +1,8 @@
 # Introduction
 
-Application to generate TEI for the body of theater plays in Alsatian, based on OCR output. Takes HOCR or ALTO formats as input and outputs TEI for the play's body. The `teiHeader` element needs to be encoded separately, as does the play's `castList` element and other frontmatter preceding the play's first scene, besides backmatter after the last scene, if any.   
+Application to generate TEI for the body of theater plays in Alsatian, based on OCR output. Takes HOCR or ALTO formats as input and outputs TEI for the play's body: `<div>` elements for acts and scenes are encoded (with the relevant `@type` attribute), as well stage directions (`<stage>`) and character speech turns (`<sp>` elements, also identifiying their `<speaker>`). When speech is in verse, `<l>` elements are encoded.
+
+The `<teiHeader>` element needs to be encoded separately, as does the play's `<castList>` element and other frontmatter preceding the play's first scene, besides backmatter after the last scene, if any exists.   
 
 Inspired by earlier literature (e.g. [Grobid](https://grobid.readthedocs.io/en/latest/Introduction/) among others), the tool uses Conditional Random Fields (CRF) as implemented in [sklearn-crfsuite](https://github.com/TeamHG-Memex/sklearn-crfsuite). Lexical and typographical cues present in OCR output, besides token coordinates on the page, are exploited to generate TEI elements.  
 
