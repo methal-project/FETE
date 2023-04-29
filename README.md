@@ -1,8 +1,11 @@
+FETE: Fast Encoding of Theater in TEI
+=====================================
+
 # Introduction
 
-Application to generate TEI for the body of theater plays in Alsatian, based on OCR output. Takes HOCR or ALTO formats as input and outputs TEI for the play's body: `<div>` elements for acts and scenes are encoded (with the relevant `@type` attribute), as well stage directions (`<stage>`) and character speech turns (`<sp>` elements, also identifiying their `<speaker>`). When speech is in verse, `<l>` elements are encoded.
+FETE is an application to generate TEI for the body of theater plays in Alsatian, based on OCR output. It takes [HOCR](https://kba.github.io/hocr-spec/1.2/) or [ALTO](https://www.loc.gov/standards/alto/) formats as input. It outputs TEI for the play's body: `<div>` elements for acts and scenes (with the relevant `@type` attribute), as well as stage directions (`<stage>`) and character speech turns (`<sp>` elements and their children, also identifiying the `<speaker>` element). When speech is in verse, `<l>` elements are encoded.
 
-The `<teiHeader>` element needs to be encoded separately, as does the play's `<castList>` element and other frontmatter preceding the play's first scene, besides backmatter after the last scene, if any exists.   
+The `<teiHeader>` element for the plays needs to be encoded separately, as does the play's `<castList>` element and other frontmatter preceding the play's first scene, besides backmatter after the last scene, if any exists.   
 
 Inspired by earlier literature (e.g. [Grobid](https://grobid.readthedocs.io/en/latest/Introduction/) among others), the tool uses Conditional Random Fields (CRF) as implemented in [sklearn-crfsuite](https://github.com/TeamHG-Memex/sklearn-crfsuite). Lexical and typographical cues present in OCR output, besides token coordinates on the page, are exploited to generate TEI elements.  
 
@@ -18,7 +21,7 @@ The tool was developed by Andrew Briand (University of Washington), in the conte
 - `utils`: Some scripts for common manipulations to HOCR and TEI documents. Usage described in the scripts.
 
 <a name="prediction"></a>
-# Prediction
+# Generating TEI
 
 To generate TEI based on a directory of HOCR files, use the following command from within the `sklearn_crfsuite` directory:
 
@@ -36,7 +39,7 @@ This will predict the `../example/outputs/verbotte-fahne-exp3.xml` TEI file base
 
 <a name="training"></a>
 
-# Training
+# Training a model
 
 Training data consist on HOCR files and manually corrected TEI for them.
 
@@ -69,3 +72,12 @@ The lexical cues used by the tool are currently suitable for Alsatian theater. P
 
 Given a corpus of HOCR plays and their corresponding TEI-encoding versions, the tool's lexical features (see [`sklearn_crfsuite/features.py`](./sklearn_crfsuite/features.py)) could be adapted to further languages.
 
+# How to cite
+
+The software may be cited as:
+
+- Briand, Andrew & Ruiz Fabo, Pablo (2023). FETE. Fast Encoding of Theater in TEI.
+
+You can also cite a related publication:
+
+- Ruiz Fabo, Pablo, Bernhard, Delphine, Briand, Andrew & Werner, Carole. (Accepted). Computational drama analysis from almost zero electronic text: The case of Alsatian theater. To appear in (working title and editor list) Andresen, Melanie, Krautter, Benjamin, Pagel, Janis & Reiter, Nils. _Computational Drama Analysis: Reflecting Methods and Interpretations_. https://univoak.eu/islandora/object/islandora:157880
