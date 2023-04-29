@@ -16,8 +16,8 @@ The tool was developed by Andrew Briand (University of Washington), in the conte
 - `example`: example input, XML output obtained with it and CRF model used to predict the output.
 - `hocr2alto`: Scripts to convert between these formats.
     - Usage is documented in the script
-    - Requires `ocr-validate` (see https://github.com/UB-Mannheim/ocr-fileformat/blob/master/bin/ocr-validate.sh)
-- `sklearn_crfsuite`: The main program is in this directory, see [Prediction](#prediction) and [Training](#training) below for its usage.
+    - Requires the [`ocr-validate`](https://github.com/UB-Mannheim/ocr-fileformat/blob/master/bin/ocr-validate.sh) script
+- `sklearn_crfsuite`: The main program is in this directory, see [Generating TEI](#prediction) and [Training a model](#training) below for its usage.
 - `utils`: Some scripts for common manipulations to HOCR and TEI documents. Usage described in the scripts.
 
 <a name="prediction"></a>
