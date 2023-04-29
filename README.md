@@ -4,7 +4,9 @@ Not a real README, but we're testing the application and want to document it, so
 
 # Application structure
 
-- HOCR2ALTO: Scripts to convert between these formats. Can leave them in public repo (maybe remove most of the outputs and leave one as an example?)
+- HOCR2ALTO: Scripts to convert between these formats.
+    - Usage is documented in the script
+    - Requires `ocr-validate` (see https://github.com/UB-Mannheim/ocr-fileformat/blob/master/bin/ocr-validate.sh)
 - ncrf: Andrew's neural CRF tests. Can remove it since didn't really exploit it
 - sklearn_crfsuite: This is the main program. Most things happen here.
 - utils.py: Useful to keep these in the public application
