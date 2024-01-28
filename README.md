@@ -1,5 +1,6 @@
 FETE: Fast Encoding of Theater in TEI
 =====================================
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10578269.svg)](https://doi.org/10.5281/zenodo.10578269)
 
 # Introduction
 
