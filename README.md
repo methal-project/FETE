@@ -83,4 +83,4 @@ The software may be cited as:
 
 You can also cite a related publication:
 
-- Ruiz Fabo, Pablo, Bernhard, Delphine, Briand, Andrew & Werner, Carole. (Accepted). Computational drama analysis from almost zero electronic text: The case of Alsatian theater. To appear in (working title and editor list) Andresen, Melanie, Krautter, Benjamin, Pagel, Janis & Reiter, Nils. _Computational Drama Analysis: Reflecting Methods and Interpretations_. https://univoak.eu/islandora/object/islandora:157880
+- Ruiz Fabo, Pablo, Bernhard, Delphine, Briand, Andrew & Werner, Carole. (2024). Computational drama analysis from almost zero electronic text: The case of Alsatian theater. To appear in Andresen, Melanie & Reiter, Nils (eds.). _Computational Drama Analysis: Reflecting Methods and Interpretations_. Preprint at https://univoak.eu/islandora/object/islandora:157880
