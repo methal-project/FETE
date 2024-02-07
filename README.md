@@ -21,6 +21,13 @@ The tool was developed by Andrew Briand (University of Washington), in the conte
 - `sklearn_crfsuite`: The main program is in this directory, see [Generating TEI](#prediction) and [Training a model](#training) below for its usage.
 - `utils`: Some scripts for common manipulations to HOCR and TEI documents. Usage described in the scripts.
 
+<a name="requirements"></a>
+# Requirements
+
+The tool requires the packages listed in [`requirements.txt`](./requirements.txt). To install them, you can run `pip install -r requirements.txt` from the directory where `requirements.txt` resides.
+
+It is not required, but a good practice, to create a virtual environment for projects using the tool and install the requirements there. To create an environment, you can use [`venv`](https://docs.python.org/3/library/venv.html), or if you have [Anaconda](https://anaconda.org/anaconda/python), you can create it with `conda create --name fete python=3.12`, then activate the environment (`conda activate fete`) and run `pip install requirements.txt` once the environment is active.
+
 <a name="prediction"></a>
 # Generating TEI
 

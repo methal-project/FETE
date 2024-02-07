@@ -66,7 +66,7 @@ with open(formatted_name, mode="r", encoding="utf-8") as ixml,\
     # need a TEI root for CSS to add margins
     oxml.write(html.unescape(txt).replace('<?xml version="1.0"?>',
                                           """<?xml version="1.0"?>\n""" 
-                                          """<?xml-stylesheet type='text/css' href='../example/css/tei-drama.css' ?>\n""" +
+                                          """<?xml-stylesheet type='text/css' href='../css/tei-drama.css' ?>\n""" +
                                           """<TEI xmlns="http://www.tei-c.org/ns/1.0">\n{}\n<text>""".format(
                                            TEI_HEADER)).replace("</body>", "</body>\n</text>\n</TEI>"))
 
